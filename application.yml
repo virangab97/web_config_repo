@@ -1,0 +1,47 @@
+# Spring config
+spring:
+  mvc:
+    static-path-pattern: /static
+    throw-exception-if-no-handler-found: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      dialect : Oracle12cDialect
+  servlet:
+    multipart:
+      max-file-size: 6MB
+  datasource:
+    backend:
+        jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50040:oradb}
+        username: ${BACKEND_USERNAME:ECMSBEDEV1}
+        password: ${BACKEND_PASSWORD:ECMSBEDEV1}
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        test-on-borrow: true
+        validationQuery: SELECT 1 FROM DUAL
+    online:
+        jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50040:oradb}
+        username: ${BACKEND_USERNAME:DFCCCMSOLDEV1}
+        password: ${BACKEND_PASSWORD:DFCCCMSOLDEV1}
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        test-on-borrow: true
+        validationQuery: SELECT 1 FROM DUAL
+jwt:
+  issuer: epic-cms
+  secret: EPICCMSREVAMP
+  token-validity: 36000
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui-custom.html
+    operationsSorter: method
+
+#Report module DB Connections 
+ecms_issuing_report_backend_connection_url : DFCCBACKEND19CTST/DFCCBACKEND19CTST@//172.30.35.35:1569/pdbbktst1.dfcc.net
+ecms_issuing_report_online_connection_url : DFCCONLINE19CTST/DFCCONLINE19CTST@//172.30.35.35:1569/pdbbktst1.dfcc.net
+
+#EOD File upload path
+eoduploadpath: '/CMS/EODFILE/'
+

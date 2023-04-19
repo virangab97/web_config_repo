@@ -1,0 +1,151 @@
+config.precedence: 100
+ecms_web_core_api.token.obtain.url : http://TOKEN-SERVICE/token/obtain
+ecms_web_core_api.token.validate.url : http://TOKEN-SERVICE/token/validate
+
+ecms_web_core_api.home.domain : http://CORE-SERVICE/home/domain
+ecms_web_core_api.home.application : http://CORE-SERVICE/home/application
+ecms_web_core_api.home.section : http://CORE-SERVICE/home/section
+ecms_web_core_api.home.pagetask : http://CORE-SERVICE/home/pagetask
+ecms_web_core_api.password.reset : http://CORE-SERVICE/password/reset
+ecms_web_core_api.home.navigation : http://CORE-SERVICE/home/navigation
+
+# Userrole Management
+ecms_web_core_api.userrole.access : http://CORE-SERVICE/userrole/access
+ecms_web_core_api.userrole.list : http://CORE-SERVICE/userrole/list
+ecms_web_core_api.userrole.dualauthlist : http://CORE-SERVICE/userrole/dualauthlist
+ecms_web_core_api.userrole.history : http://CORE-SERVICE/userrole/history
+ecms_web_core_api.userrole.add : http://CORE-SERVICE/userrole/add
+ecms_web_core_api.userrole.edit : http://CORE-SERVICE/userrole/edit
+ecms_web_core_api.userrole.delete : http://CORE-SERVICE/userrole/delete
+ecms_web_core_api.userrole.confirm : http://CORE-SERVICE/userrole/confirm
+ecms_web_core_api.userrole.reject : http://CORE-SERVICE/userrole/reject
+
+# Province Management
+ecms_web_core_api.province.access : http://CORE-SERVICE/province/access
+ecms_web_core_api.province.list : http://CORE-SERVICE/province/list
+
+# District Management
+ecms_web_core_api.district.access : http://CORE-SERVICE/district/access
+ecms_web_core_api.district.list : http://CORE-SERVICE/district/list
+
+# Area Management
+ecms_web_core_api.area.access : http://CORE-SERVICE/area/access
+ecms_web_core_api.area.list : http://CORE-SERVICE/area/list
+ecms_web_core_api.area.history : http://CORE-SERVICE/area/history
+ecms_web_core_api.area.add : http://CORE-SERVICE/area/add
+ecms_web_core_api.area.edit : http://CORE-SERVICE/area/edit
+ecms_web_core_api.area.delete : http://CORE-SERVICE/area/delete
+
+# Alert Configuration Management
+ecms_web_core_api.alert.access : http://CORE-SERVICE/alert/access
+ecms_web_core_api.alert.list : http://CORE-SERVICE/alert/list
+ecms_web_core_api.alert.dualauthlist : http://CORE-SERVICE/alert/dualauthlist
+ecms_web_core_api.alert.history : http://CORE-SERVICE/alert/history
+ecms_web_core_api.alert.edit : http://CORE-SERVICE/alert/edit
+
+# Bank Management
+ecms_web_core_api.bank.access : http://CORE-SERVICE/bank/access
+ecms_web_core_api.bank.list : http://CORE-SERVICE/bank/list
+ecms_web_core_api.bank.dualauthlist : http://CORE-SERVICE/bank/dualauthlist
+ecms_web_core_api.bank.history : http://CORE-SERVICE/bank/history
+ecms_web_core_api.bank.add : http://CORE-SERVICE/bank/add
+ecms_web_core_api.bank.edit : http://CORE-SERVICE/bank/edit
+ecms_web_core_api.bank.delete : http://CORE-SERVICE/bank/delete
+ecms_web_core_api.bank.confirm : http://CORE-SERVICE/bank/confirm
+ecms_web_core_api.bank.reject : http://CORE-SERVICE/bank/reject
+
+# Bank Branch Management
+ecms_web_core_api.bankbranch.access : http://CORE-SERVICE/bankbranch/access
+ecms_web_core_api.bankbranch.list : http://CORE-SERVICE/bankbranch/list
+ecms_web_core_api.bankbranch.dualauthlist : http://CORE-SERVICE/bankbranch/dualauthlist
+ecms_web_core_api.bankbranch.history : http://CORE-SERVICE/bankbranch/history
+ecms_web_core_api.bankbranch.add : http://CORE-SERVICE/bankbranch/add
+ecms_web_core_api.bankbranch.edit : http://CORE-SERVICE/bankbranch/edit
+ecms_web_core_api.bankbranch.delete : http://CORE-SERVICE/bankbranch/delete
+ecms_web_core_api.bankbranch.confirm : http://CORE-SERVICE/bankbranch/confirm
+ecms_web_core_api.bankbranch.reject : http://CORE-SERVICE/bankbranch/reject
+
+# Online Connection Management
+ecms_web_core_api.onlineconnection.access : http://CORE-SERVICE/onlineconnection/access
+ecms_web_core_api.onlineconnection.list : http://CORE-SERVICE/onlineconnection/list
+ecms_web_core_api.onlineconnection.dualauthlist : http://CORE-SERVICE/onlineconnection/dualauthlist
+ecms_web_core_api.onlineconnection.history : http://CORE-SERVICE/onlineconnection/history
+ecms_web_core_api.onlineconnection.edit : http://CORE-SERVICE/onlineconnection/edit
+ecms_web_core_api.onlineconnection.confirm : http://CORE-SERVICE/onlineconnection/confirm
+ecms_web_core_api.onlineconnection.reject : http://CORE-SERVICE/onlineconnection/reject
+
+
+# Holiday Management
+ecms_web_core_api.holiday.access : http://CORE-SERVICE/holiday/access
+ecms_web_core_api.holiday.list : http://CORE-SERVICE/holiday/list
+ecms_web_core_api.holiday.dualauthlist : http://CORE-SERVICE/holiday/dualauthlist
+ecms_web_core_api.holiday.history : http://CORE-SERVICE/holiday/history
+ecms_web_core_api.holiday.add : http://CORE-SERVICE/holiday/add
+ecms_web_core_api.holiday.edit : http://CORE-SERVICE/holiday/edit
+ecms_web_core_api.holiday.delete : http://CORE-SERVICE/holiday/delete
+ecms_web_core_api.holiday.confirm : http://CORE-SERVICE/holiday/confirm
+ecms_web_core_api.holiday.reject : http://CORE-SERVICE/holiday/reject
+
+
+# Mcc Management
+ecms_web_core_api.mcc.access : http://CORE-SERVICE/mcc/access
+ecms_web_core_api.mcc.list : http://CORE-SERVICE/mcc/list
+ecms_web_core_api.mcc.dualauthlist : http://CORE-SERVICE/mcc/dualauthlist
+ecms_web_core_api.mcc.history : http://CORE-SERVICE/mcc/history
+ecms_web_core_api.mcc.add : http://CORE-SERVICE/mcc/add
+ecms_web_core_api.mcc.edit : http://CORE-SERVICE/mcc/edit
+ecms_web_core_api.mcc.delete : http://CORE-SERVICE/mcc/delete
+ecms_web_core_api.mcc.confirm : http://CORE-SERVICE/mcc/confirm
+ecms_web_core_api.mcc.reject : http://CORE-SERVICE/mcc/reject
+
+
+# Bin Management
+ecms_web_core_api.bin.access : http://CORE-SERVICE/bin/access
+ecms_web_core_api.bin.list : http://CORE-SERVICE/bin/list
+ecms_web_core_api.bin.dualauthlist : http://CORE-SERVICE/bin/dualauthlist
+ecms_web_core_api.bin.history : http://CORE-SERVICE/bin/history
+ecms_web_core_api.bin.add : http://CORE-SERVICE/bin/add
+ecms_web_core_api.bin.edit : http://CORE-SERVICE/bin/edit
+ecms_web_core_api.bin.delete : http://CORE-SERVICE/bin/delete
+ecms_web_core_api.bin.confirm : http://CORE-SERVICE/bin/confirm
+ecms_web_core_api.bin.reject : http://CORE-SERVICE/bin/reject
+ecms_web_core_api.bin.view : http://CORE-SERVICE/bin/view
+
+# Country Management
+ecms_web_core_api.country.access : http://CORE-SERVICE/country/access
+ecms_web_core_api.country.list : http://CORE-SERVICE/country/list
+
+#Password Policy Management
+ecms_web_core_api.pwpolicy.access : http://CORE-SERVICE/pwpolicy/access
+ecms_web_core_api.pwpolicy.dualauthlist : http://CORE-SERVICE/pwpolicy/dualauthlist
+ecms_web_core_api.pwpolicy.history : http://CORE-SERVICE/pwpolicy/history
+ecms_web_core_api.pwpolicy.edit : http://CORE-SERVICE/pwpolicy/edit
+ecms_web_core_api.pwpolicy.confirm : http://CORE-SERVICE/pwpolicy/confirm
+ecms_web_core_api.pwpolicy.reject : http://CORE-SERVICE/pwpolicy/reject
+
+# Currency Management
+ecms_web_core_api.currency.access : http://CORE-SERVICE/currency/access
+ecms_web_core_api.currency.list : http://CORE-SERVICE/currency/list
+ecms_web_core_api.currency.dualauthlist : http://CORE-SERVICE/currency/dualauthlist
+ecms_web_core_api.currency.history : http://CORE-SERVICE/currency/history
+ecms_web_core_api.currency.add : http://CORE-SERVICE/currency/add
+ecms_web_core_api.currency.edit : http://CORE-SERVICE/currency/edit
+ecms_web_core_api.currency.delete : http://CORE-SERVICE/currency/delete
+ecms_web_core_api.currency.confirm : http://CORE-SERVICE/currency/confirm
+ecms_web_core_api.currency.reject : http://CORE-SERVICE/currency/reject
+
+#Credit products
+# cardrenewal 
+ecms_web_core_api.cardrenewal.access : http://CORE-SERVICE/cardrenewal/access
+ecms_web_core_api.cardrenewal.list : http://CORE-SERVICE/cardrenewal/list
+ecms_web_core_api.cardrenewal.history : http://CORE-SERVICE/cardrenewal/history
+ecms_web_core_api.cardrenewal.approve : http://CORE-SERVICE/cardrenewal/approve
+ecms_web_core_api.cardrenewal.reject : http://CORE-SERVICE/cardrenewal/reject
+
+#Installment payements
+# LOC ACCELERATION CONFIRMATION 
+ecms_web_core_api.locaccelerationconfirm.access : http://CORE-SERVICE/locaccelerationconfirm/access
+ecms_web_core_api.locaccelerationconfirm.list : http://CORE-SERVICE/locaccelerationconfirm/list
+ecms_web_core_api.locaccelerationconfirm.history : http://CORE-SERVICE/locaccelerationconfirm/history
+ecms_web_core_api.locaccelerationconfirm.approve : http://CORE-SERVICE/locaccelerationconfirm/approve
+ecms_web_core_api.locaccelerationconfirm.reject : http://CORE-SERVICE/locaccelerationconfirm/reject
