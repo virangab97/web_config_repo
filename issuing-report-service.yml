@@ -1,0 +1,45 @@
+# Report location dir
+ecms_web_issuing_report_file.directory.excel : C:/Users/viranga_b/Documents/CMSREPORTS/GeneratedExcel/
+ecms_web_issuing_report_file.directory.pdf : C:/Users/viranga_b/Documents/CMSREPORTS/GeneratedPDF/
+
+
+# Report_Generator
+
+# 1 Installment Detail Report
+report_gen_api.installment.detail : http://localhost:5000/ecms_report_core_api/installmentdetailsreport
+
+# 2 application confirmation Report
+report_gen_api.application.confirmation : http://localhost:5000/ecms_report_core_api/application_confirmation_report
+
+# 3 application data entry Report
+report_gen_api.application.dataentry : http://localhost:5000/ecms_report_core_api/ApplicationDataEntry
+
+# 4 application rejection Report
+report_gen_api.application.reject : http://localhost:5000/ecms_report_core_api/ApplicationRejection
+
+# 5 application summary Report
+report_gen_api.application.summary : http://localhost:5000/ecms_report_core_api/ApplicationSummaryReport
+
+# 6 card application Report
+report_gen_api.card.application : http://localhost:5000/ecms_report_core_api/CardApplication
+
+# 7 application credit score Report
+report_gen_api.application.creditscore : http://localhost:5000/ecms_report_core_api/ApplicationCreditScoreReport
+
+# 8 activated not used card Report
+report_gen_api.act.notused : http://localhost:5000/ecms_report_core_api/activatedNotUsedCard
+
+# 9 card activation Report
+report_gen_api.card.activation : http://localhost:5000/ecms_report_core_api/cardActivationReport
+
+# 10 card distribution Report
+report_gen_api.card.distribution : http://localhost:5000/ecms_report_core_api/card_distribution_report
+
+# 11 card in circulation Report
+report_gen_api.card.circulation : http://localhost:5000/ecms_report_core_api/cardincirculationreport
+
+# 12 card number generation Report
+report_gen_api.card.generation : http://localhost:5000/ecms_report_core_api/cardnumbergenerationreport
+
+# 13 daily transaction detail report
+report_gen_api.daily.transactiondetail : http://localhost:5000/ecms_report_core_api/dailyTransactionDetailReport
