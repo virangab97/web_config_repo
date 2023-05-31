@@ -43,3 +43,12 @@ report_gen_api.card.generation : http://localhost:5000/ecms_report_core_api/card
 
 # 13 daily transaction detail report
 report_gen_api.daily.transactiondetail : http://localhost:5000/ecms_report_core_api/dailyTransactionDetailReport
+
+# 14 embossing and encoding report
+report_gen_api.embossing.encoding : http://localhost:5000/ecms_report_core_api/EmbossingandEncodingReport
+
+# 15 pin generation and mailing report
+report_gen_api.pingeneration.mailing : http://localhost:5000/ecms_report_core_api/PinGenerationAndMailingReport
+
+# 16 card status report
+report_gen_api.card.status : http://localhost:5000/ecms_report_core_api/cardstatusreport

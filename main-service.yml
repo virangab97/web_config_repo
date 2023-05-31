@@ -42,6 +42,8 @@ ecms_web_core_api.alert.list : http://CORE-SERVICE/alert/list
 ecms_web_core_api.alert.dualauthlist : http://CORE-SERVICE/alert/dualauthlist
 ecms_web_core_api.alert.history : http://CORE-SERVICE/alert/history
 ecms_web_core_api.alert.edit : http://CORE-SERVICE/alert/edit
+ecms_web_core_api.alert.confirm : http://CORE-SERVICE/alert/confirm
+ecms_web_core_api.alert.reject : http://CORE-SERVICE/alert/reject
 
 # Bank Management
 ecms_web_core_api.bank.access : http://CORE-SERVICE/bank/access
@@ -134,18 +136,920 @@ ecms_web_core_api.currency.delete : http://CORE-SERVICE/currency/delete
 ecms_web_core_api.currency.confirm : http://CORE-SERVICE/currency/confirm
 ecms_web_core_api.currency.reject : http://CORE-SERVICE/currency/reject
 
-#Credit products
-# cardrenewal 
-ecms_web_core_api.cardrenewal.access : http://CORE-SERVICE/cardrenewal/access
-ecms_web_core_api.cardrenewal.list : http://CORE-SERVICE/cardrenewal/list
-ecms_web_core_api.cardrenewal.history : http://CORE-SERVICE/cardrenewal/history
-ecms_web_core_api.cardrenewal.approve : http://CORE-SERVICE/cardrenewal/approve
-ecms_web_core_api.cardrenewal.reject : http://CORE-SERVICE/cardrenewal/reject
+# Currency Exchange Rate Management
+ecms_web_core_api.currency_rate.access : http://CORE-SERVICE/exrate/access
+ecms_web_core_api.currency_rate.list : http://CORE-SERVICE/exrate/list
+ecms_web_core_api.currency_rate.dualauthlist : http://CORE-SERVICE/exrate/dualauthlist
+ecms_web_core_api.currency_rate.history : http://CORE-SERVICE/exrate/history
+ecms_web_core_api.currency_rate.add : http://CORE-SERVICE/exrate/add
+ecms_web_core_api.currency_rate.edit : http://CORE-SERVICE/exrate/edit
+ecms_web_core_api.currency_rate.delete : http://CORE-SERVICE/exrate/delete
+ecms_web_core_api.currency_rate.confirm : http://CORE-SERVICE/exrate/confirm
+ecms_web_core_api.currency_rate.reject : http://CORE-SERVICE/exrate/reject
 
-#Installment payements
-# LOC ACCELERATION CONFIRMATION 
-ecms_web_core_api.locaccelerationconfirm.access : http://CORE-SERVICE/locaccelerationconfirm/access
-ecms_web_core_api.locaccelerationconfirm.list : http://CORE-SERVICE/locaccelerationconfirm/list
-ecms_web_core_api.locaccelerationconfirm.history : http://CORE-SERVICE/locaccelerationconfirm/history
-ecms_web_core_api.locaccelerationconfirm.approve : http://CORE-SERVICE/locaccelerationconfirm/approve
-ecms_web_core_api.locaccelerationconfirm.reject : http://CORE-SERVICE/locaccelerationconfirm/reject
+
+#Audit Trace Management
+ecms_web_core_api.audit.access : http://CORE-SERVICE/audit/access
+ecms_web_core_api.audit.list : http://CORE-SERVICE/audit/list
+ecms_web_core_api.audit.view : http://CORE-SERVICE/audit/view
+
+# Userrole Privilege Management
+ecms_web_core_api.privilege.access : http://CORE-SERVICE/privilege/access
+ecms_web_core_api.privilege.list : http://CORE-SERVICE/privilege/list
+ecms_web_core_api.privilege.dropdown : http://CORE-SERVICE/privilege/dropdown
+ecms_web_core_api.privilege.manage : http://CORE-SERVICE/privilege/manage
+ecms_web_core_api.privilege.history : http://CORE-SERVICE/privilege/history
+
+# Userrole Pagetask Management
+ecms_web_core_api.pagetask.access : http://CORE-SERVICE/pagetask/access
+ecms_web_core_api.pagetask.tasks : http://CORE-SERVICE/pagetask/tasks
+ecms_web_core_api.pagetask.details: http://CORE-SERVICE/pagetask/details
+ecms_web_core_api.pagetask.add :  http://CORE-SERVICE/pagetask/add
+ecms_web_core_api.pagetask.delete : http://CORE-SERVICE/pagetask/delete
+ecms_web_core_api.pagetask.history : http://CORE-SERVICE/pagetask/history
+ecms_web_core_api.pagetask.list : http://CORE-SERVICE/pagetask/list
+ecms_web_core_api.pagetask.edit : http://CORE-SERVICE//pagetask/edit
+
+# Userlevel Management
+ecms_web_core_api.userlevel.access : http://CORE-SERVICE/userlevel/access
+ecms_web_core_api.userlevel.list : http://CORE-SERVICE/userlevel/list
+ecms_web_core_api.userlevel.history : http://CORE-SERVICE/userlevel/history
+ecms_web_core_api.userlevel.add : http://CORE-SERVICE/userlevel/add
+ecms_web_core_api.userlevel.edit : http://CORE-SERVICE/userlevel/edit
+ecms_web_core_api.userlevel.delete : http://CORE-SERVICE/userlevel/delete
+
+# Fee Management
+ecms_web_core_api.fee.access : http://CORE-SERVICE/fee/access
+ecms_web_core_api.fee.list : http://CORE-SERVICE/fee/list
+ecms_web_core_api.fee.dualauthlist : http://CORE-SERVICE/fee/dualauthlist
+ecms_web_core_api.fee.history : http://CORE-SERVICE/fee/history
+ecms_web_core_api.fee.add : http://CORE-SERVICE/fee/add
+ecms_web_core_api.fee.edit : http://CORE-SERVICE/fee/edit
+ecms_web_core_api.fee.delete : http://CORE-SERVICE/fee/delete
+ecms_web_core_api.fee.confirm : http://CORE-SERVICE/fee/confirm
+ecms_web_core_api.fee.reject : http://CORE-SERVICE/fee/reject
+
+# system user management
+ecms_web_core_api.systemuser.access : http://CORE-SERVICE/systemuser/access
+ecms_web_core_api.systemuser.list : http://CORE-SERVICE/systemuser/list
+ecms_web_core_api.systemuser.dualauthlist : http://CORE-SERVICE/systemuser/dualauthlist
+ecms_web_core_api.systemuser.history : http://CORE-SERVICE/systemuser/history
+ecms_web_core_api.systemuser.add : http://CORE-SERVICE/systemuser/add
+ecms_web_core_api.systemuser.edit : http://CORE-SERVICE/systemuser/edit
+ecms_web_core_api.systemuser.delete : http://CORE-SERVICE/systemuser/delete
+ecms_web_core_api.systemuser.confirm : http://CORE-SERVICE/systemuser/confirm
+ecms_web_core_api.systemuser.reject : http://CORE-SERVICE/systemuser/reject
+ecms_web_core_api.systemuser.resetpwd : http://CORE-SERVICE/systemuser/reset
+
+# ------------------ Profile Management ---------------------------#
+# Feepro Management
+ecms_web_core_api.feepro.access : http://CORE-SERVICE/feepro/access
+ecms_web_core_api.feepro.list : http://CORE-SERVICE/feepro/list
+ecms_web_core_api.feepro.dualauthlist : http://CORE-SERVICE/feepro/dualauthlist
+ecms_web_core_api.feepro.history : http://CORE-SERVICE/feepro/history
+ecms_web_core_api.feepro.add : http://CORE-SERVICE/feepro/add
+ecms_web_core_api.feepro.edit : http://CORE-SERVICE/feepro/edit
+ecms_web_core_api.feepro.delete : http://CORE-SERVICE/feepro/delete
+ecms_web_core_api.feepro.confirm : http://CORE-SERVICE/feepro/confirm
+ecms_web_core_api.feepro.reject : http://CORE-SERVICE/feepro/reject
+
+# Promofee Management
+ecms_web_core_api.promofee.access : http://CORE-SERVICE/promofee/access
+ecms_web_core_api.promofee.list : http://CORE-SERVICE/promofee/list
+ecms_web_core_api.promofee.dualauthlist : http://CORE-SERVICE/promofee/dualauthlist
+ecms_web_core_api.promofee.history : http://CORE-SERVICE/promofee/history
+ecms_web_core_api.promofee.add : http://CORE-SERVICE/promofee/add
+ecms_web_core_api.promofee.edit : http://CORE-SERVICE/promofee/edit
+ecms_web_core_api.promofee.delete : http://CORE-SERVICE/promofee/delete
+ecms_web_core_api.promofee.confirm : http://CORE-SERVICE/promofee/confirm
+ecms_web_core_api.promofee.reject : http://CORE-SERVICE/promofee/reject
+
+# Cashback Management
+ecms_web_core_api.cashback.access : http://CORE-SERVICE/cashback/access
+ecms_web_core_api.cashback.list : http://CORE-SERVICE/cashback/list
+ecms_web_core_api.cashback.dualauthlist : http://CORE-SERVICE/cashback/dualauthlist
+ecms_web_core_api.cashback.history : http://CORE-SERVICE/cashback/history
+ecms_web_core_api.cashback.add : http://CORE-SERVICE/cashback/add
+ecms_web_core_api.cashback.edit : http://CORE-SERVICE/cashback/edit
+ecms_web_core_api.cashback.delete : http://CORE-SERVICE/cashback/delete
+ecms_web_core_api.cashback.confirm : http://CORE-SERVICE/cashback/confirm
+ecms_web_core_api.cashback.reject : http://CORE-SERVICE/cashback/reject
+
+#Risk Profile Management
+ecms_web_core_api.risk.access : http://CORE-SERVICE/risk/access
+ecms_web_core_api.risk.list : http://CORE-SERVICE/risk/list
+ecms_web_core_api.risk.dropdown : http://CORE-SERVICE/risk/dropdown
+ecms_web_core_api.risk.dualauthlist : http://CORE-SERVICE/risk/dualauthlist
+ecms_web_core_api.risk.history : http://CORE-SERVICE/risk/history
+ecms_web_core_api.risk.add : http://CORE-SERVICE/risk/add
+ecms_web_core_api.risk.edit : http://CORE-SERVICE/risk/edit
+ecms_web_core_api.risk.delete : http://CORE-SERVICE/risk/delete
+ecms_web_core_api.risk.confirm : http://CORE-SERVICE/risk/confirm
+ecms_web_core_api.risk.reject : http://CORE-SERVICE/risk/reject
+
+# ------------------ Common File Download ---------------------------#
+
+ecms_web_core_api.commonfile.access : http://CORE-SERVICE/commonfile/access
+ecms_web_core_api.commonfile.list : http://CORE-SERVICE/commonfile/list
+ecms_web_core_api.commonfile.history : http://CORE-SERVICE/commonfile/history
+ecms_web_core_api.commonfile.download : http://CORE-SERVICE/commonfile/download
+
+# ------------------ Common File Download ---------------------------#
+
+# General Ledger Management
+ecms_web_core_api.generalledger.confirm : http://CORE-SERVICE/generalledger/confirm
+ecms_web_core_api.generalledger.reject : http://CORE-SERVICE/generalledger/reject
+
+
+
+ecms_web_core_api.risk.data : http://CORE-SERVICE/risk/data
+ecms_web_core_api.risk.duplicate : http://CORE-SERVICE/risk/duplicate
+
+# ------------------ EOD Management ---------------------------#
+
+# EOD Process Mgt
+ecms_web_core_api.eodprocessmgt.access : http://CORE-SERVICE/eodprocessmgt/access
+ecms_web_core_api.eodprocessmgt.list : http://CORE-SERVICE/eodprocessmgt/list
+ecms_web_core_api.eodprocessmgt.dualauthlist : http://CORE-SERVICE/eodprocessmgt/dualauthlist
+ecms_web_core_api.eodprocessmgt.history : http://CORE-SERVICE/eodprocessmgt/history
+ecms_web_core_api.eodprocessmgt.add : http://CORE-SERVICE/eodprocessmgt/add
+ecms_web_core_api.eodprocessmgt.edit : http://CORE-SERVICE/eodprocessmgt/edit
+ecms_web_core_api.eodprocessmgt.delete : http://CORE-SERVICE/eodprocessmgt/delete
+ecms_web_core_api.eodprocessmgt.confirm : http://CORE-SERVICE/eodprocessmgt/confirm
+ecms_web_core_api.eodprocessmgt.reject : http://CORE-SERVICE/eodprocessmgt/reject
+
+# EOD Process Category Mgt
+ecms_web_core_api.processcategory.access : http://CORE-SERVICE/processcategory/access
+ecms_web_core_api.processcategory.list : http://CORE-SERVICE/processcategory/list
+ecms_web_core_api.processcategory.dualauthlist : http://CORE-SERVICE/processcategory/dualauthlist
+ecms_web_core_api.processcategory.history : http://CORE-SERVICE/processcategory/history
+ecms_web_core_api.processcategory.add : http://CORE-SERVICE/processcategory/add
+ecms_web_core_api.processcategory.edit : http://CORE-SERVICE/processcategory/edit
+ecms_web_core_api.processcategory.delete : http://CORE-SERVICE/processcategory/delete
+ecms_web_core_api.processcategory.confirm : http://CORE-SERVICE/processcategory/confirm
+ecms_web_core_api.processcategory.reject : http://CORE-SERVICE/processcategory/reject
+
+#Process category flow
+ecms_web_core_api.processcategoryflow.add : http://CORE-SERVICE/processcategoryflow/add
+ecms_web_core_api.processcategoryflow.history : http://CORE-SERVICE/processcategoryflow/history
+ecms_web_core_api.processcategoryflow.access : http://CORE-SERVICE/processcategoryflow/access
+ecms_web_core_api.processcategoryflow.list : http://CORE-SERVICE/processcategoryflow/list
+ecms_web_core_api.processcategoryflow.dualauthlist : http://CORE-SERVICE/processcategoryflow/dualauthlist
+ecms_web_core_api.processcategoryflow.confirm : http://CORE-SERVICE/processcategoryflow/confirm
+ecms_web_core_api.processcategoryflow.reject : http://CORE-SERVICE/processcategoryflow/reject
+
+
+#EOD file upload
+ecms_web_core_api.eodfileupload.history : http://CORE-SERVICE/eodfileupload/history
+ecms_web_core_api.eodfileupload.access : http://CORE-SERVICE/eodfileupload/access
+ecms_web_core_api.eodfileupload.list : http://CORE-SERVICE/eodfileupload/list
+ecms_web_core_api.eodfileupload.dualauthlist : http://CORE-SERVICE/eodfileupload/dualauthlist
+ecms_web_core_api.eodfileupload.uploadfile : http://CORE-SERVICE/eodfileupload/uploadfile
+ecms_web_core_api.eodfileupload.confirm : http://CORE-SERVICE/eodfileupload/confirm
+ecms_web_core_api.eodfileupload.reject : http://CORE-SERVICE/eodfileupload/reject
+
+#EOD process flow
+ecms_web_core_api.eodprocessflow.history : http://CORE-SERVICE/eodprocessflow/history
+ecms_web_core_api.eodprocessflow.dualauthlist : http://CORE-SERVICE/eodprocessflow/dualauthlist
+ecms_web_core_api.eodprocessflow.list : http://CORE-SERVICE/eodprocessflow/list
+ecms_web_core_api.eodprocessflow.access : http://CORE-SERVICE/eodprocessflow/access
+ecms_web_core_api.eodprocessflow.add : http://CORE-SERVICE/eodprocessflow/add
+ecms_web_core_api.eodprocessflow.confirm : http://CORE-SERVICE/eodprocessflow/confirm
+ecms_web_core_api.eodprocessflow.reject : http://CORE-SERVICE/eodprocessflow/reject
+
+# ------------------ Report Management ---------------------------#
+
+# Report location dir
+ecms_web_issuing_report_file.directory.excel : C:/Users/viranga_b/Documents/CMSREPORTS/GeneratedExcel/
+ecms_web_issuing_report_file.directory.pdf : C:/Users/viranga_b/Documents/CMSREPORTS/GeneratedPDF/
+
+# Delete Report from dir
+ecms_web_issuing_report_api.delete_report.excel : http://ISSUING-REPORT-SERVICE/delete_report/excel
+ecms_web_issuing_report_api.delete_report.pdf : http://ISSUING-REPORT-SERVICE/delete_report/pdf
+
+# Installment Detail Report
+ecms_web_issuing_report_api.installment.detail.access : http://ISSUING-REPORT-SERVICE/installment_detail/access
+ecms_web_issuing_report_api.installment.detail.list : http://ISSUING-REPORT-SERVICE/installment_detail/list
+ecms_web_issuing_report_api.installment.detail.excel: http://ISSUING-REPORT-SERVICE/installment_detail/excel
+ecms_web_issuing_report_api.installment.detail.pdf: http://ISSUING-REPORT-SERVICE/installment_detail/pdf
+
+
+# application confirmation Report
+ecms_web_issuing_report_api.application.confirmation.access : http://ISSUING-REPORT-SERVICE/application_confirmation/access
+ecms_web_issuing_report_api.application.confirmation.list : http://ISSUING-REPORT-SERVICE/application_confirmation/list
+ecms_web_issuing_report_api.application.confirmation.excel: http://ISSUING-REPORT-SERVICE/application_confirmation/excel
+ecms_web_issuing_report_api.application.confirmation.pdf: http://ISSUING-REPORT-SERVICE/application_confirmation/pdf
+
+
+# application data entry Report
+ecms_web_issuing_report_api.application.dataentry.access : http://ISSUING-REPORT-SERVICE/application_dataentry/access
+ecms_web_issuing_report_api.application.dataentry.list : http://ISSUING-REPORT-SERVICE/application_dataentry/list
+ecms_web_issuing_report_api.application.dataentry.excel: http://ISSUING-REPORT-SERVICE/application_dataentry/excel
+ecms_web_issuing_report_api.application.dataentry.pdf: http://ISSUING-REPORT-SERVICE/application_dataentry/pdf
+
+
+# application rejection Report
+ecms_web_issuing_report_api.application.reject.access : http://ISSUING-REPORT-SERVICE/application_reject/access
+ecms_web_issuing_report_api.application.reject.list : http://ISSUING-REPORT-SERVICE/application_reject/list
+ecms_web_issuing_report_api.application.reject.excel: http://ISSUING-REPORT-SERVICE/application_reject/excel
+ecms_web_issuing_report_api.application.reject.pdf: http://ISSUING-REPORT-SERVICE/application_reject/pdf
+
+
+# application summary Report
+ecms_web_issuing_report_api.application.summary.access : http://ISSUING-REPORT-SERVICE/application_summary/access
+ecms_web_issuing_report_api.application.summary.list : http://ISSUING-REPORT-SERVICE/application_summary/list
+ecms_web_issuing_report_api.application.summary.excel: http://ISSUING-REPORT-SERVICE/application_summary/excel
+ecms_web_issuing_report_api.application.summary.pdf: http://ISSUING-REPORT-SERVICE/application_summary/pdf
+
+
+# card application Report
+ecms_web_issuing_report_api.card.application.access : http://ISSUING-REPORT-SERVICE/card_application/access
+ecms_web_issuing_report_api.card.application.list : http://ISSUING-REPORT-SERVICE/card_application/list
+ecms_web_issuing_report_api.card.application.excel: http://ISSUING-REPORT-SERVICE/card_application/excel
+ecms_web_issuing_report_api.card.application.pdf: http://ISSUING-REPORT-SERVICE/card_application/pdf
+
+
+# application credit score Report
+ecms_web_issuing_report_api.application.creditscore.access : http://ISSUING-REPORT-SERVICE/application_creditscore/access
+ecms_web_issuing_report_api.application.creditscore.list : http://ISSUING-REPORT-SERVICE/application_creditscore/list
+ecms_web_issuing_report_api.application.creditscore.excel: http://ISSUING-REPORT-SERVICE/application_creditscore/excel
+ecms_web_issuing_report_api.application.creditscore.pdf: http://ISSUING-REPORT-SERVICE/application_creditscore/pdf
+
+
+
+# activated not used card Report
+ecms_web_issuing_report_api.act.notused.access : http://ISSUING-REPORT-SERVICE/act_notused/access
+ecms_web_issuing_report_api.act.notused.list : http://ISSUING-REPORT-SERVICE/act_notused/list
+ecms_web_issuing_report_api.act.notused.excel: http://ISSUING-REPORT-SERVICE/act_notused/excel
+ecms_web_issuing_report_api.act.notused.pdf: http://ISSUING-REPORT-SERVICE/act_notused/pdf
+
+
+# card activation Report
+ecms_web_issuing_report_api.card.activation.access : http://ISSUING-REPORT-SERVICE/card_activation/access
+ecms_web_issuing_report_api.card.activation.list : http://ISSUING-REPORT-SERVICE/card_activation/list
+ecms_web_issuing_report_api.card.activation.excel: http://ISSUING-REPORT-SERVICE/card_activation/excel
+ecms_web_issuing_report_api.card.activation.pdf: http://ISSUING-REPORT-SERVICE/card_activation/pdf
+
+
+# card distribution Report
+ecms_web_issuing_report_api.card.distribution.access : http://ISSUING-REPORT-SERVICE/card_distribution/access
+ecms_web_issuing_report_api.card.distribution.list : http://ISSUING-REPORT-SERVICE/card_distribution/list
+ecms_web_issuing_report_api.card.distribution.excel: http://ISSUING-REPORT-SERVICE/card_distribution/excel
+ecms_web_issuing_report_api.card.distribution.pdf: http://ISSUING-REPORT-SERVICE/card_distribution/pdf
+
+
+# card in circulation Report
+ecms_web_issuing_report_api.card.circulation.access : http://ISSUING-REPORT-SERVICE/card_circulation/access
+ecms_web_issuing_report_api.card.circulation.list : http://ISSUING-REPORT-SERVICE/card_circulation/list
+ecms_web_issuing_report_api.card.circulation.excel: http://ISSUING-REPORT-SERVICE/card_circulation/excel
+ecms_web_issuing_report_api.card.circulation.pdf: http://ISSUING-REPORT-SERVICE/card_circulation/pdf
+
+
+# card number generation Report
+ecms_web_issuing_report_api.card.generation.access : http://ISSUING-REPORT-SERVICE/card_generation/access
+ecms_web_issuing_report_api.card.generation.list : http://ISSUING-REPORT-SERVICE/card_generation/list
+ecms_web_issuing_report_api.card.generation.excel: http://ISSUING-REPORT-SERVICE/card_generation/excel
+ecms_web_issuing_report_api.card.generation.pdf: http://ISSUING-REPORT-SERVICE/card_generation/pdf
+
+
+# daily transaction detail report
+ecms_web_issuing_report_api.daily.transactiondetail.access : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/access
+ecms_web_issuing_report_api.daily.transactiondetail.list : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/list
+ecms_web_issuing_report_api.daily.transactiondetail.excel : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/excel
+ecms_web_issuing_report_api.daily.transactiondetail.pdf : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/pdf
+
+#embossing and encoding report
+ecms_web_issuing_report_api.embossing.encoding.access : http://ISSUING-REPORT-SERVICE/embossing_encoding/access
+ecms_web_issuing_report_api.embossing.encoding.list : http://ISSUING-REPORT-SERVICE/embossing_encoding/list
+ecms_web_issuing_report_api.embossing.encoding.excel : http://ISSUING-REPORT-SERVICE/embossing_encoding/excel
+ecms_web_issuing_report_api.embossing.encoding.pdf : http://ISSUING-REPORT-SERVICE/embossing_encoding/pdf
+
+# pin generation and mailing report
+ecms_web_issuing_report_api.pingeneration.mailing.access : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/access
+ecms_web_issuing_report_api.pingeneration.mailing.list : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/list
+ecms_web_issuing_report_api.pingeneration.mailing.excel : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/excel
+ecms_web_issuing_report_api.pingeneration.mailing.pdf : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/pdf
+
+# card status report
+ecms_web_issuing_report_api.card.status.access : http://ISSUING-REPORT-SERVICE/card_status/access
+ecms_web_issuing_report_api.card.status.list : http://ISSUING-REPORT-SERVICE/card_status/list
+ecms_web_issuing_report_api.card.status.excel : http://ISSUING-REPORT-SERVICE/card_status/excel
+ecms_web_issuing_report_api.card.status.pdf : http://ISSUING-REPORT-SERVICE/card_status/pdf
+
+
+# ------------------ General Ledger Management ---------------------------#
+
+ecms_web_core_api.generalledger.history : http://CORE-SERVICE/generalledger/history
+ecms_web_core_api.generalledger.access : http://CORE-SERVICE/generalledger/access
+ecms_web_core_api.generalledger.add : http://CORE-SERVICE/generalledger/add
+ecms_web_core_api.generalledger.view : http://CORE-SERVICE/generalledger/view
+ecms_web_core_api.generalledger.edit : http://CORE-SERVICE/generalledger/edit
+ecms_web_core_api.generalledger.delete : http://CORE-SERVICE/generalledger/delete
+ecms_web_core_api.generalledger.list : http://CORE-SERVICE/generalledger/list
+ecms_web_core_api.generalledger.dualauthlist : http://CORE-SERVICE/generalledger/dualauthlist
+
+# ------------------ General Ledger Management ---------------------------#
+
+# ------------------ Update ISO Codes ---------------------------#
+
+ecms_web_core_api.updateiso.history : http://CORE-SERVICE/updateiso/history
+ecms_web_core_api.updateiso.access : http://CORE-SERVICE/updateiso/access
+ecms_web_core_api.updateiso.add : http://CORE-SERVICE/updateiso/add
+ecms_web_core_api.updateiso.view : http://CORE-SERVICE/updateiso/view
+ecms_web_core_api.updateiso.edit : http://CORE-SERVICE/updateiso/edit
+ecms_web_core_api.updateiso.delete : http://CORE-SERVICE/updateiso/delete
+ecms_web_core_api.updateiso.list : http://CORE-SERVICE/updateiso/list
+ecms_web_core_api.updateiso.dualauthlist : http://CORE-SERVICE/updateiso/dualauthlist
+
+# ------------------ Update ISO Codes ---------------------------#
+
+# ------------------ Update Engine Mappings ---------------------------#
+
+ecms_web_core_api.updateenginemap.history : http://CORE-SERVICE/updateenginemap/history
+ecms_web_core_api.updateenginemap.access : http://CORE-SERVICE/updateenginemap/access
+ecms_web_core_api.updateenginemap.add : http://CORE-SERVICE/updateenginemap/add
+ecms_web_core_api.updateenginemap.view : http://CORE-SERVICE/updateenginemap/view
+ecms_web_core_api.updateenginemap.edit : http://CORE-SERVICE/updateenginemap/edit
+ecms_web_core_api.updateenginemap.delete : http://CORE-SERVICE/updateenginemap/delete
+ecms_web_core_api.updateenginemap.list : http://CORE-SERVICE/updateenginemap/list
+ecms_web_core_api.updateenginemap.dualauthlist : http://CORE-SERVICE/updateenginemap/dualauthlist
+
+# ------------------ Update Engine Mappings ---------------------------#
+
+# ------------------ Notifications Alerts ---------------------------#
+
+ecms_web_core_api.notificationalerts.access : http://CORE-SERVICE/notificationalerts/access
+ecms_web_core_api.notificationalerts.list : http://CORE-SERVICE/notificationalerts/list
+ecms_web_core_api.notificationalerts.view : http://CORE-SERVICE/notificationalerts/view
+
+# ------------------ Notifications Alerts ---------------------------#
+
+# ------------------ Transactions Alerts ---------------------------#
+
+ecms_web_core_api.txnalerts.access : http://CORE-SERVICE/txnalerts/access
+ecms_web_core_api.txnalerts.list : http://CORE-SERVICE/txnalerts/list
+ecms_web_core_api.txnalerts.view : http://CORE-SERVICE/txnalerts/view
+
+# ------------------ Transactions Alerts ---------------------------#
+
+# ------------------ Update Channels ---------------------------#
+
+ecms_web_core_api.onlinechannels.history : http://CORE-SERVICE/onlinechannels/history
+ecms_web_core_api.onlinechannels.access : http://CORE-SERVICE/onlinechannels/access
+ecms_web_core_api.onlinechannels.add : http://CORE-SERVICE/onlinechannels/add
+ecms_web_core_api.onlinechannels.view : http://CORE-SERVICE/onlinechannels/view
+ecms_web_core_api.onlinechannels.edit : http://CORE-SERVICE/onlinechannels/edit
+ecms_web_core_api.onlinechannels.confirm : http://CORE-SERVICE/onlinechannels/confirm
+ecms_web_core_api.onlinechannels.reject : http://CORE-SERVICE/onlinechannels/reject
+ecms_web_core_api.onlinechannels.delete : http://CORE-SERVICE/onlinechannels/delete
+ecms_web_core_api.onlinechannels.list : http://CORE-SERVICE/onlinechannels/list
+ecms_web_core_api.onlinechannels.dualauthlist : http://CORE-SERVICE/onlinechannels/dualauthlist
+ecms_web_core_api.onlinechannels.operation : http://CORE-SERVICE/onlinechannels/operation
+
+# ------------------ Update Channels ---------------------------#
+
+# ------------------ Engine Control Monitor ---------------------------#
+
+ecms_web_core_api.enginemonitor.history : http://CORE-SERVICE/enginemonitor/history
+ecms_web_core_api.enginemonitor.access : http://CORE-SERVICE/enginemonitor/access
+ecms_web_core_api.enginemonitor.list : http://CORE-SERVICE/enginemonitor/list
+
+# ------------------ Engine Control Monitor ---------------------------#
+
+# ------------------ Channel Admin Messages ---------------------------#
+
+ecms_web_core_api.adminmessage.history : http://CORE-SERVICE/adminmessage/history
+ecms_web_core_api.adminmessage.access : http://CORE-SERVICE/adminmessage/access
+ecms_web_core_api.adminmessage.list : http://CORE-SERVICE/adminmessage/list
+ecms_web_core_api.adminmessage.send : http://CORE-SERVICE/adminmessage/send
+
+# ------------------ Channel Admin Messages ---------------------------#
+
+# ------------------ Update Server Settings ---------------------------#
+
+ecms_web_core_api.updateserver.history : http://CORE-SERVICE/updateserver/history
+ecms_web_core_api.updateserver.access : http://CORE-SERVICE/updateserver/access
+ecms_web_core_api.updateserver.edit : http://CORE-SERVICE/updateserver/edit
+
+# ------------------ Update Server Settings ---------------------------#
+
+
+# ------------------ Template Management ---------------------------#
+#Email Template Management
+ecms_web_core_api.emailtemplate.dualauthlist : http://CORE-SERVICE/emailtemplate/dualauthlist
+ecms_web_core_api.emailtemplate.confirm : http://CORE-SERVICE/emailtemplate/confirm
+ecms_web_core_api.emailtemplate.reject : http://CORE-SERVICE/emailtemplate/reject
+
+#Letter Template Management
+ecms_web_core_api.lettertemplate.access : http://CORE-SERVICE/lettertemplate/access
+ecms_web_core_api.lettertemplate.dualauthlist : http://CORE-SERVICE/lettertemplate/dualauthlist
+ecms_web_core_api.lettertemplate.history : http://CORE-SERVICE/lettertemplate/history
+ecms_web_core_api.lettertemplate.edit : http://CORE-SERVICE/lettertemplate/edit
+ecms_web_core_api.lettertemplate.confirm : http://CORE-SERVICE/lettertemplate/confirm
+ecms_web_core_api.lettertemplate.reject : http://CORE-SERVICE/lettertemplate/reject
+ecms_web_core_api.lettertemplate.view : http://CORE-SERVICE/lettertemplate/view
+ecms_web_core_api.lettertemplate.delete : http://CORE-SERVICE/lettertemplate/delete
+ecms_web_core_api.lettertemplate.list : http://CORE-SERVICE/lettertemplate/list
+ecms_web_core_api.lettertemplate.add : http://CORE-SERVICE/lettertemplate/add
+ecms_web_core_api.lettertemplate.cardproductby: http://CORE-SERVICE/lettertemplate/cardproductby
+
+#GL Txn Type Assign Mgt
+ecms_web_core_api.gltxnassign.history : http://CORE-SERVICE/gltxnassign/history
+ecms_web_core_api.gltxnassign.access : http://CORE-SERVICE/gltxnassign/access
+ecms_web_core_api.gltxnassign.add : http://CORE-SERVICE/gltxnassign/add
+ecms_web_core_api.gltxnassign.view : http://CORE-SERVICE/gltxnassign/view
+ecms_web_core_api.gltxnassign.edit : http://CORE-SERVICE/gltxnassign/edit
+ecms_web_core_api.gltxnassign.delete : http://CORE-SERVICE/gltxnassign/delete
+ecms_web_core_api.gltxnassign.list : http://CORE-SERVICE/gltxnassign/list
+ecms_web_core_api.gltxnassign.dualauthlist : http://CORE-SERVICE/gltxnassign/dualauthlist
+ecms_web_core_api.gltxnassign.confirm : http://CORE-SERVICE/gltxnassign/confirm
+ecms_web_core_api.gltxnassign.reject : http://CORE-SERVICE/gltxnassign/reject
+
+#SMS Template
+ecms_web_core_api.smstemplate.history : http://CORE-SERVICE/smstemplate/history
+ecms_web_core_api.smstemplate.access : http://CORE-SERVICE/smstemplate/access
+ecms_web_core_api.smstemplate.add : http://CORE-SERVICE/smstemplate/add
+ecms_web_core_api.smstemplate.view : http://CORE-SERVICE/smstemplate/view
+ecms_web_core_api.smstemplate.edit : http://CORE-SERVICE/smstemplate/edit
+ecms_web_core_api.smstemplate.delete : http://CORE-SERVICE/smstemplate/delete
+ecms_web_core_api.smstemplate.list : http://CORE-SERVICE/smstemplate/list
+
+
+#Customer template managment
+ecms_web_core_api.customertemplate.access : http://CORE-SERVICE/customertemplate/access
+ecms_web_core_api.customertemplate.list : http://CORE-SERVICE/customertemplate/list
+ecms_web_core_api.customertemplate.history : http://CORE-SERVICE/customertemplate/history
+ecms_web_core_api.customertemplate.add : http://CORE-SERVICE/customertemplate/add
+ecms_web_core_api.customertemplate.edit : http://CORE-SERVICE/customertemplate/edit
+ecms_web_core_api.customertemplate.delete : http://CORE-SERVICE/customertemplate/delete
+
+
+#Card template managment
+ecms_web_core_api.creditcardtemplate.access : http://CORE-SERVICE/creditcardtemplate/access
+ecms_web_core_api.creditcardtemplate.list : http://CORE-SERVICE/creditcardtemplate/list
+ecms_web_core_api.creditcardtemplate.history : http://CORE-SERVICE/creditcardtemplate/history
+ecms_web_core_api.creditcardtemplate.add : http://CORE-SERVICE/creditcardtemplate/add
+ecms_web_core_api.creditcardtemplate.edit : http://CORE-SERVICE/creditcardtemplate/edit
+ecms_web_core_api.creditcardtemplate.delete : http://CORE-SERVICE/creditcardtemplate/delete
+
+
+#Card domain template managment
+ecms_web_core_api.carddomaintemplate.access : http://CORE-SERVICE/carddomaintemplate/access
+ecms_web_core_api.carddomaintemplate.list : http://CORE-SERVICE/carddomaintemplate/list
+ecms_web_core_api.carddomaintemplate.history : http://CORE-SERVICE/carddomaintemplate/history
+ecms_web_core_api.carddomaintemplate.add : http://CORE-SERVICE/carddomaintemplate/add
+ecms_web_core_api.carddomaintemplate.edit : http://CORE-SERVICE/carddomaintemplate/edit
+ecms_web_core_api.carddomaintemplate.delete : http://CORE-SERVICE/carddomaintemplate/delete
+
+#litener updates
+ecms_web_core_api.updatelistener.access : http://CORE-SERVICE/updatelistener/access
+ecms_web_core_api.updatelistener.list : http://CORE-SERVICE/updatelistener/list
+ecms_web_core_api.updatelistener.dualauthlist : http://CORE-SERVICE/updatelistener/dualauthlist
+ecms_web_core_api.updatelistener.history : http://CORE-SERVICE/updatelistener/history
+ecms_web_core_api.updatelistener.add : http://CORE-SERVICE/updatelistener/add
+ecms_web_core_api.updatelistener.edit : http://CORE-SERVICE/updatelistener/edit
+ecms_web_core_api.updatelistener.delete : http://CORE-SERVICE/updatelistener/delete
+ecms_web_core_api.updatelistener.confirm : http://CORE-SERVICE/updatelistener/confirm
+ecms_web_core_api.updatelistener.reject : http://CORE-SERVICE/updatelistener/reject
+ecms_web_core_api.updatelistener.restart : http://CORE-SERVICE/updatelistener/restart
+
+#log updates
+ecms_web_core_api.updatelog.access : http://CORE-SERVICE/updatelog/access
+ecms_web_core_api.updatelog.list : http://CORE-SERVICE/updatelog/list
+ecms_web_core_api.updatelog.dualauthlist : http://CORE-SERVICE/updatelog/dualauthlist
+ecms_web_core_api.updatelog.edit : http://CORE-SERVICE/updatelog/edit
+ecms_web_core_api.updatelog.confirm : http://CORE-SERVICE/updatelog/confirm
+ecms_web_core_api.updatelog.reject : http://CORE-SERVICE/updatelog/reject
+ecms_web_core_api.updatelog.history : http://CORE-SERVICE/updatelog/history
+
+
+
+#Listener Key mailing
+ecms_web_core_api.listenerkeymail.access : http://CORE-SERVICE/listenerkeymail/access
+ecms_web_core_api.listenerkeymail.list : http://CORE-SERVICE/listenerkeymail/list
+ecms_web_core_api.listenerkeymail.history : http://CORE-SERVICE/listenerkeymail/history
+ecms_web_core_api.listenerkeymail.generate : http://CORE-SERVICE/listenerkeymail/generate
+
+
+#Channel Key mailing
+ecms_web_core_api.channelkeymail.access : http://CORE-SERVICE/channelkeymail/access
+ecms_web_core_api.channelkeymail.list : http://CORE-SERVICE/channelkeymail/list
+ecms_web_core_api.channelkeymail.history : http://CORE-SERVICE/channelkeymail/history
+ecms_web_core_api.channelkeymail.generate : http://CORE-SERVICE/channelkeymail/generate
+
+
+#Communication keys
+ecms_web_core_api.communicationkeys.access : http://CORE-SERVICE/communicationkeys/access
+ecms_web_core_api.communicationkeys.list : http://CORE-SERVICE/communicationkeys/list
+ecms_web_core_api.communicationkeys.dualauthlist : http://CORE-SERVICE/communicationkeys/dualauthlist
+ecms_web_core_api.communicationkeys.history : http://CORE-SERVICE/communicationkeys/history
+ecms_web_core_api.communicationkeys.add : http://CORE-SERVICE/communicationkeys/add
+ecms_web_core_api.communicationkeys.edit : http://CORE-SERVICE/communicationkeys/edit
+ecms_web_core_api.communicationkeys.editawk : http://CORE-SERVICE/communicationkeys/editawk
+ecms_web_core_api.communicationkeys.editiwk : http://CORE-SERVICE/communicationkeys/editiwk
+ecms_web_core_api.communicationkeys.editzmk : http://CORE-SERVICE/communicationkeys/editzmk
+ecms_web_core_api.communicationkeys.delete : http://CORE-SERVICE/communicationkeys/delete
+ecms_web_core_api.communicationkeys.confirm : http://CORE-SERVICE/communicationkeys/confirm
+ecms_web_core_api.communicationkeys.reject : http://CORE-SERVICE/communicationkeys/reject
+
+
+#Issuer keys
+
+ecms_web_core_api.issuerkeys.access : http://CORE-SERVICE/issuerkeys/access
+ecms_web_core_api.issuerkeys.list : http://CORE-SERVICE/issuerkeys/list
+ecms_web_core_api.issuerkeys.dualauthlist : http://CORE-SERVICE/issuerkeys/dualauthlist
+ecms_web_core_api.issuerkeys.history : http://CORE-SERVICE/issuerkeys/history
+ecms_web_core_api.issuerkeys.add : http://CORE-SERVICE/issuerkeys/add
+ecms_web_core_api.issuerkeys.edit : http://CORE-SERVICE/issuerkeys/edit
+ecms_web_core_api.issuerkeys.editkey : http://CORE-SERVICE/issuerkeys/editkey
+ecms_web_core_api.issuerkeys.delete : http://CORE-SERVICE/issuerkeys/delete
+ecms_web_core_api.issuerkeys.confirm : http://CORE-SERVICE/issuerkeys/confirm
+ecms_web_core_api.issuerkeys.reject : http://CORE-SERVICE/issuerkeys/reject
+
+#emlTemplate
+ecms_web_core_api.emailtemplate.history : http://CORE-SERVICE/emailtemplate/history
+ecms_web_core_api.emailtemplate.access : http://CORE-SERVICE/emailtemplate/access
+ecms_web_core_api.emailtemplate.add : http://CORE-SERVICE/emailtemplate/add
+ecms_web_core_api.emailtemplate.view : http://CORE-SERVICE/emailtemplate/view
+ecms_web_core_api.emailtemplate.edit : http://CORE-SERVICE/emailtemplate/edit
+ecms_web_core_api.emailtemplate.delete : http://CORE-SERVICE/emailtemplate/delete
+ecms_web_core_api.emailtemplate.list : http://CORE-SERVICE/emailtemplate/list
+
+
+#Transaction Type Management
+ecms_web_core_api.trantype.access : http://CORE-SERVICE/trantype/access
+ecms_web_core_api.trantype.list : http://CORE-SERVICE/trantype/list
+ecms_web_core_api.trantype.add : http://CORE-SERVICE/trantype/add
+ecms_web_core_api.trantype.edit : http://CORE-SERVICE/trantype/edit
+ecms_web_core_api.trantype.view : http://CORE-SERVICE/trantype/view
+ecms_web_core_api.trantype.delete : http://CORE-SERVICE/trantype/delete
+ecms_web_core_api.trantype.history : http://CORE-SERVICE/trantype/history
+ecms_web_core_api.trantype.confirm : http://CORE-SERVICE/trantype/confirm
+ecms_web_core_api.trantype.reject : http://CORE-SERVICE/trantype/reject
+ecms_web_core_api.trantype.dualauthlist : http://CORE-SERVICE/trantype/dualauthlist
+
+# -------------------------- Issuing Configuration -------------------------------- #
+
+# Issuer Security Questions
+ecms_web_core_api.securityquestion.access : http://CORE-SERVICE/securityquestion/access
+ecms_web_core_api.securityquestion.list : http://CORE-SERVICE/securityquestion/list
+ecms_web_core_api.securityquestion.history : http://CORE-SERVICE/securityquestion/history
+ecms_web_core_api.securityquestion.add : http://CORE-SERVICE/securityquestion/add
+ecms_web_core_api.securityquestion.edit : http://CORE-SERVICE/securityquestion/edit
+ecms_web_core_api.securityquestion.delete : http://CORE-SERVICE/securityquestion/delete
+
+# Service Code Management
+ecms_web_core_api.servicecode.access : http://CORE-SERVICE/servicecode/access
+ecms_web_core_api.servicecode.list : http://CORE-SERVICE/servicecode/list
+ecms_web_core_api.servicecode.dualauthlist : http://CORE-SERVICE/servicecode/dualauthlist
+ecms_web_core_api.servicecode.history : http://CORE-SERVICE/servicecode/history
+ecms_web_core_api.servicecode.add : http://CORE-SERVICE/servicecode/add
+ecms_web_core_api.servicecode.edit : http://CORE-SERVICE/servicecode/edit
+ecms_web_core_api.servicecode.delete : http://CORE-SERVICE/servicecode/delete
+ecms_web_core_api.servicecode.confirm : http://CORE-SERVICE/servicecode/confirm
+ecms_web_core_api.servicecode.reject : http://CORE-SERVICE/servicecode/reject
+
+# Billing Cycle Management
+ecms_web_core_api.billingcycle.access : http://CORE-SERVICE/billingcycle/access
+ecms_web_core_api.billingcycle.list : http://CORE-SERVICE/billingcycle/list
+ecms_web_core_api.billingcycle.history : http://CORE-SERVICE/billingcycle/history
+ecms_web_core_api.billingcycle.add : http://CORE-SERVICE/billingcycle/add
+ecms_web_core_api.billingcycle.edit : http://CORE-SERVICE/billingcycle/edit
+ecms_web_core_api.billingcycle.delete : http://CORE-SERVICE/billingcycle/delete
+
+# Credit Confirmation Schema
+ecms_web_core_api.creditschema.access : http://CORE-SERVICE/creditschema/access
+ecms_web_core_api.creditschema.list : http://CORE-SERVICE/creditschema/list
+ecms_web_core_api.creditschema.history : http://CORE-SERVICE/creditschema/history
+ecms_web_core_api.creditschema.add : http://CORE-SERVICE/creditschema/add
+ecms_web_core_api.creditschema.edit : http://CORE-SERVICE/creditschema/edit
+ecms_web_core_api.creditschema.delete : http://CORE-SERVICE/creditschema/delete
+
+# Document Type Management
+ecms_web_core_api.documenttype.access : http://CORE-SERVICE/documenttype/access
+ecms_web_core_api.documenttype.list : http://CORE-SERVICE/documenttype/list
+ecms_web_core_api.documenttype.history : http://CORE-SERVICE/documenttype/history
+ecms_web_core_api.documenttype.add : http://CORE-SERVICE/documenttype/add
+ecms_web_core_api.documenttype.edit : http://CORE-SERVICE/documenttype/edit
+ecms_web_core_api.documenttype.delete : http://CORE-SERVICE/documenttype/delete
+
+# Billing Statement Profile Management
+ecms_web_core_api.bilstatementprofile.access : http://CORE-SERVICE/bilstatementprofile/access
+ecms_web_core_api.bilstatementprofile.list : http://CORE-SERVICE/bilstatementprofile/list
+ecms_web_core_api.bilstatementprofile.history : http://CORE-SERVICE/bilstatementprofile/history
+ecms_web_core_api.bilstatementprofile.add : http://CORE-SERVICE/bilstatementprofile/add
+ecms_web_core_api.bilstatementprofile.edit : http://CORE-SERVICE/bilstatementprofile/edit
+ecms_web_core_api.bilstatementprofile.delete : http://CORE-SERVICE/bilstatementprofile/delete
+
+# Interest Profile Management
+ecms_web_core_api.interest.access : http://CORE-SERVICE/interest/access
+ecms_web_core_api.interest.list : http://CORE-SERVICE/interest/list
+ecms_web_core_api.interest.history : http://CORE-SERVICE/interest/history
+ecms_web_core_api.interest.add : http://CORE-SERVICE/interest/add
+ecms_web_core_api.interest.edit : http://CORE-SERVICE/interest/edit
+ecms_web_core_api.interest.delete : http://CORE-SERVICE/interest/delete
+# EOD File Info Management
+ecms_web_core_api.eodfileinfo.access : http://CORE-SERVICE/eodfileinfo/access
+ecms_web_core_api.eodfileinfo.list : http://CORE-SERVICE/eodfileinfo/list
+ecms_web_core_api.eodfileinfo.history : http://CORE-SERVICE/eodfileinfo/history
+ecms_web_core_api.eodfileinfo.add : http://CORE-SERVICE/eodfileinfo/add
+ecms_web_core_api.eodfileinfo.edit : http://CORE-SERVICE/eodfileinfo/edit
+ecms_web_core_api.eodfileinfo.delete : http://CORE-SERVICE/eodfileinfo/delete
+
+# Hotlist Reason Management
+ecms_web_core_api.hotlistreason.access : http://CORE-SERVICE/hotlistreason/access
+ecms_web_core_api.hotlistreason.list : http://CORE-SERVICE/hotlistreason/list
+ecms_web_core_api.hotlistreason.history : http://CORE-SERVICE/hotlistreason/history
+ecms_web_core_api.hotlistreason.add : http://CORE-SERVICE/hotlistreason/add
+ecms_web_core_api.hotlistreason.edit : http://CORE-SERVICE/hotlistreason/edit
+ecms_web_core_api.hotlistreason.delete : http://CORE-SERVICE/hotlistreason/delete
+
+# Credit Score Field
+ecms_web_core_api.creditscorefield.access : http://CORE-SERVICE/creditscorefield/access
+ecms_web_core_api.creditscorefield.list : http://CORE-SERVICE/creditscorefield/list
+ecms_web_core_api.creditscorefield.history : http://CORE-SERVICE/creditscorefield/history
+ecms_web_core_api.creditscorefield.add : http://CORE-SERVICE/creditscorefield/add
+ecms_web_core_api.creditscorefield.edit : http://CORE-SERVICE/creditscorefield/edit
+ecms_web_core_api.creditscorefield.delete : http://CORE-SERVICE/creditscorefield/delete
+
+# Credit Score Rules
+ecms_web_core_api.creditscorerule.access : http://CORE-SERVICE/creditscorerule/access
+ecms_web_core_api.creditscorerule.list : http://CORE-SERVICE/creditscorerule/list
+ecms_web_core_api.creditscorerule.history : http://CORE-SERVICE/creditscorerule/history
+ecms_web_core_api.creditscorerule.add : http://CORE-SERVICE/creditscorerule/add
+ecms_web_core_api.creditscorerule.edit : http://CORE-SERVICE/creditscorerule/edit
+ecms_web_core_api.creditscorerule.delete : http://CORE-SERVICE/creditscorerule/delete
+
+# Credit Application Assigning
+ecms_web_core_api.creditappassign.access : http://CORE-SERVICE/creditappassign/access
+ecms_web_core_api.creditappassign.list : http://CORE-SERVICE/creditappassign/list
+ecms_web_core_api.creditappassign.countlist : http://CORE-SERVICE/creditappassign/countlist
+ecms_web_core_api.creditappassign.previousapps : http://CORE-SERVICE/creditappassign/previousapps
+ecms_web_core_api.creditappassign.history : http://CORE-SERVICE/creditappassign/history
+ecms_web_core_api.creditappassign.add : http://CORE-SERVICE/creditappassign/add
+
+# Credit Application Update Assigning
+ecms_web_core_api.creditupdate.access : http://CORE-SERVICE/creditupdate/access
+ecms_web_core_api.creditupdate.list : http://CORE-SERVICE/creditupdate/list
+ecms_web_core_api.creditupdate.history : http://CORE-SERVICE/creditupdate/history
+ecms_web_core_api.creditupdate.add : http://CORE-SERVICE/creditupdate/add
+
+#ApplicationRejectReason
+ecms_web_core_api.apprejectreason.history : http://CORE-SERVICE/apprejectreason/history
+ecms_web_core_api.apprejectreason.access : http://CORE-SERVICE/apprejectreason/access
+ecms_web_core_api.apprejectreason.add : http://CORE-SERVICE/apprejectreason/add
+ecms_web_core_api.apprejectreason.edit : http://CORE-SERVICE/apprejectreason/edit
+ecms_web_core_api.apprejectreason.delete : http://CORE-SERVICE/apprejectreason/delete
+ecms_web_core_api.apprejectreason.list : http://CORE-SERVICE/apprejectreason/list
+ecms_web_core_api.apprejectreason.dualauthlist : http://CORE-SERVICE/apprejectreason/dualauthlist
+ecms_web_core_api.apprejectreason.confirm : http://CORE-SERVICE/apprejectreason/confirm
+ecms_web_core_api.apprejectreason.reject : http://CORE-SERVICE/apprejectreason/reject
+
+
+#EMV emboss file
+
+ecms_web_core_api.emvemboss.access : http://CORE-SERVICE/emvemboss/access
+ecms_web_core_api.emvemboss.list : http://CORE-SERVICE/emvemboss/list
+ecms_web_core_api.emvemboss.dualauthlist : http://CORE-SERVICE/emvemboss/dualauthlist
+ecms_web_core_api.emvemboss.history : http://CORE-SERVICE/emvemboss/history
+ecms_web_core_api.emvemboss.add : http://CORE-SERVICE/emvemboss/add
+ecms_web_core_api.emvemboss.edit : http://CORE-SERVICE/emvemboss/edit
+ecms_web_core_api.emvemboss.editkey : http://CORE-SERVICE/emvemboss/editkey
+ecms_web_core_api.emvemboss.delete : http://CORE-SERVICE/emvemboss/delete
+ecms_web_core_api.emvemboss.confirm : http://CORE-SERVICE/emvemboss/confirm
+ecms_web_core_api.emvemboss.reject : http://CORE-SERVICE/emvemboss/reject
+
+#Card number format
+ecms_web_core_api.cardnumformat.access : http://CORE-SERVICE/cardnumformat/access
+ecms_web_core_api.cardnumformat.list : http://CORE-SERVICE/cardnumformat/list
+ecms_web_core_api.cardnumformat.dualauthlist : http://CORE-SERVICE/cardnumformat/dualauthlist
+ecms_web_core_api.cardnumformat.history : http://CORE-SERVICE/cardnumformat/history
+ecms_web_core_api.cardnumformat.add : http://CORE-SERVICE/cardnumformat/add
+ecms_web_core_api.cardnumformat.edit : http://CORE-SERVICE/cardnumformat/edit
+ecms_web_core_api.cardnumformat.editkey : http://CORE-SERVICE/cardnumformat/editkey
+ecms_web_core_api.cardnumformat.delete : http://CORE-SERVICE/cardnumformat/delete
+ecms_web_core_api.cardnumformat.confirm : http://CORE-SERVICE/cardnumformat/confirm
+ecms_web_core_api.cardnumformat.reject : http://CORE-SERVICE/cardnumformat/reject
+
+
+#product recomendation
+ecms_web_core_api.productrecomendation.history : http://CORE-SERVICE/productrecomendation/history
+ecms_web_core_api.productrecomendation.access : http://CORE-SERVICE/productrecomendation/access
+ecms_web_core_api.productrecomendation.add : http://CORE-SERVICE/productrecomendation/add
+ecms_web_core_api.productrecomendation.edit : http://CORE-SERVICE/productrecomendation/edit
+ecms_web_core_api.productrecomendation.delete : http://CORE-SERVICE/productrecomendation/delete
+ecms_web_core_api.productrecomendation.list : http://CORE-SERVICE/productrecomendation/list
+ecms_web_core_api.productrecomendation.dualauthlist : http://CORE-SERVICE/productrecomendation/dualauthlist
+ecms_web_core_api.productrecomendation.confirm : http://CORE-SERVICE/productrecomendation/confirm
+ecms_web_core_api.productrecomendation.reject : http://CORE-SERVICE/productrecomendation/reject
+
+#score card mgt
+ecms_web_core_api.scorecardmgt.history : http://CORE-SERVICE/scorecardmgt/history
+ecms_web_core_api.scorecardmgt.access : http://CORE-SERVICE/scorecardmgt/access
+ecms_web_core_api.scorecardmgt.add : http://CORE-SERVICE/scorecardmgt/add
+ecms_web_core_api.scorecardmgt.edit : http://CORE-SERVICE/scorecardmgt/edit
+ecms_web_core_api.scorecardmgt.delete : http://CORE-SERVICE/scorecardmgt/delete
+ecms_web_core_api.scorecardmgt.list : http://CORE-SERVICE/scorecardmgt/list
+ecms_web_core_api.scorecardmgt.dualauthlist : http://CORE-SERVICE/scorecardmgt/dualauthlist
+ecms_web_core_api.scorecardmgt.confirm : http://CORE-SERVICE/scorecardmgt/confirm
+ecms_web_core_api.scorecardmgt.reject : http://CORE-SERVICE/scorecardmgt/reject
+
+#common configurations
+ecms_web_core_api.commonconfigurations.history : http://CORE-SERVICE/commonconfigurations/history
+ecms_web_core_api.commonconfigurations.access : http://CORE-SERVICE/commonconfigurations/access
+ecms_web_core_api.commonconfigurations.edit : http://CORE-SERVICE/commonconfigurations/edit
+ecms_web_core_api.commonconfigurations.list : http://CORE-SERVICE/commonconfigurations/list
+ecms_web_core_api.commonconfigurations.dualauthlist : http://CORE-SERVICE/commonconfigurations/dualauthlist
+ecms_web_core_api.commonconfigurations.confirm : http://CORE-SERVICE/commonconfigurations/confirm
+ecms_web_core_api.commonconfigurations.reject : http://CORE-SERVICE/commonconfigurations/reject
+
+#common file path
+ecms_web_core_api.commonfilepath.history : http://CORE-SERVICE/commonfilepath/history
+ecms_web_core_api.commonfilepath.access : http://CORE-SERVICE/commonfilepath/access
+ecms_web_core_api.commonfilepath.edit : http://CORE-SERVICE/commonfilepath/edit
+ecms_web_core_api.commonfilepath.list : http://CORE-SERVICE/commonfilepath/list
+ecms_web_core_api.commonfilepath.dualauthlist : http://CORE-SERVICE/commonfilepath/dualauthlist
+ecms_web_core_api.commonfilepath.confirm : http://CORE-SERVICE/commonfilepath/confirm
+ecms_web_core_api.commonfilepath.reject : http://CORE-SERVICE/commonfilepath/reject
+
+#CRDR
+ecms_web_core_api.crdrsubdomain.getsubdomain : http://CORE-SERVICE/crdrsubdomain/getsubdomain
+
+# Account Template Management
+ecms_web_core_api.accounttemplate.access : http://CORE-SERVICE/accounttemplate/access
+ecms_web_core_api.accounttemplate.list : http://CORE-SERVICE/accounttemplate/list
+ecms_web_core_api.accounttemplate.history : http://CORE-SERVICE/accounttemplate/history
+ecms_web_core_api.accounttemplate.add : http://CORE-SERVICE/accounttemplate/add
+ecms_web_core_api.accounttemplate.edit : http://CORE-SERVICE/accounttemplate/edit
+ecms_web_core_api.accounttemplate.delete : http://CORE-SERVICE/accounttemplate/delete
+
+# Card Product Management
+ecms_web_core_api.cardproduct.access : http://CORE-SERVICE/cardproduct/access
+ecms_web_core_api.cardproduct.list : http://CORE-SERVICE/cardproduct/list
+ecms_web_core_api.cardproduct.cardkeysby : http://CORE-SERVICE/cardproduct/cardkeysby
+ecms_web_core_api.cardproduct.cardbinsby : http://CORE-SERVICE/cardproduct/cardbinsby
+ecms_web_core_api.cardproduct.history : http://CORE-SERVICE/cardproduct/history
+ecms_web_core_api.cardproduct.add : http://CORE-SERVICE/cardproduct/add
+ecms_web_core_api.cardproduct.edit : http://CORE-SERVICE/cardproduct/edit
+ecms_web_core_api.cardproduct.delete : http://CORE-SERVICE/cardproduct/delete
+
+# ------------------------------ Back Office Operations Issuing ------------------------------------ #
+
+#PIN Count Reset Request Confirmation
+ecms_web_core_api.pincount.access : http://CORE-SERVICE/pincount/access
+ecms_web_core_api.pincount.list : http://CORE-SERVICE/pincount/list
+ecms_web_core_api.pincount.view : http://CORE-SERVICE/pincount/view
+
+#Memos Monitor
+ecms_web_core_api.memos.access : http://CORE-SERVICE/memos/access
+ecms_web_core_api.memos.list : http://CORE-SERVICE/memos/list
+ecms_web_core_api.memos.history : http://CORE-SERVICE/memos/history
+
+# Manual NP Request Management
+ecms_web_core_api.manualnp.access : http://CORE-SERVICE/manualnp/access
+ecms_web_core_api.manualnp.list : http://CORE-SERVICE/manualnp/list
+ecms_web_core_api.manualnp.dualauthlist : http://CORE-SERVICE/manualnp/dualauthlist
+ecms_web_core_api.manualnp.history : http://CORE-SERVICE/manualnp/history
+ecms_web_core_api.manualnp.add : http://CORE-SERVICE/manualnp/add
+ecms_web_core_api.manualnp.confirm : http://CORE-SERVICE/manualnp/confirm
+ecms_web_core_api.manualnp.reject : http://CORE-SERVICE/manualnp/reject
+
+# FeePromotion Management
+ecms_web_core_api.feepromotion.access : http://CORE-SERVICE/feepromotion/access
+ecms_web_core_api.feepromotion.list : http://CORE-SERVICE/feepromotion/list
+ecms_web_core_api.feepromotion.dualauthlist : http://CORE-SERVICE/feepromotion/dualauthlist
+ecms_web_core_api.feepromotion.history : http://CORE-SERVICE/feepromotion/history
+ecms_web_core_api.feepromotion.add : http://CORE-SERVICE/feepromotion/add
+ecms_web_core_api.feepromotion.edit : http://CORE-SERVICE/feepromotion/edit
+ecms_web_core_api.feepromotion.confirm : http://CORE-SERVICE/feepromotion/confirm
+ecms_web_core_api.feepromotion.reject : http://CORE-SERVICE/feepromotion/reject
+
+#Card Type managment
+ecms_web_core_api.cardtype.access : http://CORE-SERVICE/cardtype/access
+ecms_web_core_api.cardtype.list : http://CORE-SERVICE/cardtype/list
+ecms_web_core_api.cardtype.history : http://CORE-SERVICE/cardtype/history
+ecms_web_core_api.cardtype.add : http://CORE-SERVICE/cardtype/add
+ecms_web_core_api.cardtype.edit : http://CORE-SERVICE/cardtype/edit
+ecms_web_core_api.cardtype.delete : http://CORE-SERVICE/cardtype/delete
+
+# Team Allocation Management
+ecms_web_core_api.teamallocation.access : http://CORE-SERVICE/teamallocation/access
+ecms_web_core_api.teamallocation.list : http://CORE-SERVICE/teamallocation/list
+ecms_web_core_api.teamallocation.bucketrules : http://CORE-SERVICE/teamallocation/bucketrules
+ecms_web_core_api.teamallocation.history : http://CORE-SERVICE/teamallocation/history
+ecms_web_core_api.teamallocation.add : http://CORE-SERVICE/teamallocation/add
+ecms_web_core_api.teamallocation.edit : http://CORE-SERVICE/teamallocation/edit
+ecms_web_core_api.teamallocation.delete : http://CORE-SERVICE/teamallocation/delete
+
+
+# ------------------ Installment Plan ---------------------------#
+#Easy payment plan
+ecms_web_core_api.easypaymentplan.access : http://CORE-SERVICE/easypaymentplan/access
+ecms_web_core_api.easypaymentplan.list : http://CORE-SERVICE/easypaymentplan/list
+ecms_web_core_api.easypaymentplan.dualauthlist : http://CORE-SERVICE/easypaymentplan/dualauthlist
+ecms_web_core_api.easypaymentplan.history : http://CORE-SERVICE/easypaymentplan/history
+ecms_web_core_api.easypaymentplan.add : http://CORE-SERVICE/easypaymentplan/add
+ecms_web_core_api.easypaymentplan.edit : http://CORE-SERVICE/easypaymentplan/edit
+ecms_web_core_api.easypaymentplan.delete : http://CORE-SERVICE/easypaymentplan/delete
+ecms_web_core_api.easypaymentplan.confirm : http://CORE-SERVICE/easypaymentplan/confirm
+ecms_web_core_api.easypaymentplan.reject : http://CORE-SERVICE/easypaymentplan/reject
+
+# Easy Payment Acceleration Confirmation
+ecms_web_core_api.easypayacceleration.access : http://CORE-SERVICE/easypayacceleration/access
+ecms_web_core_api.easypayacceleration.list : http://CORE-SERVICE/easypayacceleration/list
+ecms_web_core_api.easypayacceleration.history : http://CORE-SERVICE/easypayacceleration/history
+ecms_web_core_api.easypayacceleration.confirm : http://CORE-SERVICE/easypayacceleration/confirm
+ecms_web_core_api.easypayacceleration.reject : http://CORE-SERVICE/easypayacceleration/reject
+
+# BT Acceleration Confirmation
+ecms_web_core_api.btacceleration.access : http://CORE-SERVICE/btacceleration/access
+ecms_web_core_api.btacceleration.list : http://CORE-SERVICE/btacceleration/list
+ecms_web_core_api.btacceleration.history : http://CORE-SERVICE/btacceleration/history
+ecms_web_core_api.btacceleration.confirm : http://CORE-SERVICE/btacceleration/confirm
+ecms_web_core_api.btacceleration.reject : http://CORE-SERVICE/btacceleration/reject
+
+#loan on card plan
+ecms_web_core_api.loanoncardplan.access : http://CORE-SERVICE/loanoncardplan/access
+ecms_web_core_api.loanoncardplan.list : http://CORE-SERVICE/loanoncardplan/list
+ecms_web_core_api.loanoncardplan.dualauthlist : http://CORE-SERVICE/loanoncardplan/dualauthlist
+ecms_web_core_api.loanoncardplan.history : http://CORE-SERVICE/loanoncardplan/history
+ecms_web_core_api.loanoncardplan.add : http://CORE-SERVICE/loanoncardplan/add
+ecms_web_core_api.loanoncardplan.edit : http://CORE-SERVICE/loanoncardplan/edit
+ecms_web_core_api.loanoncardplan.delete : http://CORE-SERVICE/loanoncardplan/delete
+ecms_web_core_api.loanoncardplan.confirm : http://CORE-SERVICE/loanoncardplan/confirm
+ecms_web_core_api.loanoncardplan.reject : http://CORE-SERVICE/loanoncardplan/reject
+
+#Balance Transfer Plan
+ecms_web_core_api.balancetransferplan.access : http://CORE-SERVICE/balancetransferplan/access
+ecms_web_core_api.balancetransferplan.list : http://CORE-SERVICE/balancetransferplan/list
+ecms_web_core_api.balancetransferplan.dualauthlist : http://CORE-SERVICE/balancetransferplan/dualauthlist
+ecms_web_core_api.balancetransferplan.history : http://CORE-SERVICE/balancetransferplan/history
+ecms_web_core_api.balancetransferplan.add : http://CORE-SERVICE/balancetransferplan/add
+ecms_web_core_api.balancetransferplan.edit : http://CORE-SERVICE/balancetransferplan/edit
+ecms_web_core_api.balancetransferplan.delete : http://CORE-SERVICE/balancetransferplan/delete
+ecms_web_core_api.balancetransferplan.confirm : http://CORE-SERVICE/balancetransferplan/confirm
+ecms_web_core_api.balancetransferplan.reject : http://CORE-SERVICE/balancetransferplan/reject
+
+
+# ------------------ Request Confirmation ---------------------------#
+#Cash Back Redeem Request Confirmation
+ecms_web_core_api.cashbackredeemconf.list : http://CORE-SERVICE/cashbackredeemconf/list
+ecms_web_core_api.cashbackredeemconf.history : http://CORE-SERVICE/cashbackredeemconf/history
+ecms_web_core_api.cashbackredeemconf.approve : http://CORE-SERVICE/cashbackredeemconf/approve
+ecms_web_core_api.cashbackredeemconf.reject : http://CORE-SERVICE/cashbackredeemconf/reject
+
+#Cash Back Enrolment Request Confirmation
+ecms_web_core_api.cashbackenrolmentreqconf.list : http://CORE-SERVICE/cashbackenrolmentreqconf/list
+ecms_web_core_api.cashbackenrolmentreqconf.history : http://CORE-SERVICE/cashbackenrolmentreqconf/history
+ecms_web_core_api.cashbackenrolmentreqconf.approve : http://CORE-SERVICE/cashbackenrolmentreqconf/approve
+ecms_web_core_api.cashbackenrolmentreqconf.reject : http://CORE-SERVICE/cashbackenrolmentreqconf/reject
+
+#Transaction Drop Request Confirmation
+ecms_web_core_api.transactiondropconf.list : http://CORE-SERVICE/transactiondropconf/list
+ecms_web_core_api.transactiondropconf.history : http://CORE-SERVICE/transactiondropconf/history
+ecms_web_core_api.transactiondropconf.approve : http://CORE-SERVICE/transactiondropconf/approve
+ecms_web_core_api.transactiondropconf.reject : http://CORE-SERVICE/transactiondropconf/reject
+
+#Statement Copy Request Confirmation
+ecms_web_core_api.statementcopyreqconf.list : http://CORE-SERVICE/statementcopyreqconf/list
+ecms_web_core_api.statementcopyreqconf.history : http://CORE-SERVICE/statementcopyreqconf/history
+ecms_web_core_api.statementcopyreqconf.approve : http://CORE-SERVICE/statementcopyreqconf/approve
+ecms_web_core_api.statementcopyreqconf.reject : http://CORE-SERVICE/statementcopyreqconf/reject
+
+#Billing Cycle Change Request Confirmation
+ecms_web_core_api.billingcyclechangereqconf.list : http://CORE-SERVICE/billingcyclechangereqconf/list
+ecms_web_core_api.billingcyclechangereqconf.history : http://CORE-SERVICE/billingcyclechangereqconf/history
+ecms_web_core_api.billingcyclechangereqconf.approve : http://CORE-SERVICE/billingcyclechangereqconf/approve
+ecms_web_core_api.billingcyclechangereqconf.reject : http://CORE-SERVICE/billingcyclechangereqconf/reject
+
+
+#Limit COnfirmation approve
+ecms_web_core_api.limitconfirmationapprove.list : http://CORE-SERVICE/limitconfirmationapprove/list
+ecms_web_core_api.limitconfirmationapprove.history : http://CORE-SERVICE/limitconfirmationapprove/history
+ecms_web_core_api.limitconfirmationapprove.approve : http://CORE-SERVICE/limitconfirmationapprove/approve
+ecms_web_core_api.limitconfirmationapprove.reject : http://CORE-SERVICE/limitconfirmationapprove/reject
+
+#Loan On Card Confirmation
+ecms_web_core_api.loanoncardconfirmation.access : http://CORE-SERVICE/loanoncardconfirmation/access
+ecms_web_core_api.loanoncardconfirmation.list : http://CORE-SERVICE/loanoncardconfirmation/list
+ecms_web_core_api.loanoncardconfirmation.history : http://CORE-SERVICE/loanoncardconfirmation/history
+ecms_web_core_api.loanoncardconfirmation.approve : http://CORE-SERVICE/loanoncardconfirmation/approve
+ecms_web_core_api.loanoncardconfirmation.reject : http://CORE-SERVICE/loanoncardconfirmation/reject
+
+# ------------------ Standing order ---------------------------#
+#Utility Standing Order
+ecms_web_core_api.utilitystandingorder.access : http://CORE-SERVICE/utilitystandingorder/access
+ecms_web_core_api.utilitystandingorder.list : http://CORE-SERVICE/utilitystandingorder/list
+ecms_web_core_api.utilitystandingorder.history : http://CORE-SERVICE/utilitystandingorder/history
+ecms_web_core_api.utilitystandingorder.add : http://CORE-SERVICE/utilitystandingorder/add
+ecms_web_core_api.utilitystandingorder.edit : http://CORE-SERVICE/utilitystandingorder/edit
+ecms_web_core_api.utilitystandingorder.delete : http://CORE-SERVICE/utilitystandingorder/delete
+
+# ------------------ Call center ----------------------------------#
+#call center search
+ecms_web_call_center_api.callcentersearch.verificationquestion : http://CALL-CENTER-SERVICE/callcentersearch/verificationquestion
+ecms_web_call_center_api.callcentersearch.advancedsearch : http://CALL-CENTER-SERVICE/callcentersearch/advancedsearch
+ecms_web_call_center_api.callcentersearch.verify : http://CALL-CENTER-SERVICE/callcentersearch/verify
+ecms_web_call_center_api.callcentersearch.reject : http://CALL-CENTER-SERVICE/callcentersearch/reject
+ecms_web_call_center_api.callcentersearch.basicview : http://CALL-CENTER-SERVICE/callcentersearch/basicview
+
