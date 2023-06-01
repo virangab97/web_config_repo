@@ -1,6 +1,6 @@
 # Report location dir
-ecms_web_issuing_report_file.directory.excel : C:/Users/viranga_b/Documents/CMSREPORTS/GeneratedExcel/
-ecms_web_issuing_report_file.directory.pdf : C:/Users/viranga_b/Documents/CMSREPORTS/GeneratedPDF/
+ecms_web_issuing_report_file.directory.excel : D:/final_report/report-module/CMSreports/
+ecms_web_issuing_report_file.directory.pdf : D:/final_report/report-module/CMSreports/
 
 
 # Report_Generator
