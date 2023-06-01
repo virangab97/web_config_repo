@@ -6,7 +6,7 @@ ecms_web_issuing_report_file.directory.pdf : D:/final_report/report-module/CMSre
 # Report_Generator
 
 # 1 Installment Detail Report
-report_gen_api.installment.detail : http://localhost:5000/ecms_report_core_api/installmentdetailsreport
+report_gen_api.installment.detail : http://192.168.1.156:5000/ecms_report_core_api/installmentdetailsreport
 
 # 2 application confirmation Report
 report_gen_api.application.confirmation : http://localhost:5000/ecms_report_core_api/application_confirmation_report
