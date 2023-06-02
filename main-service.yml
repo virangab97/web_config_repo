@@ -316,12 +316,14 @@ ecms_web_core_api.eodprocessflow.access : http://CORE-SERVICE/eodprocessflow/acc
 ecms_web_core_api.eodprocessflow.add : http://CORE-SERVICE/eodprocessflow/add
 ecms_web_core_api.eodprocessflow.confirm : http://CORE-SERVICE/eodprocessflow/confirm
 ecms_web_core_api.eodprocessflow.reject : http://CORE-SERVICE/eodprocessflow/reject
+ecms_web_core_api.eodprocessflow.viewbycategory : http://CORE-SERVICE/eodprocessflow/viewbycategory
+ecms_web_core_api.eodprocessflow.viewbycategoryandstepid : http://CORE-SERVICE/eodprocessflow/viewbycategoryandstepid
 
 # ------------------ Report Management ---------------------------#
 
 # Report location dir
-ecms_web_issuing_report_file.directory.excel : D:/final_report/report-module/CMSreports/
-ecms_web_issuing_report_file.directory.pdf : D:/final_report/report-module/CMSreports/
+ecms_web_issuing_report_file.directory.excel : C:/Users/viranga_b/Documents/CMSREPORTS/GeneratedExcel/
+ecms_web_issuing_report_file.directory.pdf : C:/Users/viranga_b/Documents/CMSREPORTS/GeneratedPDF/
 
 # Delete Report from dir
 ecms_web_issuing_report_api.delete_report.excel : http://ISSUING-REPORT-SERVICE/delete_report/excel
@@ -932,6 +934,52 @@ ecms_web_core_api.cardtype.add : http://CORE-SERVICE/cardtype/add
 ecms_web_core_api.cardtype.edit : http://CORE-SERVICE/cardtype/edit
 ecms_web_core_api.cardtype.delete : http://CORE-SERVICE/cardtype/delete
 
+
+#request monitor
+
+ecms_web_core_api.requestmonitor.list.customer.contactdetailchangereq : http://CORE-SERVICE/requestmonitor/list/customer/contactdetailchangereq
+ecms_web_core_api.requestmonitor.list.installmentpayment.easypaymentrequest : http://CORE-SERVICE/requestmonitor/list/installmentpayment/easypaymentrequest
+ecms_web_core_api.requestmonitor.list.installmentpayment.balancetransferrequest : http://CORE-SERVICE/requestmonitor/list/installmentpayment/balancetransferrequest
+ecms_web_core_api.requestmonitor.list.installmentpayment.loanoncardrequest : http://CORE-SERVICE/requestmonitor/list/installmentpayment/loanoncardrequest
+ecms_web_core_api.requestmonitor.list.installmentpayment.adjustmentrequest : http://CORE-SERVICE/requestmonitor/list/installmentpayment/adjustmentrequest
+ecms_web_core_api.requestmonitor.list.card.permlimitincrementreq : http://CORE-SERVICE/requestmonitor/list/card/permlimitincrementreq
+ecms_web_core_api.requestmonitor.list.card.templimitincrementreq : http://CORE-SERVICE/requestmonitor/list/card/templimitincrementreq
+ecms_web_core_api.requestmonitor.list.card.limitconfirmationrequest : http://CORE-SERVICE/requestmonitor/list/card/limitconfirmationrequest
+ecms_web_core_api.requestmonitor.list.card.cardrequest : http://CORE-SERVICE/requestmonitor/list/card/cardrequest
+ecms_web_core_api.requestmonitor.list.card.cardrenewalreq : http://CORE-SERVICE/requestmonitor/list/card/cardrenewalreq
+ecms_web_core_api.requestmonitor.list.card.transactiondropreq : http://CORE-SERVICE/requestmonitor/list/card/transactiondropreq
+ecms_web_core_api.requestmonitor.list.account.autosettlementreq : http://CORE-SERVICE/requestmonitor/list/account/autosettlementreq
+ecms_web_core_api.requestmonitor.list.account.billingcyclechangerequest : http://CORE-SERVICE/requestmonitor/list/account/billingcyclechangerequest
+ecms_web_core_api.requestmonitor.list.account.statementcopyrequest : http://CORE-SERVICE/requestmonitor/list/account/statementcopyrequest
+ecms_web_core_api.requestmonitor.list.account.cashbackenrolmentrequest : http://CORE-SERVICE/requestmonitor/list/account/cashbackenrolmentrequest
+ecms_web_core_api.requestmonitor.list.account.cashbackredeemrequest : http://CORE-SERVICE/requestmonitor/list/account/cashbackredeemrequest
+ecms_web_core_api.requestmonitor.list.standingorder.utilitystandingorder : http://CORE-SERVICE/requestmonitor/list/standingorder/utilitystandingorder
+
+
+#card embossing
+ecms_web_core_api.cardembossing.access : http://CORE-SERVICE/cardembossing/access
+ecms_web_core_api.cardembossing.history : http://CORE-SERVICE/cardembossing/history
+ecms_web_core_api.cardembossing.list : http://CORE-SERVICE/cardembossing/list
+ecms_web_core_api.cardembossing.generate : http://CORE-SERVICE/cardembossing/generate
+ecms_web_core_api.cardembossing.download : http://CORE-SERVICE/cardembossing/download
+
+#pinmailer quality
+ecms_web_core_api.pinmailerquality.access : http://CORE-SERVICE/pinmailerquality/access
+ecms_web_core_api.pinmailerquality.history : http://CORE-SERVICE/pinmailerquality/history
+ecms_web_core_api.pinmailerquality.qualityfail : http://CORE-SERVICE/pinmailerquality/qualityfail
+ecms_web_core_api.pinmailerquality.list : http://CORE-SERVICE/pinmailerquality/list
+
+
+
+#personalized quality
+ecms_web_core_api.personalizedquality.view : http://CORE-SERVICE/personalizedquality/view
+ecms_web_core_api.personalizedquality.history : http://CORE-SERVICE/personalizedquality/history
+ecms_web_core_api.personalizedquality.qualityfail : http://CORE-SERVICE/personalizedquality/qualityfail
+
+
+
+
+
 # Team Allocation Management
 ecms_web_core_api.teamallocation.access : http://CORE-SERVICE/teamallocation/access
 ecms_web_core_api.teamallocation.list : http://CORE-SERVICE/teamallocation/list
@@ -1044,6 +1092,28 @@ ecms_web_core_api.utilitystandingorder.history : http://CORE-SERVICE/utilitystan
 ecms_web_core_api.utilitystandingorder.add : http://CORE-SERVICE/utilitystandingorder/add
 ecms_web_core_api.utilitystandingorder.edit : http://CORE-SERVICE/utilitystandingorder/edit
 ecms_web_core_api.utilitystandingorder.delete : http://CORE-SERVICE/utilitystandingorder/delete
+
+# ------------------ Application Processing ----------------------------------#
+
+# ------------------ Application Confirmation ----------------------------------#
+#Credit Officer Review and Confirmation
+ecms_web_core_api.creditofficerreviewandconf.access : http://CORE-SERVICE/creditofficerreviewandconf/access
+ecms_web_core_api.creditofficerreviewandconf.list : http://CORE-SERVICE/creditofficerreviewandconf/list
+ecms_web_core_api.creditofficerreviewandconf.history : http://CORE-SERVICE/creditofficerreviewandconf/history
+ecms_web_core_api.creditofficerreviewandconf.viewaccess : http://CORE-SERVICE/creditofficerreviewandconf/viewaccess
+ecms_web_core_api.creditofficerreviewandconf.approve : http://CORE-SERVICE/creditofficerreviewandconf/approve
+ecms_web_core_api.creditofficerreviewandconf.reject : http://CORE-SERVICE/creditofficerreviewandconf/reject
+
+# ------------------ ISSUANCE & PERSONALISATION ----------------------------------#
+
+# ------------------ Number generation ----------------------------------#
+#credit number generation
+ecms_web_core_api.numbergen.access : http://CORE-SERVICE/numbergen/access
+ecms_web_core_api.numbergen.list : http://CORE-SERVICE/numbergen/list
+ecms_web_core_api.numbergen.history : http://CORE-SERVICE/numbergen/history
+ecms_web_core_api.numbergen.generate : http://CORE-SERVICE/numbergen/generate
+
+
 
 # ------------------ Call center ----------------------------------#
 #call center search
