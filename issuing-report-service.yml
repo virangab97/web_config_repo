@@ -1,6 +1,6 @@
 # Report location dir
-ecms_web_issuing_report_file.directory.excel : D:/final_report/report-module/CMSreports/
-ecms_web_issuing_report_file.directory.pdf : D:/final_report/report-module/CMSreports/
+ecms_web_issuing_report_file.directory.excel : app/final_report/report-module/CMSreports/
+ecms_web_issuing_report_file.directory.pdf : app/final_report/report-module/CMSreports/
 
 
 # Report_Generator
