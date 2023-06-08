@@ -14,7 +14,7 @@ spring:
       com.zaxxer.hikari: DEBUG
   servlet:
     multipart:
-      max-file-size: 6MB
+      max-file-size: 20MB
   datasource:
     hikari:
       minimumIdle: 2
