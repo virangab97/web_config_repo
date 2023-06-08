@@ -322,8 +322,8 @@ ecms_web_core_api.eodprocessflow.viewbycategoryandstepid : http://CORE-SERVICE/e
 # ------------------ Report Management ---------------------------#
 
 # Report location dir
-ecms_web_issuing_report_file.directory.excel : app/final_report/report-module/CMSreports/
-ecms_web_issuing_report_file.directory.pdf : app/final_report/report-module/CMSreports/
+ecms_web_issuing_report_file.directory.excel : app/CMSreports/
+ecms_web_issuing_report_file.directory.pdf : app/CMSreports/
 
 # Delete Report from dir
 ecms_web_issuing_report_api.delete_report.excel : http://ISSUING-REPORT-SERVICE/delete_report/excel
