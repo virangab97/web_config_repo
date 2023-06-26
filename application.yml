@@ -17,9 +17,7 @@ spring:
       max-file-size: 20MB
   datasource:
     hikari:
-      maximumPoolSize: 25
-      idleTimeout: 300000 # maximum idle time for connection
-      maxLifetime: 420000 # maximum lifetime in milliseconds of a connection in the pool after it is closed
+      maximumPoolSize: 20
       connectionTimeout: 300000 # maximum number of milliseconds that a client will wait for a connection
       poolName: ecms-product-main-pool
     backend:
