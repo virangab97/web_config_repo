@@ -18,8 +18,8 @@ spring:
   datasource:
     hikari:
       maximumPoolSize: 50
-      idleTimeout: 30000 # maximum idle time for connection
-      connectionTimeout: 30000 # maximum number of milliseconds that a client will wait for a connection
+      idleTimeout: 300000 # maximum idle time for connection
+      connectionTimeout: 300000 # maximum number of milliseconds that a client will wait for a connection
       max-lifetime: 180000
       poolName: ecms-product-main-pool
     backend:
