@@ -52,3 +52,48 @@ report_gen_api.pingeneration.mailing : http://192.168.1.150:5000/ecms_report_cor
 
 # 16 card status report
 report_gen_api.card.status : http://192.168.1.150:5000/ecms_report_core_api/cardstatusreport
+
+# 17 card annual fee report
+report_gen_api.card.annualfee : http://192.168.1.150:5000/ecms_report_core_api/CardAnnualFeeReport
+
+# 18 aggrigate limits report
+report_gen_api.aggrigate.limits : http://192.168.1.150:5000/ecms_report_core_api/AggrigateLimitsReport
+
+# 19 new card generated report
+report_gen_api.new.cardgenerated : http://192.168.1.150:5000/ecms_report_core_api/NewCardGeneratedReport
+
+# 20 card history report
+report_gen_api.card.history : http://192.168.1.150:5000/ecms_report_core_api/CardHistoryReport
+
+# 21 card history report
+report_gen_api.user.login : http://192.168.1.150:5000/ecms_report_core_api/UserLoginReport
+
+# 22 excess card report
+report_gen_api.excess.card : http://192.168.1.150:5000/ecms_report_core_api/ExcessCardReport
+
+# 23 card outstanding report
+report_gen_api.card.outstanding : http://192.168.1.150:5000/ecms_report_core_api/CardOutstanding
+
+# 24 daily maintenance report
+report_gen_api.daily.maintainance : http://192.168.1.150:5000/ecms_report_core_api/DailyMaintenance
+
+# 25 cash back reconciliation report
+report_gen_api.cashback.reconciliation : http://192.168.1.150:5000/ecms_report_core_api/CashBackReconciliationReport
+
+# 26 government stamp duty report
+report_gen_api.government.stampduty : http://192.168.1.150:5000/ecms_report_core_api/GovernmentStampDuty
+
+# 27 cash back summary report
+report_gen_api.cashback.summary : http://192.168.1.150:5000/ecms_report_core_api/CashBackSummary
+
+# 28 np listening report
+report_gen_api.np.listening : http://192.168.1.150:5000/ecms_report_core_api/NPListeningReport
+
+# 29 summary npl report
+report_gen_api.summary.npl : http://192.168.1.150:5000/ecms_report_core_api/NPListeningSummaryReport
+
+# 30 only visa auth report
+report_gen_api.only.visaauth : http://192.168.1.150:5000/ecms_report_core_api/NPListeningSummaryReport
+
+# 31 card.payment summary report
+report_gen_api.card.paymentsummary : http://192.168.1.150:5000/ecms_report_core_api/CardPaymentSummary
