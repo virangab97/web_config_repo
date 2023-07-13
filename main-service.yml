@@ -438,6 +438,96 @@ ecms_web_issuing_report_api.card.status.list : http://ISSUING-REPORT-SERVICE/car
 ecms_web_issuing_report_api.card.status.excel : http://ISSUING-REPORT-SERVICE/card_status/excel
 ecms_web_issuing_report_api.card.status.pdf : http://ISSUING-REPORT-SERVICE/card_status/pdf
 
+# card annual fee report
+ecms_web_issuing_report_api.card.annualfee.access : http://ISSUING-REPORT-SERVICE/card_annualfee/access
+ecms_web_issuing_report_api.card.annualfee.list : http://ISSUING-REPORT-SERVICE/card_annualfee/list
+ecms_web_issuing_report_api.card.annualfee.excel : http://ISSUING-REPORT-SERVICE/card_annualfee/excel
+ecms_web_issuing_report_api.card.annualfee.pdf : http://ISSUING-REPORT-SERVICE/card_annualfee/pdf
+
+# aggrigate limits report
+ecms_web_issuing_report_api.aggrigate.limits.access : http://ISSUING-REPORT-SERVICE/aggrigate_limits/access
+ecms_web_issuing_report_api.aggrigate.limits.list : http://ISSUING-REPORT-SERVICE/aggrigate_limits/list
+ecms_web_issuing_report_api.aggrigate.limits.excel : http://ISSUING-REPORT-SERVICE/aggrigate_limits/excel
+ecms_web_issuing_report_api.aggrigate.limits.pdf : http://ISSUING-REPORT-SERVICE/aggrigate_limits/pdf
+
+# new card generated report
+ecms_web_issuing_report_api.new.cardgenerated.access : http://ISSUING-REPORT-SERVICE/new_cardgenerated/access
+ecms_web_issuing_report_api.new.cardgenerated.list : http://ISSUING-REPORT-SERVICE/new_cardgenerated/list
+ecms_web_issuing_report_api.new.cardgenerated.excel : http://ISSUING-REPORT-SERVICE/new_cardgenerated/excel
+ecms_web_issuing_report_api.new.cardgenerated.pdf : http://ISSUING-REPORT-SERVICE/new_cardgenerated/pdf
+
+# card payment summary report
+ecms_web_issuing_report_api.card.paymentsummary.access : http://ISSUING-REPORT-SERVICE/card_paymentsummary/access
+ecms_web_issuing_report_api.card.paymentsummary.list : http://ISSUING-REPORT-SERVICE/card_paymentsummary/list
+ecms_web_issuing_report_api.card.paymentsummary.excel : http://ISSUING-REPORT-SERVICE/card_paymentsummary/excel
+ecms_web_issuing_report_api.card.paymentsummary.pdf : http://ISSUING-REPORT-SERVICE/card_paymentsummary/pdf
+
+# card history report
+ecms_web_issuing_report_api.card.history.access : http://ISSUING-REPORT-SERVICE/card_history/access
+ecms_web_issuing_report_api.card.history.list : http://ISSUING-REPORT-SERVICE/card_history/list
+ecms_web_issuing_report_api.card.history.excel : http://ISSUING-REPORT-SERVICE/card_history/excel
+ecms_web_issuing_report_api.card.history.pdf : http://ISSUING-REPORT-SERVICE/card_history/pdf
+
+# user login report
+ecms_web_issuing_report_api.user.login.access : http://ISSUING-REPORT-SERVICE/user_login/access
+ecms_web_issuing_report_api.user.login.list : http://ISSUING-REPORT-SERVICE/user_login/list
+ecms_web_issuing_report_api.user.login.excel : http://ISSUING-REPORT-SERVICE/user_login/excel
+ecms_web_issuing_report_api.user.login.pdf : http://ISSUING-REPORT-SERVICE/user_login/pdf
+
+# excess card report
+ecms_web_issuing_report_api.excess.card.access : http://ISSUING-REPORT-SERVICE/excess_card/access
+ecms_web_issuing_report_api.excess.card.list : http://ISSUING-REPORT-SERVICE/excess_card/list
+ecms_web_issuing_report_api.excess.card.excel : http://ISSUING-REPORT-SERVICE/excess_card/excel
+ecms_web_issuing_report_api.excess.card.pdf : http://ISSUING-REPORT-SERVICE/excess_card/pdf
+
+# card outstanding report
+ecms_web_issuing_report_api.card.outstanding.access : http://ISSUING-REPORT-SERVICE/card_outstanding/access
+ecms_web_issuing_report_api.card.outstanding.list : http://ISSUING-REPORT-SERVICE/card_outstanding/list
+ecms_web_issuing_report_api.card.outstanding.excel : http://ISSUING-REPORT-SERVICE/card_outstanding/excel
+ecms_web_issuing_report_api.card.outstanding.pdf : http://ISSUING-REPORT-SERVICE/card_outstanding/pdf
+
+# daily maintainance report
+ecms_web_issuing_report_api.daily.maintainance.access : http://ISSUING-REPORT-SERVICE/daily_maintainance/access
+ecms_web_issuing_report_api.daily.maintainance.list : http://ISSUING-REPORT-SERVICE/daily_maintainance/list
+ecms_web_issuing_report_api.daily.maintainance.excel : http://ISSUING-REPORT-SERVICE/daily_maintainance/excel
+ecms_web_issuing_report_api.daily.maintainance.pdf : http://ISSUING-REPORT-SERVICE/daily_maintainance/pdf
+
+# cash back reconciliation report
+ecms_web_issuing_report_api.cashback.reconciliation.access : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/access
+ecms_web_issuing_report_api.cashback.reconciliation.list : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/list
+ecms_web_issuing_report_api.cashback.reconciliation.excel : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/excel
+ecms_web_issuing_report_api.cashback.reconciliation.pdf : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/pdf
+
+# government stamp duty report
+ecms_web_issuing_report_api.government.stampduty.access : http://ISSUING-REPORT-SERVICE/government_stampduty/access
+ecms_web_issuing_report_api.government.stampduty.list : http://ISSUING-REPORT-SERVICE/government_stampduty/list
+ecms_web_issuing_report_api.government.stampduty.excel : http://ISSUING-REPORT-SERVICE/government_stampduty/excel
+ecms_web_issuing_report_api.government.stampduty.pdf : http://ISSUING-REPORT-SERVICE/government_stampduty/pdf
+
+# cash back summary report
+ecms_web_issuing_report_api.cashback.summary.access : http://ISSUING-REPORT-SERVICE/cashback_summary/access
+ecms_web_issuing_report_api.cashback.summary.list : http://ISSUING-REPORT-SERVICE/cashback_summary/list
+ecms_web_issuing_report_api.cashback.summary.excel : http://ISSUING-REPORT-SERVICE/cashback_summary/excel
+ecms_web_issuing_report_api.cashback.summary.pdf : http://ISSUING-REPORT-SERVICE/cashback_summary/pdf
+
+# np listening report
+ecms_web_issuing_report_api.np.listening.access : http://ISSUING-REPORT-SERVICE/np_listening/access
+ecms_web_issuing_report_api.np.listening.list : http://ISSUING-REPORT-SERVICE/np_listening/list
+ecms_web_issuing_report_api.np.listening.excel : http://ISSUING-REPORT-SERVICE/np_listening/excel
+ecms_web_issuing_report_api.np.listening.pdf : http://ISSUING-REPORT-SERVICE/np_listening/pdf
+
+# summary npl report
+ecms_web_issuing_report_api.summary.npl.access : http://ISSUING-REPORT-SERVICE/summary_npl/access
+ecms_web_issuing_report_api.summary.npl.list : http://ISSUING-REPORT-SERVICE/summary_npl/list
+ecms_web_issuing_report_api.summary.npl.excel : http://ISSUING-REPORT-SERVICE/summary_npl/excel
+ecms_web_issuing_report_api.summary.npl.pdf : http://ISSUING-REPORT-SERVICE/summary_npl/pdf
+
+# only visa auth report
+ecms_web_issuing_report_api.only.visaauth.access : http://ISSUING-REPORT-SERVICE/only_visaauth/access
+ecms_web_issuing_report_api.only.visaauth.list : http://ISSUING-REPORT-SERVICE/only_visaauth/list
+ecms_web_issuing_report_api.only.visaauth.excel : http://ISSUING-REPORT-SERVICE/only_visaauth/excel
+ecms_web_issuing_report_api.only.visaauth.pdf : http://ISSUING-REPORT-SERVICE/only_visaauth/pdf
+
 
 # ------------------ General Ledger Management ---------------------------#
 
