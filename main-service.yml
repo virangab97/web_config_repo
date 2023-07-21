@@ -212,6 +212,10 @@ ecms_web_core_api.feepro.edit : http://CORE-SERVICE/feepro/edit
 ecms_web_core_api.feepro.delete : http://CORE-SERVICE/feepro/delete
 ecms_web_core_api.feepro.confirm : http://CORE-SERVICE/feepro/confirm
 ecms_web_core_api.feepro.reject : http://CORE-SERVICE/feepro/reject
+ecms_web_core_api.feepro.txnlist : http://CORE-SERVICE/feepro/txnlist
+ecms_web_core_api.feepro.servicelist : http://CORE-SERVICE/feepro/servicelist
+ecms_web_core_api.feepro.getdeletesevicedrop : http://CORE-SERVICE/feepro/getdeletesevicedrop
+ecms_web_core_api.feepro.getdeletetxndrop : http://CORE-SERVICE/feepro/getdeletetxndrop
 
 # Promofee Management
 ecms_web_core_api.promofee.access : http://CORE-SERVICE/promofee/access
@@ -528,8 +532,6 @@ ecms_web_issuing_report_api.only.visaauth.list : http://ISSUING-REPORT-SERVICE/o
 ecms_web_issuing_report_api.only.visaauth.excel : http://ISSUING-REPORT-SERVICE/only_visaauth/excel
 ecms_web_issuing_report_api.only.visaauth.pdf : http://ISSUING-REPORT-SERVICE/only_visaauth/pdf
 
-
-
 # ------------------ General Ledger Management ---------------------------#
 
 ecms_web_core_api.generalledger.history : http://CORE-SERVICE/generalledger/history
@@ -632,6 +634,7 @@ ecms_web_core_api.operation.access :  http://CORE-SERVICE/operation/access
 ecms_web_core_api.operation.list :  http://CORE-SERVICE/operation/list
 ecms_web_core_api.operation.history :  http://CORE-SERVICE/operation/history
 ecms_web_core_api.operation.process :  http://CORE-SERVICE/operation/process
+ecms_web_core_api.operation.loadoperations :  http://CORE-SERVICE/operation/loadoperations
 
 # ------------------ Update Server Settings ---------------------------#
 
@@ -693,6 +696,7 @@ ecms_web_core_api.creditcardtemplate.history : http://CORE-SERVICE/creditcardtem
 ecms_web_core_api.creditcardtemplate.add : http://CORE-SERVICE/creditcardtemplate/add
 ecms_web_core_api.creditcardtemplate.edit : http://CORE-SERVICE/creditcardtemplate/edit
 ecms_web_core_api.creditcardtemplate.delete : http://CORE-SERVICE/creditcardtemplate/delete
+ecms_web_core_api.creditcardtemplate.detailsby : http://CORE-SERVICE/creditcardtemplate/detailsby
 
 
 #Card domain template managment
@@ -824,7 +828,7 @@ ecms_web_core_api.creditschema.access : http://CORE-SERVICE/creditschema/access
 ecms_web_core_api.creditschema.list : http://CORE-SERVICE/creditschema/list
 ecms_web_core_api.creditschema.history : http://CORE-SERVICE/creditschema/history
 ecms_web_core_api.creditschema.add : http://CORE-SERVICE/creditschema/add
-ecms_web_core_api.creditschema.edit : http://CORE-SERVICE/creditschema/edit
+ecms_web_core_api.creditschema.assign : http://CORE-SERVICE/creditschema/assign
 ecms_web_core_api.creditschema.delete : http://CORE-SERVICE/creditschema/delete
 
 # Document Type Management
@@ -869,12 +873,12 @@ ecms_web_core_api.hotlistreason.delete : http://CORE-SERVICE/hotlistreason/delet
 
 # Credit Score Field
 ecms_web_core_api.creditscorefield.access : http://CORE-SERVICE/creditscorefield/access
+ecms_web_core_api.creditscorefield.fieldlist : http://CORE-SERVICE/creditscorefield/fieldlist
 ecms_web_core_api.creditscorefield.list : http://CORE-SERVICE/creditscorefield/list
 ecms_web_core_api.creditscorefield.history : http://CORE-SERVICE/creditscorefield/history
 ecms_web_core_api.creditscorefield.add : http://CORE-SERVICE/creditscorefield/add
 ecms_web_core_api.creditscorefield.edit : http://CORE-SERVICE/creditscorefield/edit
 ecms_web_core_api.creditscorefield.delete : http://CORE-SERVICE/creditscorefield/delete
-ecms_web_core_api.creditscorefield.fieldnameby : http://CORE-SERVICE/creditscorefield/fieldnameby
 
 # Credit Score Rules
 ecms_web_core_api.creditscorerule.access : http://CORE-SERVICE/creditscorerule/access
@@ -946,6 +950,7 @@ ecms_web_core_api.productrecomendation.list : http://CORE-SERVICE/productrecomen
 ecms_web_core_api.productrecomendation.dualauthlist : http://CORE-SERVICE/productrecomendation/dualauthlist
 ecms_web_core_api.productrecomendation.confirm : http://CORE-SERVICE/productrecomendation/confirm
 ecms_web_core_api.productrecomendation.reject : http://CORE-SERVICE/productrecomendation/reject
+ecms_web_core_api.productrecomendation.cardproductby : http://CORE-SERVICE/productrecomendation/cardproductby
 
 #score card mgt
 ecms_web_core_api.scorecardmgt.history : http://CORE-SERVICE/scorecardmgt/history
@@ -1080,7 +1085,21 @@ ecms_web_core_api.personalizedquality.qualityfail : http://CORE-SERVICE/personal
 
 
 
+#Action message mgt
+ecms_web_core_api.actionmsgmgt.access : http://CORE-SERVICE/actionmsgmgt/access
+ecms_web_core_api.actionmsgmgt.list : http://CORE-SERVICE/actionmsgmgt/list
+ecms_web_core_api.actionmsgmgt.history : http://CORE-SERVICE/actionmsgmgt/history
+ecms_web_core_api.actionmsgmgt.add : http://CORE-SERVICE/actionmsgmgt/add
+ecms_web_core_api.actionmsgmgt.edit : http://CORE-SERVICE/actionmsgmgt/edit
+ecms_web_core_api.actionmsgmgt.delete : http://CORE-SERVICE/actionmsgmgt/delete
 
+#Allocation rule mgt
+ecms_web_core_api.allocrulemgt.access : http://CORE-SERVICE/allocrulemgt/access
+ecms_web_core_api.allocrulemgt.list : http://CORE-SERVICE/allocrulemgt/list
+ecms_web_core_api.allocrulemgt.history : http://CORE-SERVICE/allocrulemgt/history
+ecms_web_core_api.allocrulemgt.add : http://CORE-SERVICE/allocrulemgt/add
+ecms_web_core_api.allocrulemgt.edit : http://CORE-SERVICE/allocrulemgt/edit
+ecms_web_core_api.allocrulemgt.delete : http://CORE-SERVICE/allocrulemgt/delete
 
 # Team Allocation Management
 ecms_web_core_api.teamallocation.access : http://CORE-SERVICE/teamallocation/access
@@ -1090,6 +1109,14 @@ ecms_web_core_api.teamallocation.history : http://CORE-SERVICE/teamallocation/hi
 ecms_web_core_api.teamallocation.add : http://CORE-SERVICE/teamallocation/add
 ecms_web_core_api.teamallocation.edit : http://CORE-SERVICE/teamallocation/edit
 ecms_web_core_api.teamallocation.delete : http://CORE-SERVICE/teamallocation/delete
+
+#Risk Class managment
+ecms_web_core_api.riskclassmgt.access : http://CORE-SERVICE/riskclassmgt/access
+ecms_web_core_api.riskclassmgt.list : http://CORE-SERVICE/riskclassmgt/list
+ecms_web_core_api.riskclassmgt.history : http://CORE-SERVICE/riskclassmgt/history
+ecms_web_core_api.riskclassmgt.add : http://CORE-SERVICE/riskclassmgt/add
+ecms_web_core_api.riskclassmgt.edit : http://CORE-SERVICE/riskclassmgt/edit
+ecms_web_core_api.riskclassmgt.delete : http://CORE-SERVICE/riskclassmgt/delete
 
 
 # ------------------ Installment Plan ---------------------------#
@@ -1155,7 +1182,6 @@ ecms_web_core_api.cashbackenrolmentreqconf.approve : http://CORE-SERVICE/cashbac
 ecms_web_core_api.cashbackenrolmentreqconf.reject : http://CORE-SERVICE/cashbackenrolmentreqconf/reject
 
 #Transaction Drop Request Confirmation
-ecms_web_core_api.transactiondropconf.access : http://CORE-SERVICE/transactiondropconf/access
 ecms_web_core_api.transactiondropconf.list : http://CORE-SERVICE/transactiondropconf/list
 ecms_web_core_api.transactiondropconf.history : http://CORE-SERVICE/transactiondropconf/history
 ecms_web_core_api.transactiondropconf.approve : http://CORE-SERVICE/transactiondropconf/approve
@@ -1187,15 +1213,6 @@ ecms_web_core_api.loanoncardconfirmation.history : http://CORE-SERVICE/loanoncar
 ecms_web_core_api.loanoncardconfirmation.approve : http://CORE-SERVICE/loanoncardconfirmation/approve
 ecms_web_core_api.loanoncardconfirmation.reject : http://CORE-SERVICE/loanoncardconfirmation/reject
 
-#Customer contact details change Confirmation
-ecms_web_core_api.cuscontact.access : http://CORE-SERVICE/cuscontact/access
-ecms_web_core_api.cuscontact.list : http://CORE-SERVICE/cuscontact/list
-ecms_web_core_api.cuscontact.previous-details : http://CORE-SERVICE/cuscontact/previous-details
-ecms_web_core_api.cuscontact.history : http://CORE-SERVICE/cuscontact/history
-ecms_web_core_api.cuscontact.approve : http://CORE-SERVICE/cuscontact/approve
-ecms_web_core_api.cuscontact.reject : http://CORE-SERVICE/cuscontact/reject
-
-
 # ------------------ Standing order ---------------------------#
 #Utility Standing Order
 ecms_web_core_api.utilitystandingorder.access : http://CORE-SERVICE/utilitystandingorder/access
@@ -1205,58 +1222,29 @@ ecms_web_core_api.utilitystandingorder.add : http://CORE-SERVICE/utilitystanding
 ecms_web_core_api.utilitystandingorder.edit : http://CORE-SERVICE/utilitystandingorder/edit
 ecms_web_core_api.utilitystandingorder.delete : http://CORE-SERVICE/utilitystandingorder/delete
 
-# ------------------ Credit products ---------------------------#
-#Temporary Limit Change
-ecms_web_core_api.templimitchange.access : http://CORE-SERVICE/templimitchange/access
-ecms_web_core_api.templimitchange.list : http://CORE-SERVICE/templimitchange/list
-ecms_web_core_api.templimitchange.history : http://CORE-SERVICE/templimitchange/history
-ecms_web_core_api.templimitchange.approve : http://CORE-SERVICE/templimitchange/approve
-ecms_web_core_api.templimitchange.reject : http://CORE-SERVICE/templimitchange/reject
-
-
-
-# ------------------ Application Processing ----------------------------------#
-
-# ------------------ Application Confirmation ----------------------------------#
-#Credit Officer Review and Confirmation
-ecms_web_core_api.creditofficerreviewandconf.access : http://CORE-SERVICE/creditofficerreviewandconf/access
-ecms_web_core_api.creditofficerreviewandconf.list : http://CORE-SERVICE/creditofficerreviewandconf/list
-ecms_web_core_api.creditofficerreviewandconf.history : http://CORE-SERVICE/creditofficerreviewandconf/history
-ecms_web_core_api.creditofficerreviewandconf.viewaccess : http://CORE-SERVICE/creditofficerreviewandconf/viewaccess
-ecms_web_core_api.creditofficerreviewandconf.approve : http://CORE-SERVICE/creditofficerreviewandconf/approve
-ecms_web_core_api.creditofficerreviewandconf.reject : http://CORE-SERVICE/creditofficerreviewandconf/reject
-
-# ------------------ ISSUANCE & PERSONALISATION ----------------------------------#
-
-# ------------------ Number generation ----------------------------------#
-#credit number generation
-ecms_web_core_api.numbergen.access : http://CORE-SERVICE/numbergen/access
-ecms_web_core_api.numbergen.list : http://CORE-SERVICE/numbergen/list
-ecms_web_core_api.numbergen.history : http://CORE-SERVICE/numbergen/history
-ecms_web_core_api.numbergen.generate : http://CORE-SERVICE/numbergen/generate
-
-
-# ------------------ Distribution ----------------------------------#
-#Card & Pin Distibution
-ecms_web_core_api.cardpindistribution.access : http://CORE-SERVICE/cardpindistribution/access
-ecms_web_core_api.cardpindistribution.history : http://CORE-SERVICE/cardpindistribution/history
-ecms_web_core_api.cardpindistribution.carddistributionlist : http://CORE-SERVICE/cardpindistribution/carddistributionlist
-ecms_web_core_api.cardpindistribution.pindistributionlist : http://CORE-SERVICE/cardpindistribution/pindistributionlist
-ecms_web_core_api.cardpindistribution.cardproductby : http://CORE-SERVICE/cardpindistribution/cardproductby
-ecms_web_core_api.cardpindistribution.updatecarddistribution : http://CORE-SERVICE/cardpindistribution/updatecarddistribution
-ecms_web_core_api.cardpindistribution.updatepindistribution : http://CORE-SERVICE/cardpindistribution/updatepindistribution
-
-
-
-#------------------------------------- Call center --------------------------------------------------------#
-
+# ------------------ Call center ----------------------------------#
 #call center search
-ecms_web_call_center_api.callcentersearch.access : http://CALL-CENTER-SERVICE/callcentersearch/access
 ecms_web_call_center_api.callcentersearch.verificationquestion : http://CALL-CENTER-SERVICE/callcentersearch/verificationquestion
 ecms_web_call_center_api.callcentersearch.advancedsearch : http://CALL-CENTER-SERVICE/callcentersearch/advancedsearch
 ecms_web_call_center_api.callcentersearch.verify : http://CALL-CENTER-SERVICE/callcentersearch/verify
 ecms_web_call_center_api.callcentersearch.reject : http://CALL-CENTER-SERVICE/callcentersearch/reject
 ecms_web_call_center_api.callcentersearch.basicview : http://CALL-CENTER-SERVICE/callcentersearch/basicview
+ecms_web_call_center_api.callcentersearch.cardlist : http://CALL-CENTER-SERVICE/callcentersearch/cardlist
+ecms_web_call_center_api.callcentersearch.accountlist : http://CALL-CENTER-SERVICE/callcentersearch/accountlist
+ecms_web_call_center_api.callcentersearch.applicationlist : http://CALL-CENTER-SERVICE/callcentersearch/applicationlist
+
+#-------------------Customer level----------------------------------
+#Customer main view
+ecms_web_call_center_api.cusview.access : http://CALL-CENTER-SERVICE/cusview/access
+ecms_web_call_center_api.cusview.mainview : http://CALL-CENTER-SERVICE/cusview/mainview
+ecms_web_call_center_api.cusview.changedcustomerdetails : http://CALL-CENTER-SERVICE/cusview/changedcustomerdetails
+
+#Customer memos request
+ecms_web_call_center_api.customermemo.access : http://CALL-CENTER-SERVICE/customermemo/access
+ecms_web_call_center_api.customermemo.history : http://CALL-CENTER-SERVICE/customermemo/history
+ecms_web_call_center_api.customermemo.list : http://CALL-CENTER-SERVICE/customermemo/list
+ecms_web_call_center_api.customermemo.add : http://CALL-CENTER-SERVICE/customermemo/add
+
 
 #-------------------Account level----------------------------------
 #Account main view
