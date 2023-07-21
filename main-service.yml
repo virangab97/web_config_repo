@@ -1199,6 +1199,18 @@ ecms_web_core_api.billingcyclechangereqconf.history : http://CORE-SERVICE/billin
 ecms_web_core_api.billingcyclechangereqconf.approve : http://CORE-SERVICE/billingcyclechangereqconf/approve
 ecms_web_core_api.billingcyclechangereqconf.reject : http://CORE-SERVICE/billingcyclechangereqconf/reject
 
+#Txn profile Management
+ecms_web_core_api.transactionpro.access : http://CORE-SERVICE/transpro/access
+ecms_web_core_api.transactionpro.list : http://CORE-SERVICE/transpro/list
+ecms_web_core_api.transactionpro.dropdown : http://CORE-SERVICE/transpro/dropdown
+ecms_web_core_api.transactionpro.dualauthlist : http://CORE-SERVICE/transpro/dualauthlist
+ecms_web_core_api.transactionpro.history : http://CORE-SERVICE/transpro/history
+ecms_web_core_api.transactionpro.add : http://CORE-SERVICE/transpro/add
+ecms_web_core_api.transactionpro.edit : http://CORE-SERVICE/transpro/edit
+ecms_web_core_api.transactionpro.delete : http://CORE-SERVICE/transpro/delete
+ecms_web_core_api.transactionpro.confirm : http://CORE-SERVICE/transpro/confirm
+ecms_web_core_api.transactionpro.reject : http://CORE-SERVICE/transpro/reject
+
 
 #Limit COnfirmation approve
 ecms_web_core_api.limitconfirmationapprove.list : http://CORE-SERVICE/limitconfirmationapprove/list
