@@ -23,14 +23,14 @@ spring:
       max-lifetime: 180000
       poolName: ecms-product-main-pool
     backend:
-        jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.85:50170:cmsbkdb}
+        jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
         username: ${BACKEND_USERNAME:CMSPRODUCTBACKEND}
         password: ${BACKEND_PASSWORD:password}
         driverClassName: oracle.jdbc.driver.OracleDriver
         test-on-borrow: true
         validationQuery: SELECT 1 FROM DUAL
     online:
-        jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.85:50170:cmsbkdb}
+        jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
         username: ${BACKEND_USERNAME:CMSPRODUCTONLINE}
         password: ${BACKEND_PASSWORD:password}
         driverClassName: oracle.jdbc.driver.OracleDriver
@@ -49,8 +49,8 @@ springdoc:
     operationsSorter: method
 
 #Report module DB Connections 
-ecms_issuing_report_backend_connection_url : CMSPRODUCTBACKEND/password@//124.43.16.85:50170/cmsbkdb
-ecms_issuing_report_online_connection_url : CMSPRODUCTONLINE/password@//124.43.16.85:50170/cmsbkdb
+ecms_issuing_report_backend_connection_url : CMSPRODUCTBACKEND/password@//124.43.16.185:50170/cmsbkdb
+ecms_issuing_report_online_connection_url : CMSPRODUCTONLINE/password@//124.43.16.185:50170/cmsbkdb
 
 
 
