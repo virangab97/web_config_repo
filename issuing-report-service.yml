@@ -97,3 +97,36 @@ report_gen_api.only.visaauth : http://192.168.1.150:5000/ecms_report_core_api/NP
 
 # 31 card.payment summary report
 report_gen_api.card.paymentsummary : http://192.168.1.150:5000/ecms_report_core_api/CardPaymentSummary
+
+# 32 cash advances summary report
+report_gen_api.cash.advancessummary : http://localhost:5000/ecms_report_core_api/CashAdvanceSummary
+
+# 33 foreign currency circulation report
+report_gen_api.foreign.currencycirculation : http://localhost:5000/ecms_report_core_api/ForeignCurrencyCirculation
+
+# 34 key statqoc report
+report_gen_api.key.statqoc : http://localhost:5000/ecms_report_core_api/CardPaymentSummary
+
+# 35 cashback redemption report
+report_gen_api.cashback.redemption : http://localhost:5000/ecms_report_core_api/CashBackRedemptionReport
+
+# 36 transaction details report
+report_gen_api.transaction.details : http://localhost:5000/ecms_report_core_api/TransactionDetailsReport
+
+# 37 userrole privileges report
+report_gen_api.userrole.privileges : http://localhost:5000/ecms_report_core_api/UserRolePrivilegesReport
+
+# 38 cashback redemption summary report
+report_gen_api.cashback.redemptionsummary : http://localhost:5000/ecms_report_core_api/CashBackRedemptionSummaryReport
+
+# 39 exception report
+report_gen_api.exception : http://localhost:5000/ecms_report_core_api/ExceptionReport
+
+# 40 electronic cardt ransactions report
+report_gen_api.electronic.cardtransactions : http://localhost:5000/ecms_report_core_api/electronic_cardtransactions
+
+# 41 system user status report
+report_gen_api.system.userstatus : http://localhost:6000/ecms_report_core_api/SystemUserStatusReport
+
+# 42 daily posted transaction summary report
+report_gen_api.dailyposted.transactionsummary : http://localhost:5000/ecms_report_core_api/daily
