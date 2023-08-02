@@ -335,12 +335,12 @@ ecms_web_core_api.eodprocessflow.viewbycategoryandstepid : http://CORE-SERVICE/e
 # ------------------ Report Management ---------------------------#
 
 # Report location dir
-ecms_web_issuing_report_file.directory.excel : /app/CMS/
-ecms_web_issuing_report_file.directory.pdf : /app/CMS/
+ecms_web_issuing_report_file.directory.excel : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
+ecms_web_issuing_report_file.directory.pdf : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
 
 # Delete Report from dir
-ecms_web_issuing_report_api.delete_report.excel : http://ISSUING-REPORT-SERVICE/delete_report/excel
-ecms_web_issuing_report_api.delete_report.pdf : http://ISSUING-REPORT-SERVICE/delete_report/pdf
+ecms_web_issuing_report_api.delete_report.excel : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
+ecms_web_issuing_report_api.delete_report.pdf : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
 
 # Installment Detail Report
 ecms_web_issuing_report_api.installment.detail.access : http://ISSUING-REPORT-SERVICE/installment_detail/access
@@ -541,7 +541,95 @@ ecms_web_issuing_report_api.only.visaauth.list : http://ISSUING-REPORT-SERVICE/o
 ecms_web_issuing_report_api.only.visaauth.excel : http://ISSUING-REPORT-SERVICE/only_visaauth/excel
 ecms_web_issuing_report_api.only.visaauth.pdf : http://ISSUING-REPORT-SERVICE/only_visaauth/pdf
 
+# account outstanding report
+ecms_web_issuing_report_api.account.outstanding.access : http://ISSUING-REPORT-SERVICE/account_outstanding/access
+ecms_web_issuing_report_api.account.outstanding.list : http://ISSUING-REPORT-SERVICE/account_outstanding/list
+ecms_web_issuing_report_api.account.outstanding.excel : http://ISSUING-REPORT-SERVICE/account_outstanding/excel
+ecms_web_issuing_report_api.account.outstanding.pdf : http://ISSUING-REPORT-SERVICE/account_outstanding/pdf
 
+# opstat qoc  report
+ecms_web_issuing_report_api.opstat.qoc.access : http://ISSUING-REPORT-SERVICE/opstat_qoc/access
+ecms_web_issuing_report_api.opstat.qoc.list : http://ISSUING-REPORT-SERVICE/opstat_qoc/list
+ecms_web_issuing_report_api.opstat.qoc.excel : http://ISSUING-REPORT-SERVICE/opstat_qoc/excel
+ecms_web_issuing_report_api.opstat.qoc.pdf : http://ISSUING-REPORT-SERVICE/opstat_qoc/pdf
+
+# keystatopstat parta report
+ecms_web_issuing_report_api.keystat.opsstatparta.access : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/access
+ecms_web_issuing_report_api.keystat.opsstatparta.list : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/list
+ecms_web_issuing_report_api.keystat.opsstatparta.excel : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/excel
+ecms_web_issuing_report_api.keystat.opsstatparta.pdf : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/pdf
+
+# limit modification report
+ecms_web_issuing_report_api.limit.modification.access : http://ISSUING-REPORT-SERVICE/limit_modification/access
+ecms_web_issuing_report_api.limit.modification.list : http://ISSUING-REPORT-SERVICE/limit_modification/list
+ecms_web_issuing_report_api.limit.modification.excel : http://ISSUING-REPORT-SERVICE/limit_modification/excel
+ecms_web_issuing_report_api.limit.modification.pdf : http://ISSUING-REPORT-SERVICE/limit_modification/pdf
+
+# loyalty redemption report
+ecms_web_issuing_report_api.loyalty.redemption.access : http://ISSUING-REPORT-SERVICE/loyalty_redemption/access
+ecms_web_issuing_report_api.loyalty.redemption.list : http://ISSUING-REPORT-SERVICE/loyalty_redemption/list
+ecms_web_issuing_report_api.loyalty.redemption.excel : http://ISSUING-REPORT-SERVICE/loyalty_redemption/excel
+ecms_web_issuing_report_api.loyalty.redemption.pdf : http://ISSUING-REPORT-SERVICE/loyalty_redemption/pdf
+
+# interest adjustment report
+ecms_web_issuing_report_api.interest.adjustment.access : http://ISSUING-REPORT-SERVICE/interest_adjustment/access
+ecms_web_issuing_report_api.interest.adjustment.list : http://ISSUING-REPORT-SERVICE/interest_adjustment/list
+ecms_web_issuing_report_api.interest.adjustment.excel : http://ISSUING-REPORT-SERVICE/interest_adjustment/excel
+ecms_web_issuing_report_api.interest.adjustment.pdf : http://ISSUING-REPORT-SERVICE/interest_adjustment/pdf
+
+# call histry report
+ecms_web_issuing_report_api.call.history.access : http://ISSUING-REPORT-SERVICE/call_history/access
+ecms_web_issuing_report_api.call.history.list : http://ISSUING-REPORT-SERVICE/call_history/list
+ecms_web_issuing_report_api.call.history.excel : http://ISSUING-REPORT-SERVICE/call_history/excel
+ecms_web_issuing_report_api.call.history.pdf : http://ISSUING-REPORT-SERVICE/call_history/pdf
+
+# user modification report
+ecms_web_issuing_report_api.user.modification.access : http://ISSUING-REPORT-SERVICE/user_modification/access
+ecms_web_issuing_report_api.user.modification.list : http://ISSUING-REPORT-SERVICE/user_modification/list
+ecms_web_issuing_report_api.user.modification.excel : http://ISSUING-REPORT-SERVICE/user_modification/excel
+ecms_web_issuing_report_api.user.modification.pdf : http://ISSUING-REPORT-SERVICE/user_modification/pdf
+
+# posted sys gen txn report
+ecms_web_issuing_report_api.posted.sysgentxnsummary.access : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/access
+ecms_web_issuing_report_api.posted.sysgentxnsummary.list : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/list
+ecms_web_issuing_report_api.posted.sysgentxnsummary.excel : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/excel
+ecms_web_issuing_report_api.posted.sysgentxnsummary.pdf : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/pdf
+
+# usage summary report
+ecms_web_issuing_report_api.usage.summary.access : http://ISSUING-REPORT-SERVICE/usage_summary/access
+ecms_web_issuing_report_api.usage.summary.list : http://ISSUING-REPORT-SERVICE/usage_summary/list
+ecms_web_issuing_report_api.usage.summary.excel : http://ISSUING-REPORT-SERVICE/usage_summary/excel
+ecms_web_issuing_report_api.usage.summary.pdf : http://ISSUING-REPORT-SERVICE/usage_summary/pdf
+
+# daily posted txn report
+ecms_web_issuing_report_api.daily.postedtransaction.access : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/access
+ecms_web_issuing_report_api.daily.postedtransaction.list : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/list
+ecms_web_issuing_report_api.daily.postedtransaction.excel : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/excel
+ecms_web_issuing_report_api.daily.postedtransaction.pdf : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/pdf
+
+# transaction drop report
+ecms_web_issuing_report_api.transaction.drop.access : http://ISSUING-REPORT-SERVICE/transaction_drop/access
+ecms_web_issuing_report_api.transaction.drop.list : http://ISSUING-REPORT-SERVICE/transaction_drop/list
+ecms_web_issuing_report_api.transaction.drop.excel : http://ISSUING-REPORT-SERVICE/transaction_drop/excel
+ecms_web_issuing_report_api.transaction.drop.pdf : http://ISSUING-REPORT-SERVICE/transaction_drop/pdf
+
+# system audit report
+ecms_web_issuing_report_api.system.auditreport.access : http://ISSUING-REPORT-SERVICE/system_auditreport/access
+ecms_web_issuing_report_api.system.auditreport.list : http://ISSUING-REPORT-SERVICE/system_auditreport/list
+ecms_web_issuing_report_api.system.auditreport.excel : http://ISSUING-REPORT-SERVICE/system_auditreport/excel
+ecms_web_issuing_report_api.system.auditreport.pdf : http://ISSUING-REPORT-SERVICE/system_auditreport/pdf
+
+# password reset report
+ecms_web_issuing_report_api.password.reset.access : http://ISSUING-REPORT-SERVICE/password_reset/access
+ecms_web_issuing_report_api.password.reset.list : http://ISSUING-REPORT-SERVICE/password_reset/list
+ecms_web_issuing_report_api.password.reset.excel : http://ISSUING-REPORT-SERVICE/password_reset/excel
+ecms_web_issuing_report_api.password.reset.pdf : http://ISSUING-REPORT-SERVICE/password_reset/pdf
+
+# internal user creation report
+ecms_web_issuing_report_api.internal.usercreation.access : http://ISSUING-REPORT-SERVICE/internal_usercreation/access
+ecms_web_issuing_report_api.internal.usercreation.list : http://ISSUING-REPORT-SERVICE/internal_usercreation/list
+ecms_web_issuing_report_api.internal.usercreation.excel : http://ISSUING-REPORT-SERVICE/internal_usercreation/excel
+ecms_web_issuing_report_api.internal.usercreation.pdf : http://ISSUING-REPORT-SERVICE/internal_usercreation/pdf
 
 # ------------------ General Ledger Management ---------------------------#
 
