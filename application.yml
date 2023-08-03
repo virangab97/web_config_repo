@@ -17,11 +17,10 @@ spring:
       max-file-size: 20MB
   datasource:
     hikari:
-      minimumIdle: 4
-      maximumPoolSize: 20
+      maximumPoolSize: 50
       idleTimeout: 300000 # maximum idle time for connection
-      maxLifetime: 420000 # maximum lifetime in milliseconds of a connection in the pool after it is closed
-      connectionTimeout: 8000 # maximum number of milliseconds that a client will wait for a connection
+      connectionTimeout: 300000 # maximum number of milliseconds that a client will wait for a connection
+      max-lifetime: 180000
       poolName: ecms-product-main-pool
     backend:
         jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}

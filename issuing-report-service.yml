@@ -6,49 +6,95 @@ ecms_web_issuing_report_file.directory.pdf : GeneratedReports/
 # Report_Generator
 
 # 1 Installment Detail Report
-report_gen_api.installment.detail : http://192.168.1.156:5000/ecms_report_core_api/installmentdetailsreport
+report_gen_api.installment.detail : http://192.168.1.150:5000/ecms_report_core_api/installmentdetailsreport
 
 # 2 application confirmation Report
-report_gen_api.application.confirmation : http://192.168.1.156:5000/ecms_report_core_api/application_confirmation_report
+report_gen_api.application.confirmation : http://192.168.1.150:5000/ecms_report_core_api/application_confirmation_report
 
 # 3 application data entry Report
-report_gen_api.application.dataentry : http://192.168.1.156:5000/ecms_report_core_api/ApplicationDataEntry
+report_gen_api.application.dataentry : http://192.168.1.150:5000/ecms_report_core_api/ApplicationDataEntry
 
 # 4 application rejection Report
-report_gen_api.application.reject : http://192.168.1.156:5000/ecms_report_core_api/ApplicationRejection
+report_gen_api.application.reject : http://192.168.1.150:5000/ecms_report_core_api/ApplicationRejection
 
 # 5 application summary Report
-report_gen_api.application.summary : http://192.168.1.156:5000/ecms_report_core_api/ApplicationSummaryReport
+report_gen_api.application.summary : http://192.168.1.150:5000/ecms_report_core_api/ApplicationSummaryReport
 
 # 6 card application Report
-report_gen_api.card.application : http://192.168.1.156:5000/ecms_report_core_api/CardApplication
+report_gen_api.card.application : http://192.168.1.150:5000/ecms_report_core_api/CardApplication
 
 # 7 application credit score Report
-report_gen_api.application.creditscore : http://192.168.1.156:5000/ecms_report_core_api/ApplicationCreditScoreReport
+report_gen_api.application.creditscore : http://192.168.1.150:5000/ecms_report_core_api/ApplicationCreditScoreReport
 
 # 8 activated not used card Report
-report_gen_api.act.notused : http://192.168.1.156:5000/ecms_report_core_api/activatedNotUsedCard
+report_gen_api.act.notused : http://192.168.1.150:5000/ecms_report_core_api/activatedNotUsedCard
 
 # 9 card activation Report
-report_gen_api.card.activation : http://192.168.1.156:5000/ecms_report_core_api/cardActivationReport
+report_gen_api.card.activation : http://192.168.1.150:5000/ecms_report_core_api/cardActivationReport
 
 # 10 card distribution Report
-report_gen_api.card.distribution : http://192.168.1.156:5000/ecms_report_core_api/card_distribution_report
+report_gen_api.card.distribution : http://192.168.1.150:5000/ecms_report_core_api/card_distribution_report
 
 # 11 card in circulation Report
-report_gen_api.card.circulation : http://192.168.1.156:5000/ecms_report_core_api/cardincirculationreport
+report_gen_api.card.circulation : http://192.168.1.150:5000/ecms_report_core_api/cardincirculationreport
 
 # 12 card number generation Report
-report_gen_api.card.generation : http://192.168.1.156:5000/ecms_report_core_api/cardnumbergenerationreport
+report_gen_api.card.generation : http://192.168.1.150:5000/ecms_report_core_api/cardnumbergenerationreport
 
 # 13 daily transaction detail report
-report_gen_api.daily.transactiondetail : http://192.168.1.156:5000/ecms_report_core_api/dailyTransactionDetailReport
+report_gen_api.daily.transactiondetail : http://192.168.1.150:5000/ecms_report_core_api/dailyTransactionDetailReport
 
 # 14 embossing and encoding report
-report_gen_api.embossing.encoding : http://192.168.1.156:5000/ecms_report_core_api/EmbossingandEncodingReport
+report_gen_api.embossing.encoding : http://192.168.1.150:5000/ecms_report_core_api/EmbossingandEncodingReport
 
 # 15 pin generation and mailing report
-report_gen_api.pingeneration.mailing : http://192.168.1.156:5000/ecms_report_core_api/PinGenerationAndMailingReport
+report_gen_api.pingeneration.mailing : http://192.168.1.150:5000/ecms_report_core_api/PinGenerationAndMailingReport
 
 # 16 card status report
-report_gen_api.card.status : http://192.168.1.156:5000/ecms_report_core_api/cardstatusreport
+report_gen_api.card.status : http://192.168.1.150:5000/ecms_report_core_api/cardstatusreport
+
+# 17 card annual fee report
+report_gen_api.card.annualfee : http://192.168.1.150:5000/ecms_report_core_api/CardAnnualFeeReport
+
+# 18 aggrigate limits report
+report_gen_api.aggrigate.limits : http://192.168.1.150:5000/ecms_report_core_api/AggrigateLimitsReport
+
+# 19 new card generated report
+report_gen_api.new.cardgenerated : http://192.168.1.150:5000/ecms_report_core_api/NewCardGeneratedReport
+
+# 20 card history report
+report_gen_api.card.history : http://192.168.1.150:5000/ecms_report_core_api/CardHistoryReport
+
+# 21 card history report
+report_gen_api.user.login : http://192.168.1.150:5000/ecms_report_core_api/UserLoginReport
+
+# 22 excess card report
+report_gen_api.excess.card : http://192.168.1.150:5000/ecms_report_core_api/ExcessCardReport
+
+# 23 card outstanding report
+report_gen_api.card.outstanding : http://192.168.1.150:5000/ecms_report_core_api/CardOutstanding
+
+# 24 daily maintenance report
+report_gen_api.daily.maintainance : http://192.168.1.150:5000/ecms_report_core_api/DailyMaintenance
+
+# 25 cash back reconciliation report
+report_gen_api.cashback.reconciliation : http://192.168.1.150:5000/ecms_report_core_api/CashBackReconciliationReport
+
+# 26 government stamp duty report
+report_gen_api.government.stampduty : http://192.168.1.150:5000/ecms_report_core_api/GovernmentStampDuty
+
+# 27 cash back summary report
+report_gen_api.cashback.summary : http://192.168.1.150:5000/ecms_report_core_api/CashBackSummary
+
+# 28 np listening report
+report_gen_api.np.listening : http://192.168.1.150:5000/ecms_report_core_api/NPListeningReport
+
+# 29 summary npl report
+report_gen_api.summary.npl : http://192.168.1.150:5000/ecms_report_core_api/NPListeningSummaryReport
+
+# 30 only visa auth report
+report_gen_api.only.visaauth : http://192.168.1.150:5000/ecms_report_core_api/NPListeningSummaryReport
+
+# 31 card.payment summary report
+report_gen_api.card.paymentsummary : http://192.168.1.150:5000/ecms_report_core_api/CardPaymentSummary
+
