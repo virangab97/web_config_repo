@@ -1367,29 +1367,29 @@ ecms_web_call_center_api.callcentersearch.applicationlist : http://CALL-CENTER-S
 
 
 #Update Credit Application Capturing
-ecms_web_core_api.app_capture_upd.access : http://CORE-SERVICE/app_capture_upd/access
-ecms_web_core_api.app_capture_upd.list : http://CORE-SERVICE/app_capture_upd/list
-ecms_web_core_api.app_capture_upd.data : http://CORE-SERVICE/app_capture_upd/data
-ecms_web_core_api.app_capture_upd.updpersonaldetails : http://CORE-SERVICE/app_capture_upd/updpersonaldetails
-ecms_web_core_api.app_capture_upd.updemployeedetails : http://CORE-SERVICE/app_capture_upd/updemployeedetails
-ecms_web_core_api.app_capture_upd.updbankdetails : http://CORE-SERVICE/app_capture_upd/updbankdetails
-ecms_web_core_api.app_capture_upd.updincomedetails : http://CORE-SERVICE/app_capture_upd/updincomedetails
-ecms_web_core_api.app_capture_upd.upddocumentdetails : http://CORE-SERVICE/app_capture_upd/upddocumentdetails
-ecms_web_core_api.app_capture_upd.updotherdetails : http://CORE-SERVICE/app_capture_upd/updotherdetails
-ecms_web_core_api.app_capture_upd.customerdetails : http://CORE-SERVICE/app_capture_upd/customerdetails
-ecms_web_core_api.app_capture_upd.mandatorydocs : http://CORE-SERVICE/app_capture_upd/mandatorydocs
-ecms_web_core_api.app_capture_upd.verificationcategory : http://CORE-SERVICE/app_capture_upd/verificationcategory
-ecms_web_core_api.app_capture_upd.bankBranch : http://CORE-SERVICE/app_capture_upd/bankBranch
-ecms_web_core_api.app_capture_upd.idTypes : http://CORE-SERVICE/app_capture_upd/idTypes
-ecms_web_core_api.app_capture_upd.upduploadfile : http://CORE-SERVICE/app_capture_upd/upduploadfile
-ecms_web_core_api.app_capture_upd.img_signature : http://CORE-SERVICE/app_capture_upd/img_signature
-ecms_web_core_api.app_capture_upd.cardTypes : http://CORE-SERVICE/app_capture_upd/cardTypes
-ecms_web_core_api.app_capture_upd.cardProducts : http://CORE-SERVICE/app_capture_upd/cardProducts
-ecms_web_core_api.app_capture_upd.bankList : http://CORE-SERVICE/app_capture_upd/bankList
-ecms_web_core_api.app_capture_upd.deleteDocument : http://CORE-SERVICE/app_capture_upd/deleteDocument
-ecms_web_core_api.app_capture_upd.completeDocuments : http://CORE-SERVICE/app_capture_upd/completeDocuments
-ecms_web_core_api.app_capture_upd.updcomplete : http://CORE-SERVICE/app_capture_upd/updcomplete
-ecms_web_core_api.app_capture_upd.history : http://CORE-SERVICE/app_capture_upd/history
+#ecms_web_core_api.app_capture_upd.access : http://CORE-SERVICE/app_capture_upd/access
+#ecms_web_core_api.app_capture_upd.list : http://CORE-SERVICE/app_capture_upd/list
+#ecms_web_core_api.app_capture_upd.data : http://CORE-SERVICE/app_capture_upd/data
+#ecms_web_core_api.app_capture_upd.updpersonaldetails : http://CORE-SERVICE/app_capture_upd/updpersonaldetails
+#ecms_web_core_api.app_capture_upd.updemployeedetails : http://CORE-SERVICE/app_capture_upd/updemployeedetails
+#ecms_web_core_api.app_capture_upd.updbankdetails : http://CORE-SERVICE/app_capture_upd/updbankdetails
+#ecms_web_core_api.app_capture_upd.updincomedetails : http://CORE-SERVICE/app_capture_upd/updincomedetails
+#ecms_web_core_api.app_capture_upd.upddocumentdetails : http://CORE-SERVICE/app_capture_upd/upddocumentdetails
+#ecms_web_core_api.app_capture_upd.updotherdetails : http://CORE-SERVICE/app_capture_upd/updotherdetails
+#ecms_web_core_api.app_capture_upd.customerdetails : http://CORE-SERVICE/app_capture_upd/customerdetails
+#ecms_web_core_api.app_capture_upd.mandatorydocs : http://CORE-SERVICE/app_capture_upd/mandatorydocs
+#ecms_web_core_api.app_capture_upd.verificationcategory : http://CORE-SERVICE/app_capture_upd/verificationcategory
+#ecms_web_core_api.app_capture_upd.bankBranch : http://CORE-SERVICE/app_capture_upd/bankBranch
+#ecms_web_core_api.app_capture_upd.idTypes : http://CORE-SERVICE/app_capture_upd/idTypes
+#ecms_web_core_api.app_capture_upd.upduploadfile : http://CORE-SERVICE/app_capture_upd/upduploadfile
+#ecms_web_core_api.app_capture_upd.img_signature : http://CORE-SERVICE/app_capture_upd/img_signature
+#ecms_web_core_api.app_capture_upd.cardTypes : http://CORE-SERVICE/app_capture_upd/cardTypes
+#ecms_web_core_api.app_capture_upd.cardProducts : http://CORE-SERVICE/app_capture_upd/cardProducts
+#ecms_web_core_api.app_capture_upd.bankList : http://CORE-SERVICE/app_capture_upd/bankList
+#ecms_web_core_api.app_capture_upd.deleteDocument : http://CORE-SERVICE/app_capture_upd/deleteDocument
+#ecms_web_core_api.app_capture_upd.completeDocuments : http://CORE-SERVICE/app_capture_upd/completeDocuments
+#ecms_web_core_api.app_capture_upd.updcomplete : http://CORE-SERVICE/app_capture_upd/updcomplete
+#ecms_web_core_api.app_capture_upd.history : http://CORE-SERVICE/app_capture_upd/history
 
 #Credit Application Checking
 ecms_web_core_api.app_checking.access : http://CORE-SERVICE/app_checking/access
