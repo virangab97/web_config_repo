@@ -1,0 +1,34 @@
+# Report location dir
+ecms_web_common_report_file.directory.excel : GeneratedReports/
+ecms_web_common_report_file.directory.pdf : GeneratedReports/
+ecms_web_common_report_file.directory.txt : GeneratedReports/
+
+
+# Report_Generator
+
+
+# --------------------- COMMON REPORT ---------------------------------------------
+
+
+# 01 user login report
+report_gen_api.user.login : http://192.168.1.150:6000/ecms_report_core_api/UserLoginReport
+
+# 02 user modification report
+report_gen_api.user.modification : http://192.168.1.150:6000/ecms_report_core_api/UserModificationReport
+
+# 03 userrole privileges report
+report_gen_api.userrole.privileges : http://192.168.1.150:6000/ecms_report_core_api/UserRolePrivilegesReport
+
+# 04 password reset report
+report_gen_api.password.reset : http://192.168.1.150:6000/ecms_report_core_api/PasswordResetReport
+
+# 05 internal user creation report
+report_gen_api.internal.usercreation : http://192.168.1.150:6000/ecms_report_core_api/InternalUserCreationReport
+
+# 06 system user status report
+report_gen_api.system.userstatus : http://192.168.1.150:6000/ecms_report_core_api/SystemUserStatusReport
+
+# 07 system audit report
+report_gen_api.system.auditreport : http://192.168.1.150:6000/ecms_report_core_api/SystemAduitReport
+
+
