@@ -213,6 +213,10 @@ ecms_web_core_api.feepro.edit : http://CORE-SERVICE/feepro/edit
 ecms_web_core_api.feepro.delete : http://CORE-SERVICE/feepro/delete
 ecms_web_core_api.feepro.confirm : http://CORE-SERVICE/feepro/confirm
 ecms_web_core_api.feepro.reject : http://CORE-SERVICE/feepro/reject
+ecms_web_core_api.feepro.txnlist : http://CORE-SERVICE/feepro/txnlist
+ecms_web_core_api.feepro.servicelist : http://CORE-SERVICE/feepro/servicelist
+ecms_web_core_api.feepro.getdeletesevicedrop : http://CORE-SERVICE/feepro/getdeletesevicedrop
+ecms_web_core_api.feepro.getdeletetxndrop : http://CORE-SERVICE/feepro/getdeletetxndrop
 
 # Promofee Management
 ecms_web_core_api.promofee.access : http://CORE-SERVICE/promofee/access
@@ -240,9 +244,12 @@ ecms_web_core_api.cashback.reject : http://CORE-SERVICE/cashback/reject
 ecms_web_core_api.risk.access : http://CORE-SERVICE/risk/access
 ecms_web_core_api.risk.list : http://CORE-SERVICE/risk/list
 ecms_web_core_api.risk.dropdown : http://CORE-SERVICE/risk/dropdown
+ecms_web_core_api.risk.profile : http://CORE-SERVICE/risk/profile
 ecms_web_core_api.risk.dualauthlist : http://CORE-SERVICE/risk/dualauthlist
 ecms_web_core_api.risk.history : http://CORE-SERVICE/risk/history
 ecms_web_core_api.risk.add : http://CORE-SERVICE/risk/add
+ecms_web_core_api.risk.data : http://CORE-SERVICE/risk/data
+ecms_web_core_api.risk.duplicate : http://CORE-SERVICE/risk/duplicate
 ecms_web_core_api.risk.edit : http://CORE-SERVICE/risk/edit
 ecms_web_core_api.risk.delete : http://CORE-SERVICE/risk/delete
 ecms_web_core_api.risk.confirm : http://CORE-SERVICE/risk/confirm
@@ -275,8 +282,7 @@ ecms_web_core_api.generalledger.reject : http://CORE-SERVICE/generalledger/rejec
 
 
 
-ecms_web_core_api.risk.data : http://CORE-SERVICE/risk/data
-ecms_web_core_api.risk.duplicate : http://CORE-SERVICE/risk/duplicate
+
 
 # ------------------ EOD Management ---------------------------#
 
@@ -335,16 +341,19 @@ ecms_web_core_api.eodprocessflow.viewbycategoryandstepid : http://CORE-SERVICE/e
 # ------------------ Report Management ---------------------------#
 
 # Report location dir
-ecms_web_issuing_report_file.directory.excel : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
-ecms_web_issuing_report_file.directory.pdf : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
+ecms_web_issuing_report_file.directory.excel : home/epic/Report-Module/Generated-Report/
+ecms_web_issuing_report_file.directory.pdf : home/epic/Report-Module/Generated-Report/
+ecms_web_issuing_report_file.directory.txt : home/epic/Report-Module/Generated-Report/
 
 # Delete Report from dir
-ecms_web_issuing_report_api.delete_report.excel : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
-ecms_web_issuing_report_api.delete_report.pdf : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
+ecms_web_issuing_report_api.delete_report.excel : http://issuing-report-service/delete_report/excel
+ecms_web_issuing_report_api.delete_report.pdf : http://issuing-report-service/delete_report/pdf
+ecms_web_issuing_report_api.delete_report.txt : http://issuing-report-service/delete_report/txt
 
 # Installment Detail Report
 ecms_web_issuing_report_api.installment.detail.access : http://ISSUING-REPORT-SERVICE/installment_detail/access
 ecms_web_issuing_report_api.installment.detail.list : http://ISSUING-REPORT-SERVICE/installment_detail/list
+ecms_web_issuing_report_api.installment.detail.loadpaymentplan : http://ISSUING-REPORT-SERVICE/installment_detail/loadpaymentplan
 ecms_web_issuing_report_api.installment.detail.excel: http://ISSUING-REPORT-SERVICE/installment_detail/excel
 ecms_web_issuing_report_api.installment.detail.pdf: http://ISSUING-REPORT-SERVICE/installment_detail/pdf
 
@@ -394,6 +403,7 @@ ecms_web_issuing_report_api.application.creditscore.pdf: http://ISSUING-REPORT-S
 
 # activated not used card Report
 ecms_web_issuing_report_api.act.notused.access : http://ISSUING-REPORT-SERVICE/act_notused/access
+ecms_web_issuing_report_api.act.notused.loadcardproducts : http://ISSUING-REPORT-SERVICE/act_notused/loadcardproducts
 ecms_web_issuing_report_api.act.notused.list : http://ISSUING-REPORT-SERVICE/act_notused/list
 ecms_web_issuing_report_api.act.notused.excel: http://ISSUING-REPORT-SERVICE/act_notused/excel
 ecms_web_issuing_report_api.act.notused.pdf: http://ISSUING-REPORT-SERVICE/act_notused/pdf
@@ -401,6 +411,7 @@ ecms_web_issuing_report_api.act.notused.pdf: http://ISSUING-REPORT-SERVICE/act_n
 
 # card activation Report
 ecms_web_issuing_report_api.card.activation.access : http://ISSUING-REPORT-SERVICE/card_activation/access
+ecms_web_issuing_report_api.card.activation.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_activation/loadcardproducts
 ecms_web_issuing_report_api.card.activation.list : http://ISSUING-REPORT-SERVICE/card_activation/list
 ecms_web_issuing_report_api.card.activation.excel: http://ISSUING-REPORT-SERVICE/card_activation/excel
 ecms_web_issuing_report_api.card.activation.pdf: http://ISSUING-REPORT-SERVICE/card_activation/pdf
@@ -408,6 +419,7 @@ ecms_web_issuing_report_api.card.activation.pdf: http://ISSUING-REPORT-SERVICE/c
 
 # card distribution Report
 ecms_web_issuing_report_api.card.distribution.access : http://ISSUING-REPORT-SERVICE/card_distribution/access
+ecms_web_issuing_report_api.card.distribution.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_distribution/loadcardproducts
 ecms_web_issuing_report_api.card.distribution.list : http://ISSUING-REPORT-SERVICE/card_distribution/list
 ecms_web_issuing_report_api.card.distribution.excel: http://ISSUING-REPORT-SERVICE/card_distribution/excel
 ecms_web_issuing_report_api.card.distribution.pdf: http://ISSUING-REPORT-SERVICE/card_distribution/pdf
@@ -422,10 +434,77 @@ ecms_web_issuing_report_api.card.circulation.pdf: http://ISSUING-REPORT-SERVICE/
 
 # card number generation Report
 ecms_web_issuing_report_api.card.generation.access : http://ISSUING-REPORT-SERVICE/card_generation/access
+ecms_web_issuing_report_api.card.generation.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_generation/loadcardproducts
 ecms_web_issuing_report_api.card.generation.list : http://ISSUING-REPORT-SERVICE/card_generation/list
 ecms_web_issuing_report_api.card.generation.excel: http://ISSUING-REPORT-SERVICE/card_generation/excel
 ecms_web_issuing_report_api.card.generation.pdf: http://ISSUING-REPORT-SERVICE/card_generation/pdf
 
+
+# keystat qoc  report
+ecms_web_issuing_report_api.key.statqoc.access : http://ISSUING-REPORT-SERVICE/key_statqoc/access
+ecms_web_issuing_report_api.key.statqoc.list : http://ISSUING-REPORT-SERVICE/key_statqoc/list
+ecms_web_issuing_report_api.key.statqoc.excel : http://ISSUING-REPORT-SERVICE/key_statqoc/excel
+ecms_web_issuing_report_api.key.statqoc.pdf : http://ISSUING-REPORT-SERVICE/key_statqoc/pdf
+
+
+# cash advances summary report
+ecms_web_issuing_report_api.cash.advancessummary.access : http://ISSUING-REPORT-SERVICE/cash_advancessummary/access
+ecms_web_issuing_report_api.cash.advancessummary.list   : http://ISSUING-REPORT-SERVICE/cash_advancessummary/list
+ecms_web_issuing_report_api.cash.advancessummary.excel : http://ISSUING-REPORT-SERVICE/cash_advancessummary/excel
+ecms_web_issuing_report_api.cash.advancessummary.pdf : http://ISSUING-REPORT-SERVICE/cash_advancessummary/pdf
+
+# foreign currency circulation report
+ecms_web_issuing_report_api.foreign_currency_circulation.access : http://ISSUING-REPORT-SERVICE/foreign_currencycirculation/access
+ecms_web_issuing_report_api.foreign_currency_circulation.list : http://ISSUING-REPORT-SERVICE/foreign_currencycirculation/list
+ecms_web_issuing_report_api.foreign_currency_circulation.excel : http://ISSUING-REPORT-SERVICE/foreign_currencycirculation/excel
+ecms_web_issuing_report_api.foreign_currency_circulation.pdf : http://ISSUING-REPORT-SERVICE/foreign_currencycirculation/pdf
+
+# cashback redemption report
+ecms_web_issuing_report_api.cashback.redemption.access : http://ISSUING-REPORT-SERVICE/cashback_redemption/access
+ecms_web_issuing_report_api.cashback.redemption.list : http://ISSUING-REPORT-SERVICE/cashback_redemption/list
+ecms_web_issuing_report_api.cashback.redemption.excel : http://ISSUING-REPORT-SERVICE/cashback_redemption/excel
+ecms_web_issuing_report_api.cashback.redemption.pdf : http://ISSUING-REPORT-SERVICE/cashback_redemption/pdf
+
+# transaction details report
+ecms_web_issuing_report_api.transaction.details.access : http://ISSUING-REPORT-SERVICE/transaction_details/access
+ecms_web_issuing_report_api.transaction.details.list : http://ISSUING-REPORT-SERVICE/transaction_details/list
+ecms_web_issuing_report_api.transaction.details.excel : http://ISSUING-REPORT-SERVICE/transaction_details/excel
+ecms_web_issuing_report_api.transaction.details.pdf : http://ISSUING-REPORT-SERVICE/transaction_details/pdf
+
+# # cashback redemption summary report
+ecms_web_issuing_report_api.cashback.redemptionsummary.access : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/access
+ecms_web_issuing_report_api.cashback.redemptionsummary.list : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/list
+ecms_web_issuing_report_api.cashback.redemptionsummary.excel : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/excel
+ecms_web_issuing_report_api.cashback.redemptionsummary.pdf : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/pdf
+
+# exception report
+ecms_web_issuing_report_api.exception.access : http://ISSUING-REPORT-SERVICE/exception/access
+ecms_web_issuing_report_api.exception.list : http://ISSUING-REPORT-SERVICE/exception/list
+ecms_web_issuing_report_api.exception.excel : http://ISSUING-REPORT-SERVICE/exception/excel
+ecms_web_issuing_report_api.exception.pdf : http://ISSUING-REPORT-SERVICE/exception/pdf
+
+# # electronic card transactions report
+cms_web_issuing_report_api.electronic.cardtransactions.access : http://ISSUING-REPORT-SERVICE/electronic_cardtransactions/access
+ecms_web_issuing_report_api.electronic.cardtransactions.txt : http://ISSUING-REPORT-SERVICE/electronic_cardtransactions/txt
+
+
+# # DailyPostedTransactionSummary report
+ecms_web_issuing_report_api.dailyposted.transactionsummary.access : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/access
+ecms_web_issuing_report_api.dailyposted.transactionsummary.list : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/list
+ecms_web_issuing_report_api.dailyposted.transactionsummary.excel : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/excel
+ecms_web_issuing_report_api.dailyposted.transactionsummary.pdf : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/pdf
+
+# # EOD Transaction report
+ecms_web_issuing_report_api.eod.transaction.access : http://ISSUING-REPORT-SERVICE/eod_transaction/access
+ecms_web_issuing_report_api.eod.transaction.list : http://ISSUING-REPORT-SERVICE/eod_transaction/list
+ecms_web_issuing_report_api.eod.transaction.excel : http://ISSUING-REPORT-SERVICE/eod_transaction/excel
+ecms_web_issuing_report_api.eod.transaction.pdf : http://ISSUING-REPORT-SERVICE/eod_transaction/pdf
+
+# # BRH File report
+ecms_web_issuing_report_api.brh.file.access : http://ISSUING-REPORT-SERVICE/brh_file/access
+ecms_web_issuing_report_api.brh.file.list : http://ISSUING-REPORT-SERVICE/brh_file/list
+ecms_web_issuing_report_api.brh.file.excel : http://ISSUING-REPORT-SERVICE/brh_file/excel
+ecms_web_issuing_report_api.brh.file.pdf : http://ISSUING-REPORT-SERVICE/brh_file/pdf
 
 # daily transaction detail report
 ecms_web_issuing_report_api.daily.transactiondetail.access : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/access
@@ -435,18 +514,21 @@ ecms_web_issuing_report_api.daily.transactiondetail.pdf : http://ISSUING-REPORT-
 
 #embossing and encoding report
 ecms_web_issuing_report_api.embossing.encoding.access : http://ISSUING-REPORT-SERVICE/embossing_encoding/access
+ecms_web_issuing_report_api.embossing.encoding.loadcardproducts : http://ISSUING-REPORT-SERVICE/embossing_encoding/loadcardproducts
 ecms_web_issuing_report_api.embossing.encoding.list : http://ISSUING-REPORT-SERVICE/embossing_encoding/list
 ecms_web_issuing_report_api.embossing.encoding.excel : http://ISSUING-REPORT-SERVICE/embossing_encoding/excel
 ecms_web_issuing_report_api.embossing.encoding.pdf : http://ISSUING-REPORT-SERVICE/embossing_encoding/pdf
 
 # pin generation and mailing report
 ecms_web_issuing_report_api.pingeneration.mailing.access : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/access
+ecms_web_issuing_report_api.pingeneration.mailing.loadcardproducts : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/loadcardproducts
 ecms_web_issuing_report_api.pingeneration.mailing.list : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/list
 ecms_web_issuing_report_api.pingeneration.mailing.excel : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/excel
 ecms_web_issuing_report_api.pingeneration.mailing.pdf : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/pdf
 
 # card status report
 ecms_web_issuing_report_api.card.status.access : http://ISSUING-REPORT-SERVICE/card_status/access
+ecms_web_issuing_report_api.card.status.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_status/loadcardproducts
 ecms_web_issuing_report_api.card.status.list : http://ISSUING-REPORT-SERVICE/card_status/list
 ecms_web_issuing_report_api.card.status.excel : http://ISSUING-REPORT-SERVICE/card_status/excel
 ecms_web_issuing_report_api.card.status.pdf : http://ISSUING-REPORT-SERVICE/card_status/pdf
@@ -474,6 +556,7 @@ ecms_web_issuing_report_api.card.paymentsummary.access : http://ISSUING-REPORT-S
 ecms_web_issuing_report_api.card.paymentsummary.list : http://ISSUING-REPORT-SERVICE/card_paymentsummary/list
 ecms_web_issuing_report_api.card.paymentsummary.excel : http://ISSUING-REPORT-SERVICE/card_paymentsummary/excel
 ecms_web_issuing_report_api.card.paymentsummary.pdf : http://ISSUING-REPORT-SERVICE/card_paymentsummary/pdf
+ecms_web_issuing_report_api.card.paymentsummary.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_paymentsummary/loadcardproducts
 
 # card history report
 ecms_web_issuing_report_api.card.history.access : http://ISSUING-REPORT-SERVICE/card_history/access
@@ -481,14 +564,10 @@ ecms_web_issuing_report_api.card.history.list : http://ISSUING-REPORT-SERVICE/ca
 ecms_web_issuing_report_api.card.history.excel : http://ISSUING-REPORT-SERVICE/card_history/excel
 ecms_web_issuing_report_api.card.history.pdf : http://ISSUING-REPORT-SERVICE/card_history/pdf
 
-# user login report
-ecms_web_issuing_report_api.user.login.access : http://ISSUING-REPORT-SERVICE/user_login/access
-ecms_web_issuing_report_api.user.login.list : http://ISSUING-REPORT-SERVICE/user_login/list
-ecms_web_issuing_report_api.user.login.excel : http://ISSUING-REPORT-SERVICE/user_login/excel
-ecms_web_issuing_report_api.user.login.pdf : http://ISSUING-REPORT-SERVICE/user_login/pdf
 
 # excess card report
 ecms_web_issuing_report_api.excess.card.access : http://ISSUING-REPORT-SERVICE/excess_card/access
+ecms_web_issuing_report_api.excess.card.loadcardproducts : http://ISSUING-REPORT-SERVICE/excess_card/loadcardproducts
 ecms_web_issuing_report_api.excess.card.list : http://ISSUING-REPORT-SERVICE/excess_card/list
 ecms_web_issuing_report_api.excess.card.excel : http://ISSUING-REPORT-SERVICE/excess_card/excel
 ecms_web_issuing_report_api.excess.card.pdf : http://ISSUING-REPORT-SERVICE/excess_card/pdf
@@ -613,23 +692,54 @@ ecms_web_issuing_report_api.transaction.drop.list : http://ISSUING-REPORT-SERVIC
 ecms_web_issuing_report_api.transaction.drop.excel : http://ISSUING-REPORT-SERVICE/transaction_drop/excel
 ecms_web_issuing_report_api.transaction.drop.pdf : http://ISSUING-REPORT-SERVICE/transaction_drop/pdf
 
-# system audit report
-ecms_web_issuing_report_api.system.auditreport.access : http://ISSUING-REPORT-SERVICE/system_auditreport/access
-ecms_web_issuing_report_api.system.auditreport.list : http://ISSUING-REPORT-SERVICE/system_auditreport/list
-ecms_web_issuing_report_api.system.auditreport.excel : http://ISSUING-REPORT-SERVICE/system_auditreport/excel
-ecms_web_issuing_report_api.system.auditreport.pdf : http://ISSUING-REPORT-SERVICE/system_auditreport/pdf
+
+
+# ------------------  Common Report  ------------------------#
+
+# user login report
+ecms_web_common_report_api.user.login.access : http://COMMON-REPORT-SERVICE/user_login/access
+ecms_web_common_report_api.user.login.list : http://COMMON-REPORT-SERVICE/user_login/list
+ecms_web_common_report_api.user.login.excel : http://COMMON-REPORT-SERVICE/user_login/excel
+ecms_web_common_report_api.user.login.pdf : http://COMMON-REPORT-SERVICE/user_login/pdf
+
+# system user status report
+ecms_web_common_report_api.system.userstatus.access : http://COMMON-REPORT-SERVICE/system_userstatus/access
+ecms_web_common_report_api.system.userstatus.list : http://COMMON-REPORT-SERVICE/system_userstatus/list
+ecms_web_common_report_api.system.userstatus.excel : http://COMMON-REPORT-SERVICE/system_userstatus/excel
+ecms_web_common_report_api.system.userstatus.pdf : http://COMMON-REPORT-SERVICE/system_userstatus/pdf
+
+# user modification report
+ecms_web_common_report_api.user.modification.access : http://COMMON-REPORT-SERVICE/user_modification/access
+ecms_web_common_report_api.user.modification.list : http://COMMON-REPORT-SERVICE/user_modification/list
+ecms_web_common_report_api.user.modification.excel : http://COMMON-REPORT-SERVICE/user_modification/excel
+ecms_web_common_report_api.user.modification.pdf : http://COMMON-REPORT-SERVICE/user_modification/pdf
+
+# userrole privileges report
+ecms_web_common_report_api.userrole.privileges.access : http://COMMON-REPORT-SERVICE/userrole_privileges/access
+ecms_web_common_report_api.userrole.privileges.list : http://COMMON-REPORT-SERVICE/userrole_privileges/list
+ecms_web_common_report_api.userrole.privileges.excel : http://COMMON-REPORT-SERVICE/userrole_privileges/excel
+ecms_web_common_report_api.userrole.privileges.pdf : http://COMMON-REPORT-SERVICE/userrole_privileges/pdf
 
 # password reset report
-ecms_web_issuing_report_api.password.reset.access : http://ISSUING-REPORT-SERVICE/password_reset/access
-ecms_web_issuing_report_api.password.reset.list : http://ISSUING-REPORT-SERVICE/password_reset/list
-ecms_web_issuing_report_api.password.reset.excel : http://ISSUING-REPORT-SERVICE/password_reset/excel
-ecms_web_issuing_report_api.password.reset.pdf : http://ISSUING-REPORT-SERVICE/password_reset/pdf
+ecms_web_common_report_api.password.reset.access : http://COMMON-REPORT-SERVICE/password_reset/access
+ecms_web_common_report_api.password.reset.list : http://COMMON-REPORT-SERVICE/password_reset/list
+ecms_web_common_report_api.password.reset.excel : http://COMMON-REPORT-SERVICE/password_reset/excel
+ecms_web_common_report_api.password.reset.pdf : http://COMMON-REPORT-SERVICE/password_reset/pdf
 
 # internal user creation report
-ecms_web_issuing_report_api.internal.usercreation.access : http://ISSUING-REPORT-SERVICE/internal_usercreation/access
-ecms_web_issuing_report_api.internal.usercreation.list : http://ISSUING-REPORT-SERVICE/internal_usercreation/list
-ecms_web_issuing_report_api.internal.usercreation.excel : http://ISSUING-REPORT-SERVICE/internal_usercreation/excel
-ecms_web_issuing_report_api.internal.usercreation.pdf : http://ISSUING-REPORT-SERVICE/internal_usercreation/pdf
+ecms_web_common_report_api.internal.usercreation.access : http://COMMON-REPORT-SERVICE/internal_usercreation/access
+ecms_web_common_report_api.internal.usercreation.list : http://COMMON-REPORT-SERVICE/internal_usercreation/list
+ecms_web_common_report_api.internal.usercreation.excel : http://COMMON-REPORT-SERVICE/internal_usercreation/excel
+ecms_web_common_report_api.internal.usercreation.pdf : http://COMMON-REPORT-SERVICE/internal_usercreation/pdf
+
+# system audit report
+ecms_web_common_report_api.system.auditreport.access : http://COMMON-REPORT-SERVICE/system_auditreport/access
+ecms_web_common_report_api.system.auditreport.list : http://COMMON-REPORT-SERVICE/system_auditreport/list
+ecms_web_common_report_api.system.auditreport.excel : http://COMMON-REPORT-SERVICE/system_auditreport/excel
+ecms_web_common_report_api.system.auditreport.pdf : http://COMMON-REPORT-SERVICE/system_auditreport/pdf
+
+
+
 
 # ------------------ General Ledger Management ---------------------------#
 
@@ -902,6 +1012,8 @@ ecms_web_core_api.securityquestion.history : http://CORE-SERVICE/securityquestio
 ecms_web_core_api.securityquestion.add : http://CORE-SERVICE/securityquestion/add
 ecms_web_core_api.securityquestion.edit : http://CORE-SERVICE/securityquestion/edit
 ecms_web_core_api.securityquestion.delete : http://CORE-SERVICE/securityquestion/delete
+ecms_web_core_api.securityquestion.loadtables : http://CORE-SERVICE/securityquestion/loadtables
+ecms_web_core_api.securityquestion.loadfields : http://CORE-SERVICE/securityquestion/loadfields
 
 # Service Code Management
 ecms_web_core_api.servicecode.access : http://CORE-SERVICE/servicecode/access
@@ -978,7 +1090,6 @@ ecms_web_core_api.creditscorefield.history : http://CORE-SERVICE/creditscorefiel
 ecms_web_core_api.creditscorefield.add : http://CORE-SERVICE/creditscorefield/add
 ecms_web_core_api.creditscorefield.edit : http://CORE-SERVICE/creditscorefield/edit
 ecms_web_core_api.creditscorefield.delete : http://CORE-SERVICE/creditscorefield/delete
-ecms_web_core_api.creditscorefield.fieldnameby : http://CORE-SERVICE/creditscorefield/fieldnameby
 
 # Credit Score Rules
 ecms_web_core_api.creditscorerule.access : http://CORE-SERVICE/creditscorerule/access
@@ -991,16 +1102,20 @@ ecms_web_core_api.creditscorerule.delete : http://CORE-SERVICE/creditscorerule/d
 # Credit Application Assigning
 ecms_web_core_api.creditappassign.access : http://CORE-SERVICE/creditappassign/access
 ecms_web_core_api.creditappassign.list : http://CORE-SERVICE/creditappassign/list
+ecms_web_core_api.creditappassign.previouslist : http://CORE-SERVICE/creditappassign/previouslist
 ecms_web_core_api.creditappassign.countlist : http://CORE-SERVICE/creditappassign/countlist
 ecms_web_core_api.creditappassign.previousapps : http://CORE-SERVICE/creditappassign/previousapps
 ecms_web_core_api.creditappassign.history : http://CORE-SERVICE/creditappassign/history
 ecms_web_core_api.creditappassign.add : http://CORE-SERVICE/creditappassign/add
+ecms_web_core_api.creditappassign.loadidusers : http://CORE-SERVICE/creditappassign/loadidusers
 
 # Credit Application Update Assigning
 ecms_web_core_api.creditupdate.access : http://CORE-SERVICE/creditupdate/access
 ecms_web_core_api.creditupdate.list : http://CORE-SERVICE/creditupdate/list
 ecms_web_core_api.creditupdate.history : http://CORE-SERVICE/creditupdate/history
 ecms_web_core_api.creditupdate.add : http://CORE-SERVICE/creditupdate/add
+ecms_web_core_api.creditupdate.edit : http://CORE-SERVICE/creditupdate/edit
+ecms_web_core_api.creditupdate.loadedit : http://CORE-SERVICE/creditupdate/loadedit
 
 #ApplicationRejectReason
 ecms_web_core_api.apprejectreason.history : http://CORE-SERVICE/apprejectreason/history
@@ -1123,6 +1238,29 @@ ecms_web_core_api.manualnp.add : http://CORE-SERVICE/manualnp/add
 ecms_web_core_api.manualnp.confirm : http://CORE-SERVICE/manualnp/confirm
 ecms_web_core_api.manualnp.reject : http://CORE-SERVICE/manualnp/reject
 
+# Card Request Confirmation
+ecms_web_core_api.cardreqconf.access : http://CORE-SERVICE/cardreqconf/access
+ecms_web_core_api.cardreqconf.list : http://CORE-SERVICE/cardreqconf/list
+ecms_web_core_api.cardreqconf.history : http://CORE-SERVICE/cardreqconf/history
+ecms_web_core_api.cardreqconf.approve : http://CORE-SERVICE/cardreqconf/approve
+ecms_web_core_api.cardreqconf.reject : http://CORE-SERVICE/cardreqconf/reject
+
+# Fee Promotion Confirmation
+ecms_web_core_api.feepromotionconf.access : http://CORE-SERVICE/feepromotionconf/access
+ecms_web_core_api.feepromotionconf.list : http://CORE-SERVICE/feepromotionconf/list
+ecms_web_core_api.feepromotionconf.history : http://CORE-SERVICE/feepromotionconf/history
+ecms_web_core_api.feepromotionconf.approve : http://CORE-SERVICE/feepromotionconf/approve
+ecms_web_core_api.feepromotionconf.reject : http://CORE-SERVICE/feepromotionconf/reject
+
+# Fee Promotion Request
+ecms_web_core_api.feepromoreq.access : http://CORE-SERVICE/feepromoreq/access
+ecms_web_core_api.feepromoreq.list : http://CORE-SERVICE/feepromoreq/list
+ecms_web_core_api.feepromoreq.feeprofiles : http://CORE-SERVICE/feepromoreq/feeprofiles
+ecms_web_core_api.feepromoreq.history : http://CORE-SERVICE/feepromoreq/history
+ecms_web_core_api.feepromoreq.productlist : http://CORE-SERVICE/feepromoreq/productlist
+ecms_web_core_api.feepromoreq.assign : http://CORE-SERVICE/feepromoreq/assign
+ecms_web_core_api.feepromoreq.promoprofilesview : http://CORE-SERVICE/feepromoreq/promoprofilesview
+
 # FeePromotion Management
 ecms_web_core_api.feepromotion.access : http://CORE-SERVICE/feepromotion/access
 ecms_web_core_api.feepromotion.list : http://CORE-SERVICE/feepromotion/list
@@ -1132,6 +1270,8 @@ ecms_web_core_api.feepromotion.add : http://CORE-SERVICE/feepromotion/add
 ecms_web_core_api.feepromotion.edit : http://CORE-SERVICE/feepromotion/edit
 ecms_web_core_api.feepromotion.confirm : http://CORE-SERVICE/feepromotion/confirm
 ecms_web_core_api.feepromotion.reject : http://CORE-SERVICE/feepromotion/reject
+ecms_web_core_api.feepromotion.loadcardproduct : http://CORE-SERVICE/feepromotion/loadcardproduct
+ecms_web_core_api.feepromotion.feepromotionselection : http://CORE-SERVICE/feepromotion/feepromotionselection
 
 #Card Type managment
 ecms_web_core_api.cardtype.access : http://CORE-SERVICE/cardtype/access
@@ -1185,7 +1325,21 @@ ecms_web_core_api.personalizedquality.qualityfail : http://CORE-SERVICE/personal
 
 
 
+#Action message mgt
+ecms_web_core_api.actionmsgmgt.access : http://CORE-SERVICE/actionmsgmgt/access
+ecms_web_core_api.actionmsgmgt.list : http://CORE-SERVICE/actionmsgmgt/list
+ecms_web_core_api.actionmsgmgt.history : http://CORE-SERVICE/actionmsgmgt/history
+ecms_web_core_api.actionmsgmgt.add : http://CORE-SERVICE/actionmsgmgt/add
+ecms_web_core_api.actionmsgmgt.edit : http://CORE-SERVICE/actionmsgmgt/edit
+ecms_web_core_api.actionmsgmgt.delete : http://CORE-SERVICE/actionmsgmgt/delete
 
+#Allocation rule mgt
+ecms_web_core_api.allocrulemgt.access : http://CORE-SERVICE/allocrulemgt/access
+ecms_web_core_api.allocrulemgt.list : http://CORE-SERVICE/allocrulemgt/list
+ecms_web_core_api.allocrulemgt.history : http://CORE-SERVICE/allocrulemgt/history
+ecms_web_core_api.allocrulemgt.add : http://CORE-SERVICE/allocrulemgt/add
+ecms_web_core_api.allocrulemgt.edit : http://CORE-SERVICE/allocrulemgt/edit
+ecms_web_core_api.allocrulemgt.delete : http://CORE-SERVICE/allocrulemgt/delete
 
 # Team Allocation Management
 ecms_web_core_api.teamallocation.access : http://CORE-SERVICE/teamallocation/access
@@ -1195,6 +1349,14 @@ ecms_web_core_api.teamallocation.history : http://CORE-SERVICE/teamallocation/hi
 ecms_web_core_api.teamallocation.add : http://CORE-SERVICE/teamallocation/add
 ecms_web_core_api.teamallocation.edit : http://CORE-SERVICE/teamallocation/edit
 ecms_web_core_api.teamallocation.delete : http://CORE-SERVICE/teamallocation/delete
+
+#Risk Class managment
+ecms_web_core_api.riskclassmgt.access : http://CORE-SERVICE/riskclassmgt/access
+ecms_web_core_api.riskclassmgt.list : http://CORE-SERVICE/riskclassmgt/list
+ecms_web_core_api.riskclassmgt.history : http://CORE-SERVICE/riskclassmgt/history
+ecms_web_core_api.riskclassmgt.add : http://CORE-SERVICE/riskclassmgt/add
+ecms_web_core_api.riskclassmgt.edit : http://CORE-SERVICE/riskclassmgt/edit
+ecms_web_core_api.riskclassmgt.delete : http://CORE-SERVICE/riskclassmgt/delete
 
 
 # ------------------ Installment Plan ---------------------------#
@@ -1260,7 +1422,6 @@ ecms_web_core_api.cashbackenrolmentreqconf.approve : http://CORE-SERVICE/cashbac
 ecms_web_core_api.cashbackenrolmentreqconf.reject : http://CORE-SERVICE/cashbackenrolmentreqconf/reject
 
 #Transaction Drop Request Confirmation
-ecms_web_core_api.transactiondropconf.access : http://CORE-SERVICE/transactiondropconf/access
 ecms_web_core_api.transactiondropconf.list : http://CORE-SERVICE/transactiondropconf/list
 ecms_web_core_api.transactiondropconf.history : http://CORE-SERVICE/transactiondropconf/history
 ecms_web_core_api.transactiondropconf.approve : http://CORE-SERVICE/transactiondropconf/approve
@@ -1292,15 +1453,6 @@ ecms_web_core_api.loanoncardconfirmation.history : http://CORE-SERVICE/loanoncar
 ecms_web_core_api.loanoncardconfirmation.approve : http://CORE-SERVICE/loanoncardconfirmation/approve
 ecms_web_core_api.loanoncardconfirmation.reject : http://CORE-SERVICE/loanoncardconfirmation/reject
 
-#Customer contact details change Confirmation
-ecms_web_core_api.cuscontact.access : http://CORE-SERVICE/cuscontact/access
-ecms_web_core_api.cuscontact.list : http://CORE-SERVICE/cuscontact/list
-ecms_web_core_api.cuscontact.previous-details : http://CORE-SERVICE/cuscontact/previous-details
-ecms_web_core_api.cuscontact.history : http://CORE-SERVICE/cuscontact/history
-ecms_web_core_api.cuscontact.approve : http://CORE-SERVICE/cuscontact/approve
-ecms_web_core_api.cuscontact.reject : http://CORE-SERVICE/cuscontact/reject
-
-
 # ------------------ Standing order ---------------------------#
 #Utility Standing Order
 ecms_web_core_api.utilitystandingorder.access : http://CORE-SERVICE/utilitystandingorder/access
@@ -1321,6 +1473,97 @@ ecms_web_core_api.templimitchange.reject : http://CORE-SERVICE/templimitchange/r
 
 
 # ------------------ Application Processing ----------------------------------#
+#Credit Application Capturing
+ecms_web_core_api.app_capture.access : http://CORE-SERVICE/app_capture/access
+ecms_web_core_api.app_capture.list : http://CORE-SERVICE/app_capture/list
+ecms_web_core_api.app_capture.data : http://CORE-SERVICE/app_capture/data
+ecms_web_core_api.app_capture.addpersonaldetails : http://CORE-SERVICE/app_capture/addpersonaldetails
+ecms_web_core_api.app_capture.addemployeedetails : http://CORE-SERVICE/app_capture/addemployeedetails
+ecms_web_core_api.app_capture.addbankdetails : http://CORE-SERVICE/app_capture/addbankdetails
+ecms_web_core_api.app_capture.addincomedetails : http://CORE-SERVICE/app_capture/addincomedetails
+ecms_web_core_api.app_capture.adddocumentdetails : http://CORE-SERVICE/app_capture/adddocumentdetails
+ecms_web_core_api.app_capture.addotherdetails : http://CORE-SERVICE/app_capture/addotherdetails
+ecms_web_core_api.app_capture.customerdetails : http://CORE-SERVICE/app_capture/customerdetails
+ecms_web_core_api.app_capture.mandatorydocs : http://CORE-SERVICE/app_capture/mandatorydocs
+ecms_web_core_api.app_capture.verificationcategory : http://CORE-SERVICE/app_capture/verificationcategory
+ecms_web_core_api.app_capture.bankBranch : http://CORE-SERVICE/app_capture/bankBranch
+ecms_web_core_api.app_capture.idTypes : http://CORE-SERVICE/app_capture/idTypes
+ecms_web_core_api.app_capture.uploadfile : http://CORE-SERVICE/app_capture/uploadfile
+ecms_web_core_api.app_capture.img_signature : http://CORE-SERVICE/app_capture/img_signature
+ecms_web_core_api.app_capture.cardTypes : http://CORE-SERVICE/app_capture/cardTypes
+ecms_web_core_api.app_capture.cardProducts : http://CORE-SERVICE/app_capture/cardProducts
+ecms_web_core_api.app_capture.bankList : http://CORE-SERVICE/app_capture/bankList
+ecms_web_core_api.app_capture.deleteDocument : http://CORE-SERVICE/app_capture/deleteDocument
+ecms_web_core_api.app_capture.finances : http://CORE-SERVICE/app_capture/finances
+ecms_web_core_api.app_capture.addfinancedetails : http://CORE-SERVICE/app_capture/addfinancedetails
+ecms_web_core_api.app_capture.nationality : http://CORE-SERVICE/app_capture/nationality
+ecms_web_core_api.app_capture.districtandprovice : http://CORE-SERVICE/app_capture/districtandprovice
+ecms_web_core_api.app_capture.occupations : http://CORE-SERVICE/app_capture/occupations
+
+#Update Credit Application Capturing
+ecms_web_core_api.app_capture_upd.access : http://CORE-SERVICE/app_capture_upd/access
+ecms_web_core_api.app_capture_upd.list : http://CORE-SERVICE/app_capture_upd/list
+ecms_web_core_api.app_capture_upd.data : http://CORE-SERVICE/app_capture_upd/data
+ecms_web_core_api.app_capture_upd.updpersonaldetails : http://CORE-SERVICE/app_capture_upd/updpersonaldetails
+ecms_web_core_api.app_capture_upd.updemployeedetails : http://CORE-SERVICE/app_capture_upd/updemployeedetails
+ecms_web_core_api.app_capture_upd.updbankdetails : http://CORE-SERVICE/app_capture_upd/updbankdetails
+ecms_web_core_api.app_capture_upd.updincomedetails : http://CORE-SERVICE/app_capture_upd/updincomedetails
+ecms_web_core_api.app_capture_upd.upddocumentdetails : http://CORE-SERVICE/app_capture_upd/upddocumentdetails
+ecms_web_core_api.app_capture_upd.updotherdetails : http://CORE-SERVICE/app_capture_upd/updotherdetails
+ecms_web_core_api.app_capture_upd.customerdetails : http://CORE-SERVICE/app_capture_upd/customerdetails
+ecms_web_core_api.app_capture_upd.mandatorydocs : http://CORE-SERVICE/app_capture_upd/mandatorydocs
+ecms_web_core_api.app_capture_upd.verificationcategory : http://CORE-SERVICE/app_capture_upd/verificationcategory
+ecms_web_core_api.app_capture_upd.bankBranch : http://CORE-SERVICE/app_capture_upd/bankBranch
+ecms_web_core_api.app_capture_upd.idTypes : http://CORE-SERVICE/app_capture_upd/idTypes
+ecms_web_core_api.app_capture_upd.upduploadfile : http://CORE-SERVICE/app_capture_upd/upduploadfile
+ecms_web_core_api.app_capture_upd.img_signature : http://CORE-SERVICE/app_capture_upd/img_signature
+ecms_web_core_api.app_capture_upd.cardTypes : http://CORE-SERVICE/app_capture_upd/cardTypes
+ecms_web_core_api.app_capture_upd.cardProducts : http://CORE-SERVICE/app_capture_upd/cardProducts
+ecms_web_core_api.app_capture_upd.bankList : http://CORE-SERVICE/app_capture_upd/bankList
+ecms_web_core_api.app_capture_upd.deleteDocument : http://CORE-SERVICE/app_capture_upd/deleteDocument
+ecms_web_core_api.app_capture_upd.completeDocuments : http://CORE-SERVICE/app_capture_upd/completeDocuments
+ecms_web_core_api.app_capture_upd.updcomplete : http://CORE-SERVICE/app_capture_upd/updcomplete
+ecms_web_core_api.app_capture_upd.history : http://CORE-SERVICE/app_capture_upd/history
+ecms_web_core_api.app_capture_upd.finances : http://CORE-SERVICE/app_capture_upd/finances
+ecms_web_core_api.app_capture_upd.updfinancedetails : http://CORE-SERVICE/app_capture_upd/updfinancedetails
+ecms_web_core_api.app_capture_upd.nationality : http://CORE-SERVICE/app_capture_upd/nationality
+ecms_web_core_api.app_capture_upd.districtandprovice : http://CORE-SERVICE/app_capture_upd/districtandprovice
+ecms_web_core_api.app_capture_upd.occupations : http://CORE-SERVICE/app_capture_upd/occupations
+
+#Credit Application Checking
+ecms_web_core_api.app_checking.access : http://CORE-SERVICE/app_checking/access
+ecms_web_core_api.app_checking.list : http://CORE-SERVICE/app_checking/list
+ecms_web_core_api.app_checking.data : http://CORE-SERVICE/app_checking/data
+ecms_web_core_api.app_checking.accept : http://CORE-SERVICE/app_checking/accept
+ecms_web_core_api.app_checking.recheck : http://CORE-SERVICE/app_checking/recheck
+ecms_web_core_api.app_checking.add_remark : http://CORE-SERVICE/app_checking/add_remark
+ecms_web_core_api.app_checking.history : http://CORE-SERVICE/app_checking/history
+ecms_web_core_api.app_checking.finances : http://CORE-SERVICE/app_checking/finances
+ecms_web_core_api.app_checking.cardTypes : http://CORE-SERVICE/app_checking/cardTypes
+ecms_web_core_api.app_checking.cardProducts : http://CORE-SERVICE/app_checking/cardProducts
+ecms_web_core_api.app_checking.nationality : http://CORE-SERVICE/app_checking/nationality
+ecms_web_core_api.app_checking.districtandprovice : http://CORE-SERVICE/app_checking/districtandprovice
+ecms_web_core_api.app_checking.occupations : http://CORE-SERVICE/app_checking/occupations
+
+#Credit Application Verify
+ecms_web_core_api.app_verify.access : http://CORE-SERVICE/app_verify/access
+ecms_web_core_api.app_verify.list : http://CORE-SERVICE/app_verify/list
+ecms_web_core_api.app_verify.data : http://CORE-SERVICE/app_verify/data
+ecms_web_core_api.app_verify.accept : http://CORE-SERVICE/app_verify/accept
+ecms_web_core_api.app_verify.recheck : http://CORE-SERVICE/app_verify/recheck
+ecms_web_core_api.app_verify.verify : http://CORE-SERVICE/app_verify/verify
+ecms_web_core_api.app_verify.history : http://CORE-SERVICE/app_verify/history
+ecms_web_core_api.app_verify.uploadfile : http://CORE-SERVICE/app_verify/uploadfile
+ecms_web_core_api.app_verify.prevapplications : http://CORE-SERVICE/app_verify/prevapplications
+ecms_web_core_api.app_verify.reject : http://CORE-SERVICE/app_verify/reject
+ecms_web_core_api.app_verify.onlold : http://CORE-SERVICE/app_verify/onlold
+ecms_web_core_api.app_verify.mandatorydocs : http://CORE-SERVICE/app_verify/mandatorydocs
+ecms_web_core_api.app_verify.finances : http://CORE-SERVICE/app_verify/finances
+ecms_web_core_api.app_verify.cardTypes : http://CORE-SERVICE/app_verify/cardTypes
+ecms_web_core_api.app_verify.cardProducts : http://CORE-SERVICE/app_verify/cardProducts
+ecms_web_core_api.app_verify.nationality : http://CORE-SERVICE/app_verify/nationality
+ecms_web_core_api.app_verify.districtandprovice : http://CORE-SERVICE/app_verify/districtandprovice
+ecms_web_core_api.app_verify.occupations : http://CORE-SERVICE/app_verify/occupations
 
 # ------------------ Application Confirmation ----------------------------------#
 #Credit Officer Review and Confirmation
@@ -1354,8 +1597,8 @@ ecms_web_core_api.cardpindistribution.updatepindistribution : http://CORE-SERVIC
 
 
 # ------------------ Call center ----------------------------------#
+# ------------------ Call center ----------------------------------#
 #call center search
-ecms_web_call_center_api.callcentersearch.access : http://CALL-CENTER-SERVICE/callcentersearch/access
 ecms_web_call_center_api.callcentersearch.verificationquestion : http://CALL-CENTER-SERVICE/callcentersearch/verificationquestion
 ecms_web_call_center_api.callcentersearch.advancedsearch : http://CALL-CENTER-SERVICE/callcentersearch/advancedsearch
 ecms_web_call_center_api.callcentersearch.verify : http://CALL-CENTER-SERVICE/callcentersearch/verify
@@ -1366,60 +1609,23 @@ ecms_web_call_center_api.callcentersearch.accountlist : http://CALL-CENTER-SERVI
 ecms_web_call_center_api.callcentersearch.applicationlist : http://CALL-CENTER-SERVICE/callcentersearch/applicationlist
 
 
-#Update Credit Application Capturing
-ecms_web_core_api.app_capture_upd.access : http://CORE-SERVICE/app_capture_upd/access
-ecms_web_core_api.app_capture_upd.list : http://CORE-SERVICE/app_capture_upd/list
-ecms_web_core_api.app_capture_upd.data : http://CORE-SERVICE/app_capture_upd/data
-ecms_web_core_api.app_capture_upd.updpersonaldetails : http://CORE-SERVICE/app_capture_upd/updpersonaldetails
-ecms_web_core_api.app_capture_upd.updemployeedetails : http://CORE-SERVICE/app_capture_upd/updemployeedetails
-ecms_web_core_api.app_capture_upd.updbankdetails : http://CORE-SERVICE/app_capture_upd/updbankdetails
-ecms_web_core_api.app_capture_upd.updincomedetails : http://CORE-SERVICE/app_capture_upd/updincomedetails
-ecms_web_core_api.app_capture_upd.upddocumentdetails : http://CORE-SERVICE/app_capture_upd/upddocumentdetails
-ecms_web_core_api.app_capture_upd.updotherdetails : http://CORE-SERVICE/app_capture_upd/updotherdetails
-ecms_web_core_api.app_capture_upd.customerdetails : http://CORE-SERVICE/app_capture_upd/customerdetails
-ecms_web_core_api.app_capture_upd.mandatorydocs : http://CORE-SERVICE/app_capture_upd/mandatorydocs
-ecms_web_core_api.app_capture_upd.verificationcategory : http://CORE-SERVICE/app_capture_upd/verificationcategory
-ecms_web_core_api.app_capture_upd.bankBranch : http://CORE-SERVICE/app_capture_upd/bankBranch
-ecms_web_core_api.app_capture_upd.idTypes : http://CORE-SERVICE/app_capture_upd/idTypes
-ecms_web_core_api.app_capture_upd.upduploadfile : http://CORE-SERVICE/app_capture_upd/upduploadfile
-ecms_web_core_api.app_capture_upd.img_signature : http://CORE-SERVICE/app_capture_upd/img_signature
-ecms_web_core_api.app_capture_upd.cardTypes : http://CORE-SERVICE/app_capture_upd/cardTypes
-ecms_web_core_api.app_capture_upd.cardProducts : http://CORE-SERVICE/app_capture_upd/cardProducts
-ecms_web_core_api.app_capture_upd.bankList : http://CORE-SERVICE/app_capture_upd/bankList
-ecms_web_core_api.app_capture_upd.deleteDocument : http://CORE-SERVICE/app_capture_upd/deleteDocument
-ecms_web_core_api.app_capture_upd.completeDocuments : http://CORE-SERVICE/app_capture_upd/completeDocuments
-ecms_web_core_api.app_capture_upd.updcomplete : http://CORE-SERVICE/app_capture_upd/updcomplete
-ecms_web_core_api.app_capture_upd.history : http://CORE-SERVICE/app_capture_upd/history
 
-#Credit Application Checking
-ecms_web_core_api.app_checking.access : http://CORE-SERVICE/app_checking/access
-ecms_web_core_api.app_checking.list : http://CORE-SERVICE/app_checking/list
-ecms_web_core_api.app_checking.data : http://CORE-SERVICE/app_checking/data
-ecms_web_core_api.app_checking.accept : http://CORE-SERVICE/app_checking/accept
-ecms_web_core_api.app_checking.recheck : http://CORE-SERVICE/app_checking/recheck
-ecms_web_core_api.app_checking.add_remark : http://CORE-SERVICE/app_checking/add_remark
-ecms_web_core_api.app_checking.history : http://CORE-SERVICE/app_checking/history
-
-
-#Credit Application Verify
-ecms_web_core_api.app_verify.access : http://CORE-SERVICE/app_verify/access
-ecms_web_core_api.app_verify.list : http://CORE-SERVICE/app_verify/list
-ecms_web_core_api.app_verify.data : http://CORE-SERVICE/app_verify/data
-ecms_web_core_api.app_verify.accept : http://CORE-SERVICE/app_verify/accept
-ecms_web_core_api.app_verify.recheck : http://CORE-SERVICE/app_verify/recheck
-ecms_web_core_api.app_verify.verify : http://CORE-SERVICE/app_verify/verify
-ecms_web_core_api.app_verify.history : http://CORE-SERVICE/app_verify/history
-ecms_web_core_api.app_verify.uploadfile : http://CORE-SERVICE/app_verify/uploadfile
-ecms_web_core_api.app_verify.prevapplications : http://CORE-SERVICE/app_verify/prevapplications
-ecms_web_core_api.app_verify.reject : http://CORE-SERVICE/app_verify/reject
-ecms_web_core_api.app_verify.onlold : http://CORE-SERVICE/app_verify/onlold
-ecms_web_core_api.app_verify.mandatorydocs : http://CORE-SERVICE/app_verify/mandatorydocs
 
 #Card Pin generation
 ecms_web_core_api.pin_generator.access : http://CORE-SERVICE/pin_generator/access
 ecms_web_core_api.pin_generator.list : http://CORE-SERVICE/pin_generator/list
 ecms_web_core_api.pin_generator.generate : http://CORE-SERVICE/pin_generator/generate
 ecms_web_core_api.pin_generator.history : http://CORE-SERVICE/pin_generator/history
+ecms_web_core_api.pin_generator.cardTypes : http://CORE-SERVICE/pin_generator/cardTypes
+ecms_web_core_api.pin_generator.cardProducts : http://CORE-SERVICE/pin_generator/cardProducts
+
+#-------------------Customer level----------------------------------
+#Customer main view
+ecms_web_call_center_api.cusview.access : http://CALL-CENTER-SERVICE/cusview/access
+ecms_web_call_center_api.cusview.mainview : http://CALL-CENTER-SERVICE/cusview/mainview
+ecms_web_call_center_api.cusview.changedcustomerdetails : http://CALL-CENTER-SERVICE/cusview/changedcustomerdetails
+
+
 #Customer memos request
 ecms_web_call_center_api.customermemo.access : http://CALL-CENTER-SERVICE/customermemo/access
 ecms_web_call_center_api.customermemo.history : http://CALL-CENTER-SERVICE/customermemo/history
@@ -1467,75 +1673,59 @@ ecms_web_call_center_api.cardmemo.history : http://CALL-CENTER-SERVICE/cardmemo/
 ecms_web_call_center_api.cardmemo.list : http://CALL-CENTER-SERVICE/cardmemo/list
 ecms_web_call_center_api.cardmemo.add : http://CALL-CENTER-SERVICE/cardmemo/add
 
-#Credit Application Capturing
-ecms_web_core_api.app_capture.access : http://CORE-SERVICE/app_capture/access
-ecms_web_core_api.app_capture.list : http://CORE-SERVICE/app_capture/list
-ecms_web_core_api.app_capture.data : http://CORE-SERVICE/app_capture/data
-ecms_web_core_api.app_capture.addpersonaldetails : http://CORE-SERVICE/app_capture/addpersonaldetails
-ecms_web_core_api.app_capture.addemployeedetails : http://CORE-SERVICE/app_capture/addemployeedetails
-ecms_web_core_api.app_capture.addbankdetails : http://CORE-SERVICE/app_capture/addbankdetails
-ecms_web_core_api.app_capture.addincomedetails : http://CORE-SERVICE/app_capture/addincomedetails
-ecms_web_core_api.app_capture.adddocumentdetails : http://CORE-SERVICE/app_capture/adddocumentdetails
-ecms_web_core_api.app_capture.addotherdetails : http://CORE-SERVICE/app_capture/addotherdetails
-ecms_web_core_api.app_capture.customerdetails : http://CORE-SERVICE/app_capture/customerdetails
-ecms_web_core_api.app_capture.mandatorydocs : http://CORE-SERVICE/app_capture/mandatorydocs
-ecms_web_core_api.app_capture.verificationcategory : http://CORE-SERVICE/app_capture/verificationcategory
-ecms_web_core_api.app_capture.bankBranch : http://CORE-SERVICE/app_capture/bankBranch
-ecms_web_core_api.app_capture.idTypes : http://CORE-SERVICE/app_capture/idTypes
-ecms_web_core_api.app_capture.uploadfile : http://CORE-SERVICE/app_capture/uploadfile
-ecms_web_core_api.app_capture.img_signature : http://CORE-SERVICE/app_capture/img_signature
-ecms_web_core_api.app_capture.cardTypes : http://CORE-SERVICE/app_capture/cardTypes
-ecms_web_core_api.app_capture.cardProducts : http://CORE-SERVICE/app_capture/cardProducts
-ecms_web_core_api.app_capture.bankList : http://CORE-SERVICE/app_capture/bankList
-ecms_web_core_api.app_capture.deleteDocument : http://CORE-SERVICE/app_capture/deleteDocument
 
-
-#Update Credit Application Capturing
-ecms_web_core_api.app_capture_upd.access : http://CORE-SERVICE/app_capture_upd/access
-ecms_web_core_api.app_capture_upd.list : http://CORE-SERVICE/app_capture_upd/list
-ecms_web_core_api.app_capture_upd.data : http://CORE-SERVICE/app_capture_upd/data
-ecms_web_core_api.app_capture_upd.updpersonaldetails : http://CORE-SERVICE/app_capture_upd/updpersonaldetails
-ecms_web_core_api.app_capture_upd.updemployeedetails : http://CORE-SERVICE/app_capture_upd/updemployeedetails
-ecms_web_core_api.app_capture_upd.updbankdetails : http://CORE-SERVICE/app_capture_upd/updbankdetails
-ecms_web_core_api.app_capture_upd.updincomedetails : http://CORE-SERVICE/app_capture_upd/updincomedetails
-ecms_web_core_api.app_capture_upd.upddocumentdetails : http://CORE-SERVICE/app_capture_upd/upddocumentdetails
-ecms_web_core_api.app_capture_upd.updotherdetails : http://CORE-SERVICE/app_capture_upd/updotherdetails
-ecms_web_core_api.app_capture_upd.customerdetails : http://CORE-SERVICE/app_capture_upd/customerdetails
-ecms_web_core_api.app_capture_upd.mandatorydocs : http://CORE-SERVICE/app_capture_upd/mandatorydocs
-ecms_web_core_api.app_capture_upd.verificationcategory : http://CORE-SERVICE/app_capture_upd/verificationcategory
-ecms_web_core_api.app_capture_upd.bankBranch : http://CORE-SERVICE/app_capture_upd/bankBranch
-ecms_web_core_api.app_capture_upd.idTypes : http://CORE-SERVICE/app_capture_upd/idTypes
-ecms_web_core_api.app_capture_upd.upduploadfile : http://CORE-SERVICE/app_capture_upd/upduploadfile
-ecms_web_core_api.app_capture_upd.img_signature : http://CORE-SERVICE/app_capture_upd/img_signature
-ecms_web_core_api.app_capture_upd.cardTypes : http://CORE-SERVICE/app_capture_upd/cardTypes
-ecms_web_core_api.app_capture_upd.cardProducts : http://CORE-SERVICE/app_capture_upd/cardProducts
-ecms_web_core_api.app_capture_upd.bankList : http://CORE-SERVICE/app_capture_upd/bankList
-ecms_web_core_api.app_capture_upd.deleteDocument : http://CORE-SERVICE/app_capture_upd/deleteDocument
 
 #Easy Payment Request
 ecms_web_call_center_api.easypayment.access : http://CALL-CENTER-SERVICE/easypayment/access
 ecms_web_call_center_api.easypayment.list : http://CALL-CENTER-SERVICE/easypayment/list
 ecms_web_call_center_api.easypayment.history : http://CALL-CENTER-SERVICE/easypayment/history
+ecms_web_call_center_api.easypayment.add : http://CALL-CENTER-SERVICE/easypayment/add
 
 #Easy Payment Acceleration Request
 ecms_web_call_center_api.easypayacceleration.access : http://CALL-CENTER-SERVICE/easypayacceleration/access
 ecms_web_call_center_api.easypayacceleration.list : http://CALL-CENTER-SERVICE/easypayacceleration/list
 ecms_web_call_center_api.easypayacceleration.history : http://CALL-CENTER-SERVICE/easypayacceleration/history
+ecms_web_call_center_api.easypayacceleration.add : http://CALL-CENTER-SERVICE/easypayacceleration/add
 
 #Card Close Request
 ecms_web_call_center_api.cardclose.access : http://CALL-CENTER-SERVICE/cardclose/access
 ecms_web_call_center_api.cardclose.list : http://CALL-CENTER-SERVICE/cardclose/list
-ecms_web_call_center_api.cardclose.request : http://CALL-CENTER-SERVICE/cardclose/request
+ecms_web_call_center_api.cardclose.add : http://CALL-CENTER-SERVICE/cardclose/add
 ecms_web_call_center_api.cardclose.history : http://CALL-CENTER-SERVICE/cardclose/history
+ecms_web_call_center_api.cardclose.prioritylevel : http://CALL-CENTER-SERVICE/cardclose/prioritylevel
+ecms_web_call_center_api.cardclose.reasoncode : http://CALL-CENTER-SERVICE/cardclose/reasoncode
 
 #Card Request
 ecms_web_call_center_api.cardrequest.access : http://CALL-CENTER-SERVICE/cardrequest/access
 ecms_web_call_center_api.cardrequest.list : http://CALL-CENTER-SERVICE/cardrequest/list
-ecms_web_call_center_api.cardrequest.request : http://CALL-CENTER-SERVICE/cardrequest/request
+ecms_web_call_center_api.cardrequest.add : http://CALL-CENTER-SERVICE/cardrequest/add
 ecms_web_call_center_api.cardrequest.history : http://CALL-CENTER-SERVICE/cardrequest/history
 
 #Card HotList
 ecms_web_call_center_api.hotlist.access : http://CALL-CENTER-SERVICE/hotlist/access
 ecms_web_call_center_api.hotlist.list : http://CALL-CENTER-SERVICE/hotlist/list
-ecms_web_call_center_api.hotlist.request : http://CALL-CENTER-SERVICE/hotlist/request
+ecms_web_call_center_api.hotlist.add : http://CALL-CENTER-SERVICE/hotlist/add
 ecms_web_call_center_api.hotlist.history : http://CALL-CENTER-SERVICE/hotlist/history
+
+#Perm Limit Change Request
+ecms_web_call_center_api.permlimitchange.access : http://CALL-CENTER-SERVICE/permlimitchange/access
+ecms_web_call_center_api.permlimitchange.list : http://CALL-CENTER-SERVICE/permlimitchange/list
+ecms_web_call_center_api.permlimitchange.history : http://CALL-CENTER-SERVICE/permlimitchange/history
+ecms_web_call_center_api.permlimitchange.add : http://CALL-CENTER-SERVICE/permlimitchange/add
+
+#
+ecms_web_call_center_api.acctxnriskmgt.access : http://CALL-CENTER-SERVICE/acctxnriskmgt/access
+ecms_web_call_center_api.acctxnriskmgt.history : http://CALL-CENTER-SERVICE/acctxnriskmgt/history
+ecms_web_call_center_api.acctxnriskmgt.assigntxn : http://CALL-CENTER-SERVICE/acctxnriskmgt/assigntxn
+ecms_web_call_center_api.acctxnriskmgt.updaterisk : http://CALL-CENTER-SERVICE/acctxnriskmgt/updaterisk
+
+#Temporary Limit Change Request
+ecms_web_call_center_api.templimitchange.access : http://CALL-CENTER-SERVICE/templimitchangereq/access
+ecms_web_call_center_api.templimitchange.history : http://CALL-CENTER-SERVICE/templimitchangereq/history
+ecms_web_call_center_api.templimitchange.reject : http://CALL-CENTER-SERVICE/templimitchangereq/add
+
+#Card Activation Confirmation
+ecms_web_call_center_api.cardactivation.access : http://CALL-CENTER-SERVICE/cardactivation/access
+ecms_web_call_center_api.cardactivation.history : http://CALL-CENTER-SERVICE/cardactivation/history
+ecms_web_call_center_api.cardactivation.approve : http://CALL-CENTER-SERVICE/cardactivation/approve
+ecms_web_call_center_api.cardactivation.reject : http://CALL-CENTER-SERVICE/cardactivation/reject
