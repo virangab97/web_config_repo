@@ -1,6 +1,7 @@
 # Report location dir
 ecms_web_issuing_report_file.directory.excel : GeneratedReports/
 ecms_web_issuing_report_file.directory.pdf : GeneratedReports/
+ecms_web_issuing_report_file.directory.txt : GeneratedReports/
 
 
 # Report_Generator
@@ -65,36 +66,100 @@ report_gen_api.new.cardgenerated : http://192.168.1.150:5000/ecms_report_core_ap
 # 20 card history report
 report_gen_api.card.history : http://192.168.1.150:5000/ecms_report_core_api/CardHistoryReport
 
-# 21 card history report
-report_gen_api.user.login : http://192.168.1.150:5000/ecms_report_core_api/UserLoginReport
-
-# 22 excess card report
+# 21 excess card report
 report_gen_api.excess.card : http://192.168.1.150:5000/ecms_report_core_api/ExcessCardReport
 
-# 23 card outstanding report
+# 22 card outstanding report
 report_gen_api.card.outstanding : http://192.168.1.150:5000/ecms_report_core_api/CardOutstanding
 
-# 24 daily maintenance report
+# 23 daily maintenance report
 report_gen_api.daily.maintainance : http://192.168.1.150:5000/ecms_report_core_api/DailyMaintenance
 
-# 25 cash back reconciliation report
+# 24 cash back reconciliation report
 report_gen_api.cashback.reconciliation : http://192.168.1.150:5000/ecms_report_core_api/CashBackReconciliationReport
 
-# 26 government stamp duty report
+# 25 government stamp duty report
 report_gen_api.government.stampduty : http://192.168.1.150:5000/ecms_report_core_api/GovernmentStampDuty
 
-# 27 cash back summary report
+# 26 cash back summary report
 report_gen_api.cashback.summary : http://192.168.1.150:5000/ecms_report_core_api/CashBackSummary
 
-# 28 np listening report
+# 27 np listening report
 report_gen_api.np.listening : http://192.168.1.150:5000/ecms_report_core_api/NPListeningReport
 
-# 29 summary npl report
+# 28 summary npl report
 report_gen_api.summary.npl : http://192.168.1.150:5000/ecms_report_core_api/NPListeningSummaryReport
 
-# 30 only visa auth report
-report_gen_api.only.visaauth : http://192.168.1.150:5000/ecms_report_core_api/NPListeningSummaryReport
+# 29 only visa auth report
+report_gen_api.only.visaauth : http://192.168.1.150:5000/ecms_report_core_api/OnlyVisaAuth
 
-# 31 card.payment summary report
+# 30 card.payment summary report
+
 report_gen_api.card.paymentsummary : http://192.168.1.150:5000/ecms_report_core_api/CardPaymentSummary
+
+# 31 account outstanding  report
+report_gen_api.account.outstanding : http://192.168.1.150:5000/ecms_report_core_api/AccountOutstandingReport
+
+# 32 opstat qoc  report
+report_gen_api.opstat.qoc : http://192.168.1.150:5000/ecms_report_core_api/OpstatQocReport
+
+# 33 keystatopstat parta report
+report_gen_api.keystat.opsstatparta : http://192.168.1.150:5000/ecms_report_core_api/KeyStatOpStatPartAReport
+
+# 34 limit modification report
+report_gen_api.limit.modification : http://192.168.1.150:5000/ecms_report_core_api/LimitModificationReport
+
+# 35 loyality redemption report
+report_gen_api.loyalty.redemption : http://192.168.1.150:5000/ecms_report_core_api/LoyaltyRedemptionReport
+
+# 36 interest adjustment report
+report_gen_api.interest.adjustment : http://192.168.1.150:5000/ecms_report_core_api/InterestAdjustment
+
+# 37 call histry report
+report_gen_api.call.history : http://192.168.1.150:5000/ecms_report_core_api/CallHistoryMgt
+
+# 38 posted sys gen txn report
+report_gen_api.posted.sysgentxnsummary : http://192.168.1.150:5000/ecms_report_core_api/PostedSysGenTXNSummary
+
+# 39 usage summary report
+report_gen_api.usage.summary : http://192.168.1.150:5000/ecms_report_core_api/UsageSummaryReport
+
+# 40 daily posted txn report
+reoprt_gen_api.dailyposted.transactionsummary : http://192.168.1.150:5000/ecms_report_core_api/DailyPostedTXNSummary
+
+# 41 transaction drop report
+report_gen_api.transaction.drop : http://192.168.1.150:5000/ecms_report_core_api/TransactionDropReport
+
+# 42 cash advances summary report
+report_gen_api.cash.advancessummary : http://192.168.1.150:5000/ecms_report_core_api/CashAdvanceSummary
+
+# 43 foreign currency circulation report
+report_gen_api.foreign_currency_circulation : http://192.168.1.150:5000/ecms_report_core_api/ForeignCurrencyCirculation
+
+# 44 key statqoc report
+report_gen_api.key.statqoc : http://192.168.1.150:5000/ecms_report_core_api/KeyStatQOCReport
+
+# 45 cashback redemption report
+report_gen_api.cashback.redemption : http://192.168.1.150:5000/ecms_report_core_api/CashBackRedemptionReport
+
+# 46 transaction details report
+report_gen_api.transaction.details : http://192.168.1.150:5000/ecms_report_core_api/TransactionDetailsReport
+
+# 47 cashback redemption summary report
+report_gen_api.cashback.redemptionsummary : http://192.168.1.150:5000/ecms_report_core_api/CashBackRedemptionSummaryReport
+
+# 48 exception report
+report_gen_api.exception : http://192.168.1.150:5000/ecms_report_core_api/ExceptionReport
+
+# 49 electronic cardt ransactions report
+report_gen_api.electronic.cardtransactions : http://192.168.1.150:5000/ecms_report_core_api/ElectronicCardTransactionReport
+
+# 50 eod transaction report
+report_gen_api.eod.transaction : http://192.168.1.150:5000/ecms_report_core_api/EODTransactionReport
+
+# 51 brh file report
+report_gen_api.brh.file : http://192.168.1.150:5000/ecms_report_core_api/BRH
+
+
+
 
