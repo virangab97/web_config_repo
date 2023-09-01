@@ -341,9 +341,9 @@ ecms_web_core_api.eodprocessflow.viewbycategoryandstepid : http://CORE-SERVICE/e
 # ------------------ Report Management ---------------------------#
 
 # Report location dir
-ecms_web_issuing_report_file.directory.excel : /app/CMS/
-ecms_web_issuing_report_file.directory.pdf : /app/CMS/
-ecms_web_issuing_report_file.directory.txt : /app/CMS/
+ecms_web_issuing_report_file.directory.excel : home/epic/Report-Module/Generated-Report/
+ecms_web_issuing_report_file.directory.pdf : home/epic/Report-Module/Generated-Report/
+ecms_web_issuing_report_file.directory.txt : home/epic/Report-Module/Generated-Report/
 
 # Delete Report from dir
 ecms_web_issuing_report_api.delete_report.excel : http://issuing-report-service/delete_report/excel
@@ -351,107 +351,107 @@ ecms_web_issuing_report_api.delete_report.pdf : http://issuing-report-service/de
 ecms_web_issuing_report_api.delete_report.txt : http://issuing-report-service/delete_report/txt
 
 # Installment Detail Report
-ecms_web_issuing_report_api.installment.detail.access : http://ISSUING-REPORT-SERVICE/installment_detail/access
-ecms_web_issuing_report_api.installment.detail.list : http://ISSUING-REPORT-SERVICE/installment_detail/list
-ecms_web_issuing_report_api.installment.detail.loadpaymentplan : http://ISSUING-REPORT-SERVICE/installment_detail/loadpaymentplan
-ecms_web_issuing_report_api.installment.detail.excel: http://ISSUING-REPORT-SERVICE/installment_detail/excel
-ecms_web_issuing_report_api.installment.detail.pdf: http://ISSUING-REPORT-SERVICE/installment_detail/pdf
+ecms_web_issuing_report_api.installment_detail.access : http://ISSUING-REPORT-SERVICE/installment_detail/access
+ecms_web_issuing_report_api.installment_detail.list : http://ISSUING-REPORT-SERVICE/installment_detail/list
+ecms_web_issuing_report_api.installment_detail.loadpaymentplan : http://ISSUING-REPORT-SERVICE/installment_detail/loadpaymentplan
+ecms_web_issuing_report_api.installment_detail.excel: http://ISSUING-REPORT-SERVICE/installment_detail/excel
+ecms_web_issuing_report_api.installment_detail.pdf: http://ISSUING-REPORT-SERVICE/installment_detail/pdf
 
 
 # application confirmation Report
-ecms_web_issuing_report_api.application.confirmation.access : http://ISSUING-REPORT-SERVICE/application_confirmation/access
-ecms_web_issuing_report_api.application.confirmation.list : http://ISSUING-REPORT-SERVICE/application_confirmation/list
-ecms_web_issuing_report_api.application.confirmation.excel: http://ISSUING-REPORT-SERVICE/application_confirmation/excel
-ecms_web_issuing_report_api.application.confirmation.pdf: http://ISSUING-REPORT-SERVICE/application_confirmation/pdf
+ecms_web_issuing_report_api.application_confirmation.access : http://ISSUING-REPORT-SERVICE/application_confirmation/access
+ecms_web_issuing_report_api.application_confirmation.list : http://ISSUING-REPORT-SERVICE/application_confirmation/list
+ecms_web_issuing_report_api.application_confirmation.excel: http://ISSUING-REPORT-SERVICE/application_confirmation/excel
+ecms_web_issuing_report_api.application_confirmation.pdf: http://ISSUING-REPORT-SERVICE/application_confirmation/pdf
 
 
 # application data entry Report
-ecms_web_issuing_report_api.application.dataentry.access : http://ISSUING-REPORT-SERVICE/application_dataentry/access
-ecms_web_issuing_report_api.application.dataentry.list : http://ISSUING-REPORT-SERVICE/application_dataentry/list
-ecms_web_issuing_report_api.application.dataentry.excel: http://ISSUING-REPORT-SERVICE/application_dataentry/excel
-ecms_web_issuing_report_api.application.dataentry.pdf: http://ISSUING-REPORT-SERVICE/application_dataentry/pdf
+ecms_web_issuing_report_api.application_dataentry.access : http://ISSUING-REPORT-SERVICE/application_dataentry/access
+ecms_web_issuing_report_api.application_dataentry.list : http://ISSUING-REPORT-SERVICE/application_dataentry/list
+ecms_web_issuing_report_api.application_dataentry.excel: http://ISSUING-REPORT-SERVICE/application_dataentry/excel
+ecms_web_issuing_report_api.application_dataentry.pdf: http://ISSUING-REPORT-SERVICE/application_dataentry/pdf
 
 
 # application rejection Report
-ecms_web_issuing_report_api.application.reject.access : http://ISSUING-REPORT-SERVICE/application_reject/access
-ecms_web_issuing_report_api.application.reject.list : http://ISSUING-REPORT-SERVICE/application_reject/list
-ecms_web_issuing_report_api.application.reject.excel: http://ISSUING-REPORT-SERVICE/application_reject/excel
-ecms_web_issuing_report_api.application.reject.pdf: http://ISSUING-REPORT-SERVICE/application_reject/pdf
+ecms_web_issuing_report_api.application_reject.access : http://ISSUING-REPORT-SERVICE/application_reject/access
+ecms_web_issuing_report_api.application_reject.list : http://ISSUING-REPORT-SERVICE/application_reject/list
+ecms_web_issuing_report_api.application_reject.excel: http://ISSUING-REPORT-SERVICE/application_reject/excel
+ecms_web_issuing_report_api.application_reject.pdf: http://ISSUING-REPORT-SERVICE/application_reject/pdf
 
 
 # application summary Report
-ecms_web_issuing_report_api.application.summary.access : http://ISSUING-REPORT-SERVICE/application_summary/access
-ecms_web_issuing_report_api.application.summary.list : http://ISSUING-REPORT-SERVICE/application_summary/list
-ecms_web_issuing_report_api.application.summary.excel: http://ISSUING-REPORT-SERVICE/application_summary/excel
-ecms_web_issuing_report_api.application.summary.pdf: http://ISSUING-REPORT-SERVICE/application_summary/pdf
+ecms_web_issuing_report_api.application_summary.access : http://ISSUING-REPORT-SERVICE/application_summary/access
+ecms_web_issuing_report_api.application_summary.list : http://ISSUING-REPORT-SERVICE/application_summary/list
+ecms_web_issuing_report_api.application_summary.excel: http://ISSUING-REPORT-SERVICE/application_summary/excel
+ecms_web_issuing_report_api.application_summary.pdf: http://ISSUING-REPORT-SERVICE/application_summary/pdf
 
 
 # card application Report
-ecms_web_issuing_report_api.card.application.access : http://ISSUING-REPORT-SERVICE/card_application/access
-ecms_web_issuing_report_api.card.application.list : http://ISSUING-REPORT-SERVICE/card_application/list
-ecms_web_issuing_report_api.card.application.excel: http://ISSUING-REPORT-SERVICE/card_application/excel
-ecms_web_issuing_report_api.card.application.pdf: http://ISSUING-REPORT-SERVICE/card_application/pdf
+ecms_web_issuing_report_api.card_application.access : http://ISSUING-REPORT-SERVICE/card_application/access
+ecms_web_issuing_report_api.card_application.list : http://ISSUING-REPORT-SERVICE/card_application/list
+ecms_web_issuing_report_api.card_application.excel: http://ISSUING-REPORT-SERVICE/card_application/excel
+ecms_web_issuing_report_api.card_application.pdf: http://ISSUING-REPORT-SERVICE/card_application/pdf
 
 
 # application credit score Report
-ecms_web_issuing_report_api.application.creditscore.access : http://ISSUING-REPORT-SERVICE/application_creditscore/access
-ecms_web_issuing_report_api.application.creditscore.list : http://ISSUING-REPORT-SERVICE/application_creditscore/list
-ecms_web_issuing_report_api.application.creditscore.excel: http://ISSUING-REPORT-SERVICE/application_creditscore/excel
-ecms_web_issuing_report_api.application.creditscore.pdf: http://ISSUING-REPORT-SERVICE/application_creditscore/pdf
+ecms_web_issuing_report_api.application_creditscore.access : http://ISSUING-REPORT-SERVICE/application_creditscore/access
+ecms_web_issuing_report_api.application_creditscore.list : http://ISSUING-REPORT-SERVICE/application_creditscore/list
+ecms_web_issuing_report_api.application_creditscore.excel: http://ISSUING-REPORT-SERVICE/application_creditscore/excel
+ecms_web_issuing_report_api.application_creditscore.pdf: http://ISSUING-REPORT-SERVICE/application_creditscore/pdf
 
 
 
 # activated not used card Report
-ecms_web_issuing_report_api.act.notused.access : http://ISSUING-REPORT-SERVICE/act_notused/access
-ecms_web_issuing_report_api.act.notused.loadcardproducts : http://ISSUING-REPORT-SERVICE/act_notused/loadcardproducts
-ecms_web_issuing_report_api.act.notused.list : http://ISSUING-REPORT-SERVICE/act_notused/list
-ecms_web_issuing_report_api.act.notused.excel: http://ISSUING-REPORT-SERVICE/act_notused/excel
-ecms_web_issuing_report_api.act.notused.pdf: http://ISSUING-REPORT-SERVICE/act_notused/pdf
+ecms_web_issuing_report_api.act_notused.access : http://ISSUING-REPORT-SERVICE/act_notused/access
+ecms_web_issuing_report_api.act_notused.loadcardproducts : http://ISSUING-REPORT-SERVICE/act_notused/loadcardproducts
+ecms_web_issuing_report_api.act_notused.list : http://ISSUING-REPORT-SERVICE/act_notused/list
+ecms_web_issuing_report_api.act_notused.excel: http://ISSUING-REPORT-SERVICE/act_notused/excel
+ecms_web_issuing_report_api.act_notused.pdf: http://ISSUING-REPORT-SERVICE/act_notused/pdf
 
 
 # card activation Report
-ecms_web_issuing_report_api.card.activation.access : http://ISSUING-REPORT-SERVICE/card_activation/access
-ecms_web_issuing_report_api.card.activation.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_activation/loadcardproducts
-ecms_web_issuing_report_api.card.activation.list : http://ISSUING-REPORT-SERVICE/card_activation/list
-ecms_web_issuing_report_api.card.activation.excel: http://ISSUING-REPORT-SERVICE/card_activation/excel
-ecms_web_issuing_report_api.card.activation.pdf: http://ISSUING-REPORT-SERVICE/card_activation/pdf
+ecms_web_issuing_report_api.card_activation.access : http://ISSUING-REPORT-SERVICE/card_activation/access
+ecms_web_issuing_report_api.card_activation.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_activation/loadcardproducts
+ecms_web_issuing_report_api.card_activation.list : http://ISSUING-REPORT-SERVICE/card_activation/list
+ecms_web_issuing_report_api.card_activation.excel: http://ISSUING-REPORT-SERVICE/card_activation/excel
+ecms_web_issuing_report_api.card_activation.pdf: http://ISSUING-REPORT-SERVICE/card_activation/pdf
 
 
 # card distribution Report
-ecms_web_issuing_report_api.card.distribution.access : http://ISSUING-REPORT-SERVICE/card_distribution/access
-ecms_web_issuing_report_api.card.distribution.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_distribution/loadcardproducts
-ecms_web_issuing_report_api.card.distribution.list : http://ISSUING-REPORT-SERVICE/card_distribution/list
-ecms_web_issuing_report_api.card.distribution.excel: http://ISSUING-REPORT-SERVICE/card_distribution/excel
-ecms_web_issuing_report_api.card.distribution.pdf: http://ISSUING-REPORT-SERVICE/card_distribution/pdf
+ecms_web_issuing_report_api.card_distribution.access : http://ISSUING-REPORT-SERVICE/card_distribution/access
+ecms_web_issuing_report_api.card_distribution.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_distribution/loadcardproducts
+ecms_web_issuing_report_api.card_distribution.list : http://ISSUING-REPORT-SERVICE/card_distribution/list
+ecms_web_issuing_report_api.card_distribution.excel: http://ISSUING-REPORT-SERVICE/card_distribution/excel
+ecms_web_issuing_report_api.card_distribution.pdf: http://ISSUING-REPORT-SERVICE/card_distribution/pdf
 
 
 # card in circulation Report
-ecms_web_issuing_report_api.card.circulation.access : http://ISSUING-REPORT-SERVICE/card_circulation/access
-ecms_web_issuing_report_api.card.circulation.list : http://ISSUING-REPORT-SERVICE/card_circulation/list
-ecms_web_issuing_report_api.card.circulation.excel: http://ISSUING-REPORT-SERVICE/card_circulation/excel
-ecms_web_issuing_report_api.card.circulation.pdf: http://ISSUING-REPORT-SERVICE/card_circulation/pdf
+ecms_web_issuing_report_api.card_circulation.access : http://ISSUING-REPORT-SERVICE/card_circulation/access
+ecms_web_issuing_report_api.card_circulation.list : http://ISSUING-REPORT-SERVICE/card_circulation/list
+ecms_web_issuing_report_api.card_circulation.excel: http://ISSUING-REPORT-SERVICE/card_circulation/excel
+ecms_web_issuing_report_api.card_circulation.pdf: http://ISSUING-REPORT-SERVICE/card_circulation/pdf
 
 
 # card number generation Report
-ecms_web_issuing_report_api.card.generation.access : http://ISSUING-REPORT-SERVICE/card_generation/access
-ecms_web_issuing_report_api.card.generation.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_generation/loadcardproducts
-ecms_web_issuing_report_api.card.generation.list : http://ISSUING-REPORT-SERVICE/card_generation/list
-ecms_web_issuing_report_api.card.generation.excel: http://ISSUING-REPORT-SERVICE/card_generation/excel
-ecms_web_issuing_report_api.card.generation.pdf: http://ISSUING-REPORT-SERVICE/card_generation/pdf
+ecms_web_issuing_report_api.card_generation.access : http://ISSUING-REPORT-SERVICE/card_generation/access
+ecms_web_issuing_report_api.card_generation.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_generation/loadcardproducts
+ecms_web_issuing_report_api.card_generation.list : http://ISSUING-REPORT-SERVICE/card_generation/list
+ecms_web_issuing_report_api.card_generation.excel: http://ISSUING-REPORT-SERVICE/card_generation/excel
+ecms_web_issuing_report_api.card_generation.pdf: http://ISSUING-REPORT-SERVICE/card_generation/pdf
 
 
 # keystat qoc  report
-ecms_web_issuing_report_api.key.statqoc.access : http://ISSUING-REPORT-SERVICE/key_statqoc/access
-ecms_web_issuing_report_api.key.statqoc.list : http://ISSUING-REPORT-SERVICE/key_statqoc/list
-ecms_web_issuing_report_api.key.statqoc.excel : http://ISSUING-REPORT-SERVICE/key_statqoc/excel
-ecms_web_issuing_report_api.key.statqoc.pdf : http://ISSUING-REPORT-SERVICE/key_statqoc/pdf
+ecms_web_issuing_report_api.key_statqoc.access : http://ISSUING-REPORT-SERVICE/key_statqoc/access
+ecms_web_issuing_report_api.key_statqoc.list : http://ISSUING-REPORT-SERVICE/key_statqoc/list
+ecms_web_issuing_report_api.key_statqoc.excel : http://ISSUING-REPORT-SERVICE/key_statqoc/excel
+ecms_web_issuing_report_api.key_statqoc.pdf : http://ISSUING-REPORT-SERVICE/key_statqoc/pdf
 
 
 # cash advances summary report
-ecms_web_issuing_report_api.cash.advancessummary.access : http://ISSUING-REPORT-SERVICE/cash_advancessummary/access
-ecms_web_issuing_report_api.cash.advancessummary.list   : http://ISSUING-REPORT-SERVICE/cash_advancessummary/list
-ecms_web_issuing_report_api.cash.advancessummary.excel : http://ISSUING-REPORT-SERVICE/cash_advancessummary/excel
-ecms_web_issuing_report_api.cash.advancessummary.pdf : http://ISSUING-REPORT-SERVICE/cash_advancessummary/pdf
+ecms_web_issuing_report_api.cash_advancessummary.access : http://ISSUING-REPORT-SERVICE/cash_advancessummary/access
+ecms_web_issuing_report_api.cash_advancessummary.list   : http://ISSUING-REPORT-SERVICE/cash_advancessummary/list
+ecms_web_issuing_report_api.cash_advancessummary.excel : http://ISSUING-REPORT-SERVICE/cash_advancessummary/excel
+ecms_web_issuing_report_api.cash_advancessummary.pdf : http://ISSUING-REPORT-SERVICE/cash_advancessummary/pdf
 
 # foreign currency circulation report
 ecms_web_issuing_report_api.foreign_currency_circulation.access : http://ISSUING-REPORT-SERVICE/foreign_currencycirculation/access
@@ -460,22 +460,22 @@ ecms_web_issuing_report_api.foreign_currency_circulation.excel : http://ISSUING-
 ecms_web_issuing_report_api.foreign_currency_circulation.pdf : http://ISSUING-REPORT-SERVICE/foreign_currencycirculation/pdf
 
 # cashback redemption report
-ecms_web_issuing_report_api.cashback.redemption.access : http://ISSUING-REPORT-SERVICE/cashback_redemption/access
-ecms_web_issuing_report_api.cashback.redemption.list : http://ISSUING-REPORT-SERVICE/cashback_redemption/list
-ecms_web_issuing_report_api.cashback.redemption.excel : http://ISSUING-REPORT-SERVICE/cashback_redemption/excel
-ecms_web_issuing_report_api.cashback.redemption.pdf : http://ISSUING-REPORT-SERVICE/cashback_redemption/pdf
+ecms_web_issuing_report_api.cashback_redemption.access : http://ISSUING-REPORT-SERVICE/cashback_redemption/access
+ecms_web_issuing_report_api.cashback_redemption.list : http://ISSUING-REPORT-SERVICE/cashback_redemption/list
+ecms_web_issuing_report_api.cashback_redemption.excel : http://ISSUING-REPORT-SERVICE/cashback_redemption/excel
+ecms_web_issuing_report_api.cashback_redemption.pdf : http://ISSUING-REPORT-SERVICE/cashback_redemption/pdf
 
 # transaction details report
-ecms_web_issuing_report_api.transaction.details.access : http://ISSUING-REPORT-SERVICE/transaction_details/access
-ecms_web_issuing_report_api.transaction.details.list : http://ISSUING-REPORT-SERVICE/transaction_details/list
-ecms_web_issuing_report_api.transaction.details.excel : http://ISSUING-REPORT-SERVICE/transaction_details/excel
-ecms_web_issuing_report_api.transaction.details.pdf : http://ISSUING-REPORT-SERVICE/transaction_details/pdf
+ecms_web_issuing_report_api.transaction_details.access : http://ISSUING-REPORT-SERVICE/transaction_details/access
+ecms_web_issuing_report_api.transaction_details.list : http://ISSUING-REPORT-SERVICE/transaction_details/list
+ecms_web_issuing_report_api.transaction_details.excel : http://ISSUING-REPORT-SERVICE/transaction_details/excel
+ecms_web_issuing_report_api.transaction_details.pdf : http://ISSUING-REPORT-SERVICE/transaction_details/pdf
 
 # # cashback redemption summary report
-ecms_web_issuing_report_api.cashback.redemptionsummary.access : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/access
-ecms_web_issuing_report_api.cashback.redemptionsummary.list : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/list
-ecms_web_issuing_report_api.cashback.redemptionsummary.excel : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/excel
-ecms_web_issuing_report_api.cashback.redemptionsummary.pdf : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/pdf
+ecms_web_issuing_report_api.cashback_redemptionsummary.access : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/access
+ecms_web_issuing_report_api.cashback_redemptionsummary.list : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/list
+ecms_web_issuing_report_api.cashback_redemptionsummary.excel : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/excel
+ecms_web_issuing_report_api.cashback_redemptionsummary.pdf : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/pdf
 
 # exception report
 ecms_web_issuing_report_api.exception.access : http://ISSUING-REPORT-SERVICE/exception/access
@@ -484,259 +484,254 @@ ecms_web_issuing_report_api.exception.excel : http://ISSUING-REPORT-SERVICE/exce
 ecms_web_issuing_report_api.exception.pdf : http://ISSUING-REPORT-SERVICE/exception/pdf
 
 # # electronic card transactions report
-cms_web_issuing_report_api.electronic.cardtransactions.access : http://ISSUING-REPORT-SERVICE/electronic_cardtransactions/access
-ecms_web_issuing_report_api.electronic.cardtransactions.txt : http://ISSUING-REPORT-SERVICE/electronic_cardtransactions/txt
+ecms_web_issuing_report_api.electronic_cardtransactions.access : http://ISSUING-REPORT-SERVICE/electronic_cardtransactions/access
+ecms_web_issuing_report_api.electronic_cardtransactions.txt : http://ISSUING-REPORT-SERVICE/electronic_cardtransactions/txt
 
 
 # # DailyPostedTransactionSummary report
-ecms_web_issuing_report_api.dailyposted.transactionsummary.access : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/access
-ecms_web_issuing_report_api.dailyposted.transactionsummary.list : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/list
-ecms_web_issuing_report_api.dailyposted.transactionsummary.excel : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/excel
-ecms_web_issuing_report_api.dailyposted.transactionsummary.pdf : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/pdf
+ecms_web_issuing_report_api.dailyposted_transactionsummary.access : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/access
+ecms_web_issuing_report_api.dailyposted_transactionsummary.list : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/list
+ecms_web_issuing_report_api.dailyposted_transactionsummary.excel : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/excel
+ecms_web_issuing_report_api.dailyposted_transactionsummary.pdf : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/pdf
 
 # # EOD Transaction report
-ecms_web_issuing_report_api.eod.transaction.access : http://ISSUING-REPORT-SERVICE/eod_transaction/access
-ecms_web_issuing_report_api.eod.transaction.list : http://ISSUING-REPORT-SERVICE/eod_transaction/list
-ecms_web_issuing_report_api.eod.transaction.excel : http://ISSUING-REPORT-SERVICE/eod_transaction/excel
-ecms_web_issuing_report_api.eod.transaction.pdf : http://ISSUING-REPORT-SERVICE/eod_transaction/pdf
+ecms_web_issuing_report_api.eod_transaction.access : http://ISSUING-REPORT-SERVICE/eod_transaction/access
+ecms_web_issuing_report_api.eod_transaction.list : http://ISSUING-REPORT-SERVICE/eod_transaction/list
+ecms_web_issuing_report_api.eod_transaction.excel : http://ISSUING-REPORT-SERVICE/eod_transaction/excel
+ecms_web_issuing_report_api.eod_transaction.pdf : http://ISSUING-REPORT-SERVICE/eod_transaction/pdf
 
 # # BRH File report
-ecms_web_issuing_report_api.brh.file.access : http://ISSUING-REPORT-SERVICE/brh_file/access
-ecms_web_issuing_report_api.brh.file.list : http://ISSUING-REPORT-SERVICE/brh_file/list
-ecms_web_issuing_report_api.brh.file.excel : http://ISSUING-REPORT-SERVICE/brh_file/excel
-ecms_web_issuing_report_api.brh.file.pdf : http://ISSUING-REPORT-SERVICE/brh_file/pdf
+ecms_web_issuing_report_api.brh_file.access : http://ISSUING-REPORT-SERVICE/brh_file/access
+ecms_web_issuing_report_api.brh_file.list : http://ISSUING-REPORT-SERVICE/brh_file/list
+ecms_web_issuing_report_api.brh_file.excel : http://ISSUING-REPORT-SERVICE/brh_file/excel
+ecms_web_issuing_report_api.brh_file.pdf : http://ISSUING-REPORT-SERVICE/brh_file/pdf
 
 # daily transaction detail report
-ecms_web_issuing_report_api.daily.transactiondetail.access : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/access
-ecms_web_issuing_report_api.daily.transactiondetail.list : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/list
-ecms_web_issuing_report_api.daily.transactiondetail.excel : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/excel
-ecms_web_issuing_report_api.daily.transactiondetail.pdf : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/pdf
+ecms_web_issuing_report_api.daily_transactiondetail.access : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/access
+ecms_web_issuing_report_api.daily_transactiondetail.list : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/list
+ecms_web_issuing_report_api.daily_transactiondetail.excel : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/excel
+ecms_web_issuing_report_api.daily_transactiondetail.pdf : http://ISSUING-REPORT-SERVICE/daily_transactiondetail/pdf
 
 #embossing and encoding report
-ecms_web_issuing_report_api.embossing.encoding.access : http://ISSUING-REPORT-SERVICE/embossing_encoding/access
-ecms_web_issuing_report_api.embossing.encoding.loadcardproducts : http://ISSUING-REPORT-SERVICE/embossing_encoding/loadcardproducts
-ecms_web_issuing_report_api.embossing.encoding.list : http://ISSUING-REPORT-SERVICE/embossing_encoding/list
-ecms_web_issuing_report_api.embossing.encoding.excel : http://ISSUING-REPORT-SERVICE/embossing_encoding/excel
-ecms_web_issuing_report_api.embossing.encoding.pdf : http://ISSUING-REPORT-SERVICE/embossing_encoding/pdf
+ecms_web_issuing_report_api.embossing_encoding.access : http://ISSUING-REPORT-SERVICE/embossing_encoding/access
+ecms_web_issuing_report_api.embossing_encoding.loadcardproducts : http://ISSUING-REPORT-SERVICE/embossing_encoding/loadcardproducts
+ecms_web_issuing_report_api.embossing_encoding.list : http://ISSUING-REPORT-SERVICE/embossing_encoding/list
+ecms_web_issuing_report_api.embossing_encoding.excel : http://ISSUING-REPORT-SERVICE/embossing_encoding/excel
+ecms_web_issuing_report_api.embossing_encoding.pdf : http://ISSUING-REPORT-SERVICE/embossing_encoding/pdf
 
 # pin generation and mailing report
-ecms_web_issuing_report_api.pingeneration.mailing.access : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/access
-ecms_web_issuing_report_api.pingeneration.mailing.loadcardproducts : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/loadcardproducts
-ecms_web_issuing_report_api.pingeneration.mailing.list : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/list
-ecms_web_issuing_report_api.pingeneration.mailing.excel : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/excel
-ecms_web_issuing_report_api.pingeneration.mailing.pdf : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/pdf
+ecms_web_issuing_report_api.pingeneration_mailing.access : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/access
+ecms_web_issuing_report_api.pingeneration_mailing.loadcardproducts : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/loadcardproducts
+ecms_web_issuing_report_api.pingeneration_mailing.list : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/list
+ecms_web_issuing_report_api.pingeneration_mailing.excel : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/excel
+ecms_web_issuing_report_api.pingeneration_mailing.pdf : http://ISSUING-REPORT-SERVICE/pingeneration_mailing/pdf
 
 # card status report
-ecms_web_issuing_report_api.card.status.access : http://ISSUING-REPORT-SERVICE/card_status/access
-ecms_web_issuing_report_api.card.status.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_status/loadcardproducts
-ecms_web_issuing_report_api.card.status.list : http://ISSUING-REPORT-SERVICE/card_status/list
-ecms_web_issuing_report_api.card.status.excel : http://ISSUING-REPORT-SERVICE/card_status/excel
-ecms_web_issuing_report_api.card.status.pdf : http://ISSUING-REPORT-SERVICE/card_status/pdf
+ecms_web_issuing_report_api.card_status.access : http://ISSUING-REPORT-SERVICE/card_status/access
+ecms_web_issuing_report_api.card_status.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_status/loadcardproducts
+ecms_web_issuing_report_api.card_status.list : http://ISSUING-REPORT-SERVICE/card_status/list
+ecms_web_issuing_report_api.card_status.excel : http://ISSUING-REPORT-SERVICE/card_status/excel
+ecms_web_issuing_report_api.card_status.pdf : http://ISSUING-REPORT-SERVICE/card_status/pdf
 
 # card annual fee report
-ecms_web_issuing_report_api.card.annualfee.access : http://ISSUING-REPORT-SERVICE/card_annualfee/access
-ecms_web_issuing_report_api.card.annualfee.list : http://ISSUING-REPORT-SERVICE/card_annualfee/list
-ecms_web_issuing_report_api.card.annualfee.excel : http://ISSUING-REPORT-SERVICE/card_annualfee/excel
-ecms_web_issuing_report_api.card.annualfee.pdf : http://ISSUING-REPORT-SERVICE/card_annualfee/pdf
+ecms_web_issuing_report_api.card_annualfee.access : http://ISSUING-REPORT-SERVICE/card_annualfee/access
+ecms_web_issuing_report_api.card_annualfee.list : http://ISSUING-REPORT-SERVICE/card_annualfee/list
+ecms_web_issuing_report_api.card_annualfee.excel : http://ISSUING-REPORT-SERVICE/card_annualfee/excel
+ecms_web_issuing_report_api.card_annualfee.pdf : http://ISSUING-REPORT-SERVICE/card_annualfee/pdf
 
 # aggrigate limits report
-ecms_web_issuing_report_api.aggrigate.limits.access : http://ISSUING-REPORT-SERVICE/aggrigate_limits/access
-ecms_web_issuing_report_api.aggrigate.limits.list : http://ISSUING-REPORT-SERVICE/aggrigate_limits/list
-ecms_web_issuing_report_api.aggrigate.limits.excel : http://ISSUING-REPORT-SERVICE/aggrigate_limits/excel
-ecms_web_issuing_report_api.aggrigate.limits.pdf : http://ISSUING-REPORT-SERVICE/aggrigate_limits/pdf
+ecms_web_issuing_report_api.aggrigate_limits.access : http://ISSUING-REPORT-SERVICE/aggrigate_limits/access
+ecms_web_issuing_report_api.aggrigate_limits.list : http://ISSUING-REPORT-SERVICE/aggrigate_limits/list
+ecms_web_issuing_report_api.aggrigate_limits.excel : http://ISSUING-REPORT-SERVICE/aggrigate_limits/excel
+ecms_web_issuing_report_api.aggrigate_limits.pdf : http://ISSUING-REPORT-SERVICE/aggrigate_limits/pdf
 
 # new card generated report
-ecms_web_issuing_report_api.new.cardgenerated.access : http://ISSUING-REPORT-SERVICE/new_cardgenerated/access
-ecms_web_issuing_report_api.new.cardgenerated.list : http://ISSUING-REPORT-SERVICE/new_cardgenerated/list
-ecms_web_issuing_report_api.new.cardgenerated.excel : http://ISSUING-REPORT-SERVICE/new_cardgenerated/excel
-ecms_web_issuing_report_api.new.cardgenerated.pdf : http://ISSUING-REPORT-SERVICE/new_cardgenerated/pdf
+ecms_web_issuing_report_api.new_cardgenerated.access : http://ISSUING-REPORT-SERVICE/new_cardgenerated/access
+ecms_web_issuing_report_api.new_cardgenerated.list : http://ISSUING-REPORT-SERVICE/new_cardgenerated/list
+ecms_web_issuing_report_api.new_cardgenerated.excel : http://ISSUING-REPORT-SERVICE/new_cardgenerated/excel
+ecms_web_issuing_report_api.new_cardgenerated.pdf : http://ISSUING-REPORT-SERVICE/new_cardgenerated/pdf
 
 # card payment summary report
-ecms_web_issuing_report_api.card.paymentsummary.access : http://ISSUING-REPORT-SERVICE/card_paymentsummary/access
-ecms_web_issuing_report_api.card.paymentsummary.list : http://ISSUING-REPORT-SERVICE/card_paymentsummary/list
-ecms_web_issuing_report_api.card.paymentsummary.excel : http://ISSUING-REPORT-SERVICE/card_paymentsummary/excel
-ecms_web_issuing_report_api.card.paymentsummary.pdf : http://ISSUING-REPORT-SERVICE/card_paymentsummary/pdf
-ecms_web_issuing_report_api.card.paymentsummary.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_paymentsummary/loadcardproducts
+ecms_web_issuing_report_api.card_paymentsummary.access : http://ISSUING-REPORT-SERVICE/card_paymentsummary/access
+ecms_web_issuing_report_api.card_paymentsummary.list : http://ISSUING-REPORT-SERVICE/card_paymentsummary/list
+ecms_web_issuing_report_api.card_paymentsummary.excel : http://ISSUING-REPORT-SERVICE/card_paymentsummary/excel
+ecms_web_issuing_report_api.card_paymentsummary.pdf : http://ISSUING-REPORT-SERVICE/card_paymentsummary/pdf
+ecms_web_issuing_report_api.card_paymentsummary.loadcardproducts : http://ISSUING-REPORT-SERVICE/card_paymentsummary/loadcardproducts
 
 # card history report
-ecms_web_issuing_report_api.card.history.access : http://ISSUING-REPORT-SERVICE/card_history/access
-ecms_web_issuing_report_api.card.history.list : http://ISSUING-REPORT-SERVICE/card_history/list
-ecms_web_issuing_report_api.card.history.excel : http://ISSUING-REPORT-SERVICE/card_history/excel
-ecms_web_issuing_report_api.card.history.pdf : http://ISSUING-REPORT-SERVICE/card_history/pdf
+ecms_web_issuing_report_api.card_history.access : http://ISSUING-REPORT-SERVICE/card_history/access
+ecms_web_issuing_report_api.card_history.list : http://ISSUING-REPORT-SERVICE/card_history/list
+ecms_web_issuing_report_api.card_history.excel : http://ISSUING-REPORT-SERVICE/card_history/excel
+ecms_web_issuing_report_api.card_history.pdf : http://ISSUING-REPORT-SERVICE/card_history/pdf
 
 
 # excess card report
-ecms_web_issuing_report_api.excess.card.access : http://ISSUING-REPORT-SERVICE/excess_card/access
-ecms_web_issuing_report_api.excess.card.loadcardproducts : http://ISSUING-REPORT-SERVICE/excess_card/loadcardproducts
-ecms_web_issuing_report_api.excess.card.list : http://ISSUING-REPORT-SERVICE/excess_card/list
-ecms_web_issuing_report_api.excess.card.excel : http://ISSUING-REPORT-SERVICE/excess_card/excel
-ecms_web_issuing_report_api.excess.card.pdf : http://ISSUING-REPORT-SERVICE/excess_card/pdf
+ecms_web_issuing_report_api.excess_card.access : http://ISSUING-REPORT-SERVICE/excess_card/access
+ecms_web_issuing_report_api.excess_card.loadcardproducts : http://ISSUING-REPORT-SERVICE/excess_card/loadcardproducts
+ecms_web_issuing_report_api.excess_card.list : http://ISSUING-REPORT-SERVICE/excess_card/list
+ecms_web_issuing_report_api.excess_card.excel : http://ISSUING-REPORT-SERVICE/excess_card/excel
+ecms_web_issuing_report_api.excess_card.pdf : http://ISSUING-REPORT-SERVICE/excess_card/pdf
 
 # card outstanding report
-ecms_web_issuing_report_api.card.outstanding.access : http://ISSUING-REPORT-SERVICE/card_outstanding/access
-ecms_web_issuing_report_api.card.outstanding.list : http://ISSUING-REPORT-SERVICE/card_outstanding/list
-ecms_web_issuing_report_api.card.outstanding.excel : http://ISSUING-REPORT-SERVICE/card_outstanding/excel
-ecms_web_issuing_report_api.card.outstanding.pdf : http://ISSUING-REPORT-SERVICE/card_outstanding/pdf
+ecms_web_issuing_report_api.card_outstanding.access : http://ISSUING-REPORT-SERVICE/card_outstanding/access
+ecms_web_issuing_report_api.card_outstanding.list : http://ISSUING-REPORT-SERVICE/card_outstanding/list
+ecms_web_issuing_report_api.card_outstanding.excel : http://ISSUING-REPORT-SERVICE/card_outstanding/excel
+ecms_web_issuing_report_api.card_outstanding.pdf : http://ISSUING-REPORT-SERVICE/card_outstanding/pdf
 
 # daily maintainance report
-ecms_web_issuing_report_api.daily.maintainance.access : http://ISSUING-REPORT-SERVICE/daily_maintainance/access
-ecms_web_issuing_report_api.daily.maintainance.list : http://ISSUING-REPORT-SERVICE/daily_maintainance/list
-ecms_web_issuing_report_api.daily.maintainance.excel : http://ISSUING-REPORT-SERVICE/daily_maintainance/excel
-ecms_web_issuing_report_api.daily.maintainance.pdf : http://ISSUING-REPORT-SERVICE/daily_maintainance/pdf
+ecms_web_issuing_report_api.daily_maintainance.access : http://ISSUING-REPORT-SERVICE/daily_maintainance/access
+ecms_web_issuing_report_api.daily_maintainance.list : http://ISSUING-REPORT-SERVICE/daily_maintainance/list
+ecms_web_issuing_report_api.daily_maintainance.excel : http://ISSUING-REPORT-SERVICE/daily_maintainance/excel
+ecms_web_issuing_report_api.daily_maintainance.pdf : http://ISSUING-REPORT-SERVICE/daily_maintainance/pdf
 
 # cash back reconciliation report
-ecms_web_issuing_report_api.cashback.reconciliation.access : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/access
-ecms_web_issuing_report_api.cashback.reconciliation.list : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/list
-ecms_web_issuing_report_api.cashback.reconciliation.excel : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/excel
-ecms_web_issuing_report_api.cashback.reconciliation.pdf : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/pdf
+ecms_web_issuing_report_api.cashback_reconciliation.access : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/access
+ecms_web_issuing_report_api.cashback_reconciliation.list : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/list
+ecms_web_issuing_report_api.cashback_reconciliation.excel : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/excel
+ecms_web_issuing_report_api.cashback_reconciliation.pdf : http://ISSUING-REPORT-SERVICE/cashback_reconciliation/pdf
 
 # government stamp duty report
-ecms_web_issuing_report_api.government.stampduty.access : http://ISSUING-REPORT-SERVICE/government_stampduty/access
-ecms_web_issuing_report_api.government.stampduty.list : http://ISSUING-REPORT-SERVICE/government_stampduty/list
-ecms_web_issuing_report_api.government.stampduty.excel : http://ISSUING-REPORT-SERVICE/government_stampduty/excel
-ecms_web_issuing_report_api.government.stampduty.pdf : http://ISSUING-REPORT-SERVICE/government_stampduty/pdf
+ecms_web_issuing_report_api.government_stampduty.access : http://ISSUING-REPORT-SERVICE/government_stampduty/access
+ecms_web_issuing_report_api.government_stampduty.list : http://ISSUING-REPORT-SERVICE/government_stampduty/list
+ecms_web_issuing_report_api.government_stampduty.excel : http://ISSUING-REPORT-SERVICE/government_stampduty/excel
+ecms_web_issuing_report_api.government_stampduty.pdf : http://ISSUING-REPORT-SERVICE/government_stampduty/pdf
 
 # cash back summary report
-ecms_web_issuing_report_api.cashback.summary.access : http://ISSUING-REPORT-SERVICE/cashback_summary/access
-ecms_web_issuing_report_api.cashback.summary.list : http://ISSUING-REPORT-SERVICE/cashback_summary/list
-ecms_web_issuing_report_api.cashback.summary.excel : http://ISSUING-REPORT-SERVICE/cashback_summary/excel
-ecms_web_issuing_report_api.cashback.summary.pdf : http://ISSUING-REPORT-SERVICE/cashback_summary/pdf
+ecms_web_issuing_report_api.cashback_summary.access : http://ISSUING-REPORT-SERVICE/cashback_summary/access
+ecms_web_issuing_report_api.cashback_summary.list : http://ISSUING-REPORT-SERVICE/cashback_summary/list
+ecms_web_issuing_report_api.cashback_summary.excel : http://ISSUING-REPORT-SERVICE/cashback_summary/excel
+ecms_web_issuing_report_api.cashback_summary.pdf : http://ISSUING-REPORT-SERVICE/cashback_summary/pdf
 
 # np listening report
-ecms_web_issuing_report_api.np.listening.access : http://ISSUING-REPORT-SERVICE/np_listening/access
-ecms_web_issuing_report_api.np.listening.list : http://ISSUING-REPORT-SERVICE/np_listening/list
-ecms_web_issuing_report_api.np.listening.excel : http://ISSUING-REPORT-SERVICE/np_listening/excel
-ecms_web_issuing_report_api.np.listening.pdf : http://ISSUING-REPORT-SERVICE/np_listening/pdf
+ecms_web_issuing_report_api.np_listening.access : http://ISSUING-REPORT-SERVICE/np_listening/access
+ecms_web_issuing_report_api.np_listening.list : http://ISSUING-REPORT-SERVICE/np_listening/list
+ecms_web_issuing_report_api.np_listening.excel : http://ISSUING-REPORT-SERVICE/np_listening/excel
+ecms_web_issuing_report_api.np_listening.pdf : http://ISSUING-REPORT-SERVICE/np_listening/pdf
 
 # summary npl report
-ecms_web_issuing_report_api.summary.npl.access : http://ISSUING-REPORT-SERVICE/summary_npl/access
-ecms_web_issuing_report_api.summary.npl.list : http://ISSUING-REPORT-SERVICE/summary_npl/list
-ecms_web_issuing_report_api.summary.npl.excel : http://ISSUING-REPORT-SERVICE/summary_npl/excel
-ecms_web_issuing_report_api.summary.npl.pdf : http://ISSUING-REPORT-SERVICE/summary_npl/pdf
+ecms_web_issuing_report_api.summary_npl.access : http://ISSUING-REPORT-SERVICE/summary_npl/access
+ecms_web_issuing_report_api.summary_npl.list : http://ISSUING-REPORT-SERVICE/summary_npl/list
+ecms_web_issuing_report_api.summary_npl.excel : http://ISSUING-REPORT-SERVICE/summary_npl/excel
+ecms_web_issuing_report_api.summary_npl.pdf : http://ISSUING-REPORT-SERVICE/summary_npl/pdf
 
 # only visa auth report
-ecms_web_issuing_report_api.only.visaauth.access : http://ISSUING-REPORT-SERVICE/only_visaauth/access
-ecms_web_issuing_report_api.only.visaauth.list : http://ISSUING-REPORT-SERVICE/only_visaauth/list
-ecms_web_issuing_report_api.only.visaauth.excel : http://ISSUING-REPORT-SERVICE/only_visaauth/excel
-ecms_web_issuing_report_api.only.visaauth.pdf : http://ISSUING-REPORT-SERVICE/only_visaauth/pdf
+ecms_web_issuing_report_api.only_visaauth.access : http://ISSUING-REPORT-SERVICE/only_visaauth/access
+ecms_web_issuing_report_api.only_visaauth.list : http://ISSUING-REPORT-SERVICE/only_visaauth/list
+ecms_web_issuing_report_api.only_visaauth.excel : http://ISSUING-REPORT-SERVICE/only_visaauth/excel
+ecms_web_issuing_report_api.only_visaauth.pdf : http://ISSUING-REPORT-SERVICE/only_visaauth/pdf
 
 # account outstanding report
-ecms_web_issuing_report_api.account.outstanding.access : http://ISSUING-REPORT-SERVICE/account_outstanding/access
-ecms_web_issuing_report_api.account.outstanding.list : http://ISSUING-REPORT-SERVICE/account_outstanding/list
-ecms_web_issuing_report_api.account.outstanding.excel : http://ISSUING-REPORT-SERVICE/account_outstanding/excel
-ecms_web_issuing_report_api.account.outstanding.pdf : http://ISSUING-REPORT-SERVICE/account_outstanding/pdf
+ecms_web_issuing_report_api.account_outstanding.access : http://ISSUING-REPORT-SERVICE/account_outstanding/access
+ecms_web_issuing_report_api.account_outstanding.list : http://ISSUING-REPORT-SERVICE/account_outstanding/list
+ecms_web_issuing_report_api.account_outstanding.excel : http://ISSUING-REPORT-SERVICE/account_outstanding/excel
+ecms_web_issuing_report_api.account_outstanding.pdf : http://ISSUING-REPORT-SERVICE/account_outstanding/pdf
 
 # opstat qoc  report
-ecms_web_issuing_report_api.opstat.qoc.access : http://ISSUING-REPORT-SERVICE/opstat_qoc/access
-ecms_web_issuing_report_api.opstat.qoc.list : http://ISSUING-REPORT-SERVICE/opstat_qoc/list
-ecms_web_issuing_report_api.opstat.qoc.excel : http://ISSUING-REPORT-SERVICE/opstat_qoc/excel
-ecms_web_issuing_report_api.opstat.qoc.pdf : http://ISSUING-REPORT-SERVICE/opstat_qoc/pdf
+ecms_web_issuing_report_api.opstat_qoc.access : http://ISSUING-REPORT-SERVICE/opstat_qoc/access
+ecms_web_issuing_report_api.opstat_qoc.list : http://ISSUING-REPORT-SERVICE/opstat_qoc/list
+ecms_web_issuing_report_api.opstat_qoc.excel : http://ISSUING-REPORT-SERVICE/opstat_qoc/excel
+ecms_web_issuing_report_api.opstat_qoc.pdf : http://ISSUING-REPORT-SERVICE/opstat_qoc/pdf
 
 # keystatopstat parta report
-ecms_web_issuing_report_api.keystat.opsstatparta.access : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/access
-ecms_web_issuing_report_api.keystat.opsstatparta.list : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/list
-ecms_web_issuing_report_api.keystat.opsstatparta.excel : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/excel
-ecms_web_issuing_report_api.keystat.opsstatparta.pdf : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/pdf
+ecms_web_issuing_report_api.keystat_opsstatparta.access : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/access
+ecms_web_issuing_report_api.keystat_opsstatparta.list : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/list
+ecms_web_issuing_report_api.keystat_opsstatparta.excel : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/excel
+ecms_web_issuing_report_api.keystat_opsstatparta.pdf : http://ISSUING-REPORT-SERVICE/keystat_opsstatparta/pdf
 
 # limit modification report
-ecms_web_issuing_report_api.limit.modification.access : http://ISSUING-REPORT-SERVICE/limit_modification/access
-ecms_web_issuing_report_api.limit.modification.list : http://ISSUING-REPORT-SERVICE/limit_modification/list
-ecms_web_issuing_report_api.limit.modification.excel : http://ISSUING-REPORT-SERVICE/limit_modification/excel
-ecms_web_issuing_report_api.limit.modification.pdf : http://ISSUING-REPORT-SERVICE/limit_modification/pdf
+ecms_web_issuing_report_api.limit_modification.access : http://ISSUING-REPORT-SERVICE/limit_modification/access
+ecms_web_issuing_report_api.limit_modification.list : http://ISSUING-REPORT-SERVICE/limit_modification/list
+ecms_web_issuing_report_api.limit_modification.excel : http://ISSUING-REPORT-SERVICE/limit_modification/excel
+ecms_web_issuing_report_api.limit_modification.pdf : http://ISSUING-REPORT-SERVICE/limit_modification/pdf
 
 # loyalty redemption report
-ecms_web_issuing_report_api.loyalty.redemption.access : http://ISSUING-REPORT-SERVICE/loyalty_redemption/access
-ecms_web_issuing_report_api.loyalty.redemption.list : http://ISSUING-REPORT-SERVICE/loyalty_redemption/list
-ecms_web_issuing_report_api.loyalty.redemption.excel : http://ISSUING-REPORT-SERVICE/loyalty_redemption/excel
-ecms_web_issuing_report_api.loyalty.redemption.pdf : http://ISSUING-REPORT-SERVICE/loyalty_redemption/pdf
+ecms_web_issuing_report_api.loyalty_redemption.access : http://ISSUING-REPORT-SERVICE/loyalty_redemption/access
+ecms_web_issuing_report_api.loyalty_redemption.list : http://ISSUING-REPORT-SERVICE/loyalty_redemption/list
+ecms_web_issuing_report_api.loyalty_redemption.excel : http://ISSUING-REPORT-SERVICE/loyalty_redemption/excel
+ecms_web_issuing_report_api.loyalty_redemption.pdf : http://ISSUING-REPORT-SERVICE/loyalty_redemption/pdf
 
 # interest adjustment report
-ecms_web_issuing_report_api.interest.adjustment.access : http://ISSUING-REPORT-SERVICE/interest_adjustment/access
-ecms_web_issuing_report_api.interest.adjustment.list : http://ISSUING-REPORT-SERVICE/interest_adjustment/list
-ecms_web_issuing_report_api.interest.adjustment.excel : http://ISSUING-REPORT-SERVICE/interest_adjustment/excel
-ecms_web_issuing_report_api.interest.adjustment.pdf : http://ISSUING-REPORT-SERVICE/interest_adjustment/pdf
+ecms_web_issuing_report_api.interest_adjustment.access : http://ISSUING-REPORT-SERVICE/interest_adjustment/access
+ecms_web_issuing_report_api.interest_adjustment.list : http://ISSUING-REPORT-SERVICE/interest_adjustment/list
+ecms_web_issuing_report_api.interest_adjustment.excel : http://ISSUING-REPORT-SERVICE/interest_adjustment/excel
+ecms_web_issuing_report_api.interest_adjustment.pdf : http://ISSUING-REPORT-SERVICE/interest_adjustment/pdf
 
 # call histry report
-ecms_web_issuing_report_api.call.history.access : http://ISSUING-REPORT-SERVICE/call_history/access
-ecms_web_issuing_report_api.call.history.list : http://ISSUING-REPORT-SERVICE/call_history/list
-ecms_web_issuing_report_api.call.history.excel : http://ISSUING-REPORT-SERVICE/call_history/excel
-ecms_web_issuing_report_api.call.history.pdf : http://ISSUING-REPORT-SERVICE/call_history/pdf
+ecms_web_issuing_report_api.call_history.access : http://ISSUING-REPORT-SERVICE/call_history/access
+ecms_web_issuing_report_api.call_history.list : http://ISSUING-REPORT-SERVICE/call_history/list
+ecms_web_issuing_report_api.call_history.excel : http://ISSUING-REPORT-SERVICE/call_history/excel
+ecms_web_issuing_report_api.call_history.pdf : http://ISSUING-REPORT-SERVICE/call_history/pdf
 
-# user modification report
-ecms_web_issuing_report_api.user.modification.access : http://ISSUING-REPORT-SERVICE/user_modification/access
-ecms_web_issuing_report_api.user.modification.list : http://ISSUING-REPORT-SERVICE/user_modification/list
-ecms_web_issuing_report_api.user.modification.excel : http://ISSUING-REPORT-SERVICE/user_modification/excel
-ecms_web_issuing_report_api.user.modification.pdf : http://ISSUING-REPORT-SERVICE/user_modification/pdf
 
 # posted sys gen txn report
-ecms_web_issuing_report_api.posted.sysgentxnsummary.access : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/access
-ecms_web_issuing_report_api.posted.sysgentxnsummary.list : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/list
-ecms_web_issuing_report_api.posted.sysgentxnsummary.excel : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/excel
-ecms_web_issuing_report_api.posted.sysgentxnsummary.pdf : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/pdf
+ecms_web_issuing_report_api.posted_sysgentxnsummary.access : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/access
+ecms_web_issuing_report_api.posted_sysgentxnsummary.list : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/list
+ecms_web_issuing_report_api.posted_sysgentxnsummary.excel : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/excel
+ecms_web_issuing_report_api.posted_sysgentxnsummary.pdf : http://ISSUING-REPORT-SERVICE/posted_sysgentxnsummary/pdf
 
 # usage summary report
-ecms_web_issuing_report_api.usage.summary.access : http://ISSUING-REPORT-SERVICE/usage_summary/access
-ecms_web_issuing_report_api.usage.summary.list : http://ISSUING-REPORT-SERVICE/usage_summary/list
-ecms_web_issuing_report_api.usage.summary.excel : http://ISSUING-REPORT-SERVICE/usage_summary/excel
-ecms_web_issuing_report_api.usage.summary.pdf : http://ISSUING-REPORT-SERVICE/usage_summary/pdf
+ecms_web_issuing_report_api.usage_summary.access : http://ISSUING-REPORT-SERVICE/usage_summary/access
+ecms_web_issuing_report_api.usage_summary.list : http://ISSUING-REPORT-SERVICE/usage_summary/list
+ecms_web_issuing_report_api.usage_summary.excel : http://ISSUING-REPORT-SERVICE/usage_summary/excel
+ecms_web_issuing_report_api.usage_summary.pdf : http://ISSUING-REPORT-SERVICE/usage_summary/pdf
 
 # daily posted txn report
-ecms_web_issuing_report_api.daily.postedtransaction.access : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/access
-ecms_web_issuing_report_api.daily.postedtransaction.list : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/list
-ecms_web_issuing_report_api.daily.postedtransaction.excel : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/excel
-ecms_web_issuing_report_api.daily.postedtransaction.pdf : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/pdf
+ecms_web_issuing_report_api.daily_postedtransaction.access : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/access
+ecms_web_issuing_report_api.daily_postedtransaction.list : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/list
+ecms_web_issuing_report_api.daily_postedtransaction.excel : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/excel
+ecms_web_issuing_report_api.daily_postedtransaction.pdf : http://ISSUING-REPORT-SERVICE/daily_postedtransaction/pdf
 
 # transaction drop report
-ecms_web_issuing_report_api.transaction.drop.access : http://ISSUING-REPORT-SERVICE/transaction_drop/access
-ecms_web_issuing_report_api.transaction.drop.list : http://ISSUING-REPORT-SERVICE/transaction_drop/list
-ecms_web_issuing_report_api.transaction.drop.excel : http://ISSUING-REPORT-SERVICE/transaction_drop/excel
-ecms_web_issuing_report_api.transaction.drop.pdf : http://ISSUING-REPORT-SERVICE/transaction_drop/pdf
+ecms_web_issuing_report_api.transaction_drop.access : http://ISSUING-REPORT-SERVICE/transaction_drop/access
+ecms_web_issuing_report_api.transaction_drop.list : http://ISSUING-REPORT-SERVICE/transaction_drop/list
+ecms_web_issuing_report_api.transaction_drop.excel : http://ISSUING-REPORT-SERVICE/transaction_drop/excel
+ecms_web_issuing_report_api.transaction_drop.pdf : http://ISSUING-REPORT-SERVICE/transaction_drop/pdf
 
 
 
 # ------------------  Common Report  ------------------------#
 
 # user login report
-ecms_web_common_report_api.user.login.access : http://COMMON-REPORT-SERVICE/user_login/access
-ecms_web_common_report_api.user.login.list : http://COMMON-REPORT-SERVICE/user_login/list
-ecms_web_common_report_api.user.login.excel : http://COMMON-REPORT-SERVICE/user_login/excel
-ecms_web_common_report_api.user.login.pdf : http://COMMON-REPORT-SERVICE/user_login/pdf
+ecms_web_common_report_api.user_login.access : http://COMMON-REPORT-SERVICE/user_login/access
+ecms_web_common_report_api.user_login.list : http://COMMON-REPORT-SERVICE/user_login/list
+ecms_web_common_report_api.user_login.excel : http://COMMON-REPORT-SERVICE/user_login/excel
+ecms_web_common_report_api.user_login.pdf : http://COMMON-REPORT-SERVICE/user_login/pdf
 
 # system user status report
-ecms_web_common_report_api.system.userstatus.access : http://COMMON-REPORT-SERVICE/system_userstatus/access
-ecms_web_common_report_api.system.userstatus.list : http://COMMON-REPORT-SERVICE/system_userstatus/list
-ecms_web_common_report_api.system.userstatus.excel : http://COMMON-REPORT-SERVICE/system_userstatus/excel
-ecms_web_common_report_api.system.userstatus.pdf : http://COMMON-REPORT-SERVICE/system_userstatus/pdf
+ecms_web_common_report_api.system_userstatus.access : http://COMMON-REPORT-SERVICE/system_userstatus/access
+ecms_web_common_report_api.system_userstatus.list : http://COMMON-REPORT-SERVICE/system_userstatus/list
+ecms_web_common_report_api.system_userstatus.excel : http://COMMON-REPORT-SERVICE/system_userstatus/excel
+ecms_web_common_report_api.system_userstatus.pdf : http://COMMON-REPORT-SERVICE/system_userstatus/pdf
 
 # user modification report
-ecms_web_common_report_api.user.modification.access : http://COMMON-REPORT-SERVICE/user_modification/access
-ecms_web_common_report_api.user.modification.list : http://COMMON-REPORT-SERVICE/user_modification/list
-ecms_web_common_report_api.user.modification.excel : http://COMMON-REPORT-SERVICE/user_modification/excel
-ecms_web_common_report_api.user.modification.pdf : http://COMMON-REPORT-SERVICE/user_modification/pdf
+ecms_web_common_report_api.user_modification.access : http://COMMON-REPORT-SERVICE/user_modification/access
+ecms_web_common_report_api.user_modification.list : http://COMMON-REPORT-SERVICE/user_modification/list
+ecms_web_common_report_api.user_modification.excel : http://COMMON-REPORT-SERVICE/user_modification/excel
+ecms_web_common_report_api.user_modification.pdf : http://COMMON-REPORT-SERVICE/user_modification/pdf
 
 # userrole privileges report
-ecms_web_common_report_api.userrole.privileges.access : http://COMMON-REPORT-SERVICE/userrole_privileges/access
-ecms_web_common_report_api.userrole.privileges.list : http://COMMON-REPORT-SERVICE/userrole_privileges/list
-ecms_web_common_report_api.userrole.privileges.excel : http://COMMON-REPORT-SERVICE/userrole_privileges/excel
-ecms_web_common_report_api.userrole.privileges.pdf : http://COMMON-REPORT-SERVICE/userrole_privileges/pdf
+ecms_web_common_report_api.userrole_privileges.access : http://COMMON-REPORT-SERVICE/userrole_privileges/access
+ecms_web_common_report_api.userrole_privileges.list : http://COMMON-REPORT-SERVICE/userrole_privileges/list
+ecms_web_common_report_api.userrole_privileges.excel : http://COMMON-REPORT-SERVICE/userrole_privileges/excel
+ecms_web_common_report_api.userrole_privileges.pdf : http://COMMON-REPORT-SERVICE/userrole_privileges/pdf
 
 # password reset report
-ecms_web_common_report_api.password.reset.access : http://COMMON-REPORT-SERVICE/password_reset/access
-ecms_web_common_report_api.password.reset.list : http://COMMON-REPORT-SERVICE/password_reset/list
-ecms_web_common_report_api.password.reset.excel : http://COMMON-REPORT-SERVICE/password_reset/excel
-ecms_web_common_report_api.password.reset.pdf : http://COMMON-REPORT-SERVICE/password_reset/pdf
+ecms_web_common_report_api.password_reset.access : http://COMMON-REPORT-SERVICE/password_reset/access
+ecms_web_common_report_api.password_reset.list : http://COMMON-REPORT-SERVICE/password_reset/list
+ecms_web_common_report_api.password_reset.excel : http://COMMON-REPORT-SERVICE/password_reset/excel
+ecms_web_common_report_api.password_reset.pdf : http://COMMON-REPORT-SERVICE/password_reset/pdf
 
 # internal user creation report
-ecms_web_common_report_api.internal.usercreation.access : http://COMMON-REPORT-SERVICE/internal_usercreation/access
-ecms_web_common_report_api.internal.usercreation.list : http://COMMON-REPORT-SERVICE/internal_usercreation/list
-ecms_web_common_report_api.internal.usercreation.excel : http://COMMON-REPORT-SERVICE/internal_usercreation/excel
-ecms_web_common_report_api.internal.usercreation.pdf : http://COMMON-REPORT-SERVICE/internal_usercreation/pdf
+ecms_web_common_report_api.internal_usercreation.access : http://COMMON-REPORT-SERVICE/internal_usercreation/access
+ecms_web_common_report_api.internal_usercreation.list : http://COMMON-REPORT-SERVICE/internal_usercreation/list
+ecms_web_common_report_api.internal_usercreation.excel : http://COMMON-REPORT-SERVICE/internal_usercreation/excel
+ecms_web_common_report_api.internal_usercreation.pdf : http://COMMON-REPORT-SERVICE/internal_usercreation/pdf
 
 # system audit report
-ecms_web_common_report_api.system.auditreport.access : http://COMMON-REPORT-SERVICE/system_auditreport/access
-ecms_web_common_report_api.system.auditreport.list : http://COMMON-REPORT-SERVICE/system_auditreport/list
-ecms_web_common_report_api.system.auditreport.excel : http://COMMON-REPORT-SERVICE/system_auditreport/excel
-ecms_web_common_report_api.system.auditreport.pdf : http://COMMON-REPORT-SERVICE/system_auditreport/pdf
+ecms_web_common_report_api.system_auditreport.access : http://COMMON-REPORT-SERVICE/system_auditreport/access
+ecms_web_common_report_api.system_auditreport.list : http://COMMON-REPORT-SERVICE/system_auditreport/list
+ecms_web_common_report_api.system_auditreport.excel : http://COMMON-REPORT-SERVICE/system_auditreport/excel
+ecms_web_common_report_api.system_auditreport.pdf : http://COMMON-REPORT-SERVICE/system_auditreport/pdf
 
 
 
