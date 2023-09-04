@@ -7,155 +7,155 @@ ecms_web_issuing_report_file.directory.txt : GeneratedReports/
 # Report_Generator
 
 # 1 Installment Detail Report
-report_gen_api.installment_detail : http://localhost:5000/ecms_report_core_api/installmentdetailsreport
+report_gen_api.installment_detail : http://192.168.1.150:5000/ecms_report_core_api/installmentdetailsreport
 
 # 2 application confirmation Report
-report_gen_api.application_confirmation : http://localhost:5000/ecms_report_core_api/application_confirmation_report
+report_gen_api.application_confirmation : http://192.168.1.150:5000/ecms_report_core_api/application_confirmation_report
 
 # 3 application data entry Report
-report_gen_api.application_dataentry : http://localhost:5000/ecms_report_core_api/ApplicationDataEntry
+report_gen_api.application_dataentry : http://192.168.1.150:5000/ecms_report_core_api/ApplicationDataEntry
 
 # 4 application rejection Report
-report_gen_api.application_reject : http://localhost:5000/ecms_report_core_api/ApplicationRejection
+report_gen_api.application_reject : http://192.168.1.150:5000/ecms_report_core_api/ApplicationRejection
 
 # 5 application summary Report
-report_gen_api.application_summary : http://localhost:5000/ecms_report_core_api/ApplicationSummaryReport
+report_gen_api.application_summary : http://192.168.1.150:5000/ecms_report_core_api/ApplicationSummaryReport
 
 # 6 card application Report
-report_gen_api.card_application : http://localhost:5000/ecms_report_core_api/CardApplication
+report_gen_api.card_application : http://192.168.1.150:5000/ecms_report_core_api/CardApplication
 
 # 7 application credit score Report
-report_gen_api.application_creditscore : http://localhost:5000/ecms_report_core_api/ApplicationCreditScoreReport
+report_gen_api.application_creditscore : http://192.168.1.150:5000/ecms_report_core_api/ApplicationCreditScoreReport
 
 # 8 activated not used card Report
-report_gen_api.act_notused : http://localhost:5000/ecms_report_core_api/activatedNotUsedCard
+report_gen_api.act_notused : http://192.168.1.150:5000/ecms_report_core_api/activatedNotUsedCard
 
 # 9 card activation Report
-report_gen_api.card_activation : http://localhost:5000/ecms_report_core_api/cardActivationReport
+report_gen_api.card_activation : http://192.168.1.150:5000/ecms_report_core_api/cardActivationReport
 
 # 10 card distribution Report
-report_gen_api.card_distribution : http://localhost:5000/ecms_report_core_api/card_distribution_report
+report_gen_api.card_distribution : http://192.168.1.150:5000/ecms_report_core_api/card_distribution_report
 
 # 11 card in circulation Report
-report_gen_api.card_circulation : http://localhost:5000/ecms_report_core_api/cardincirculationreport
+report_gen_api.card_circulation : http://192.168.1.150:5000/ecms_report_core_api/cardincirculationreport
 
 # 12 card number generation Report
-report_gen_api.card_generation : http://localhost:5000/ecms_report_core_api/cardnumbergenerationreport
+report_gen_api.card_generation : http://192.168.1.150:5000/ecms_report_core_api/cardnumbergenerationreport
 
 # 13 daily transaction detail report
-report_gen_api.daily_transactiondetail : http://localhost:5000/ecms_report_core_api/dailyTransactionDetailReport
+report_gen_api.daily_transactiondetail : http://192.168.1.150:5000/ecms_report_core_api/dailyTransactionDetailReport
 
 # 14 embossing and encoding report
-report_gen_api.embossing_encoding : http://localhost:5000/ecms_report_core_api/EmbossingandEncodingReport
+report_gen_api.embossing_encoding : http://192.168.1.150:5000/ecms_report_core_api/EmbossingandEncodingReport
 
 # 15 pin generation and mailing report
-report_gen_api.pingeneration_mailing : http://localhost:5000/ecms_report_core_api/PinGenerationAndMailingReport
+report_gen_api.pingeneration_mailing : http://192.168.1.150:5000/ecms_report_core_api/PinGenerationAndMailingReport
 
 # 16 card status report
-report_gen_api.card_status : http://localhost:5000/ecms_report_core_api/cardstatusreport
+report_gen_api.card_status : http://192.168.1.150:5000/ecms_report_core_api/cardstatusreport
 
 # 17 card annual fee report
-report_gen_api.card_annualfee : http://localhost:5000/ecms_report_core_api/CardAnnualFeeReport
+report_gen_api.card_annualfee : http://192.168.1.150:5000/ecms_report_core_api/CardAnnualFeeReport
 
 # 18 aggrigate limits report
-report_gen_api.aggrigate_limits : http://localhost:5000/ecms_report_core_api/AggrigateLimitsReport
+report_gen_api.aggrigate_limits : http://192.168.1.150:5000/ecms_report_core_api/AggrigateLimitsReport
 
 # 19 new card generated report
-report_gen_api.new_cardgenerated : http://localhost:5000/ecms_report_core_api/NewCardGeneratedReport
+report_gen_api.new_cardgenerated : http://192.168.1.150:5000/ecms_report_core_api/NewCardGeneratedReport
 
 # 20 card history report
-report_gen_api.card.history : http://localhost:5000/ecms_report_core_api/CardHistoryReport
+report_gen_api.card.history : http://192.168.1.150:5000/ecms_report_core_api/CardHistoryReport
 
 # 21 excess card report
-report_gen_api.excess_card : http://localhost:5000/ecms_report_core_api/ExcessCardReport
+report_gen_api.excess_card : http://192.168.1.150:5000/ecms_report_core_api/ExcessCardReport
 
 # 22 card outstanding report
-report_gen_api.card_outstanding : http://localhost:5000/ecms_report_core_api/CardOutstanding
+report_gen_api.card_outstanding : http://192.168.1.150:5000/ecms_report_core_api/CardOutstanding
 
 # 23 daily maintenance report
-report_gen_api.daily_maintainance : http://localhost:5000/ecms_report_core_api/DailyMaintenance
+report_gen_api.daily_maintainance : http://192.168.1.150:5000/ecms_report_core_api/DailyMaintenance
 
 # 24 cash back reconciliation report
-report_gen_api.cashback_reconciliation : http://localhost:5000/ecms_report_core_api/CashBackReconciliationReport
+report_gen_api.cashback_reconciliation : http://192.168.1.150:5000/ecms_report_core_api/CashBackReconciliationReport
 
 # 25 government stamp duty report
-report_gen_api.government_stampduty : http://localhost:5000/ecms_report_core_api/GovernmentStampDuty
+report_gen_api.government_stampduty : http://192.168.1.150:5000/ecms_report_core_api/GovernmentStampDuty
 
 # 26 cash back summary report
-report_gen_api.cashback_summary : http://localhost:5000/ecms_report_core_api/CashBackSummary
+report_gen_api.cashback_summary : http://192.168.1.150:5000/ecms_report_core_api/CashBackSummary
 
 # 27 np listening report
-report_gen_api.np_listening : http://localhost:5000/ecms_report_core_api/NPListeningReport
+report_gen_api.np_listening : http://192.168.1.150:5000/ecms_report_core_api/NPListeningReport
 
 # 28 summary npl report
-report_gen_api.summary_npl : http://localhost:5000/ecms_report_core_api/NPListeningSummaryReport
+report_gen_api.summary_npl : http://192.168.1.150:5000/ecms_report_core_api/NPListeningSummaryReport
 
 # 29 only visa auth report
-report_gen_api.only_visaauth : http://localhost:5000/ecms_report_core_api/OnlyVisaAuth
+report_gen_api.only_visaauth : http://192.168.1.150:5000/ecms_report_core_api/OnlyVisaAuth
 
 # 30 card.payment summary report
 
-report_gen_api.card_paymentsummary : http://localhost:5000/ecms_report_core_api/CardPaymentSummary
+report_gen_api.card_paymentsummary : http://192.168.1.150:5000/ecms_report_core_api/CardPaymentSummary
 
 # 31 account outstanding  report
-report_gen_api.account_outstanding : http://localhost:5000/ecms_report_core_api/AccountOutstandingReport
+report_gen_api.account_outstanding : http://192.168.1.150:5000/ecms_report_core_api/AccountOutstandingReport
 
 # 32 opstat qoc  report
-report_gen_api.opstat_qoc : http://localhost:5000/ecms_report_core_api/OpstatQocReport
+report_gen_api.opstat_qoc : http://192.168.1.150:5000/ecms_report_core_api/OpstatQocReport
 
 # 33 keystatopstat parta report
-report_gen_api.keystat_opsstatparta : http://localhost:5000/ecms_report_core_api/KeyStatOpStatPartAReport
+report_gen_api.keystat_opsstatparta : http://192.168.1.150:5000/ecms_report_core_api/KeyStatOpStatPartAReport
 
 # 34 limit modification report
-report_gen_api.limit_modification : http://localhost:5000/ecms_report_core_api/LimitModificationReport
+report_gen_api.limit_modification : http://192.168.1.150:5000/ecms_report_core_api/LimitModificationReport
 
 # 35 loyality redemption report
-report_gen_api.loyalty_redemption : http://localhost:5000/ecms_report_core_api/LoyaltyRedemptionReport
+report_gen_api.loyalty_redemption : http://192.168.1.150:5000/ecms_report_core_api/LoyaltyRedemptionReport
 
 # 36 interest adjustment report
-report_gen_api.interest_adjustment : http://localhost:5000/ecms_report_core_api/InterestAdjustment
+report_gen_api.interest_adjustment : http://192.168.1.150:5000/ecms_report_core_api/InterestAdjustment
 
 # 37 call histry report
-report_gen_api.call_history : http://localhost:5000/ecms_report_core_api/CallHistoryMgt
+report_gen_api.call_history : http://192.168.1.150:5000/ecms_report_core_api/CallHistoryMgt
 
 # 38 posted sys gen txn report
-report_gen_api.posted_sysgentxnsummary : http://localhost:5000/ecms_report_core_api/PostedSysGenTXNSummary
+report_gen_api.posted_sysgentxnsummary : http://192.168.1.150:5000/ecms_report_core_api/PostedSysGenTXNSummary
 
 # 39 usage summary report
-report_gen_api.usage_summary : http://localhost:5000/ecms_report_core_api/UsageSummaryReport
+report_gen_api.usage_summary : http://192.168.1.150:5000/ecms_report_core_api/UsageSummaryReport
 
 # 40 daily posted txn report
-reoprt_gen_api.dailyposted_transactionsummary : http://localhost:5000/ecms_report_core_api/DailyPostedTXNSummary
+reoprt_gen_api.dailyposted_transactionsummary : http://192.168.1.150:5000/ecms_report_core_api/DailyPostedTXNSummary
 
 # 41 transaction drop report
-report_gen_api.transaction_drop : http://localhost:5000/ecms_report_core_api/TransactionDropReport
+report_gen_api.transaction_drop : http://192.168.1.150:5000/ecms_report_core_api/TransactionDropReport
 
 # 42 cash advances summary report
-report_gen_api.cash_advancessummary : http://localhost:5000/ecms_report_core_api/CashAdvanceSummary
+report_gen_api.cash_advancessummary : http://192.168.1.150:5000/ecms_report_core_api/CashAdvanceSummary
 
 # 43 foreign currency circulation report
-report_gen_api.foreign_currency_circulation : http://localhost:5000/ecms_report_core_api/ForeignCurrencyCirculation
+report_gen_api.foreign_currency_circulation : http://192.168.1.150:5000/ecms_report_core_api/ForeignCurrencyCirculation
 
 # 44 key statqoc report
-report_gen_api.key_statqoc : http://localhost:5000/ecms_report_core_api/KeyStatQOCReport
+report_gen_api.key_statqoc : http://192.168.1.150:5000/ecms_report_core_api/KeyStatQOCReport
 
 # 45 cashback redemption report
-report_gen_api.cashback_redemption : http://localhost:5000/ecms_report_core_api/CashBackRedemptionReport
+report_gen_api.cashback_redemption : http://192.168.1.150:5000/ecms_report_core_api/CashBackRedemptionReport
 
 # 46 transaction details report
-report_gen_api.transaction_details : http://localhost:5000/ecms_report_core_api/TransactionDetailsReport
+report_gen_api.transaction_details : http://192.168.1.150:5000/ecms_report_core_api/TransactionDetailsReport
 
 # 47 cashback redemption summary report
-report_gen_api.cashback_redemptionsummary : http://localhost:5000/ecms_report_core_api/CashBackRedemptionSummaryReport
+report_gen_api.cashback_redemptionsummary : http://192.168.1.150:5000/ecms_report_core_api/CashBackRedemptionSummaryReport
 
 # 48 exception report
-report_gen_api.exception : http://localhost:5000/ecms_report_core_api/ExceptionReport
+report_gen_api.exception : http://192.168.1.150:5000/ecms_report_core_api/ExceptionReport
 
 # 49 electronic cardt ransactions report
-report_gen_api.electronic_cardtransactions : http://localhost:5000/ecms_report_core_api/ElectronicCardTransactionReport
+report_gen_api.electronic_cardtransactions : http://192.168.1.150:5000/ecms_report_core_api/ElectronicCardTransactionReport
 
 # 50 eod transaction report
-report_gen_api.eod_transaction : http://localhost:5000/ecms_report_core_api/EODTransactionReport
+report_gen_api.eod_transaction : http://192.168.1.150:5000/ecms_report_core_api/EODTransactionReport
 
 # 51 brh file report
-report_gen_api.brh_file : http://localhost:5000/ecms_report_core_api/BRH
+report_gen_api.brh_file : http://192.168.1.150:5000/ecms_report_core_api/BRH
