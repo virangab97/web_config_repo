@@ -14,14 +14,16 @@ spring:
       com.zaxxer.hikari: DEBUG
   servlet:
     multipart:
-      max-file-size: 20MB
+      max-file-size: 30MB
   datasource:
     hikari:
-      maximumPoolSize: 50
-      idleTimeout: 300000 # maximum idle time for connection
-      connectionTimeout: 300000 # maximum number of milliseconds that a client will wait for a connection
-      max-lifetime: 180000
+      minimumIdle: 5
+      maximumPoolSize: 20
+      idleTimeout: 30000 # maximum idle time for connection
+      connectionTimeout: 30000 # maximum number of milliseconds that a client will wait for a connection
+      max-lifetime: 2000000
       poolName: ecms-product-main-pool
+      leak-detection-threshold: 2000
     backend:
         jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
         username: ${BACKEND_USERNAME:CMSPRODUCTBACKEND}

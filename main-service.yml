@@ -337,10 +337,12 @@ ecms_web_core_api.eodprocessflow.viewbycategoryandstepid : http://CORE-SERVICE/e
 # Report location dir
 ecms_web_issuing_report_file.directory.excel : /app/CMS/
 ecms_web_issuing_report_file.directory.pdf : /app/CMS/
+ecms_web_issuing_report_file.directory.txt : /app/CMS/
 
 # Delete Report from dir
-ecms_web_issuing_report_api.delete_report.excel : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
-ecms_web_issuing_report_api.delete_report.pdf : D:/CMS_Revamp_Report/issuing_report/GeneratedReports/
+ecms_web_issuing_report_api.delete_report.excel : http://issuing-report-service/delete_report/excel
+ecms_web_issuing_report_api.delete_report.pdf : http://issuing-report-service/delete_report/pdf
+ecms_web_issuing_report_api.delete_report.txt : http://issuing-report-service/delete_report/txt
 
 # Installment Detail Report
 ecms_web_issuing_report_api.installment_detail.access : http://ISSUING-REPORT-SERVICE/installment_detail/access
@@ -724,6 +726,7 @@ ecms_web_common_report_api.system_auditreport.access : http://COMMON-REPORT-SERV
 ecms_web_common_report_api.system_auditreport.list : http://COMMON-REPORT-SERVICE/system_auditreport/list
 ecms_web_common_report_api.system_auditreport.excel : http://COMMON-REPORT-SERVICE/system_auditreport/excel
 ecms_web_common_report_api.system_auditreport.pdf : http://COMMON-REPORT-SERVICE/system_auditreport/pdf
+
 
 # ------------------ General Ledger Management ---------------------------#
 
