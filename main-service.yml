@@ -727,7 +727,6 @@ ecms_web_common_report_api.system_auditreport.list : http://COMMON-REPORT-SERVIC
 ecms_web_common_report_api.system_auditreport.excel : http://COMMON-REPORT-SERVICE/system_auditreport/excel
 ecms_web_common_report_api.system_auditreport.pdf : http://COMMON-REPORT-SERVICE/system_auditreport/pdf
 
-
 # ------------------ General Ledger Management ---------------------------#
 
 ecms_web_core_api.generalledger.history : http://CORE-SERVICE/generalledger/history
@@ -865,6 +864,7 @@ ecms_web_core_api.gltxnassign.list : http://CORE-SERVICE/gltxnassign/list
 ecms_web_core_api.gltxnassign.dualauthlist : http://CORE-SERVICE/gltxnassign/dualauthlist
 ecms_web_core_api.gltxnassign.confirm : http://CORE-SERVICE/gltxnassign/confirm
 ecms_web_core_api.gltxnassign.reject : http://CORE-SERVICE/gltxnassign/reject
+ecms_web_core_api.gltxnassign.category : http://CORE-SERVICE/gltxnassign/category
 
 #SMS Template
 ecms_web_core_api.smstemplate.history : http://CORE-SERVICE/smstemplate/history
@@ -1280,6 +1280,12 @@ ecms_web_core_api.personalizedquality.view : http://CORE-SERVICE/personalizedqua
 ecms_web_core_api.personalizedquality.history : http://CORE-SERVICE/personalizedquality/history
 ecms_web_core_api.personalizedquality.qualityfail : http://CORE-SERVICE/personalizedquality/qualityfail
 
+#Card Pin generation
+ecms_web_core_api.pin_generator.access : http://CORE-SERVICE/pin_generator/access
+ecms_web_core_api.pin_generator.list : http://CORE-SERVICE/pin_generator/list
+ecms_web_core_api.pin_generator.generate : http://CORE-SERVICE/pin_generator/generate
+ecms_web_core_api.pin_generator.history : http://CORE-SERVICE/pin_generator/history
+ecms_web_core_api.pin_generator.cardProducts : http://CORE-SERVICE/pin_generator/cardProducts
 
 
 
@@ -1417,9 +1423,38 @@ ecms_web_core_api.templimitchange.reject : http://CORE-SERVICE/templimitchange/r
 
 
 
+
 # ------------------ Application Processing ----------------------------------#
 
-# ------------------ Application Confirmation ----------------------------------#
+#Credit Application Checking
+ecms_web_core_api.app_checking.access : http://CORE-SERVICE/app_checking/access
+ecms_web_core_api.app_checking.list : http://CORE-SERVICE/app_checking/list
+ecms_web_core_api.app_checking.data : http://CORE-SERVICE/app_checking/data
+ecms_web_core_api.app_checking.accept : http://CORE-SERVICE/app_checking/accept
+ecms_web_core_api.app_checking.recheck : http://CORE-SERVICE/app_checking/recheck
+ecms_web_core_api.app_checking.add_remark : http://CORE-SERVICE/app_checking/add_remark
+ecms_web_core_api.app_checking.history : http://CORE-SERVICE/app_checking/history
+
+#Credit Application Verify
+ecms_web_core_api.app_verify.access : http://CORE-SERVICE/app_verify/access
+ecms_web_core_api.app_verify.list : http://CORE-SERVICE/app_verify/list
+ecms_web_core_api.app_verify.data : http://CORE-SERVICE/app_verify/data
+ecms_web_core_api.app_verify.accept : http://CORE-SERVICE/app_verify/accept
+ecms_web_core_api.app_verify.recheck : http://CORE-SERVICE/app_verify/recheck
+ecms_web_core_api.app_verify.verify : http://CORE-SERVICE/app_verify/verify
+ecms_web_core_api.app_verify.history : http://CORE-SERVICE/app_verify/history
+ecms_web_core_api.app_verify.uploadfile : http://CORE-SERVICE/app_verify/uploadfile
+ecms_web_core_api.app_verify.prevapplications : http://CORE-SERVICE/app_verify/prevapplications
+ecms_web_core_api.app_verify.reject : http://CORE-SERVICE/app_verify/reject
+ecms_web_core_api.app_verify.onlold : http://CORE-SERVICE/app_verify/onlold
+ecms_web_core_api.app_verify.mandatorydocs : http://CORE-SERVICE/app_verify/mandatorydocs
+
+#Application Credit Verify
+ecms_web_core_api.appcreditscore.access : http://CORE-SERVICE/appcreditscore/access
+ecms_web_core_api.appcreditscore.list : http://CORE-SERVICE/appcreditscore/list
+ecms_web_core_api.appcreditscore.history : http://CORE-SERVICE/appcreditscore/history
+ecms_web_core_api.appcreditscore.calculate : http://CORE-SERVICE/appcreditscore/calculate
+
 #Credit Officer Review and Confirmation
 ecms_web_core_api.creditofficerreviewandconf.access : http://CORE-SERVICE/creditofficerreviewandconf/access
 ecms_web_core_api.creditofficerreviewandconf.list : http://CORE-SERVICE/creditofficerreviewandconf/list
@@ -1433,10 +1468,18 @@ ecms_web_core_api.creditofficerreviewandconf.reject : http://CORE-SERVICE/credit
 # ------------------ Number generation ----------------------------------#
 #credit number generation
 ecms_web_core_api.numbergen.access : http://CORE-SERVICE/numbergen/access
-ecms_web_core_api.numbergen.list : http://CORE-SERVICE/numbergen/list
 ecms_web_core_api.numbergen.history : http://CORE-SERVICE/numbergen/history
-ecms_web_core_api.numbergen.generate : http://CORE-SERVICE/numbergen/generate
+ecms_web_core_api.numbergen.list : http://CORE-SERVICE/numbergen/list
+ecms_web_core_api.numbergen.productlist : http://CORE-SERVICE/numbergen/productlist
+ecms_web_core_api.numbergen.number-generate : http://CORE-SERVICE/numbergen/number-generate
 
+# ------------------ Credit PIN generation ----------------------------------#
+#renew card pin generation
+ecms_web_core_api.renewpingen.access : http://CORE-SERVICE/renewpingen/access
+ecms_web_core_api.renewpingen.history : http://CORE-SERVICE/renewpingen/history
+ecms_web_core_api.renewpingen.list : http://CORE-SERVICE/renewpingen/list
+ecms_web_core_api.renewpingen.productlist : http://CORE-SERVICE/renewpingen/productlist
+ecms_web_core_api.renewpingen.generate : http://CORE-SERVICE/renewpingen/generate
 
 # ------------------ Distribution ----------------------------------#
 #Card & Pin Distibution
@@ -1462,61 +1505,12 @@ ecms_web_call_center_api.callcentersearch.cardlist : http://CALL-CENTER-SERVICE/
 ecms_web_call_center_api.callcentersearch.accountlist : http://CALL-CENTER-SERVICE/callcentersearch/accountlist
 ecms_web_call_center_api.callcentersearch.applicationlist : http://CALL-CENTER-SERVICE/callcentersearch/applicationlist
 
+#-------------------Customer level----------------------------------
+#Customer main view
+ecms_web_call_center_api.cusview.access : http://CALL-CENTER-SERVICE/cusview/access
+ecms_web_call_center_api.cusview.mainview : http://CALL-CENTER-SERVICE/cusview/mainview
+ecms_web_call_center_api.cusview.changedcustomerdetails : http://CALL-CENTER-SERVICE/cusview/changedcustomerdetails
 
-#Update Credit Application Capturing
-#ecms_web_core_api.app_capture_upd.access : http://CORE-SERVICE/app_capture_upd/access
-#ecms_web_core_api.app_capture_upd.list : http://CORE-SERVICE/app_capture_upd/list
-#ecms_web_core_api.app_capture_upd.data : http://CORE-SERVICE/app_capture_upd/data
-#ecms_web_core_api.app_capture_upd.updpersonaldetails : http://CORE-SERVICE/app_capture_upd/updpersonaldetails
-#ecms_web_core_api.app_capture_upd.updemployeedetails : http://CORE-SERVICE/app_capture_upd/updemployeedetails
-#ecms_web_core_api.app_capture_upd.updbankdetails : http://CORE-SERVICE/app_capture_upd/updbankdetails
-#ecms_web_core_api.app_capture_upd.updincomedetails : http://CORE-SERVICE/app_capture_upd/updincomedetails
-#ecms_web_core_api.app_capture_upd.upddocumentdetails : http://CORE-SERVICE/app_capture_upd/upddocumentdetails
-#ecms_web_core_api.app_capture_upd.updotherdetails : http://CORE-SERVICE/app_capture_upd/updotherdetails
-#ecms_web_core_api.app_capture_upd.customerdetails : http://CORE-SERVICE/app_capture_upd/customerdetails
-#ecms_web_core_api.app_capture_upd.mandatorydocs : http://CORE-SERVICE/app_capture_upd/mandatorydocs
-#ecms_web_core_api.app_capture_upd.verificationcategory : http://CORE-SERVICE/app_capture_upd/verificationcategory
-#ecms_web_core_api.app_capture_upd.bankBranch : http://CORE-SERVICE/app_capture_upd/bankBranch
-#ecms_web_core_api.app_capture_upd.idTypes : http://CORE-SERVICE/app_capture_upd/idTypes
-#ecms_web_core_api.app_capture_upd.upduploadfile : http://CORE-SERVICE/app_capture_upd/upduploadfile
-#ecms_web_core_api.app_capture_upd.img_signature : http://CORE-SERVICE/app_capture_upd/img_signature
-#ecms_web_core_api.app_capture_upd.cardTypes : http://CORE-SERVICE/app_capture_upd/cardTypes
-#ecms_web_core_api.app_capture_upd.cardProducts : http://CORE-SERVICE/app_capture_upd/cardProducts
-#ecms_web_core_api.app_capture_upd.bankList : http://CORE-SERVICE/app_capture_upd/bankList
-#ecms_web_core_api.app_capture_upd.deleteDocument : http://CORE-SERVICE/app_capture_upd/deleteDocument
-#ecms_web_core_api.app_capture_upd.completeDocuments : http://CORE-SERVICE/app_capture_upd/completeDocuments
-#ecms_web_core_api.app_capture_upd.updcomplete : http://CORE-SERVICE/app_capture_upd/updcomplete
-#ecms_web_core_api.app_capture_upd.history : http://CORE-SERVICE/app_capture_upd/history
-
-#Credit Application Checking
-ecms_web_core_api.app_checking.access : http://CORE-SERVICE/app_checking/access
-ecms_web_core_api.app_checking.list : http://CORE-SERVICE/app_checking/list
-ecms_web_core_api.app_checking.data : http://CORE-SERVICE/app_checking/data
-ecms_web_core_api.app_checking.accept : http://CORE-SERVICE/app_checking/accept
-ecms_web_core_api.app_checking.recheck : http://CORE-SERVICE/app_checking/recheck
-ecms_web_core_api.app_checking.add_remark : http://CORE-SERVICE/app_checking/add_remark
-ecms_web_core_api.app_checking.history : http://CORE-SERVICE/app_checking/history
-
-
-#Credit Application Verify
-ecms_web_core_api.app_verify.access : http://CORE-SERVICE/app_verify/access
-ecms_web_core_api.app_verify.list : http://CORE-SERVICE/app_verify/list
-ecms_web_core_api.app_verify.data : http://CORE-SERVICE/app_verify/data
-ecms_web_core_api.app_verify.accept : http://CORE-SERVICE/app_verify/accept
-ecms_web_core_api.app_verify.recheck : http://CORE-SERVICE/app_verify/recheck
-ecms_web_core_api.app_verify.verify : http://CORE-SERVICE/app_verify/verify
-ecms_web_core_api.app_verify.history : http://CORE-SERVICE/app_verify/history
-ecms_web_core_api.app_verify.uploadfile : http://CORE-SERVICE/app_verify/uploadfile
-ecms_web_core_api.app_verify.prevapplications : http://CORE-SERVICE/app_verify/prevapplications
-ecms_web_core_api.app_verify.reject : http://CORE-SERVICE/app_verify/reject
-ecms_web_core_api.app_verify.onlold : http://CORE-SERVICE/app_verify/onlold
-ecms_web_core_api.app_verify.mandatorydocs : http://CORE-SERVICE/app_verify/mandatorydocs
-
-#Card Pin generation
-ecms_web_core_api.pin_generator.access : http://CORE-SERVICE/pin_generator/access
-ecms_web_core_api.pin_generator.list : http://CORE-SERVICE/pin_generator/list
-ecms_web_core_api.pin_generator.generate : http://CORE-SERVICE/pin_generator/generate
-ecms_web_core_api.pin_generator.history : http://CORE-SERVICE/pin_generator/history
 #Customer memos request
 ecms_web_call_center_api.customermemo.access : http://CALL-CENTER-SERVICE/customermemo/access
 ecms_web_call_center_api.customermemo.history : http://CALL-CENTER-SERVICE/customermemo/history
@@ -1557,35 +1551,18 @@ ecms_web_call_center_api.billcyclechangereq.history : http://CALL-CENTER-SERVICE
 ecms_web_call_center_api.billcyclechangereq.list : http://CALL-CENTER-SERVICE/billcyclechangereq/list
 ecms_web_call_center_api.billcyclechangereq.add : http://CALL-CENTER-SERVICE/billcyclechangereq/add
 
+#Cash back redeem request
+ecms_web_call_center_api.cashbackredeem.access : http://CALL-CENTER-SERVICE/cashbackredeem/access
+ecms_web_call_center_api.cashbackredeem.history : http://CALL-CENTER-SERVICE/cashbackredeem/history
+ecms_web_call_center_api.cashbackredeem.list : http://CALL-CENTER-SERVICE/cashbackredeem/list
+ecms_web_call_center_api.cashbackredeem.add : http://CALL-CENTER-SERVICE/cashbackredeem/add
+
 #-------------------Card level----------------------------------
 #Card memos request
 ecms_web_call_center_api.cardmemo.access : http://CALL-CENTER-SERVICE/cardmemo/access
 ecms_web_call_center_api.cardmemo.history : http://CALL-CENTER-SERVICE/cardmemo/history
 ecms_web_call_center_api.cardmemo.list : http://CALL-CENTER-SERVICE/cardmemo/list
 ecms_web_call_center_api.cardmemo.add : http://CALL-CENTER-SERVICE/cardmemo/add
-
-#Credit Application Capturing
-ecms_web_core_api.app_capture.access : http://CORE-SERVICE/app_capture/access
-ecms_web_core_api.app_capture.list : http://CORE-SERVICE/app_capture/list
-ecms_web_core_api.app_capture.data : http://CORE-SERVICE/app_capture/data
-ecms_web_core_api.app_capture.addpersonaldetails : http://CORE-SERVICE/app_capture/addpersonaldetails
-ecms_web_core_api.app_capture.addemployeedetails : http://CORE-SERVICE/app_capture/addemployeedetails
-ecms_web_core_api.app_capture.addbankdetails : http://CORE-SERVICE/app_capture/addbankdetails
-ecms_web_core_api.app_capture.addincomedetails : http://CORE-SERVICE/app_capture/addincomedetails
-ecms_web_core_api.app_capture.adddocumentdetails : http://CORE-SERVICE/app_capture/adddocumentdetails
-ecms_web_core_api.app_capture.addotherdetails : http://CORE-SERVICE/app_capture/addotherdetails
-ecms_web_core_api.app_capture.customerdetails : http://CORE-SERVICE/app_capture/customerdetails
-ecms_web_core_api.app_capture.mandatorydocs : http://CORE-SERVICE/app_capture/mandatorydocs
-ecms_web_core_api.app_capture.verificationcategory : http://CORE-SERVICE/app_capture/verificationcategory
-ecms_web_core_api.app_capture.bankBranch : http://CORE-SERVICE/app_capture/bankBranch
-ecms_web_core_api.app_capture.idTypes : http://CORE-SERVICE/app_capture/idTypes
-ecms_web_core_api.app_capture.uploadfile : http://CORE-SERVICE/app_capture/uploadfile
-ecms_web_core_api.app_capture.img_signature : http://CORE-SERVICE/app_capture/img_signature
-ecms_web_core_api.app_capture.cardTypes : http://CORE-SERVICE/app_capture/cardTypes
-ecms_web_core_api.app_capture.cardProducts : http://CORE-SERVICE/app_capture/cardProducts
-ecms_web_core_api.app_capture.bankList : http://CORE-SERVICE/app_capture/bankList
-ecms_web_core_api.app_capture.deleteDocument : http://CORE-SERVICE/app_capture/deleteDocument
-
 
 #Update Credit Application Capturing
 ecms_web_core_api.app_capture_upd.access : http://CORE-SERVICE/app_capture_upd/access
@@ -1608,6 +1585,32 @@ ecms_web_core_api.app_capture_upd.cardTypes : http://CORE-SERVICE/app_capture_up
 ecms_web_core_api.app_capture_upd.cardProducts : http://CORE-SERVICE/app_capture_upd/cardProducts
 ecms_web_core_api.app_capture_upd.bankList : http://CORE-SERVICE/app_capture_upd/bankList
 ecms_web_core_api.app_capture_upd.deleteDocument : http://CORE-SERVICE/app_capture_upd/deleteDocument
+ecms_web_core_api.app_capture_upd.completeDocuments : http://CORE-SERVICE/app_capture_upd/completeDocuments
+ecms_web_core_api.app_capture_upd.updcomplete : http://CORE-SERVICE/app_capture_upd/updcomplete
+ecms_web_core_api.app_capture_upd.history : http://CORE-SERVICE/app_capture_upd/history
+
+
+#Credit Application Capturing
+ecms_web_core_api.app_capture.access : http://CORE-SERVICE/app_capture/access
+ecms_web_core_api.app_capture.list : http://CORE-SERVICE/app_capture/list
+ecms_web_core_api.app_capture.data : http://CORE-SERVICE/app_capture/data
+ecms_web_core_api.app_capture.addpersonaldetails : http://CORE-SERVICE/app_capture/addpersonaldetails
+ecms_web_core_api.app_capture.addemployeedetails : http://CORE-SERVICE/app_capture/addemployeedetails
+ecms_web_core_api.app_capture.addbankdetails : http://CORE-SERVICE/app_capture/addbankdetails
+ecms_web_core_api.app_capture.addincomedetails : http://CORE-SERVICE/app_capture/addincomedetails
+ecms_web_core_api.app_capture.adddocumentdetails : http://CORE-SERVICE/app_capture/adddocumentdetails
+ecms_web_core_api.app_capture.addotherdetails : http://CORE-SERVICE/app_capture/addotherdetails
+ecms_web_core_api.app_capture.customerdetails : http://CORE-SERVICE/app_capture/customerdetails
+ecms_web_core_api.app_capture.mandatorydocs : http://CORE-SERVICE/app_capture/mandatorydocs
+ecms_web_core_api.app_capture.verificationcategory : http://CORE-SERVICE/app_capture/verificationcategory
+ecms_web_core_api.app_capture.bankBranch : http://CORE-SERVICE/app_capture/bankBranch
+ecms_web_core_api.app_capture.idTypes : http://CORE-SERVICE/app_capture/idTypes
+ecms_web_core_api.app_capture.uploadfile : http://CORE-SERVICE/app_capture/uploadfile
+ecms_web_core_api.app_capture.img_signature : http://CORE-SERVICE/app_capture/img_signature
+ecms_web_core_api.app_capture.cardTypes : http://CORE-SERVICE/app_capture/cardTypes
+ecms_web_core_api.app_capture.cardProducts : http://CORE-SERVICE/app_capture/cardProducts
+ecms_web_core_api.app_capture.bankList : http://CORE-SERVICE/app_capture/bankList
+ecms_web_core_api.app_capture.deleteDocument : http://CORE-SERVICE/app_capture/deleteDocument
 
 #Easy Payment Request
 ecms_web_call_center_api.easypayment.access : http://CALL-CENTER-SERVICE/easypayment/access
