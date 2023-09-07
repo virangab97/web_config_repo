@@ -30,5 +30,3 @@ report_gen_api.system_userstatus : http://192.168.1.150:6000/ecms_report_core_ap
 
 # 07 system audit report
 report_gen_api.system_auditreport : http://192.168.1.150:6000/ecms_report_core_api/SystemAduitReport
-
-

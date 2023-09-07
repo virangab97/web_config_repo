@@ -159,7 +159,3 @@ report_gen_api.eod_transaction : http://192.168.1.150:5000/ecms_report_core_api/
 
 # 51 brh file report
 report_gen_api.brh_file : http://192.168.1.150:5000/ecms_report_core_api/BRH
-
-
-
-
