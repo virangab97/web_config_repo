@@ -308,7 +308,6 @@ ecms_web_core_api.processcategoryflow.dualauthlist : http://CORE-SERVICE/process
 ecms_web_core_api.processcategoryflow.confirm : http://CORE-SERVICE/processcategoryflow/confirm
 ecms_web_core_api.processcategoryflow.reject : http://CORE-SERVICE/processcategoryflow/reject
 
-
 #EOD file upload
 ecms_web_core_api.eodfileupload.history : http://CORE-SERVICE/eodfileupload/history
 ecms_web_core_api.eodfileupload.access : http://CORE-SERVICE/eodfileupload/access
@@ -448,30 +447,29 @@ ecms_web_issuing_report_api.transaction_details.list : http://ISSUING-REPORT-SER
 ecms_web_issuing_report_api.transaction_details.excel : http://ISSUING-REPORT-SERVICE/transaction_details/excel
 ecms_web_issuing_report_api.transaction_details.pdf : http://ISSUING-REPORT-SERVICE/transaction_details/pdf
 
-# # cashback redemption summary report
+#cashback redemption summary report
 ecms_web_issuing_report_api.cashback_redemptionsummary.access : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/access
 ecms_web_issuing_report_api.cashback_redemptionsummary.list : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/list
 ecms_web_issuing_report_api.cashback_redemptionsummary.excel : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/excel
 ecms_web_issuing_report_api.cashback_redemptionsummary.pdf : http://ISSUING-REPORT-SERVICE/cashback_redemptionsummary/pdf
 
-# exception report
+#exception report
 ecms_web_issuing_report_api.exception.access : http://ISSUING-REPORT-SERVICE/exception/access
 ecms_web_issuing_report_api.exception.list : http://ISSUING-REPORT-SERVICE/exception/list
 ecms_web_issuing_report_api.exception.excel : http://ISSUING-REPORT-SERVICE/exception/excel
 ecms_web_issuing_report_api.exception.pdf : http://ISSUING-REPORT-SERVICE/exception/pdf
 
-# # electronic card transactions report
+#electronic card transactions report
 ecms_web_issuing_report_api.electronic_cardtransactions.access : http://ISSUING-REPORT-SERVICE/electronic_cardtransactions/access
 ecms_web_issuing_report_api.electronic_cardtransactions.txt : http://ISSUING-REPORT-SERVICE/electronic_cardtransactions/txt
 
-
-# # DailyPostedTransactionSummary report
+#DailyPostedTransactionSummary report
 ecms_web_issuing_report_api.dailyposted_transactionsummary.access : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/access
 ecms_web_issuing_report_api.dailyposted_transactionsummary.list : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/list
 ecms_web_issuing_report_api.dailyposted_transactionsummary.excel : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/excel
 ecms_web_issuing_report_api.dailyposted_transactionsummary.pdf : http://ISSUING-REPORT-SERVICE/dailyposted_transactionsummary/pdf
 
-# # EOD Transaction report
+#EOD Transaction report
 ecms_web_issuing_report_api.eod_transaction.access : http://ISSUING-REPORT-SERVICE/eod_transaction/access
 ecms_web_issuing_report_api.eod_transaction.list : http://ISSUING-REPORT-SERVICE/eod_transaction/list
 ecms_web_issuing_report_api.eod_transaction.excel : http://ISSUING-REPORT-SERVICE/eod_transaction/excel
@@ -1227,6 +1225,26 @@ ecms_web_core_api.manualnp.add : http://CORE-SERVICE/manualnp/add
 ecms_web_core_api.manualnp.confirm : http://CORE-SERVICE/manualnp/confirm
 ecms_web_core_api.manualnp.reject : http://CORE-SERVICE/manualnp/reject
 
+# FeePromotion Management
+ecms_web_core_api.feepromotion.access : http://CORE-SERVICE/feepromotion/access
+ecms_web_core_api.feepromotion.list : http://CORE-SERVICE/feepromotion/list
+ecms_web_core_api.feepromotion.dualauthlist : http://CORE-SERVICE/feepromotion/dualauthlist
+ecms_web_core_api.feepromotion.history : http://CORE-SERVICE/feepromotion/history
+ecms_web_core_api.feepromotion.add : http://CORE-SERVICE/feepromotion/add
+ecms_web_core_api.feepromotion.edit : http://CORE-SERVICE/feepromotion/edit
+ecms_web_core_api.feepromotion.confirm : http://CORE-SERVICE/feepromotion/confirm
+ecms_web_core_api.feepromotion.reject : http://CORE-SERVICE/feepromotion/reject
+ecms_web_core_api.feepromotion.loadcardproduct : http://CORE-SERVICE/feepromotion/loadcardproduct
+ecms_web_core_api.feepromotion.feepromotionselection : http://CORE-SERVICE/feepromotion/feepromotionselection
+
+#Card Type managment
+ecms_web_core_api.cardtype.access : http://CORE-SERVICE/cardtype/access
+ecms_web_core_api.cardtype.list : http://CORE-SERVICE/cardtype/list
+ecms_web_core_api.cardtype.history : http://CORE-SERVICE/cardtype/history
+ecms_web_core_api.cardtype.add : http://CORE-SERVICE/cardtype/add
+ecms_web_core_api.cardtype.edit : http://CORE-SERVICE/cardtype/edit
+ecms_web_core_api.cardtype.delete : http://CORE-SERVICE/cardtype/delete
+
 # Card Request Confirmation
 ecms_web_core_api.cardreqconf.access : http://CORE-SERVICE/cardreqconf/access
 ecms_web_core_api.cardreqconf.list : http://CORE-SERVICE/cardreqconf/list
@@ -1249,26 +1267,6 @@ ecms_web_core_api.feepromoreq.history : http://CORE-SERVICE/feepromoreq/history
 ecms_web_core_api.feepromoreq.productlist : http://CORE-SERVICE/feepromoreq/productlist
 ecms_web_core_api.feepromoreq.assign : http://CORE-SERVICE/feepromoreq/assign
 ecms_web_core_api.feepromoreq.promoprofilesview : http://CORE-SERVICE/feepromoreq/promoprofilesview
-
-# FeePromotion Management
-ecms_web_core_api.feepromotion.access : http://CORE-SERVICE/feepromotion/access
-ecms_web_core_api.feepromotion.list : http://CORE-SERVICE/feepromotion/list
-ecms_web_core_api.feepromotion.dualauthlist : http://CORE-SERVICE/feepromotion/dualauthlist
-ecms_web_core_api.feepromotion.history : http://CORE-SERVICE/feepromotion/history
-ecms_web_core_api.feepromotion.add : http://CORE-SERVICE/feepromotion/add
-ecms_web_core_api.feepromotion.edit : http://CORE-SERVICE/feepromotion/edit
-ecms_web_core_api.feepromotion.confirm : http://CORE-SERVICE/feepromotion/confirm
-ecms_web_core_api.feepromotion.reject : http://CORE-SERVICE/feepromotion/reject
-ecms_web_core_api.feepromotion.loadcardproduct : http://CORE-SERVICE/feepromotion/loadcardproduct
-ecms_web_core_api.feepromotion.feepromotionselection : http://CORE-SERVICE/feepromotion/feepromotionselection
-
-#Card Type managment
-ecms_web_core_api.cardtype.access : http://CORE-SERVICE/cardtype/access
-ecms_web_core_api.cardtype.list : http://CORE-SERVICE/cardtype/list
-ecms_web_core_api.cardtype.history : http://CORE-SERVICE/cardtype/history
-ecms_web_core_api.cardtype.add : http://CORE-SERVICE/cardtype/add
-ecms_web_core_api.cardtype.edit : http://CORE-SERVICE/cardtype/edit
-ecms_web_core_api.cardtype.delete : http://CORE-SERVICE/cardtype/delete
 
 #request monitor
 ecms_web_core_api.requestmonitor.list.customer.contactdetailchangereq : http://CORE-SERVICE/requestmonitor/list/customer/contactdetailchangereq
@@ -1314,6 +1312,15 @@ ecms_web_core_api.pin_generator.generate : http://CORE-SERVICE/pin_generator/gen
 ecms_web_core_api.pin_generator.history : http://CORE-SERVICE/pin_generator/history
 ecms_web_core_api.pin_generator.cardProducts : http://CORE-SERVICE/pin_generator/cardProducts
 
+# Team Allocation Management
+ecms_web_core_api.teamallocation.access : http://CORE-SERVICE/teamallocation/access
+ecms_web_core_api.teamallocation.list : http://CORE-SERVICE/teamallocation/list
+ecms_web_core_api.teamallocation.bucketrules : http://CORE-SERVICE/teamallocation/bucketrules
+ecms_web_core_api.teamallocation.history : http://CORE-SERVICE/teamallocation/history
+ecms_web_core_api.teamallocation.add : http://CORE-SERVICE/teamallocation/add
+ecms_web_core_api.teamallocation.edit : http://CORE-SERVICE/teamallocation/edit
+ecms_web_core_api.teamallocation.delete : http://CORE-SERVICE/teamallocation/delete
+
 #Action message mgt
 ecms_web_core_api.actionmsgmgt.access : http://CORE-SERVICE/actionmsgmgt/access
 ecms_web_core_api.actionmsgmgt.list : http://CORE-SERVICE/actionmsgmgt/list
@@ -1330,15 +1337,6 @@ ecms_web_core_api.allocrulemgt.add : http://CORE-SERVICE/allocrulemgt/add
 ecms_web_core_api.allocrulemgt.edit : http://CORE-SERVICE/allocrulemgt/edit
 ecms_web_core_api.allocrulemgt.delete : http://CORE-SERVICE/allocrulemgt/delete
 
-# Team Allocation Management
-ecms_web_core_api.teamallocation.access : http://CORE-SERVICE/teamallocation/access
-ecms_web_core_api.teamallocation.list : http://CORE-SERVICE/teamallocation/list
-ecms_web_core_api.teamallocation.bucketrules : http://CORE-SERVICE/teamallocation/bucketrules
-ecms_web_core_api.teamallocation.history : http://CORE-SERVICE/teamallocation/history
-ecms_web_core_api.teamallocation.add : http://CORE-SERVICE/teamallocation/add
-ecms_web_core_api.teamallocation.edit : http://CORE-SERVICE/teamallocation/edit
-ecms_web_core_api.teamallocation.delete : http://CORE-SERVICE/teamallocation/delete
-
 #Risk Class managment
 ecms_web_core_api.riskclassmgt.access : http://CORE-SERVICE/riskclassmgt/access
 ecms_web_core_api.riskclassmgt.list : http://CORE-SERVICE/riskclassmgt/list
@@ -1347,7 +1345,8 @@ ecms_web_core_api.riskclassmgt.add : http://CORE-SERVICE/riskclassmgt/add
 ecms_web_core_api.riskclassmgt.edit : http://CORE-SERVICE/riskclassmgt/edit
 ecms_web_core_api.riskclassmgt.delete : http://CORE-SERVICE/riskclassmgt/delete
 
-# ------------------ Installment Plan ---------------------------#
+# ----------------------------------------- Installment Plan ----------------------------------------------------------#
+
 #Easy payment plan
 ecms_web_core_api.easypaymentplan.access : http://CORE-SERVICE/easypaymentplan/access
 ecms_web_core_api.easypaymentplan.list : http://CORE-SERVICE/easypaymentplan/list
@@ -1410,6 +1409,7 @@ ecms_web_core_api.cashbackenrolmentreqconf.approve : http://CORE-SERVICE/cashbac
 ecms_web_core_api.cashbackenrolmentreqconf.reject : http://CORE-SERVICE/cashbackenrolmentreqconf/reject
 
 #Transaction Drop Request Confirmation
+ecms_web_core_api.transactiondropconf.access : http://CORE-SERVICE/transactiondropconf/access
 ecms_web_core_api.transactiondropconf.list : http://CORE-SERVICE/transactiondropconf/list
 ecms_web_core_api.transactiondropconf.history : http://CORE-SERVICE/transactiondropconf/history
 ecms_web_core_api.transactiondropconf.approve : http://CORE-SERVICE/transactiondropconf/approve
@@ -1440,7 +1440,15 @@ ecms_web_core_api.loanoncardconfirmation.history : http://CORE-SERVICE/loanoncar
 ecms_web_core_api.loanoncardconfirmation.approve : http://CORE-SERVICE/loanoncardconfirmation/approve
 ecms_web_core_api.loanoncardconfirmation.reject : http://CORE-SERVICE/loanoncardconfirmation/reject
 
-# ------------------ Standing order ---------------------------#
+#Customer contact details change Confirmation
+ecms_web_core_api.cuscontact.access : http://CORE-SERVICE/cuscontact/access
+ecms_web_core_api.cuscontact.list : http://CORE-SERVICE/cuscontact/list
+ecms_web_core_api.cuscontact.previous-details : http://CORE-SERVICE/cuscontact/previous-details
+ecms_web_core_api.cuscontact.history : http://CORE-SERVICE/cuscontact/history
+ecms_web_core_api.cuscontact.approve : http://CORE-SERVICE/cuscontact/approve
+ecms_web_core_api.cuscontact.reject : http://CORE-SERVICE/cuscontact/reject
+
+# --------------------------------------------------- Standing order --------------------------------------------------#
 
 #Utility Standing Order
 ecms_web_core_api.utilitystandingorder.access : http://CORE-SERVICE/utilitystandingorder/access
@@ -1554,6 +1562,12 @@ ecms_web_call_center_api.customermemo.access : http://CALL-CENTER-SERVICE/custom
 ecms_web_call_center_api.customermemo.history : http://CALL-CENTER-SERVICE/customermemo/history
 ecms_web_call_center_api.customermemo.list : http://CALL-CENTER-SERVICE/customermemo/list
 ecms_web_call_center_api.customermemo.add : http://CALL-CENTER-SERVICE/customermemo/add
+
+#Customer tnx & risk mgt
+ecms_web_call_center_api.custxnriskmgt.access : http://CALL-CENTER-SERVICE/custxnriskmgt/access
+ecms_web_call_center_api.custxnriskmgt.assigntxn : http://CALL-CENTER-SERVICE/custxnriskmgt/assigntxn
+ecms_web_call_center_api.custxnriskmgt.updaterisk : http://CALL-CENTER-SERVICE/custxnriskmgt/updaterisk
+ecms_web_call_center_api.custxnriskmgt.history : http://CALL-CENTER-SERVICE/custxnriskmgt/history
 
 #------------------------------------------------ Account level -------------------------------------------------------#
 
