@@ -706,6 +706,57 @@ ecms_web_common_report_api.system_auditreport.list : http://COMMON-REPORT-SERVIC
 ecms_web_common_report_api.system_auditreport.excel : http://COMMON-REPORT-SERVICE/system_auditreport/excel
 ecms_web_common_report_api.system_auditreport.pdf : http://COMMON-REPORT-SERVICE/system_auditreport/pdf
 
+# -------------------------------------------------- debit Report -----------------------------------------------------#
+
+# iss transaction status  report
+ecms_web_debit_report_api.iss_transaction_status_report.access : http://DEBIT-REPORT-SERVICE/iss_transaction_status_report/access
+ecms_web_debit_report_api.iss_transaction_status_report.list : http://DEBIT-REPORT-SERVICE/iss_transaction_status_report/list
+ecms_web_debit_report_api.iss_transaction_status_report.excel : http://DEBIT-REPORT-SERVICE/iss_transaction_status_report/excel
+ecms_web_debit_report_api.iss_transaction_status_report.pdf : http://DEBIT-REPORT-SERVICE/iss_transaction_status_report/pdf
+
+# card circulation report  report
+ecms_web_debit_report_api.payment_card_circulation_report.access : http://DEBIT-REPORT-SERVICE/payment_card_circulation_report/access
+ecms_web_debit_report_api.payment_card_circulation_report.list : http://DEBIT-REPORT-SERVICE/payment_card_circulation_report/list
+ecms_web_debit_report_api.payment_card_circulation_report.excel : http://DEBIT-REPORT-SERVICE/payment_card_circulation_report/excel
+ecms_web_debit_report_api.payment_card_circulation_report.pdf : http://DEBIT-REPORT-SERVICE/payment_card_circulation_report/pdf
+
+# batch wise card stock maintenance report
+ecms_web_debit_report_api.batch_wise_card_stock_maintenance_report.access : http://DEBIT-REPORT-SERVICE/batch_wise_card_stock_maintenance_report/access
+ecms_web_debit_report_api.batch_wise_card_stock_maintenance_report.loadcardproducts : http://DEBIT-REPORT-SERVICE/batch_wise_card_stock_maintenance_report/loadcardproducts
+ecms_web_debit_report_api.batch_wise_card_stock_maintenance_report.list : http://DEBIT-REPORT-SERVICE/batch_wise_card_stock_maintenance_report/list
+ecms_web_debit_report_api.batch_wise_card_stock_maintenance_report.excel : http://DEBIT-REPORT-SERVICE/batch_wise_card_stock_maintenance_report/excel
+ecms_web_debit_report_api.batch_wise_card_stock_maintenance_report.pdf : http://DEBIT-REPORT-SERVICE/batch_wise_card_stock_maintenance_report/pdf
+
+# Indicators Of Various Payment Instruments Report
+ecms_web_debit_report_api.Indicators_of_various_payment_instruments_report.access : http://DEBIT-REPORT-SERVICE/Indicators_of_various_payment_instruments_report/access
+ecms_web_debit_report_api.Indicators_of_various_payment_instruments_report.list : http://DEBIT-REPORT-SERVICE/Indicators_of_various_payment_instruments_report/list
+ecms_web_debit_report_api.Indicators_of_various_payment_instruments_report.excel : http://DEBIT-REPORT-SERVICE/Indicators_of_various_payment_instruments_report/excel
+ecms_web_debit_report_api.Indicators_of_various_payment_instruments_report.pdf : http://DEBIT-REPORT-SERVICE/Indicators_of_various_payment_instruments_report/pdf
+
+# Management Information System Report
+ecms_web_debit_report_api.management_infor_system_report.access : http://DEBIT-REPORT-SERVICE/management_infor_system_report/access
+ecms_web_debit_report_api.management_infor_system_report.list : http://DEBIT-REPORT-SERVICE/management_infor_system_report/list
+ecms_web_debit_report_api.management_infor_system_report.excel : http://DEBIT-REPORT-SERVICE/management_infor_system_report/excel
+ecms_web_debit_report_api.management_infor_system_report.pdf : http://DEBIT-REPORT-SERVICE/management_infor_system_report/pdf
+
+# Risk TXN Attempt Report
+ecms_web_debit_report_api.risk_transaction_attempt_report.access : http://DEBIT-REPORT-SERVICE/risk_transaction_attempt_report/access
+ecms_web_debit_report_api.risk_transaction_attempt_report.list : http://DEBIT-REPORT-SERVICE/risk_transaction_attempt_report/list
+ecms_web_debit_report_api.risk_transaction_attempt_report.excel : http://DEBIT-REPORT-SERVICE/risk_transaction_attempt_report/excel
+ecms_web_debit_report_api.risk_transaction_attempt_report.pdf : http://DEBIT-REPORT-SERVICE/risk_transaction_attempt_report/pdf
+
+# ATM With Cash Report
+ecms_web_debit_report_api.atm_with_cash_report.access : http://DEBIT-REPORT-SERVICE/atm_with_cash_report/access
+ecms_web_debit_report_api.atm_with_cash_report.list : http://DEBIT-REPORT-SERVICE/atm_with_cash_report/list
+ecms_web_debit_report_api.atm_with_cash_report.excel : http://DEBIT-REPORT-SERVICE/atm_with_cash_report/excel
+ecms_web_debit_report_api.atm_with_cash_report.pdf : http://DEBIT-REPORT-SERVICE/atm_with_cash_report/pdf
+
+# Overseas TXN Report
+ecms_web_debit_report_api.overseas_transaction_report.access : http://DEBIT-REPORT-SERVICE/overseas_transaction_report/access
+ecms_web_debit_report_api.overseas_transaction_report.list : http://DEBIT-REPORT-SERVICE/overseas_transaction_report/list
+ecms_web_debit_report_api.overseas_transaction_report.excel : http://DEBIT-REPORT-SERVICE/overseas_transaction_report/excel
+ecms_web_debit_report_api.overseas_transaction_report.pdf : http://DEBIT-REPORT-SERVICE/overseas_transaction_report/pdf
+
 # --------------------------------------------- General Ledger Management ---------------------------------------------#
 
 ecms_web_core_api.generalledger.history : http://CORE-SERVICE/generalledger/history

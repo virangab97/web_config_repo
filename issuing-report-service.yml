@@ -1,11 +1,10 @@
-#----------------------------------------------- Report location dir---------------------------------------------------
+#----------------------------------------------- Report location dir---------------------------------------------------#
 
 ecms_web_issuing_report_file.directory.excel : GeneratedReports/
 ecms_web_issuing_report_file.directory.pdf : GeneratedReports/
 ecms_web_issuing_report_file.directory.txt : GeneratedReports/
 
-
-# ----------------------------------------------Issuing Report_Generator-----------------------------------------------
+# ----------------------------------------------Issuing Report_Generator-----------------------------------------------#
 
 # 1 Installment Detail Report
 report_gen_api.installment_detail : http://192.168.1.150:5000/ecms_report_core_api/installmentdetailsreport

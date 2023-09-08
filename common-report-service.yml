@@ -1,11 +1,10 @@
-#----------------------------------------------- Report location dir---------------------------------------------------
+#----------------------------------------------- Report location dir---------------------------------------------------#
 
 ecms_web_common_report_file.directory.excel : GeneratedReports/
 ecms_web_common_report_file.directory.pdf : GeneratedReports/
 ecms_web_common_report_file.directory.txt : GeneratedReports/
 
-
-#------------------------------------------- Common Report_Generator---------------------------------------------------
+#------------------------------------------- Common Report_Generator---------------------------------------------------#
 
 # 01 user login report
 report_gen_api.user_login : http://192.168.1.150:6000/ecms_report_core_api/UserLoginReport
