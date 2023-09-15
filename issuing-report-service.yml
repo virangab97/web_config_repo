@@ -64,7 +64,7 @@ report_gen_api.aggrigate_limits : http://192.168.1.150:5000/ecms_report_core_api
 report_gen_api.new_cardgenerated : http://192.168.1.150:5000/ecms_report_core_api/NewCardGeneratedReport
 
 # 20 card history report
-report_gen_api.card.history : http://192.168.1.150:5000/ecms_report_core_api/CardHistoryReport
+report_gen_api.card_history : http://192.168.1.150:5000/ecms_report_core_api/CardHistoryReport
 
 # 21 excess card report
 report_gen_api.excess_card : http://192.168.1.150:5000/ecms_report_core_api/ExcessCardReport

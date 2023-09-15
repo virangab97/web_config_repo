@@ -23,17 +23,6 @@ spring:
     multipart:
       max-file-size: 30MB
   datasource:
-    #    type: com.zaxxer.hikari.HikariDataSource
-    hikari:
-      autoCommit: true
-      keepaliveTime: 300000
-      minimumIdle: 3
-      maximumPoolSize: 25
-      idleTimeout: 600000 # maximum idle time for connection
-      connectionTimeout: 30000 # maximum number of milliseconds that a client will wait for a connection
-      max-lifetime: 1080000
-      poolName: ecms-product-main-pool
-      leak-detection-threshold: 2000
     backend:
       jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
       username: ${BACKEND_USERNAME:CMSPRODUCTBACKEND}
@@ -48,6 +37,7 @@ spring:
       driverClassName: oracle.jdbc.driver.OracleDriver
       test-on-borrow: true
       validationQuery: SELECT 1 FROM DUAL
+
 jwt:
   issuer: epic-cms
   secret: EPICCMSREVAMP
@@ -66,4 +56,3 @@ ecms_issuing_report_online_connection_url : CMSPRODUCTONLINE/password@//124.43.1
 
 #EOD File upload path
 eoduploadpath: '/CMS/EODFILE/'
-
