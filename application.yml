@@ -43,7 +43,7 @@ spring:
       validationQuery: SELECT 1 FROM DUAL
     online:
       jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
-      username: ${BACKEND_USERNAME:CMSPRODUCTONLINED}
+      username: ${BACKEND_USERNAME:CMSPRODUCTONLINE}
       password: ${BACKEND_PASSWORD:password}
       driverClassName: oracle.jdbc.driver.OracleDriver
       test-on-borrow: true
