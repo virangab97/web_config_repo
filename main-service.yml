@@ -1,6 +1,7 @@
 config.precedence: 100
 ecms_web_core_api.token.obtain.url : http://TOKEN-SERVICE/token/obtain
 ecms_web_core_api.token.validate.url : http://TOKEN-SERVICE/token/validate
+ecms_web_core_api.token.refreshToken.url : http://TOKEN-SERVICE/token/refreshToken
 
 ecms_web_core_api.home.domain : http://CORE-SERVICE/home/domain
 ecms_web_core_api.home.application : http://CORE-SERVICE/home/application
@@ -329,6 +330,10 @@ ecms_web_core_api.eodprocessflow.viewbycategory : http://CORE-SERVICE/eodprocess
 ecms_web_core_api.eodprocessflow.viewbycategoryandstepid : http://CORE-SERVICE/eodprocessflow/viewbycategoryandstepid
 
 # --------------------------------------------------------- Report Management -----------------------------------------#
+
+#Standing Order
+ecms_web_issuing_report_api.standingordertype.access: http://ISSUING-REPORT-SERVICE/standingordertype/access
+
 
 # Report location dir
 ecms_web_issuing_report_file.directory.excel : /app/CMS/
@@ -1209,7 +1214,10 @@ ecms_web_core_api.cardproduct.delete : http://CORE-SERVICE/cardproduct/delete
 #PIN Count Reset Request Confirmation
 ecms_web_core_api.pincount.access : http://CORE-SERVICE/pincount/access
 ecms_web_core_api.pincount.list : http://CORE-SERVICE/pincount/list
+ecms_web_core_api.pincount.history : http://CORE-SERVICE/pincount/history
 ecms_web_core_api.pincount.view : http://CORE-SERVICE/pincount/view
+ecms_web_core_api.pincount.approve : http://CORE-SERVICE/pincount/approve
+ecms_web_core_api.pincount.reject : http://CORE-SERVICE/pincount/reject
 
 #Memos Monitor
 ecms_web_core_api.memos.access : http://CORE-SERVICE/memos/access
@@ -1403,6 +1411,7 @@ ecms_web_core_api.cashbackredeemconf.approve : http://CORE-SERVICE/cashbackredee
 ecms_web_core_api.cashbackredeemconf.reject : http://CORE-SERVICE/cashbackredeemconf/reject
 
 #Cash Back Enrolment Request Confirmation
+ecms_web_core_api.cashbackenrolmentreqconf.access : http://CORE-SERVICE/cashbackenrolmentreqconf/access
 ecms_web_core_api.cashbackenrolmentreqconf.list : http://CORE-SERVICE/cashbackenrolmentreqconf/list
 ecms_web_core_api.cashbackenrolmentreqconf.history : http://CORE-SERVICE/cashbackenrolmentreqconf/history
 ecms_web_core_api.cashbackenrolmentreqconf.approve : http://CORE-SERVICE/cashbackenrolmentreqconf/approve
@@ -1415,18 +1424,21 @@ ecms_web_core_api.transactiondropconf.approve : http://CORE-SERVICE/transactiond
 ecms_web_core_api.transactiondropconf.reject : http://CORE-SERVICE/transactiondropconf/reject
 
 #Statement Copy Request Confirmation
+ecms_web_core_api.statementcopyreqconf.access : http://CORE-SERVICE/statementcopyreqconf/access
 ecms_web_core_api.statementcopyreqconf.list : http://CORE-SERVICE/statementcopyreqconf/list
 ecms_web_core_api.statementcopyreqconf.history : http://CORE-SERVICE/statementcopyreqconf/history
 ecms_web_core_api.statementcopyreqconf.approve : http://CORE-SERVICE/statementcopyreqconf/approve
 ecms_web_core_api.statementcopyreqconf.reject : http://CORE-SERVICE/statementcopyreqconf/reject
 
 #Billing Cycle Change Request Confirmation
+ecms_web_core_api.billingcyclechangereqconf.access : http://CORE-SERVICE/billingcyclechangereqconf/access
 ecms_web_core_api.billingcyclechangereqconf.list : http://CORE-SERVICE/billingcyclechangereqconf/list
 ecms_web_core_api.billingcyclechangereqconf.history : http://CORE-SERVICE/billingcyclechangereqconf/history
 ecms_web_core_api.billingcyclechangereqconf.approve : http://CORE-SERVICE/billingcyclechangereqconf/approve
 ecms_web_core_api.billingcyclechangereqconf.reject : http://CORE-SERVICE/billingcyclechangereqconf/reject
 
 #Limit COnfirmation approve
+ecms_web_core_api.limitconfirmationapprove.access : http://CORE-SERVICE/limitconfirmationapprove/access
 ecms_web_core_api.limitconfirmationapprove.list : http://CORE-SERVICE/limitconfirmationapprove/list
 ecms_web_core_api.limitconfirmationapprove.history : http://CORE-SERVICE/limitconfirmationapprove/history
 ecms_web_core_api.limitconfirmationapprove.approve : http://CORE-SERVICE/limitconfirmationapprove/approve
@@ -1607,6 +1619,13 @@ ecms_web_call_center_api.cashbackredeem.history : http://CALL-CENTER-SERVICE/cas
 ecms_web_call_center_api.cashbackredeem.list : http://CALL-CENTER-SERVICE/cashbackredeem/list
 ecms_web_call_center_api.cashbackredeem.add : http://CALL-CENTER-SERVICE/cashbackredeem/add
 
+#Cash back enrolment request
+ecms_web_call_center_api.cashbackenrolment.access : http://CALL-CENTER-SERVICE/cashbackenrolment/access
+ecms_web_call_center_api.cashbackenrolment.history : http://CALL-CENTER-SERVICE/cashbackenrolment/history
+ecms_web_call_center_api.cashbackenrolment.request : http://CALL-CENTER-SERVICE/cashbackenrolment/request
+ecms_web_call_center_api.cashbackenrolment.credit-option : http://CALL-CENTER-SERVICE/cashbackenrolment/credit-option
+ecms_web_call_center_api.cashbackenrolment.access-view : http://CALL-CENTER-SERVICE/cashbackenrolment/access-view
+
 #Statement copy request
 ecms_web_call_center_api.stmntcopyreq.access : http://CALL-CENTER-SERVICE/stmntcopyreq/access
 ecms_web_call_center_api.stmntcopyreq.history : http://CALL-CENTER-SERVICE/stmntcopyreq/history
@@ -1783,13 +1802,13 @@ ecms_web_call_center_api.cardclose.reasoncode : http://CALL-CENTER-SERVICE/cardc
 #Card Request
 ecms_web_call_center_api.cardrequest.access : http://CALL-CENTER-SERVICE/cardrequest/access
 ecms_web_call_center_api.cardrequest.list : http://CALL-CENTER-SERVICE/cardrequest/list
-ecms_web_call_center_api.cardrequest.request : http://CALL-CENTER-SERVICE/cardrequest/request
+ecms_web_call_center_api.cardrequest.add : http://CALL-CENTER-SERVICE/cardrequest/add
 ecms_web_call_center_api.cardrequest.history : http://CALL-CENTER-SERVICE/cardrequest/history
 
 #Card HotList
 ecms_web_call_center_api.hotlist.access : http://CALL-CENTER-SERVICE/hotlist/access
 ecms_web_call_center_api.hotlist.list : http://CALL-CENTER-SERVICE/hotlist/list
-ecms_web_call_center_api.hotlist.request : http://CALL-CENTER-SERVICE/hotlist/request
+ecms_web_call_center_api.hotlist.add : http://CALL-CENTER-SERVICE/hotlist/add
 ecms_web_call_center_api.hotlist.history : http://CALL-CENTER-SERVICE/hotlist/history
 
 #Perm Limit Change Request
@@ -1827,7 +1846,9 @@ ecms_web_core_api.crappconf.production_modes : http://CORE-SERVICE/crappconf/pro
 ecms_web_core_api.crappconf.account_templates : http://CORE-SERVICE/crappconf/account_templates
 ecms_web_core_api.crappconf.card_templates : http://CORE-SERVICE/crappconf/card_templates
 ecms_web_core_api.crappconf.rec_download : http://CORE-SERVICE/crappconf/rec_download
-ecms_web_core_api.crappconf.binby : http://CORE-SERVICE/crappconf/binby
+ecms_web_core_api.crappconf.bins : http://CORE-SERVICE/crappconf/bins
+ecms_web_core_api.crappconf.breakdown : http://CORE-SERVICE/crappconf/breakdown
+ecms_web_core_api.crappconf.recalculate : http://CORE-SERVICE/crappconf/recalculate
 
 #Debit Application Assigning
 ecms_web_debit_issuance_api.app_assign.access : http://DEBIT-SERVICE/app_assign/access
@@ -1848,6 +1869,8 @@ ecms_web_debit_issuance_api.app_upd_assign.loadedit : http://DEBIT-SERVICE/app_u
 #Debit Application Capturing
 ecms_web_debit_issuance_api.app_capture.access : http://DEBIT-SERVICE/app_capture/access
 ecms_web_debit_issuance_api.app_capture.data : http://DEBIT-SERVICE/app_capture/data
+ecms_web_debit_issuance_api.app_capture.area : http://DEBIT-SERVICE/app_capture/area
+ecms_web_debit_issuance_api.app_capture.districtandprovice : http://DEBIT-SERVICE/app_capture/districtandprovice
 ecms_web_debit_issuance_api.app_capture.list : http://DEBIT-SERVICE/app_capture/list
 ecms_web_debit_issuance_api.app_capture.uploadfile : http://DEBIT-SERVICE/app_capture/uploadfile
 ecms_web_debit_issuance_api.app_capture.history : http://DEBIT-SERVICE/app_capture/history
@@ -1859,6 +1882,8 @@ ecms_web_debit_issuance_api.app_capture.addpersonaldetails : http://DEBIT-SERVIC
 #Update Debit Application Capturing
 ecms_web_debit_issuance_api.app_capture_upd.access : http://DEBIT-SERVICE/app_capture_upd/access
 ecms_web_debit_issuance_api.app_capture_upd.data : http://DEBIT-SERVICE/app_capture_upd/data
+ecms_web_debit_issuance_api.app_capture_upd.area : http://DEBIT-SERVICE/app_capture_upd/area
+ecms_web_debit_issuance_api.app_capture_upd.districtandprovice : http://DEBIT-SERVICE/app_capture_upd/districtandprovice
 ecms_web_debit_issuance_api.app_capture_upd.list : http://DEBIT-SERVICE/app_capture_upd/list
 ecms_web_debit_issuance_api.app_capture_upd.uploadfile : http://DEBIT-SERVICE/app_capture_upd/uploadfile
 ecms_web_debit_issuance_api.app_capture_upd.history : http://DEBIT-SERVICE/app_capture_upd/history
@@ -1872,4 +1897,225 @@ ecms_web_debit_issuance_api.instant_kyc.access : http://DEBIT-SERVICE/instant_ky
 ecms_web_debit_issuance_api.instant_kyc.data : http://DEBIT-SERVICE/instant_kyc/data
 ecms_web_debit_issuance_api.instant_kyc.uploadfile : http://DEBIT-SERVICE/instant_kyc/uploadfile
 ecms_web_debit_issuance_api.instant_kyc.history : http://DEBIT-SERVICE/instant_kyc/history
-ecms_web_debit_issuance_api.instant_kyc.addpersonaldetails : http://DEBIT-SERVICE/app_capture/instant_kyc
+ecms_web_debit_issuance_api.instant_kyc.addinstantcard : http://DEBIT-SERVICE/instant_kyc/addinstantcard
+ecms_web_debit_issuance_api.instant_kyc.mandatorydocs : http://DEBIT-SERVICE/instant_kyc/mandatorydocs
+
+
+#debit_issuance
+
+
+#Bulk Card Request
+ecms_web_debit_issuance_api.bulkcardreq.access : http://DEBIT-SERVICE/bulkcardreq/access
+ecms_web_debit_issuance_api.bulkcardreq.type : http://DEBIT-SERVICE/bulkcardreq/type
+ecms_web_debit_issuance_api.bulkcardreq.product : http://DEBIT-SERVICE/bulkcardreq/product
+ecms_web_debit_issuance_api.bulkcardreq.currency : http://DEBIT-SERVICE/bulkcardreq/currency
+ecms_web_debit_issuance_api.bulkcardreq.list : http://DEBIT-SERVICE/bulkcardreq/list
+ecms_web_debit_issuance_api.bulkcardreq.history : http://DEBIT-SERVICE/bulkcardreq/history
+ecms_web_debit_issuance_api.bulkcardreq.add : http://DEBIT-SERVICE/bulkcardreq/add
+ecms_web_debit_issuance_api.bulkcardreq.update : http://DEBIT-SERVICE/bulkcardreq/update
+ecms_web_debit_issuance_api.bulkcardreq.delete : http://DEBIT-SERVICE/bulkcardreq/delete
+ecms_web_debit_issuance_api.bulkcardreq.receive : http://DEBIT-SERVICE/bulkcardreq/receive
+
+
+#customer contact details confirmation
+ecms_web_debit_issuance_api.cuscondetconf.access : http://DEBIT-SERVICE/cuscondetconf/access
+ecms_web_debit_issuance_api.cuscondetconf.list : http://DEBIT-SERVICE/cuscondetconf/list
+ecms_web_debit_issuance_api.cuscondetconf.history : http://DEBIT-SERVICE/cuscondetconf/history
+ecms_web_debit_issuance_api.cuscondetconf.approve : http://DEBIT-SERVICE/cuscondetconf/approve
+ecms_web_debit_issuance_api.cuscondetconf.reject : http://DEBIT-SERVICE/cuscondetconf/reject
+
+
+#Card Request Confirmation
+ecms_web_debit_issuance_api.cardreqconf.access : http://DEBIT-SERVICE/cardreqconf/access
+ecms_web_debit_issuance_api.cardreqconf.list : http://DEBIT-SERVICE/cardreqconf/list
+ecms_web_debit_issuance_api.cardreqconf.history : http://DEBIT-SERVICE/cardreqconf/history
+ecms_web_debit_issuance_api.cardreqconf.approve : http://DEBIT-SERVICE/cardreqconf/approve
+ecms_web_debit_issuance_api.cardreqconf.reject : http://DEBIT-SERVICE/cardreqconf/reject
+
+#Suspense Account Management
+ecms_web_debit_issuance_api.susaccmgt.access : http://DEBIT-SERVICE/susaccmgt/access
+ecms_web_debit_issuance_api.susaccmgt.list : http://DEBIT-SERVICE/susaccmgt/list
+ecms_web_debit_issuance_api.susaccmgt.history : http://DEBIT-SERVICE/susaccmgt/history
+ecms_web_debit_issuance_api.susaccmgt.add : http://DEBIT-SERVICE/susaccmgt/add
+ecms_web_debit_issuance_api.susaccmgt.update : http://DEBIT-SERVICE/susaccmgt/update
+ecms_web_debit_issuance_api.susaccmgt.delete : http://DEBIT-SERVICE/susaccmgt/delete
+ecms_web_debit_issuance_api.susaccmgt.view : http://DEBIT-SERVICE/susaccmgt/view
+ecms_web_debit_issuance_api.susaccmgt.updateView : http://DEBIT-SERVICE/susaccmgt/updateView
+
+#Debit letter Generation
+ecms_web_debit_issuance_api.lettergen.access : http://DEBIT-SERVICE/lettergen/access
+ecms_web_debit_issuance_api.lettergen.list : http://DEBIT-SERVICE/lettergen/list
+ecms_web_debit_issuance_api.lettergen.history : http://DEBIT-SERVICE/lettergen/history
+ecms_web_debit_issuance_api.lettergen.view : http://DEBIT-SERVICE/lettergen/view
+ecms_web_debit_issuance_api.lettergen.letterGen : http://DEBIT-SERVICE/lettergen/letterGen
+ecms_web_debit_issuance_api.lettergen.download : http://DEBIT-SERVICE/lettergen/download
+
+#Card Reenewal
+ecms_web_core_api.cardrenewal.access : http://CORE-SERVICE/cardrenewal/access
+ecms_web_core_api.cardrenewal.list : http://CORE-SERVICE/cardrenewal/list
+ecms_web_core_api.cardrenewal.history : http://CORE-SERVICE/cardrenewal/history
+ecms_web_core_api.cardrenewal.approve : http://CORE-SERVICE/cardrenewal/approve
+ecms_web_core_api.cardrenewal.reject : http://CORE-SERVICE/cardrenewal/reject
+
+#Loyalty Redeem Request Confirmation
+ecms_web_core_api.loyaltyredeemconf.access : http://CORE-SERVICE/loyaltyredeemconf/access
+ecms_web_core_api.loyaltyredeemconf.list : http://CORE-SERVICE/loyaltyredeemconf/list
+ecms_web_core_api.loyaltyredeemconf.history : http://CORE-SERVICE/loyaltyredeemconf/history
+ecms_web_core_api.loyaltyredeemconf.approve : http://CORE-SERVICE/loyaltyredeemconf/approve
+ecms_web_core_api.loyaltyredeemconf.reject : http://CORE-SERVICE/loyaltyredeemconf/reject
+
+#Auto Settlement Confirmation
+ecms_web_core_api.autosettlementconf.list : http://CORE-SERVICE/autosettlementconf/list
+ecms_web_core_api.autosettlementconf.access : http://CORE-SERVICE/autosettlementconf/access
+ecms_web_core_api.autosettlementconf.history : http://CORE-SERVICE/autosettlementconf/history
+ecms_web_core_api.autosettlementconf.approve : http://CORE-SERVICE/autosettlementconf/approve
+ecms_web_core_api.autosettlementconf.reject : http://CORE-SERVICE/autosettlementconf/reject
+
+#Credit letter Generation
+ecms_web_core_api.lettergen.access : http://CORE-SERVICE/lettergen/access
+ecms_web_core_api.lettergen.product : http://CORE-SERVICE/lettergen/product
+ecms_web_core_api.lettergen.list : http://CORE-SERVICE/lettergen/list
+ecms_web_core_api.lettergen.history : http://CORE-SERVICE/lettergen/history
+ecms_web_core_api.lettergen.view : http://CORE-SERVICE/lettergen/view
+ecms_web_core_api.lettergen.letterGen : http://CORE-SERVICE/lettergen/letterGen
+ecms_web_core_api.lettergen.download : http://CORE-SERVICE/lettergen/download
+
+#LOC Acceleration Confirmation
+ecms_web_core_api.locaccelerationconfirm.access : http://CORE-SERVICE/locaccelerationconfirm/access
+ecms_web_core_api.locaccelerationconfirm.list : http://CORE-SERVICE/locaccelerationconfirm/list
+ecms_web_core_api.locaccelerationconfirm.history : http://CORE-SERVICE/locaccelerationconfirm/history
+ecms_web_core_api.locaccelerationconfirm.approve : http://CORE-SERVICE/locaccelerationconfirm/approve
+ecms_web_core_api.locaccelerationconfirm.reject : http://CORE-SERVICE/locaccelerationconfirm/reject
+
+#Easy Payment Confirmation
+ecms_web_core_api.easypaymentconfirmation.access : http://CORE-SERVICE/easypaymentconfirmation/access
+ecms_web_core_api.easypaymentconfirmation.paymentplan : http://CORE-SERVICE/easypaymentconfirmation/paymentplan
+ecms_web_core_api.easypaymentconfirmation.list : http://CORE-SERVICE/easypaymentconfirmation/list
+ecms_web_core_api.easypaymentconfirmation.history : http://CORE-SERVICE/easypaymentconfirmation/history
+ecms_web_core_api.easypaymentconfirmation.approve : http://CORE-SERVICE/easypaymentconfirmation/approve
+ecms_web_core_api.easypaymentconfirmation.reject : http://CORE-SERVICE/easypaymentconfirmation/reject
+
+#Call center debit card request
+ecms_web_call_center_api.debcardrequest.access : http://CALL-CENTER-SERVICE/debcardrequest/access
+ecms_web_call_center_api.debcardrequest.history : http://CALL-CENTER-SERVICE/debcardrequest/history
+ecms_web_call_center_api.debcardrequest.add : http://CALL-CENTER-SERVICE/debcardrequest/add
+
+#Call center debit card close request
+ecms_web_call_center_api.debcardcloserequest.access : http://CALL-CENTER-SERVICE/debcardcloserequest/access
+ecms_web_call_center_api.debcardcloserequest.history : http://CALL-CENTER-SERVICE/debcardcloserequest/history
+ecms_web_call_center_api.debcardcloserequest.add : http://CALL-CENTER-SERVICE/debcardcloserequest/add
+
+#Call center debit card hotlist
+ecms_web_call_center_api.debcardhotlist.access : http://CALL-CENTER-SERVICE/debcardhotlist/access
+ecms_web_call_center_api.debcardhotlist.history : http://CALL-CENTER-SERVICE/debcardhotlist/history
+ecms_web_call_center_api.debcardhotlist.add : http://CALL-CENTER-SERVICE/debcardhotlist/add
+
+#Call center debit card memos
+ecms_web_call_center_api.debcardmemo.access : http://CALL-CENTER-SERVICE/debcardmemo/access
+ecms_web_call_center_api.debcardmemo.list : http://CALL-CENTER-SERVICE/debcardmemo/list
+ecms_web_call_center_api.debcardmemo.view : http://CALL-CENTER-SERVICE/debcardmemo/view
+ecms_web_call_center_api.debcardmemo.history : http://CALL-CENTER-SERVICE/debcardmemo/history
+ecms_web_call_center_api.debcardmemo.add : http://CALL-CENTER-SERVICE/debcardmemo/add
+ecms_web_call_center_api.debcardmemo.update : http://CALL-CENTER-SERVICE/debcardmemo/update
+ecms_web_call_center_api.debcardmemo.delete : http://CALL-CENTER-SERVICE/debcardmemo/delete
+
+#Debit Number Generation
+ecms_web_debit_issuance_api.numbergen.access : http://DEBIT-SERVICE/numbergen/access
+ecms_web_debit_issuance_api.numbergen.list : http://DEBIT-SERVICE/numbergen/list
+ecms_web_debit_issuance_api.numbergen.history : http://DEBIT-SERVICE/numbergen/history
+ecms_web_debit_issuance_api.numbergen.productlist : http://DEBIT-SERVICE/numbergen/productlist
+ecms_web_debit_issuance_api.numbergen.number-generate : http://DEBIT-SERVICE/numbergen/number-generate
+
+#Bulk Number Generation
+ecms_web_debit_issuance_api.bulknumbergen.access : http://DEBIT-SERVICE/bulknumbergen/access
+ecms_web_debit_issuance_api.bulknumbergen.list : http://DEBIT-SERVICE/bulknumbergen/list
+ecms_web_debit_issuance_api.bulknumbergen.history : http://DEBIT-SERVICE/bulknumbergen/history
+ecms_web_debit_issuance_api.bulknumbergen.typelist : http://DEBIT-SERVICE/bulknumbergen/typelist
+ecms_web_debit_issuance_api.bulknumbergen.productlist : http://DEBIT-SERVICE/bulknumbergen/productlist
+ecms_web_debit_issuance_api.bulknumbergen.view : http://DEBIT-SERVICE/bulknumbergen/view
+ecms_web_debit_issuance_api.bulknumbergen.confirm : http://DEBIT-SERVICE/bulknumbergen/confirm
+ecms_web_debit_issuance_api.bulknumbergen.reject : http://DEBIT-SERVICE/bulknumbergen/reject
+
+#Bulk Pin Generation
+ecms_web_debit_issuance_api.bulkpingen.access : http://DEBIT-SERVICE/bulkpingen/access
+ecms_web_debit_issuance_api.bulkpingen.list : http://DEBIT-SERVICE/bulkpingen/list
+ecms_web_debit_issuance_api.bulkpingen.history : http://DEBIT-SERVICE/bulkpingen/history
+ecms_web_debit_issuance_api.bulkpingen.cardtypes : http://DEBIT-SERVICE/bulkpingen/cardtypes
+ecms_web_debit_issuance_api.bulkpingen.cardproducts : http://DEBIT-SERVICE/bulkpingen/cardproducts
+ecms_web_debit_issuance_api.bulkpingen.pinGeneration : http://DEBIT-SERVICE/bulkpingen/pinGeneration
+
+#Bulk Card Embossing
+ecms_web_debit_issuance_api.bulkemboss.access : http://DEBIT-SERVICE/bulkemboss/access
+ecms_web_debit_issuance_api.bulkemboss.list : http://DEBIT-SERVICE/bulkemboss/list
+ecms_web_debit_issuance_api.bulkemboss.history : http://DEBIT-SERVICE/bulkemboss/history
+ecms_web_debit_issuance_api.bulkemboss.typelist : http://DEBIT-SERVICE/bulkemboss/typelist
+ecms_web_debit_issuance_api.bulkemboss.productlist : http://DEBIT-SERVICE/bulkemboss/productlist
+ecms_web_debit_issuance_api.bulkemboss.process : http://DEBIT-SERVICE/bulkemboss/process
+ecms_web_debit_issuance_api.bulkemboss.download : http://DEBIT-SERVICE/bulkemboss/download
+
+#Bulk Card & Pin Distribution
+ecms_web_debit_issuance_api.bulkdistribute.access : http://DEBIT-SERVICE/bulkdistribute/access
+ecms_web_debit_issuance_api.bulkdistribute.list : http://DEBIT-SERVICE/bulkdistribute/list
+ecms_web_debit_issuance_api.bulkdistribute.history : http://DEBIT-SERVICE/bulkdistribute/history
+ecms_web_debit_issuance_api.bulkdistribute.typelist : http://DEBIT-SERVICE/bulkdistribute/typelist
+ecms_web_debit_issuance_api.bulkdistribute.productlist : http://DEBIT-SERVICE/bulkdistribute/productlist
+ecms_web_debit_issuance_api.bulkdistribute.distribute : http://DEBIT-SERVICE/bulkdistribute/distribute
+
+
+#Debit Application Confirmation
+ecms_web_debit_issuance_api.app_confirm.access : http://DEBIT-SERVICE/app_confirm/access
+ecms_web_debit_issuance_api.app_confirm.list : http://DEBIT-SERVICE/app_confirm/list
+ecms_web_debit_issuance_api.app_confirm.view : http://DEBIT-SERVICE/app_confirm/view
+ecms_web_debit_issuance_api.app_confirm.history : http://DEBIT-SERVICE/app_confirm/history
+ecms_web_debit_issuance_api.app_confirm.approve : http://DEBIT-SERVICE/app_confirm/approve
+ecms_web_debit_issuance_api.app_confirm.reject : http://DEBIT-SERVICE/app_confirm/reject
+ecms_web_debit_issuance_api.app_confirm.bins : http://DEBIT-SERVICE/app_confirm/bins
+
+#Debit Account Operations - Call center
+ecms_web_call_center_api.debitaccview.access : http://CALL-CENTER-SERVICE/debitaccview/access
+ecms_web_call_center_api.debitaccview.autosetreqlist : http://CALL-CENTER-SERVICE/debitaccview/autosetreqlist
+ecms_web_call_center_api.debitaccview.autosetchangereqlist : http://CALL-CENTER-SERVICE/debitaccview/autosetchangereqlist
+ecms_web_call_center_api.debitaccview.billingcyclechangereqlist : http://CALL-CENTER-SERVICE/debitaccview/billingcyclechangereqlist
+ecms_web_call_center_api.debitaccview.loyaltyreddemreqlist : http://CALL-CENTER-SERVICE/debitaccview/loyaltyreddemreqlist
+ecms_web_call_center_api.debitaccview.cashbackreqlist : http://CALL-CENTER-SERVICE/debitaccview/cashbackreqlist
+ecms_web_call_center_api.debitaccview.cashbackmodifreqlist : http://CALL-CENTER-SERVICE/debitaccview/cashbackmodifreqlist
+ecms_web_call_center_api.debitaccview.stmtcopyreqlist : http://CALL-CENTER-SERVICE/debitaccview/stmtcopyreqlist
+ecms_web_call_center_api.debitaccview.stmtlist : http://CALL-CENTER-SERVICE/debitaccview/stmtlist
+ecms_web_call_center_api.debitaccview.cardinfor : http://CALL-CENTER-SERVICE/debitaccview/cardinfor
+
+#Debit Account Txn Risk Management
+ecms_web_call_center_api.debitacctxnriskmgt.access : http://CALL-CENTER-SERVICE/debitacctxnriskmgt/access
+ecms_web_call_center_api.debitacctxnriskmgt.history : http://CALL-CENTER-SERVICE/debitacctxnriskmgt/history
+ecms_web_call_center_api.debitacctxnriskmgt.assigntxn : http://CALL-CENTER-SERVICE/debitacctxnriskmgt/assigntxn
+ecms_web_call_center_api.debitacctxnriskmgt.updaterisk : http://CALL-CENTER-SERVICE/debitacctxnriskmgt/updaterisk
+
+#Debit Application Main View
+ecms_web_call_center_api.debitappmainview.bankseclist : http://CALL-CENTER-SERVICE/debitappmainview/bankseclist
+ecms_web_call_center_api.debitappmainview.docseclist : http://CALL-CENTER-SERVICE/debitappmainview/docseclist
+ecms_web_call_center_api.debitappmainview.expseclist : http://CALL-CENTER-SERVICE/debitappmainview/expseclist
+ecms_web_call_center_api.debitappmainview.history : http://CALL-CENTER-SERVICE/debitappmainview/history
+ecms_web_call_center_api.debitappmainview.view : http://CALL-CENTER-SERVICE/debitappmainview/view
+
+#Card Account Update Request
+ecms_web_call_center_api.debitcardaccupdate.txnmgt : http://CALL-CENTER-SERVICE/debitcardaccupdate/txnmgt
+ecms_web_call_center_api.debitcardaccupdate.saveacc : http://CALL-CENTER-SERVICE/debitcardaccupdate/saveacc
+ecms_web_call_center_api.debitcardaccupdate.request : http://CALL-CENTER-SERVICE/debitcardaccupdate/request
+ecms_web_call_center_api.debitcardaccupdate.history : http://CALL-CENTER-SERVICE/debitcardaccupdate/history
+ecms_web_call_center_api.debitcardaccupdate.access : http://CALL-CENTER-SERVICE/debitcardaccupdate/access
+
+#Online Balance
+ecms_web_call_center_api.debitonlinebal.list : http://CALL-CENTER-SERVICE/debitonlinebal/list
+ecms_web_call_center_api.debitonlinebal.history : http://CALL-CENTER-SERVICE/debitonlinebal/history
+ecms_web_call_center_api.debitonlinebal.access : http://CALL-CENTER-SERVICE/debitonlinebal/access
+
+#Debit Transaction & Risk Management
+ecms_web_call_center_api.debittxnriskmgt.riskmgt : http://CALL-CENTER-SERVICE/debittxnriskmgt/riskmgt
+ecms_web_call_center_api.debittxnriskmgt.txnmgt : http://CALL-CENTER-SERVICE/debittxnriskmgt/txnmgt
+ecms_web_call_center_api.debittxnriskmgt.history : http://CALL-CENTER-SERVICE/debittxnriskmgt/history
+ecms_web_call_center_api.debittxnriskmgt.access : http://CALL-CENTER-SERVICE/debittxnriskmgt/access
+
+#Debit card account activation confirmation
+ecms_web_call_center_api.cardactconf.reject : http://CALL-CENTER-SERVICE/cardactconf/reject
+ecms_web_call_center_api.cardactconf.approve : http://CALL-CENTER-SERVICE/cardactconf/approve
+ecms_web_call_center_api.cardactconf.history : http://CALL-CENTER-SERVICE/cardactconf/history
+ecms_web_call_center_api.cardactconf.access : http://CALL-CENTER-SERVICE/cardactconf/access

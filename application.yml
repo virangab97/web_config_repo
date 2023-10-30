@@ -24,14 +24,32 @@ spring:
       max-file-size: 30MB
   datasource:
     backend:
-      jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@192.168.1.149:1521:cmsbkdb}
+      auto-commit: true
+      keep-alive-time: 300000
+      minimum-idle: 3
+      maximum-pool-size: 25
+      idle-timeout: 600000
+      connection-timeout: 30000
+      max-lifetime: 1080000
+      leak-detection-threshold: 2000
+      pool-name: ecms-product-backend-pool
+      jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
       username: ${BACKEND_USERNAME:CMSPRODUCTBACKEND}
       password: ${BACKEND_PASSWORD:password}
       driverClassName: oracle.jdbc.driver.OracleDriver
       test-on-borrow: true
       validationQuery: SELECT 1 FROM DUAL
     online:
-      jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@192.168.1.149:1521:cmsbkdb}
+      auto-commit: true
+      keep-alive-time: 300000
+      minimum-idle: 3
+      maximum-pool-size: 25
+      idle-timeout: 600000
+      connection-timeout: 30000
+      max-lifetime: 1080000
+      leak-detection-threshold: 2000
+      pool-name: ecms-product-online-pool
+      jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
       username: ${BACKEND_USERNAME:CMSPRODUCTONLINE}
       password: ${BACKEND_PASSWORD:password}
       driverClassName: oracle.jdbc.driver.OracleDriver
