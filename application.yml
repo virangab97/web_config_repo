@@ -34,7 +34,7 @@ spring:
       leak-detection-threshold: 2000
       pool-name: ecms-product-backend-pool
       jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
-      username: ${BACKEND_USERNAME:CMSPRODUCTBACKEND}
+      username: ${BACKEND_USERNAME:CMSPRODUCTBACKENDDEV}
       password: ${BACKEND_PASSWORD:password}
       driverClassName: oracle.jdbc.driver.OracleDriver
       test-on-borrow: true
@@ -50,7 +50,7 @@ spring:
       leak-detection-threshold: 2000
       pool-name: ecms-product-online-pool
       jdbcUrl: ${BACKEND_DB_URL:jdbc:oracle:thin:@124.43.16.185:50170:cmsbkdb}
-      username: ${BACKEND_USERNAME:CMSPRODUCTONLINE}
+      username: ${BACKEND_USERNAME:CMSPRODUCTONLINEDEV}
       password: ${BACKEND_PASSWORD:password}
       driverClassName: oracle.jdbc.driver.OracleDriver
       test-on-borrow: true
@@ -69,8 +69,8 @@ springdoc:
     operationsSorter: method
 
 #Report module DB Connections
-ecms_issuing_report_backend_connection_url : CMSPRODUCTBACKEND/password@//192.168.1.149:1521/cmsbkdb
-ecms_issuing_report_online_connection_url : CMSPRODUCTONLINE/password@//192.168.1.149:1521/cmsbkdb
+ecms_issuing_report_backend_connection_url : CMSPRODUCTBACKENDDEV/password@//192.168.1.149:1521/cmsbkdb
+ecms_issuing_report_online_connection_url : CMSPRODUCTONLINEDEV/password@//192.168.1.149:1521/cmsbkdb
 
 #EOD File upload path
 eoduploadpath: '/CMS/EODFILE/'

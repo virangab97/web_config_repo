@@ -1850,60 +1850,6 @@ ecms_web_core_api.crappconf.bins : http://CORE-SERVICE/crappconf/bins
 ecms_web_core_api.crappconf.breakdown : http://CORE-SERVICE/crappconf/breakdown
 ecms_web_core_api.crappconf.recalculate : http://CORE-SERVICE/crappconf/recalculate
 
-#Debit Application Assigning
-ecms_web_debit_issuance_api.app_assign.access : http://DEBIT-SERVICE/app_assign/access
-ecms_web_debit_issuance_api.app_assign.list : http://DEBIT-SERVICE/app_assign/list
-ecms_web_debit_issuance_api.app_assign.countlist : http://DEBIT-SERVICE/app_assign/countlist
-ecms_web_debit_issuance_api.app_assign.previousapps : http://DEBIT-SERVICE/app_assign/previousapps
-ecms_web_debit_issuance_api.app_assign.history : http://DEBIT-SERVICE/app_assign/history
-ecms_web_debit_issuance_api.app_assign.add : http://DEBIT-SERVICE/app_assign/add
-ecms_web_debit_issuance_api.app_assign.loadidusers : http://DEBIT-SERVICE/app_assign/loadidusers
-
-# Debit Application Update Assigning
-ecms_web_debit_issuance_api.app_upd_assign.access : http://DEBIT-SERVICE/app_upd_assign/access
-ecms_web_debit_issuance_api.app_upd_assign.list : http://DEBIT-SERVICE/app_upd_assign/list
-ecms_web_debit_issuance_api.app_upd_assign.history : http://DEBIT-SERVICE/app_upd_assign/history
-ecms_web_debit_issuance_api.app_upd_assign.edit : http://DEBIT-SERVICE/app_upd_assign/edit
-ecms_web_debit_issuance_api.app_upd_assign.loadedit : http://DEBIT-SERVICE/app_upd_assign/loadedit
-
-#Debit Application Capturing
-ecms_web_debit_issuance_api.app_capture.access : http://DEBIT-SERVICE/app_capture/access
-ecms_web_debit_issuance_api.app_capture.data : http://DEBIT-SERVICE/app_capture/data
-ecms_web_debit_issuance_api.app_capture.area : http://DEBIT-SERVICE/app_capture/area
-ecms_web_debit_issuance_api.app_capture.districtandprovice : http://DEBIT-SERVICE/app_capture/districtandprovice
-ecms_web_debit_issuance_api.app_capture.list : http://DEBIT-SERVICE/app_capture/list
-ecms_web_debit_issuance_api.app_capture.uploadfile : http://DEBIT-SERVICE/app_capture/uploadfile
-ecms_web_debit_issuance_api.app_capture.history : http://DEBIT-SERVICE/app_capture/history
-ecms_web_debit_issuance_api.app_capture.cardTypes : http://DEBIT-SERVICE/app_capture/cardTypes
-ecms_web_debit_issuance_api.app_capture.cardProducts : http://DEBIT-SERVICE/app_capture/cardProducts
-ecms_web_debit_issuance_api.app_capture.complete : http://DEBIT-SERVICE/app_capture/complete
-ecms_web_debit_issuance_api.app_capture.addpersonaldetails : http://DEBIT-SERVICE/app_capture/addpersonaldetails
-
-#Update Debit Application Capturing
-ecms_web_debit_issuance_api.app_capture_upd.access : http://DEBIT-SERVICE/app_capture_upd/access
-ecms_web_debit_issuance_api.app_capture_upd.data : http://DEBIT-SERVICE/app_capture_upd/data
-ecms_web_debit_issuance_api.app_capture_upd.area : http://DEBIT-SERVICE/app_capture_upd/area
-ecms_web_debit_issuance_api.app_capture_upd.districtandprovice : http://DEBIT-SERVICE/app_capture_upd/districtandprovice
-ecms_web_debit_issuance_api.app_capture_upd.list : http://DEBIT-SERVICE/app_capture_upd/list
-ecms_web_debit_issuance_api.app_capture_upd.uploadfile : http://DEBIT-SERVICE/app_capture_upd/uploadfile
-ecms_web_debit_issuance_api.app_capture_upd.history : http://DEBIT-SERVICE/app_capture_upd/history
-ecms_web_debit_issuance_api.app_capture_upd.cardTypes : http://DEBIT-SERVICE/app_capture_upd/cardTypes
-ecms_web_debit_issuance_api.app_capture_upd.cardProducts : http://DEBIT-SERVICE/app_capture_upd/cardProducts
-ecms_web_debit_issuance_api.app_capture_upd.complete : http://DEBIT-SERVICE/app_capture_upd/complete
-ecms_web_debit_issuance_api.app_capture_upd.updpersonaldetails : http://DEBIT-SERVICE/app_capture_upd/updpersonaldetails
-
-#Instant Kyc Debit Application Capturing
-ecms_web_debit_issuance_api.instant_kyc.access : http://DEBIT-SERVICE/instant_kyc/access
-ecms_web_debit_issuance_api.instant_kyc.data : http://DEBIT-SERVICE/instant_kyc/data
-ecms_web_debit_issuance_api.instant_kyc.uploadfile : http://DEBIT-SERVICE/instant_kyc/uploadfile
-ecms_web_debit_issuance_api.instant_kyc.history : http://DEBIT-SERVICE/instant_kyc/history
-ecms_web_debit_issuance_api.instant_kyc.addinstantcard : http://DEBIT-SERVICE/instant_kyc/addinstantcard
-ecms_web_debit_issuance_api.instant_kyc.mandatorydocs : http://DEBIT-SERVICE/instant_kyc/mandatorydocs
-
-
-#debit_issuance
-
-
 #Bulk Card Request
 ecms_web_debit_issuance_api.bulkcardreq.access : http://DEBIT-SERVICE/bulkcardreq/access
 ecms_web_debit_issuance_api.bulkcardreq.type : http://DEBIT-SERVICE/bulkcardreq/type
@@ -1916,14 +1862,12 @@ ecms_web_debit_issuance_api.bulkcardreq.update : http://DEBIT-SERVICE/bulkcardre
 ecms_web_debit_issuance_api.bulkcardreq.delete : http://DEBIT-SERVICE/bulkcardreq/delete
 ecms_web_debit_issuance_api.bulkcardreq.receive : http://DEBIT-SERVICE/bulkcardreq/receive
 
-
 #customer contact details confirmation
 ecms_web_debit_issuance_api.cuscondetconf.access : http://DEBIT-SERVICE/cuscondetconf/access
 ecms_web_debit_issuance_api.cuscondetconf.list : http://DEBIT-SERVICE/cuscondetconf/list
 ecms_web_debit_issuance_api.cuscondetconf.history : http://DEBIT-SERVICE/cuscondetconf/history
 ecms_web_debit_issuance_api.cuscondetconf.approve : http://DEBIT-SERVICE/cuscondetconf/approve
 ecms_web_debit_issuance_api.cuscondetconf.reject : http://DEBIT-SERVICE/cuscondetconf/reject
-
 
 #Card Request Confirmation
 ecms_web_debit_issuance_api.cardreqconf.access : http://DEBIT-SERVICE/cardreqconf/access
@@ -1956,6 +1900,7 @@ ecms_web_core_api.cardrenewal.list : http://CORE-SERVICE/cardrenewal/list
 ecms_web_core_api.cardrenewal.history : http://CORE-SERVICE/cardrenewal/history
 ecms_web_core_api.cardrenewal.approve : http://CORE-SERVICE/cardrenewal/approve
 ecms_web_core_api.cardrenewal.reject : http://CORE-SERVICE/cardrenewal/reject
+ecms_web_core_api.cardrenewal.cardproductby : http://CORE-SERVICE/cardrenewal/cardproductby
 
 #Loyalty Redeem Request Confirmation
 ecms_web_core_api.loyaltyredeemconf.access : http://CORE-SERVICE/loyaltyredeemconf/access
@@ -2061,16 +2006,6 @@ ecms_web_debit_issuance_api.bulkdistribute.typelist : http://DEBIT-SERVICE/bulkd
 ecms_web_debit_issuance_api.bulkdistribute.productlist : http://DEBIT-SERVICE/bulkdistribute/productlist
 ecms_web_debit_issuance_api.bulkdistribute.distribute : http://DEBIT-SERVICE/bulkdistribute/distribute
 
-
-#Debit Application Confirmation
-ecms_web_debit_issuance_api.app_confirm.access : http://DEBIT-SERVICE/app_confirm/access
-ecms_web_debit_issuance_api.app_confirm.list : http://DEBIT-SERVICE/app_confirm/list
-ecms_web_debit_issuance_api.app_confirm.view : http://DEBIT-SERVICE/app_confirm/view
-ecms_web_debit_issuance_api.app_confirm.history : http://DEBIT-SERVICE/app_confirm/history
-ecms_web_debit_issuance_api.app_confirm.approve : http://DEBIT-SERVICE/app_confirm/approve
-ecms_web_debit_issuance_api.app_confirm.reject : http://DEBIT-SERVICE/app_confirm/reject
-ecms_web_debit_issuance_api.app_confirm.bins : http://DEBIT-SERVICE/app_confirm/bins
-
 #Debit Account Operations - Call center
 ecms_web_call_center_api.debitaccview.access : http://CALL-CENTER-SERVICE/debitaccview/access
 ecms_web_call_center_api.debitaccview.autosetreqlist : http://CALL-CENTER-SERVICE/debitaccview/autosetreqlist
@@ -2119,3 +2054,105 @@ ecms_web_call_center_api.cardactconf.reject : http://CALL-CENTER-SERVICE/cardact
 ecms_web_call_center_api.cardactconf.approve : http://CALL-CENTER-SERVICE/cardactconf/approve
 ecms_web_call_center_api.cardactconf.history : http://CALL-CENTER-SERVICE/cardactconf/history
 ecms_web_call_center_api.cardactconf.access : http://CALL-CENTER-SERVICE/cardactconf/access
+
+#Debit Application Assigning
+ecms_web_debit_issuance_api.app_assign.access : http://DEBIT-SERVICE/app_assign/access
+ecms_web_debit_issuance_api.app_assign.list : http://DEBIT-SERVICE/app_assign/list
+ecms_web_debit_issuance_api.app_assign.countlist : http://DEBIT-SERVICE/app_assign/countlist
+ecms_web_debit_issuance_api.app_assign.previousapps : http://DEBIT-SERVICE/app_assign/previousapps
+ecms_web_debit_issuance_api.app_assign.history : http://DEBIT-SERVICE/app_assign/history
+ecms_web_debit_issuance_api.app_assign.add : http://DEBIT-SERVICE/app_assign/add
+ecms_web_debit_issuance_api.app_assign.loadidusers : http://DEBIT-SERVICE/app_assign/loadidusers
+
+# Debit Application Update Assigning
+ecms_web_debit_issuance_api.app_upd_assign.access : http://DEBIT-SERVICE/app_upd_assign/access
+ecms_web_debit_issuance_api.app_upd_assign.list : http://DEBIT-SERVICE/app_upd_assign/list
+ecms_web_debit_issuance_api.app_upd_assign.history : http://DEBIT-SERVICE/app_upd_assign/history
+ecms_web_debit_issuance_api.app_upd_assign.edit : http://DEBIT-SERVICE/app_upd_assign/edit
+ecms_web_debit_issuance_api.app_upd_assign.loadedit : http://DEBIT-SERVICE/app_upd_assign/loadedit
+
+#Debit Application Capturing
+ecms_web_debit_issuance_api.app_capture.access : http://DEBIT-SERVICE/app_capture/access
+ecms_web_debit_issuance_api.app_capture.data : http://DEBIT-SERVICE/app_capture/data
+ecms_web_debit_issuance_api.app_capture.list : http://DEBIT-SERVICE/app_capture/list
+ecms_web_debit_issuance_api.app_capture.uploadfile : http://DEBIT-SERVICE/app_capture/uploadfile
+ecms_web_debit_issuance_api.app_capture.history : http://DEBIT-SERVICE/app_capture/history
+ecms_web_debit_issuance_api.app_capture.cardTypes : http://DEBIT-SERVICE/app_capture/cardTypes
+ecms_web_debit_issuance_api.app_capture.cardProducts : http://DEBIT-SERVICE/app_capture/cardProducts
+ecms_web_debit_issuance_api.app_capture.complete : http://DEBIT-SERVICE/app_capture/complete
+ecms_web_debit_issuance_api.app_capture.area : http://DEBIT-SERVICE/app_capture/area
+ecms_web_debit_issuance_api.app_capture.districtandprovice : http://DEBIT-SERVICE/app_capture/districtandprovice
+ecms_web_debit_issuance_api.app_capture.addpersonaldetails : http://DEBIT-SERVICE/app_capture/addpersonaldetails
+
+#Update Debit Application Capturing
+ecms_web_debit_issuance_api.app_capture_upd.access : http://DEBIT-SERVICE/app_capture_upd/access
+ecms_web_debit_issuance_api.app_capture_upd.data : http://DEBIT-SERVICE/app_capture_upd/data
+ecms_web_debit_issuance_api.app_capture_upd.list : http://DEBIT-SERVICE/app_capture_upd/list
+ecms_web_debit_issuance_api.app_capture_upd.uploadfile : http://DEBIT-SERVICE/app_capture_upd/uploadfile
+ecms_web_debit_issuance_api.app_capture_upd.history : http://DEBIT-SERVICE/app_capture_upd/history
+ecms_web_debit_issuance_api.app_capture_upd.cardTypes : http://DEBIT-SERVICE/app_capture_upd/cardTypes
+ecms_web_debit_issuance_api.app_capture_upd.cardProducts : http://DEBIT-SERVICE/app_capture_upd/cardProducts
+ecms_web_debit_issuance_api.app_capture_upd.complete : http://DEBIT-SERVICE/app_capture_upd/complete
+ecms_web_debit_issuance_api.app_capture_upd.updpersonaldetails : http://DEBIT-SERVICE/app_capture_upd/updpersonaldetails
+ecms_web_debit_issuance_api.app_capture_upd.area : http://DEBIT-SERVICE/app_capture_upd/area
+ecms_web_debit_issuance_api.app_capture_upd.districtandprovice : http://DEBIT-SERVICE/app_capture_upd/districtandprovice
+
+#Instant Kyc Debit Application Capturing
+ecms_web_debit_issuance_api.instant_kyc.access : http://DEBIT-SERVICE/instant_kyc/access
+ecms_web_debit_issuance_api.instant_kyc.data : http://DEBIT-SERVICE/instant_kyc/data
+ecms_web_debit_issuance_api.instant_kyc.uploadfile : http://DEBIT-SERVICE/instant_kyc/uploadfile
+ecms_web_debit_issuance_api.instant_kyc.history : http://DEBIT-SERVICE/instant_kyc/history
+ecms_web_debit_issuance_api.instant_kyc.addinstantcard : http://DEBIT-SERVICE/instant_kyc/addinstantcard
+ecms_web_debit_issuance_api.instant_kyc.mandatorydocs : http://DEBIT-SERVICE/instant_kyc/mandatorydocs
+
+#Debit Application Verify
+ecms_web_debit_issuance_api.app_verify.access : http://DEBIT-SERVICE/app_verify/access
+ecms_web_debit_issuance_api.app_verify.list : http://DEBIT-SERVICE/app_verify/list
+ecms_web_debit_issuance_api.app_verify.data : http://DEBIT-SERVICE/app_verify/data
+ecms_web_debit_issuance_api.app_verify.recheck : http://DEBIT-SERVICE/app_verify/recheck
+ecms_web_debit_issuance_api.app_verify.verify : http://DEBIT-SERVICE/app_verify/verify
+ecms_web_debit_issuance_api.app_verify.history : http://DEBIT-SERVICE/app_verify/history
+ecms_web_debit_issuance_api.app_verify.reject : http://DEBIT-SERVICE/app_verify/reject
+ecms_web_debit_issuance_api.app_verify.onlold : http://DEBIT-SERVICE/app_verify/onlold
+ecms_web_debit_issuance_api.app_verify.mandatorydocs : http://DEBIT-SERVICE/app_verify/mandatorydocs
+
+#Debit Application Confirmation
+ecms_web_debit_issuance_api.app_confirm.access : http://DEBIT-SERVICE/app_confirm/access
+ecms_web_debit_issuance_api.app_confirm.list : http://DEBIT-SERVICE/app_confirm/list
+ecms_web_debit_issuance_api.app_confirm.view : http://DEBIT-SERVICE/app_confirm/view
+ecms_web_debit_issuance_api.app_confirm.cardproduct : http://DEBIT-SERVICE/app_confirm/cardproduct
+ecms_web_debit_issuance_api.app_confirm.binList : http://DEBIT-SERVICE/app_confirm/binList
+ecms_web_debit_issuance_api.app_confirm.production_modes : http://DEBIT-SERVICE/app_confirm/production_modes
+ecms_web_debit_issuance_api.app_confirm.card_templates : http://DEBIT-SERVICE/app_confirm/card_templates
+ecms_web_debit_issuance_api.app_confirm.account_templates : http://DEBIT-SERVICE/app_confirm/account_templates
+ecms_web_debit_issuance_api.app_confirm.approve : http://DEBIT-SERVICE/app_confirm/approve
+ecms_web_debit_issuance_api.app_confirm.reject : http://DEBIT-SERVICE/app_confirm/reject
+ecms_web_debit_issuance_api.app_confirm.history : http://DEBIT-SERVICE/app_confirm/history
+
+#Debit Bulk Verify Application Confirmation
+ecms_web_debit_issuance_api.instant_app_verify_confirm.access : http://DEBIT-SERVICE/instant_app_verify_confirm/access
+ecms_web_debit_issuance_api.instant_app_verify_confirm.list : http://DEBIT-SERVICE/instant_app_verify_confirm/list
+ecms_web_debit_issuance_api.instant_app_verify_confirm.data : http://DEBIT-SERVICE/instant_app_verify_confirm/data
+ecms_web_debit_issuance_api.instant_app_verify_confirm.approve : http://DEBIT-SERVICE/instant_app_verify_confirm/approve
+ecms_web_debit_issuance_api.instant_app_verify_confirm.reject : http://DEBIT-SERVICE/instant_app_verify_confirm/reject
+ecms_web_debit_issuance_api.instant_app_verify_confirm.mandatorydocs : http://DEBIT-SERVICE/instant_app_verify_confirm/mandatorydocs
+ecms_web_debit_issuance_api.instant_app_verify_confirm.history : http://DEBIT-SERVICE/instant_app_verify_confirm/history
+
+#Standing Order Type
+ecms_web_core_api.standingordertype.access : http://CORE-SERVICE/standingordertype/access
+ecms_web_core_api.standingordertype.add : http://CORE-SERVICE/standingordertype/add
+ecms_web_core_api.standingordertype.loadcategory : http://CORE-SERVICE/standingordertype/loadcategory
+ecms_web_core_api.standingordertype.list : http://CORE-SERVICE/standingordertype/list
+ecms_web_core_api.standingordertype.history : http://CORE-SERVICE/standingordertype/history
+
+#Debit Card Pin Gen
+ecms_web_debit_issuance_api.pin_generator.access : http://DEBIT-SERVICE/pin_generator/access
+ecms_web_debit_issuance_api.pin_generator.list : http://DEBIT-SERVICE/pin_generator/list
+ecms_web_debit_issuance_api.pin_generator.genarate : http://DEBIT-SERVICE/pin_generator/genarate
+
+#Debit Emboss Encode
+ecms_web_debit_issuance_api.debit_embossing_and_encoding.access : http://DEBIT-SERVICE/debit_embossing_and_encoding/access
+ecms_web_debit_issuance_api.debit_embossing_and_encoding.list : http://DEBIT-SERVICE/debit_embossing_and_encoding/list
+
+#Test
+ecms_web_core_api.secvaluegen.list : http://CORE-SERVICE/secvaluegen/list
