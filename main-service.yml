@@ -698,10 +698,10 @@ ecms_web_common_report_api.password_reset.excel : http://COMMON-REPORT-SERVICE/p
 ecms_web_common_report_api.password_reset.pdf : http://COMMON-REPORT-SERVICE/password_reset/pdf
 
 # internal user creation report
-ecms_web_common_report_api.internal_usercreation.access : http://COMMON-REPORT-SERVICE/internal_usercreation/access
-ecms_web_common_report_api.internal_usercreation.list : http://COMMON-REPORT-SERVICE/internal_usercreation/list
-ecms_web_common_report_api.internal_usercreation.excel : http://COMMON-REPORT-SERVICE/internal_usercreation/excel
-ecms_web_common_report_api.internal_usercreation.pdf : http://COMMON-REPORT-SERVICE/internal_usercreation/pdf
+ecms_web_common_report_api.internal_user_creation.access : http://COMMON-REPORT-SERVICE/internal_user_creation/access
+ecms_web_common_report_api.internal_user_creation.list : http://COMMON-REPORT-SERVICE/internal_user_creation/list
+ecms_web_common_report_api.internal_user_creation.excel : http://COMMON-REPORT-SERVICE/internal_user_creation/excel
+ecms_web_common_report_api.internal_user_creation.pdf : http://COMMON-REPORT-SERVICE/internal_user_creation/pdf
 
 # system audit report
 ecms_web_common_report_api.system_auditreport.access : http://COMMON-REPORT-SERVICE/system_auditreport/access
@@ -759,6 +759,200 @@ ecms_web_debit_report_api.overseas_transaction_report.access : http://DEBIT-REPO
 ecms_web_debit_report_api.overseas_transaction_report.list : http://DEBIT-REPORT-SERVICE/overseas_transaction_report/list
 ecms_web_debit_report_api.overseas_transaction_report.excel : http://DEBIT-REPORT-SERVICE/overseas_transaction_report/excel
 ecms_web_debit_report_api.overseas_transaction_report.pdf : http://DEBIT-REPORT-SERVICE/overseas_transaction_report/pdf
+
+# debit activated not used card Report
+ecms_web_issuing_report_api.debit_act_notused.access : http://ISSUING-REPORT-SERVICE/debit_act_notused/access
+ecms_web_issuing_report_api.debit_act_notused.loadcardproducts : http://ISSUING-REPORT-SERVICE/debit_act_notused/loadcardproducts
+ecms_web_issuing_report_api.debit_act_notused.list : http://ISSUING-REPORT-SERVICE/debit_act_notused/list
+ecms_web_issuing_report_api.debit_act_notused.excel: http://ISSUING-REPORT-SERVICE/debit_act_notused/excel
+ecms_web_issuing_report_api.debit_act_notused.pdf: http://ISSUING-REPORT-SERVICE/debit_act_notused/pdf
+
+# debit card application Report
+ecms_web_issuing_report_api.debit_card_application.access : http://ISSUING-REPORT-SERVICE/debit_card_application/access
+ecms_web_issuing_report_api.debit_card_application.list : http://ISSUING-REPORT-SERVICE/debit_card_application/list
+ecms_web_issuing_report_api.debit_card_application.excel: http://ISSUING-REPORT-SERVICE/debit_card_application/excel
+ecms_web_issuing_report_api.debit_card_application.pdf: http://ISSUING-REPORT-SERVICE/debit_card_application/pdf
+
+# debit card number generation Report
+ecms_web_issuing_report_api.debit_card_generation.access : http://ISSUING-REPORT-SERVICE/debit_card_generation/access
+ecms_web_issuing_report_api.debit_card_generation.loadcardproducts : http://ISSUING-REPORT-SERVICE/debit_card_generation/loadcardproducts
+ecms_web_issuing_report_api.debit_card_generation.list : http://ISSUING-REPORT-SERVICE/debit_card_generation/list
+ecms_web_issuing_report_api.debit_card_generation.excel: http://ISSUING-REPORT-SERVICE/debit_card_generation/excel
+ecms_web_issuing_report_api.debit_card_generation.pdf: http://ISSUING-REPORT-SERVICE/debit_card_generation/pdf
+
+# debit card status report
+ecms_web_issuing_report_api.debit_card_status.access : http://ISSUING-REPORT-SERVICE/debit_card_status/access
+ecms_web_issuing_report_api.debit_card_status.loadcardproducts : http://ISSUING-REPORT-SERVICE/debit_card_status/loadcardproducts
+ecms_web_issuing_report_api.debit_card_status.list : http://ISSUING-REPORT-SERVICE/debit_card_status/list
+ecms_web_issuing_report_api.debit_card_status.excel : http://ISSUING-REPORT-SERVICE/debit_card_status/excel
+ecms_web_issuing_report_api.debit_card_status.pdf : http://ISSUING-REPORT-SERVICE/debit_card_status/pdf
+
+# debit transaction details report
+ecms_web_issuing_report_api.debit_transaction_details.access : http://ISSUING-REPORT-SERVICE/debit_transaction_details/access
+ecms_web_issuing_report_api.debit_transaction_details.list : http://ISSUING-REPORT-SERVICE/debit_transaction_details/list
+ecms_web_issuing_report_api.debit_transaction_details.excel : http://ISSUING-REPORT-SERVICE/debit_transaction_details/excel
+ecms_web_issuing_report_api.debit_transaction_details.pdf : http://ISSUING-REPORT-SERVICE/debit_transaction_details/pdf
+
+# --------------------------------------------- Acquiring Report ---------------------------------------------#
+# 1. Cash Advance Report
+ecms_web_acquiring_report_api.cash_advance.access : http://ACQUIRING-REPORT-SERVICE/cash_advance/access
+ecms_web_acquiring_report_api.cash_advance.list : http://ACQUIRING-REPORT-SERVICE/cash_advance/list
+ecms_web_acquiring_report_api.cash_advance.excel : http://ACQUIRING-REPORT-SERVICE/cash_advance/excel
+ecms_web_acquiring_report_api.cash_advance.pdf : http://ACQUIRING-REPORT-SERVICE/cash_advance/pdf
+
+## 2. Daily Acq Summary Report
+#ecms_web_acquiring_report_api.daily_exception.access : http://ACQUIRING-REPORT-SERVICE/daily_exception/access
+#ecms_web_acquiring_report_api.daily_exception.list : http://ACQUIRING-REPORT-SERVICE/daily_exception/list
+#ecms_web_acquiring_report_api.daily_exception.excel : http://ACQUIRING-REPORT-SERVICE/daily_exception/excel
+#ecms_web_acquiring_report_api.daily_exception.pdf : http://ACQUIRING-REPORT-SERVICE/daily_exception/pdf
+
+# 3. Daily Exception Report
+ecms_web_acquiring_report_api.daily_exception.access : http://ACQUIRING-REPORT-SERVICE/daily_exception/access
+ecms_web_acquiring_report_api.daily_exception.list : http://ACQUIRING-REPORT-SERVICE/daily_exception/list
+ecms_web_acquiring_report_api.daily_exception.excel : http://ACQUIRING-REPORT-SERVICE/daily_exception/excel
+ecms_web_acquiring_report_api.daily_exception.pdf : http://ACQUIRING-REPORT-SERVICE/daily_exception/pdf
+
+# 4. Daily Merchant Fee Adj Report
+ecms_web_acquiring_report_api.daily_merchant_fee_adj.access : http://ACQUIRING-REPORT-SERVICE/daily_merchant_fee_adj/access
+ecms_web_acquiring_report_api.daily_merchant_fee_adj.list : http://ACQUIRING-REPORT-SERVICE/daily_merchant_fee_adj/list
+ecms_web_acquiring_report_api.daily_merchant_fee_adj.excel : http://ACQUIRING-REPORT-SERVICE/daily_merchant_fee_adj/excel
+ecms_web_acquiring_report_api.daily_merchant_fee_adj.pdf : http://ACQUIRING-REPORT-SERVICE/daily_merchant_fee_adj/pdf
+
+# 5. Daily Merchant Sales Summary Report
+ecms_web_acquiring_report_api.daily_merchant_sales_summary.access : http://ACQUIRING-REPORT-SERVICE/daily_merchant_sales_summary/access
+ecms_web_acquiring_report_api.daily_merchant_sales_summary.list : http://ACQUIRING-REPORT-SERVICE/daily_merchant_sales_summary/list
+ecms_web_acquiring_report_api.daily_merchant_sales_summary.excel : http://ACQUIRING-REPORT-SERVICE/daily_merchant_sales_summary/excel
+ecms_web_acquiring_report_api.daily_merchant_sales_summary.pdf : http://ACQUIRING-REPORT-SERVICE/daily_merchant_sales_summary/pdf
+
+# 6. EOD Merchant Transaction Report
+ecms_web_acquiring_report_api.eod_merchant_transaction.access : http://ACQUIRING-REPORT-SERVICE/eod_merchant_transaction/access
+ecms_web_acquiring_report_api.eod_merchant_transaction.list : http://ACQUIRING-REPORT-SERVICE/eod_merchant_transaction/list
+ecms_web_acquiring_report_api.eod_merchant_transaction.excel : http://ACQUIRING-REPORT-SERVICE/eod_merchant_transaction/excel
+ecms_web_acquiring_report_api.eod_merchant_transaction.pdf : http://ACQUIRING-REPORT-SERVICE/eod_merchant_transaction/pdf
+
+# 7. Merchant Application Details Report
+ecms_web_acquiring_report_api.merchant_application_details.access : http://ACQUIRING-REPORT-SERVICE/merchant_application_details/access
+ecms_web_acquiring_report_api.merchant_application_details.loaddistricts : http://ACQUIRING-REPORT-SERVICE/merchant_application_details/loaddistricts
+ecms_web_acquiring_report_api.merchant_application_details.loadareas : http://ACQUIRING-REPORT-SERVICE/merchant_application_details/loadareas
+ecms_web_acquiring_report_api.merchant_application_details.list : http://ACQUIRING-REPORT-SERVICE/merchant_application_details/list
+ecms_web_acquiring_report_api.merchant_application_details.excel : http://ACQUIRING-REPORT-SERVICE/merchant_application_details/excel
+ecms_web_acquiring_report_api.merchant_application_details.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_application_details/pdf
+
+# 8. Merchant Commission Report
+ecms_web_acquiring_report_api.merchant_commission.access : http://ACQUIRING-REPORT-SERVICE/merchant_commission/access
+ecms_web_acquiring_report_api.merchant_commission.list : http://ACQUIRING-REPORT-SERVICE/merchant_commission/list
+ecms_web_acquiring_report_api.merchant_commission.excel : http://ACQUIRING-REPORT-SERVICE/merchant_commission/excel
+ecms_web_acquiring_report_api.merchant_commission.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_commission/pdf
+
+# 9. Merchant Detail Report
+ecms_web_acquiring_report_api.merchant_detail.access : http://ACQUIRING-REPORT-SERVICE/merchant_detail/access
+ecms_web_acquiring_report_api.merchant_detail.loaddistricts : http://ACQUIRING-REPORT-SERVICE/merchant_detail/loaddistricts
+ecms_web_acquiring_report_api.merchant_detail.loadareas : http://ACQUIRING-REPORT-SERVICE/merchant_detail/loadareas
+ecms_web_acquiring_report_api.merchant_detail.list : http://ACQUIRING-REPORT-SERVICE/merchant_detail/list
+ecms_web_acquiring_report_api.merchant_detail.excel : http://ACQUIRING-REPORT-SERVICE/merchant_detail/excel
+ecms_web_acquiring_report_api.merchant_detail.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_detail/pdf
+
+# 10. Merchant Installment Report
+ecms_web_acquiring_report_api.merchant_installment.access : http://ACQUIRING-REPORT-SERVICE/merchant_installment/access
+ecms_web_acquiring_report_api.merchant_installment.list : http://ACQUIRING-REPORT-SERVICE/merchant_installment/list
+ecms_web_acquiring_report_api.merchant_installment.excel : http://ACQUIRING-REPORT-SERVICE/merchant_installment/excel
+ecms_web_acquiring_report_api.merchant_installment.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_installment/pdf
+
+# 11. Merchant Maintenance Report
+ecms_web_acquiring_report_api.merchant_maintenance.access : http://ACQUIRING-REPORT-SERVICE/merchant_maintenance/access
+ecms_web_acquiring_report_api.merchant_maintenance.list : http://ACQUIRING-REPORT-SERVICE/merchant_maintenance/list
+ecms_web_acquiring_report_api.merchant_maintenance.excel : http://ACQUIRING-REPORT-SERVICE/merchant_maintenance/excel
+ecms_web_acquiring_report_api.merchant_maintenance.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_maintenance/pdf
+
+# 12. Merchant Payment Report
+ecms_web_acquiring_report_api.merchant_payment.access : http://ACQUIRING-REPORT-SERVICE/merchant_payment/access
+ecms_web_acquiring_report_api.merchant_payment.list : http://ACQUIRING-REPORT-SERVICE/merchant_payment/list
+ecms_web_acquiring_report_api.merchant_payment.excel : http://ACQUIRING-REPORT-SERVICE/merchant_payment/excel
+ecms_web_acquiring_report_api.merchant_payment.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_payment/pdf
+
+# 13. Merchant Payment Summary Report
+ecms_web_acquiring_report_api.merchant_payment_summary.access : http://ACQUIRING-REPORT-SERVICE/merchant_payment_summary/access
+ecms_web_acquiring_report_api.merchant_payment_summary.list : http://ACQUIRING-REPORT-SERVICE/merchant_payment_summary/list
+ecms_web_acquiring_report_api.merchant_payment_summary.excel : http://ACQUIRING-REPORT-SERVICE/merchant_payment_summary/excel
+ecms_web_acquiring_report_api.merchant_payment_summary.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_payment_summary/pdf
+
+# 14. Merchant Training Report
+ecms_web_acquiring_report_api.merchant_training.access : http://ACQUIRING-REPORT-SERVICE/merchant_training/access
+ecms_web_acquiring_report_api.merchant_training.list : http://ACQUIRING-REPORT-SERVICE/merchant_training/list
+ecms_web_acquiring_report_api.merchant_training.excel : http://ACQUIRING-REPORT-SERVICE/merchant_training/excel
+ecms_web_acquiring_report_api.merchant_training.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_training/pdf
+
+# 15. Merchant Transaction Details Report
+ecms_web_acquiring_report_api.merchant_transaction_details.access : http://ACQUIRING-REPORT-SERVICE/merchant_transaction_details/access
+ecms_web_acquiring_report_api.merchant_transaction_details.list : http://ACQUIRING-REPORT-SERVICE/merchant_transaction_details/list
+ecms_web_acquiring_report_api.merchant_transaction_details.excel : http://ACQUIRING-REPORT-SERVICE/merchant_transaction_details/excel
+ecms_web_acquiring_report_api.merchant_transaction_details.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_transaction_details/pdf
+
+# 16. Merchant Transaction Summary Report
+ecms_web_acquiring_report_api.merchant_transaction_summary.access : http://ACQUIRING-REPORT-SERVICE/merchant_transaction_summary/access
+ecms_web_acquiring_report_api.merchant_transaction_summary.list : http://ACQUIRING-REPORT-SERVICE/merchant_transaction_summary/list
+ecms_web_acquiring_report_api.merchant_transaction_summary.excel : http://ACQUIRING-REPORT-SERVICE/merchant_transaction_summary/excel
+ecms_web_acquiring_report_api.merchant_transaction_summary.pdf : http://ACQUIRING-REPORT-SERVICE/merchant_transaction_summary/pdf
+
+# 17. Non-Settled Transaction Report
+ecms_web_acquiring_report_api.non_settled_transaction.access : http://ACQUIRING-REPORT-SERVICE/non_settled_transaction/access
+ecms_web_acquiring_report_api.non_settled_transaction.list : http://ACQUIRING-REPORT-SERVICE/non_settled_transaction/list
+ecms_web_acquiring_report_api.non_settled_transaction.excel : http://ACQUIRING-REPORT-SERVICE/non_settled_transaction/excel
+ecms_web_acquiring_report_api.non_settled_transaction.pdf : http://ACQUIRING-REPORT-SERVICE/non_settled_transaction/pdf
+
+# 18. Non-Settled Transaction Report
+ecms_web_acquiring_report_api.settled_transaction.access : http://ACQUIRING-REPORT-SERVICE/settled_transaction/access
+ecms_web_acquiring_report_api.settled_transaction.list : http://ACQUIRING-REPORT-SERVICE/settled_transaction/list
+ecms_web_acquiring_report_api.settled_transaction.excel : http://ACQUIRING-REPORT-SERVICE/settled_transaction/excel
+ecms_web_acquiring_report_api.settled_transaction.pdf : http://ACQUIRING-REPORT-SERVICE/settled_transaction/pdf
+
+# 19. System Generated Merchant Transaction Summary Report
+ecms_web_acquiring_report_api.sys_gen_merchant_tran_summary.access : http://ACQUIRING-REPORT-SERVICE/sys_gen_merchant_tran_summary/access
+ecms_web_acquiring_report_api.sys_gen_merchant_tran_summary.list : http://ACQUIRING-REPORT-SERVICE/sys_gen_merchant_tran_summary/list
+ecms_web_acquiring_report_api.sys_gen_merchant_tran_summary.excel : http://ACQUIRING-REPORT-SERVICE/sys_gen_merchant_tran_summary/excel
+ecms_web_acquiring_report_api.sys_gen_merchant_tran_summary.pdf : http://ACQUIRING-REPORT-SERVICE/sys_gen_merchant_tran_summary/pdf
+
+# 20. Terminal Detail Report
+ecms_web_acquiring_report_api.terminal_detail.access : http://ACQUIRING-REPORT-SERVICE/terminal_detail/access
+ecms_web_acquiring_report_api.terminal_detail.list : http://ACQUIRING-REPORT-SERVICE/terminal_detail/list
+ecms_web_acquiring_report_api.terminal_detail.excel : http://ACQUIRING-REPORT-SERVICE/terminal_detail/excel
+ecms_web_acquiring_report_api.terminal_detail.pdf : http://ACQUIRING-REPORT-SERVICE/terminal_detail/pdf
+
+# 21. Mobile Login History Report
+ecms_web_acquiring_report_api.mobile_login_history.access : http://ACQUIRING-REPORT-SERVICE/mobile_login_history/access
+ecms_web_acquiring_report_api.mobile_login_history.list : http://ACQUIRING-REPORT-SERVICE/mobile_login_history/list
+ecms_web_acquiring_report_api.mobile_login_history.excel : http://ACQUIRING-REPORT-SERVICE/mobile_login_history/excel
+ecms_web_acquiring_report_api.mobile_login_history.pdf : http://ACQUIRING-REPORT-SERVICE/mobile_login_history/pdf
+
+# 22. Mobile Request Details Report
+ecms_web_acquiring_report_api.mobile_request_details.access : http://ACQUIRING-REPORT-SERVICE/mobile_request_details/access
+ecms_web_acquiring_report_api.mobile_request_details.list : http://ACQUIRING-REPORT-SERVICE/mobile_request_details/list
+ecms_web_acquiring_report_api.mobile_request_details.excel : http://ACQUIRING-REPORT-SERVICE/mobile_request_details/excel
+ecms_web_acquiring_report_api.mobile_request_details.pdf : http://ACQUIRING-REPORT-SERVICE/mobile_request_details/pdf
+
+# 23. M-Visa Transaction Report
+ecms_web_acquiring_report_api.mvisa_transaction.access : http://ACQUIRING-REPORT-SERVICE/mvisa_transaction/access
+ecms_web_acquiring_report_api.mvisa_transaction.list : http://ACQUIRING-REPORT-SERVICE/mvisa_transaction/list
+ecms_web_acquiring_report_api.mvisa_transaction.excel : http://ACQUIRING-REPORT-SERVICE/mvisa_transaction/excel
+ecms_web_acquiring_report_api.mvisa_transaction.pdf : http://ACQUIRING-REPORT-SERVICE/mvisa_transaction/pdf
+
+# 24. Terminal Level TXN Summary Report
+ecms_web_acquiring_report_api.terminal_level_txn_summary.access : http://ACQUIRING-REPORT-SERVICE/terminal_level_txn_summary/access
+ecms_web_acquiring_report_api.terminal_level_txn_summary.list : http://ACQUIRING-REPORT-SERVICE/terminal_level_txn_summary/list
+ecms_web_acquiring_report_api.terminal_level_txn_summary.excel : http://ACQUIRING-REPORT-SERVICE/terminal_level_txn_summary/excel
+ecms_web_acquiring_report_api.terminal_level_txn_summary.pdf : http://ACQUIRING-REPORT-SERVICE/terminal_level_txn_summary/pdf
+
+# 25. UPI Merchant And Terminal Statistics Report
+ecms_web_acquiring_report_api.upi_merchant_and_terminal_stat.access : http://ACQUIRING-REPORT-SERVICE/upi_merchant_and_terminal_stat/access
+ecms_web_acquiring_report_api.upi_merchant_and_terminal_stat.list : http://ACQUIRING-REPORT-SERVICE/upi_merchant_and_terminal_stat/list
+ecms_web_acquiring_report_api.upi_merchant_and_terminal_stat.excel : http://ACQUIRING-REPORT-SERVICE/upi_merchant_and_terminal_stat/excel
+ecms_web_acquiring_report_api.upi_merchant_and_terminal_stat.pdf : http://ACQUIRING-REPORT-SERVICE/upi_merchant_and_terminal_stat/pdf
+
+# 26. UPI Acquiring Transaction Statistics Report
+ecms_web_acquiring_report_api.upi_acquiring_transaction_stat.access : http://ACQUIRING-REPORT-SERVICE/upi_acquiring_transaction_stat/access
+ecms_web_acquiring_report_api.upi_acquiring_transaction_stat.list : http://ACQUIRING-REPORT-SERVICE/upi_acquiring_transaction_stat/list
+ecms_web_acquiring_report_api.upi_acquiring_transaction_stat.excel : http://ACQUIRING-REPORT-SERVICE/upi_acquiring_transaction_stat/excel
+ecms_web_acquiring_report_api.upi_acquiring_transaction_stat.pdf : http://ACQUIRING-REPORT-SERVICE/upi_acquiring_transaction_stat/pdf
 
 # --------------------------------------------- General Ledger Management ---------------------------------------------#
 
@@ -988,6 +1182,7 @@ ecms_web_core_api.emailtemplate.list : http://CORE-SERVICE/emailtemplate/list
 #Transaction Type Management
 ecms_web_core_api.trantype.access : http://CORE-SERVICE/trantype/access
 ecms_web_core_api.trantype.list : http://CORE-SERVICE/trantype/list
+ecms_web_core_api.trantype.financial-status : http://CORE-SERVICE/trantype/financial-status
 ecms_web_core_api.trantype.add : http://CORE-SERVICE/trantype/add
 ecms_web_core_api.trantype.edit : http://CORE-SERVICE/trantype/edit
 ecms_web_core_api.trantype.view : http://CORE-SERVICE/trantype/view
@@ -1478,6 +1673,23 @@ ecms_web_core_api.templimitchange.history : http://CORE-SERVICE/templimitchange/
 ecms_web_core_api.templimitchange.approve : http://CORE-SERVICE/templimitchange/approve
 ecms_web_core_api.templimitchange.reject : http://CORE-SERVICE/templimitchange/reject
 
+# ------------------------------------------------ Data Capturing -----------------------------------------------------#
+#Credit Application Confirmation
+ecms_web_core_api.crappconf.access : http://CORE-SERVICE/crappconf/access
+ecms_web_core_api.crappconf.list : http://CORE-SERVICE/crappconf/list
+ecms_web_core_api.crappconf.view : http://CORE-SERVICE/crappconf/view
+ecms_web_core_api.crappconf.history : http://CORE-SERVICE/crappconf/history
+ecms_web_core_api.crappconf.approve : http://CORE-SERVICE/crappconf/approve
+ecms_web_core_api.crappconf.reject : http://CORE-SERVICE/crappconf/reject
+ecms_web_core_api.crappconf.customer_templates : http://CORE-SERVICE/crappconf/customer_templates
+ecms_web_core_api.crappconf.production_modes : http://CORE-SERVICE/crappconf/production_modes
+ecms_web_core_api.crappconf.account_templates : http://CORE-SERVICE/crappconf/account_templates
+ecms_web_core_api.crappconf.card_templates : http://CORE-SERVICE/crappconf/card_templates
+ecms_web_core_api.crappconf.rec_download : http://CORE-SERVICE/crappconf/rec_download
+ecms_web_core_api.crappconf.bins : http://CORE-SERVICE/crappconf/bins
+ecms_web_core_api.crappconf.breakdown : http://CORE-SERVICE/crappconf/breakdown
+ecms_web_core_api.crappconf.recalculate : http://CORE-SERVICE/crappconf/recalculate
+
 # ------------------------------------------------ Application Processing ---------------------------------------------#
 
 #Credit Application Checking
@@ -1488,6 +1700,7 @@ ecms_web_core_api.app_checking.accept : http://CORE-SERVICE/app_checking/accept
 ecms_web_core_api.app_checking.recheck : http://CORE-SERVICE/app_checking/recheck
 ecms_web_core_api.app_checking.add_remark : http://CORE-SERVICE/app_checking/add_remark
 ecms_web_core_api.app_checking.history : http://CORE-SERVICE/app_checking/history
+ecms_web_core_api.app_checking.img_signature : http://CORE-SERVICE/app_checking/img_signature
 
 #Credit Application Verify
 ecms_web_core_api.app_verify.access : http://CORE-SERVICE/app_verify/access
@@ -1516,6 +1729,14 @@ ecms_web_core_api.creditofficerreviewandconf.history : http://CORE-SERVICE/credi
 ecms_web_core_api.creditofficerreviewandconf.viewaccess : http://CORE-SERVICE/creditofficerreviewandconf/viewaccess
 ecms_web_core_api.creditofficerreviewandconf.approve : http://CORE-SERVICE/creditofficerreviewandconf/approve
 ecms_web_core_api.creditofficerreviewandconf.reject : http://CORE-SERVICE/creditofficerreviewandconf/reject
+
+#Credit Officer Review
+ecms_web_core_api.crofficerreview.access : http://CORE-SERVICE/crofficerreview/access
+ecms_web_core_api.crofficerreview.list : http://CORE-SERVICE/crofficerreview/list
+ecms_web_core_api.crofficerreview.history : http://CORE-SERVICE/crofficerreview/history
+ecms_web_core_api.crofficerreview.view : http://CORE-SERVICE/crofficerreview/view
+ecms_web_core_api.crofficerreview.submit : http://CORE-SERVICE/crofficerreview/submit
+
 
 # ---------------------------------------- ISSUANCE & PERSONALISATION -------------------------------------------------#
 
@@ -1723,6 +1944,7 @@ ecms_web_call_center_api.cardmemos.add : http://CALL-CENTER-SERVICE/cardmemos/ad
 
 #Update Credit Application Capturing
 ecms_web_core_api.app_capture_upd.access : http://CORE-SERVICE/app_capture_upd/access
+ecms_web_core_api.app_capture_upd.currency : http://CORE-SERVICE/app_capture_upd/currency
 ecms_web_core_api.app_capture_upd.occupations : http://CORE-SERVICE/app_capture_upd/occupations
 ecms_web_core_api.app_capture_upd.list : http://CORE-SERVICE/app_capture_upd/list
 ecms_web_core_api.app_capture_upd.data : http://CORE-SERVICE/app_capture_upd/data
@@ -1749,6 +1971,7 @@ ecms_web_core_api.app_capture_upd.history : http://CORE-SERVICE/app_capture_upd/
 
 #Credit Application Capturing
 ecms_web_core_api.app_capture.access : http://CORE-SERVICE/app_capture/access
+ecms_web_core_api.app_capture.currency : http://CORE-SERVICE/app_capture/currency
 ecms_web_core_api.app_capture.list : http://CORE-SERVICE/app_capture/list
 ecms_web_core_api.app_capture.data : http://CORE-SERVICE/app_capture/data
 ecms_web_core_api.app_capture.addpersonaldetails : http://CORE-SERVICE/app_capture/addpersonaldetails
@@ -1834,22 +2057,6 @@ ecms_web_call_center_api.cardactivation.history : http://CALL-CENTER-SERVICE/car
 ecms_web_call_center_api.cardactivation.approve : http://CALL-CENTER-SERVICE/cardactivation/approve
 ecms_web_call_center_api.cardactivation.reject : http://CALL-CENTER-SERVICE/cardactivation/reject
 
-#Credit Application Confirmation
-ecms_web_core_api.crappconf.access : http://CORE-SERVICE/crappconf/access
-ecms_web_core_api.crappconf.list : http://CORE-SERVICE/crappconf/list
-ecms_web_core_api.crappconf.view : http://CORE-SERVICE/crappconf/view
-ecms_web_core_api.crappconf.history : http://CORE-SERVICE/crappconf/history
-ecms_web_core_api.crappconf.approve : http://CORE-SERVICE/crappconf/approve
-ecms_web_core_api.crappconf.reject : http://CORE-SERVICE/crappconf/reject
-ecms_web_core_api.crappconf.customer_templates : http://CORE-SERVICE/crappconf/customer_templates
-ecms_web_core_api.crappconf.production_modes : http://CORE-SERVICE/crappconf/production_modes
-ecms_web_core_api.crappconf.account_templates : http://CORE-SERVICE/crappconf/account_templates
-ecms_web_core_api.crappconf.card_templates : http://CORE-SERVICE/crappconf/card_templates
-ecms_web_core_api.crappconf.rec_download : http://CORE-SERVICE/crappconf/rec_download
-ecms_web_core_api.crappconf.bins : http://CORE-SERVICE/crappconf/bins
-ecms_web_core_api.crappconf.breakdown : http://CORE-SERVICE/crappconf/breakdown
-ecms_web_core_api.crappconf.recalculate : http://CORE-SERVICE/crappconf/recalculate
-
 #Debit Application Assigning
 ecms_web_debit_issuance_api.app_assign.access : http://DEBIT-SERVICE/app_assign/access
 ecms_web_debit_issuance_api.app_assign.list : http://DEBIT-SERVICE/app_assign/list
@@ -1866,18 +2073,6 @@ ecms_web_debit_issuance_api.app_upd_assign.history : http://DEBIT-SERVICE/app_up
 ecms_web_debit_issuance_api.app_upd_assign.edit : http://DEBIT-SERVICE/app_upd_assign/edit
 ecms_web_debit_issuance_api.app_upd_assign.loadedit : http://DEBIT-SERVICE/app_upd_assign/loadedit
 
-#Debit Application Capturing
-ecms_web_debit_issuance_api.app_capture.access : http://DEBIT-SERVICE/app_capture/access
-ecms_web_debit_issuance_api.app_capture.data : http://DEBIT-SERVICE/app_capture/data
-ecms_web_debit_issuance_api.app_capture.area : http://DEBIT-SERVICE/app_capture/area
-ecms_web_debit_issuance_api.app_capture.districtandprovice : http://DEBIT-SERVICE/app_capture/districtandprovice
-ecms_web_debit_issuance_api.app_capture.list : http://DEBIT-SERVICE/app_capture/list
-ecms_web_debit_issuance_api.app_capture.uploadfile : http://DEBIT-SERVICE/app_capture/uploadfile
-ecms_web_debit_issuance_api.app_capture.history : http://DEBIT-SERVICE/app_capture/history
-ecms_web_debit_issuance_api.app_capture.cardTypes : http://DEBIT-SERVICE/app_capture/cardTypes
-ecms_web_debit_issuance_api.app_capture.cardProducts : http://DEBIT-SERVICE/app_capture/cardProducts
-ecms_web_debit_issuance_api.app_capture.complete : http://DEBIT-SERVICE/app_capture/complete
-ecms_web_debit_issuance_api.app_capture.addpersonaldetails : http://DEBIT-SERVICE/app_capture/addpersonaldetails
 
 #Update Debit Application Capturing
 ecms_web_debit_issuance_api.app_capture_upd.access : http://DEBIT-SERVICE/app_capture_upd/access
@@ -1899,16 +2094,18 @@ ecms_web_debit_issuance_api.instant_kyc.uploadfile : http://DEBIT-SERVICE/instan
 ecms_web_debit_issuance_api.instant_kyc.history : http://DEBIT-SERVICE/instant_kyc/history
 ecms_web_debit_issuance_api.instant_kyc.addinstantcard : http://DEBIT-SERVICE/instant_kyc/addinstantcard
 ecms_web_debit_issuance_api.instant_kyc.mandatorydocs : http://DEBIT-SERVICE/instant_kyc/mandatorydocs
+ecms_web_debit_issuance_api.instant_kyc.area : http://DEBIT-SERVICE/instant_kyc/area
+ecms_web_debit_issuance_api.instant_kyc.districtandprovice : http://DEBIT-SERVICE/instant_kyc/districtandprovice
 
 
 #debit_issuance
-
 
 #Bulk Card Request
 ecms_web_debit_issuance_api.bulkcardreq.access : http://DEBIT-SERVICE/bulkcardreq/access
 ecms_web_debit_issuance_api.bulkcardreq.type : http://DEBIT-SERVICE/bulkcardreq/type
 ecms_web_debit_issuance_api.bulkcardreq.product : http://DEBIT-SERVICE/bulkcardreq/product
 ecms_web_debit_issuance_api.bulkcardreq.currency : http://DEBIT-SERVICE/bulkcardreq/currency
+ecms_web_debit_issuance_api.bulkcardreq.production : http://DEBIT-SERVICE/bulkcardreq/production
 ecms_web_debit_issuance_api.bulkcardreq.list : http://DEBIT-SERVICE/bulkcardreq/list
 ecms_web_debit_issuance_api.bulkcardreq.history : http://DEBIT-SERVICE/bulkcardreq/history
 ecms_web_debit_issuance_api.bulkcardreq.add : http://DEBIT-SERVICE/bulkcardreq/add
@@ -1916,6 +2113,15 @@ ecms_web_debit_issuance_api.bulkcardreq.update : http://DEBIT-SERVICE/bulkcardre
 ecms_web_debit_issuance_api.bulkcardreq.delete : http://DEBIT-SERVICE/bulkcardreq/delete
 ecms_web_debit_issuance_api.bulkcardreq.receive : http://DEBIT-SERVICE/bulkcardreq/receive
 
+#Bulk Card Request Confirmation
+ecms_web_debit_issuance_api.bulkcardreqconf.access : http://DEBIT-SERVICE/bulkcardreqconf/access
+ecms_web_debit_issuance_api.bulkcardreqconf.type : http://DEBIT-SERVICE/bulkcardreqconf/type
+ecms_web_debit_issuance_api.bulkcardreqconf.product : http://DEBIT-SERVICE/bulkcardreqconf/product
+ecms_web_debit_issuance_api.bulkcardreqconf.currency : http://DEBIT-SERVICE/bulkcardreqconf/currency
+ecms_web_debit_issuance_api.bulkcardreqconf.list : http://DEBIT-SERVICE/bulkcardreqconf/list
+ecms_web_debit_issuance_api.bulkcardreqconf.history : http://DEBIT-SERVICE/bulkcardreqconf/history
+ecms_web_debit_issuance_api.bulkcardreqconf.approve : http://DEBIT-SERVICE/bulkcardreqconf/approve
+ecms_web_debit_issuance_api.bulkcardreqconf.reject : http://DEBIT-SERVICE/bulkcardreqconf/reject
 
 #customer contact details confirmation
 ecms_web_debit_issuance_api.cuscondetconf.access : http://DEBIT-SERVICE/cuscondetconf/access
@@ -1923,7 +2129,6 @@ ecms_web_debit_issuance_api.cuscondetconf.list : http://DEBIT-SERVICE/cuscondetc
 ecms_web_debit_issuance_api.cuscondetconf.history : http://DEBIT-SERVICE/cuscondetconf/history
 ecms_web_debit_issuance_api.cuscondetconf.approve : http://DEBIT-SERVICE/cuscondetconf/approve
 ecms_web_debit_issuance_api.cuscondetconf.reject : http://DEBIT-SERVICE/cuscondetconf/reject
-
 
 #Card Request Confirmation
 ecms_web_debit_issuance_api.cardreqconf.access : http://DEBIT-SERVICE/cardreqconf/access
@@ -1956,6 +2161,7 @@ ecms_web_core_api.cardrenewal.list : http://CORE-SERVICE/cardrenewal/list
 ecms_web_core_api.cardrenewal.history : http://CORE-SERVICE/cardrenewal/history
 ecms_web_core_api.cardrenewal.approve : http://CORE-SERVICE/cardrenewal/approve
 ecms_web_core_api.cardrenewal.reject : http://CORE-SERVICE/cardrenewal/reject
+ecms_web_core_api.cardrenewal.cardproductby : http://CORE-SERVICE/cardrenewal/cardproductby
 
 #Loyalty Redeem Request Confirmation
 ecms_web_core_api.loyaltyredeemconf.access : http://CORE-SERVICE/loyaltyredeemconf/access
@@ -2061,15 +2267,18 @@ ecms_web_debit_issuance_api.bulkdistribute.typelist : http://DEBIT-SERVICE/bulkd
 ecms_web_debit_issuance_api.bulkdistribute.productlist : http://DEBIT-SERVICE/bulkdistribute/productlist
 ecms_web_debit_issuance_api.bulkdistribute.distribute : http://DEBIT-SERVICE/bulkdistribute/distribute
 
-
 #Debit Application Confirmation
 ecms_web_debit_issuance_api.app_confirm.access : http://DEBIT-SERVICE/app_confirm/access
 ecms_web_debit_issuance_api.app_confirm.list : http://DEBIT-SERVICE/app_confirm/list
 ecms_web_debit_issuance_api.app_confirm.view : http://DEBIT-SERVICE/app_confirm/view
-ecms_web_debit_issuance_api.app_confirm.history : http://DEBIT-SERVICE/app_confirm/history
+ecms_web_debit_issuance_api.app_confirm.cardproduct : http://DEBIT-SERVICE/app_confirm/cardproduct
+ecms_web_debit_issuance_api.app_confirm.binList : http://DEBIT-SERVICE/app_confirm/binList
+ecms_web_debit_issuance_api.app_confirm.production_modes : http://DEBIT-SERVICE/app_confirm/production_modes
+ecms_web_debit_issuance_api.app_confirm.card_templates : http://DEBIT-SERVICE/app_confirm/card_templates
+ecms_web_debit_issuance_api.app_confirm.account_templates : http://DEBIT-SERVICE/app_confirm/account_templates
 ecms_web_debit_issuance_api.app_confirm.approve : http://DEBIT-SERVICE/app_confirm/approve
 ecms_web_debit_issuance_api.app_confirm.reject : http://DEBIT-SERVICE/app_confirm/reject
-ecms_web_debit_issuance_api.app_confirm.bins : http://DEBIT-SERVICE/app_confirm/bins
+ecms_web_debit_issuance_api.app_confirm.history : http://DEBIT-SERVICE/app_confirm/history
 
 #Debit Account Operations - Call center
 ecms_web_call_center_api.debitaccview.access : http://CALL-CENTER-SERVICE/debitaccview/access
@@ -2119,3 +2328,95 @@ ecms_web_call_center_api.cardactconf.reject : http://CALL-CENTER-SERVICE/cardact
 ecms_web_call_center_api.cardactconf.approve : http://CALL-CENTER-SERVICE/cardactconf/approve
 ecms_web_call_center_api.cardactconf.history : http://CALL-CENTER-SERVICE/cardactconf/history
 ecms_web_call_center_api.cardactconf.access : http://CALL-CENTER-SERVICE/cardactconf/access
+
+#Perm Limit Change Request
+ecms_web_core_api.permanentlimitchange.access : http://CORE-SERVICE/permanentlimitchange/access
+ecms_web_core_api.permanentlimitchange.list : http://CORE-SERVICE/permanentlimitchange/list
+ecms_web_core_api.permanentlimitchange.history : http://CORE-SERVICE/permanentlimitchange/history
+ecms_web_core_api.permanentlimitchange.approve : http://CORE-SERVICE/permanentlimitchange/approve
+ecms_web_core_api.permanentlimitchange.reject : http://CORE-SERVICE/permanentlimitchange/reject
+
+#Debit request monitor
+ecms_web_debit_issuance_api.requestmonitor.list.customer.contactdetailchangereq : http:///DEBIT-SERVICE/requestmonitor/list/customer/contactdetailchangereq
+ecms_web_debit_issuance_api.requestmonitor.list.installmentpayment.easypaymentrequest : http:///DEBIT-SERVICE/requestmonitor/list/installmentpayment/easypaymentrequest
+ecms_web_debit_issuance_api.requestmonitor.list.installmentpayment.balancetransferrequest : http:///DEBIT-SERVICE/requestmonitor/list/installmentpayment/balancetransferrequest
+ecms_web_debit_issuance_api.requestmonitor.list.installmentpayment.loanoncardrequest : http:///DEBIT-SERVICE/requestmonitor/list/installmentpayment/loanoncardrequest
+ecms_web_debit_issuance_api.requestmonitor.list.installmentpayment.adjustmentrequest : http:///DEBIT-SERVICE/requestmonitor/list/installmentpayment/adjustmentrequest
+ecms_web_debit_issuance_api.requestmonitor.list.card.permlimitincrementreq : http:///DEBIT-SERVICE/requestmonitor/list/card/permlimitincrementreq
+ecms_web_debit_issuance_api.requestmonitor.list.card.templimitincrementreq : http:///DEBIT-SERVICE/requestmonitor/list/card/templimitincrementreq
+ecms_web_debit_issuance_api.requestmonitor.list.card.limitconfirmationrequest : http:///DEBIT-SERVICE/requestmonitor/list/card/limitconfirmationrequest
+ecms_web_debit_issuance_api.requestmonitor.list.card.cardrequest : http:///DEBIT-SERVICE/requestmonitor/list/card/cardrequest
+ecms_web_debit_issuance_api.requestmonitor.list.card.cardrenewalreq : http:///DEBIT-SERVICE/requestmonitor/list/card/cardrenewalreq
+ecms_web_debit_issuance_api.requestmonitor.list.card.transactiondropreq : http:///DEBIT-SERVICE/requestmonitor/list/card/transactiondropreq
+ecms_web_debit_issuance_api.requestmonitor.list.account.autosettlementreq : http:///DEBIT-SERVICE/requestmonitor/list/account/autosettlementreq
+ecms_web_debit_issuance_api.requestmonitor.list.account.billingcyclechangerequest : http:///DEBIT-SERVICE/requestmonitor/list/account/billingcyclechangerequest
+ecms_web_debit_issuance_api.requestmonitor.list.account.statementcopyrequest : http:///DEBIT-SERVICE/requestmonitor/list/account/statementcopyrequest
+ecms_web_debit_issuance_api.requestmonitor.list.account.cashbackenrolmentrequest : http:///DEBIT-SERVICE/requestmonitor/list/account/cashbackenrolmentrequest
+ecms_web_debit_issuance_api.requestmonitor.list.account.cashbackredeemrequest : http:///DEBIT-SERVICE/requestmonitor/list/account/cashbackredeemrequest
+ecms_web_debit_issuance_api.requestmonitor.list.standingorder.utilitystandingorder : http:///DEBIT-SERVICE/requestmonitor/list/standingorder/utilitystandingorder
+
+#Balance Transfer Confirmation
+ecms_web_core_api.balancetransferconf.access : http://CORE-SERVICE/balancetransferconf/access
+ecms_web_core_api.balancetransferconf.list : http://CORE-SERVICE/balancetransferconf/list
+ecms_web_core_api.balancetransferconf.history : http://CORE-SERVICE/balancetransferconf/history
+ecms_web_core_api.balancetransferconf.confirm : http://CORE-SERVICE/balancetransferconf/confirm
+ecms_web_core_api.balancetransferconf.reject : http://CORE-SERVICE/balancetransferconf/reject
+
+#Debit Application Capturing
+ecms_web_debit_issuance_api.app_capture.access : http://DEBIT-SERVICE/app_capture/access
+ecms_web_debit_issuance_api.app_capture.data : http://DEBIT-SERVICE/app_capture/data
+ecms_web_debit_issuance_api.app_capture.area : http://DEBIT-SERVICE/app_capture/area
+ecms_web_debit_issuance_api.app_capture.districtandprovice : http://DEBIT-SERVICE/app_capture/districtandprovice
+ecms_web_debit_issuance_api.app_capture.districtProvince : http://DEBIT-SERVICE/app_capture/districtProvince
+ecms_web_debit_issuance_api.app_capture.list : http://DEBIT-SERVICE/app_capture/list
+ecms_web_debit_issuance_api.app_capture.uploadfile : http://DEBIT-SERVICE/app_capture/uploadfile
+ecms_web_debit_issuance_api.app_capture.history : http://DEBIT-SERVICE/app_capture/history
+ecms_web_debit_issuance_api.app_capture.cardTypes : http://DEBIT-SERVICE/app_capture/cardTypes
+ecms_web_debit_issuance_api.app_capture.cardProducts : http://DEBIT-SERVICE/app_capture/cardProducts
+ecms_web_debit_issuance_api.app_capture.complete : http://DEBIT-SERVICE/app_capture/complete
+ecms_web_debit_issuance_api.app_capture.addpersonaldetails : http://DEBIT-SERVICE/app_capture/addpersonaldetails
+
+#Debit Application Verify
+ecms_web_debit_issuance_api.app_verify.access : http://DEBIT-SERVICE/app_verify/access
+ecms_web_debit_issuance_api.app_verify.list : http://DEBIT-SERVICE/app_verify/list
+ecms_web_debit_issuance_api.app_verify.data : http://DEBIT-SERVICE/app_verify/data
+ecms_web_debit_issuance_api.app_verify.recheck : http://DEBIT-SERVICE/app_verify/recheck
+ecms_web_debit_issuance_api.app_verify.verify : http://DEBIT-SERVICE/app_verify/verify
+ecms_web_debit_issuance_api.app_verify.history : http://DEBIT-SERVICE/app_verify/history
+ecms_web_debit_issuance_api.app_verify.reject : http://DEBIT-SERVICE/app_verify/reject
+ecms_web_debit_issuance_api.app_verify.onlold : http://DEBIT-SERVICE/app_verify/onlold
+ecms_web_debit_issuance_api.app_verify.mandatorydocs : http://DEBIT-SERVICE/app_verify/mandatorydocs
+
+#Debit Bulk Verify Application Confirmation
+ecms_web_debit_issuance_api.instant_app_verify_confirm.access : http://DEBIT-SERVICE/instant_app_verify_confirm/access
+ecms_web_debit_issuance_api.instant_app_verify_confirm.list : http://DEBIT-SERVICE/instant_app_verify_confirm/list
+ecms_web_debit_issuance_api.instant_app_verify_confirm.data : http://DEBIT-SERVICE/instant_app_verify_confirm/data
+ecms_web_debit_issuance_api.instant_app_verify_confirm.approve : http://DEBIT-SERVICE/instant_app_verify_confirm/approve
+ecms_web_debit_issuance_api.instant_app_verify_confirm.reject : http://DEBIT-SERVICE/instant_app_verify_confirm/reject
+ecms_web_debit_issuance_api.instant_app_verify_confirm.mandatorydocs : http://DEBIT-SERVICE/instant_app_verify_confirm/mandatorydocs
+ecms_web_debit_issuance_api.instant_app_verify_confirm.history : http://DEBIT-SERVICE/instant_app_verify_confirm/history
+
+#Debit Application Verification and Confirmation
+ecms_web_debit_issuance_api.app_verify_confirm.access : http://DEBIT-SERVICE/instant_app_verify_confirm/access
+ecms_web_debit_issuance_api.app_verify_confirm.list : http://DEBIT-SERVICE/instant_app_verify_confirm/list
+ecms_web_debit_issuance_api.app_verify_confirm.data : http://DEBIT-SERVICE/instant_app_verify_confirm/data
+ecms_web_debit_issuance_api.app_verify_confirm.verify : http://DEBIT-SERVICE/instant_app_verify_confirm/verify
+ecms_web_debit_issuance_api.app_verify_confirm.onhold : http://DEBIT-SERVICE/instant_app_verify_confirm/onhold
+ecms_web_debit_issuance_api.app_verify_confirm.mandatorydocs : http://DEBIT-SERVICE/instant_app_verify_confirm/mandatorydocs
+ecms_web_debit_issuance_api.app_verify_confirm.history : http://DEBIT-SERVICE/instant_app_verify_confirm/history
+ecms_web_debit_issuance_api.app_verify_confirm.recheck : http://DEBIT-SERVICE/instant_app_verify_confirm/recheck
+ecms_web_debit_issuance_api.app_verify_confirm.reject : http://DEBIT-SERVICE/instant_app_verify_confirm/reject
+ecms_web_debit_issuance_api.app_verify_confirm.cardproduct : http://DEBIT-SERVICE/instant_app_verify_confirm/cardproduct
+ecms_web_debit_issuance_api.app_verify_confirm.binList : http://DEBIT-SERVICE/instant_app_verify_confirm/binList
+ecms_web_debit_issuance_api.app_verify_confirm.production_modes : http://DEBIT-SERVICE/instant_app_verify_confirm/production_modes
+ecms_web_debit_issuance_api.app_verify_confirm.card_templates : http://DEBIT-SERVICE/instant_app_verify_confirm/card_templates
+ecms_web_debit_issuance_api.app_verify_confirm.account_templates : http://DEBIT-SERVICE/instant_app_verify_confirm/account_templates
+ecms_web_debit_issuance_api.app_verify_confirm.approve : http://DEBIT-SERVICE/instant_app_verify_confirm/approve
+
+#Manual NP Request Approve
+ecms_web_core_api.manualnpreqaprv.access : http://CORE-SERVICE/manualnpreqaprv/access
+ecms_web_core_api.manualnpreqaprv.list : http://CORE-SERVICE/manualnpreqaprv/list
+ecms_web_core_api.manualnpreqaprv.history : http://CORE-SERVICE/manualnpreqaprv/history
+ecms_web_core_api.manualnpreqaprv.confirm : http://CORE-SERVICE/manualnpreqaprv/confirm
+ecms_web_core_api.manualnpreqaprv.reject : http://CORE-SERVICE/manualnpreqaprv/reject
+
